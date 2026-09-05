@@ -1,0 +1,114 @@
+{
+  "schema_version": "AXXEL-TRACK-B-CAPTURE-CONFIG-1",
+  "config_id": "TRACK_B_XM_FORWARD_CAPTURE_V1",
+  "status": "FROZEN",
+  "frozen_at_utc": "2026-09-04T18:14:02.469662Z",
+  "scope": {
+    "track": "B",
+    "partition": "FORWARD_EXECUTION",
+    "broker_company_contains": "XM",
+    "server": "XMGlobal-MT5 6",
+    "symbol": "GOLD",
+    "instrument": "XAUUSD",
+    "environment": "DEMO",
+    "mode": "READ_ONLY",
+    "orders_authorized": false,
+    "fills_authorized": false,
+    "slippage_observed": false,
+    "research_authorized": false
+  },
+  "polling": {
+    "api": "MetaTrader5.copy_ticks_range",
+    "flags": "COPY_TICKS_ALL",
+    "cadence_seconds": 30,
+    "maximum_request_span_seconds": 60,
+    "overlap_milliseconds": 2000,
+    "claim_tick_completeness": false
+  },
+  "symbol_specification": {
+    "snapshot_cadence_seconds": 900,
+    "snapshot_on_start": true,
+    "snapshot_on_reconnect": true,
+    "change_creates_new_interval": true,
+    "retroactive_application": false
+  },
+  "batch": {
+    "maximum_records": 100000,
+    "flush_commit_cadence": "EVERY_RESPONSE",
+    "raw_format": "NUMPY_NPY_ALLOW_PICKLE_FALSE",
+    "derived_format": "PARQUET_ZSTD",
+    "checkpoint_after_durable_commit_only": true
+  },
+  "timeouts": {
+    "mt5_initialize_milliseconds": 10000,
+    "mt5_call_observation_threshold_milliseconds": 10000,
+    "utc_reference_milliseconds": 2000
+  },
+  "backpressure": {
+    "maximum_tolerated_lag_seconds": 120,
+    "maximum_tolerated_backlog_records": 100000,
+    "disk_minimum_free_bytes": 5368709120,
+    "on_threshold": "STOP_AND_RECORD_INCIDENT"
+  },
+  "retention": {
+    "policy": "NO_AUTOMATIC_DELETION_DURING_QUALIFICATION",
+    "minimum_days": 30,
+    "preserve_failures_and_partial_staging": true
+  },
+  "utc_reference": {
+    "strategy": "SNTP_INDEPENDENT_OF_MT5",
+    "servers": ["time.cloudflare.com", "time.google.com"],
+    "refresh_cadence_seconds": 60,
+    "required_responses": 1,
+    "maximum_uncertainty_milliseconds": 250,
+    "maximum_source_disagreement_milliseconds": 100,
+    "failure_action": "PRESERVE_RAW_SUSPEND_TEMPORAL_ELIGIBILITY"
+  },
+  "reconnection": {
+    "after_exhausted_retries": true,
+    "new_session_identity": true,
+    "snapshot_symbol_specification": true,
+    "recovery_label": "RECOVERED_AFTER_GAP",
+    "never_request_before_t0": true
+  },
+  "retry": {
+    "maximum_attempts": 3,
+    "backoff_seconds": [1, 2, 4],
+    "preserve_every_attempt": true,
+    "retry_on_none": true,
+    "retry_on_exception": true,
+    "retry_on_empty": false
+  },
+  "incident_classification": {
+    "classes": [
+      "EMPTY_RESPONSE",
+      "API_ERROR",
+      "API_TIMEOUT_THRESHOLD_EXCEEDED",
+      "RECONNECT",
+      "GAP_OR_INTERRUPTION",
+      "RECOVERED_AFTER_GAP",
+      "DUPLICATE_RESPONSE",
+      "BACKLOG_EXCEEDED",
+      "BATCH_RECORD_LIMIT_EXCEEDED",
+      "DISK_THRESHOLD",
+      "UTC_REFERENCE_UNAVAILABLE",
+      "UTC_UNCERTAINTY_EXCEEDED",
+      "UTC_SOURCE_DISAGREEMENT",
+      "CLOCK_INCONSISTENCY",
+      "SYMBOL_SPECIFICATION_CHANGE",
+      "SERVER_ACCOUNT_IDENTITY_CHANGE",
+      "SCOPE_REVOKED",
+      "PARTIAL_STAGING_RECOVERED"
+    ],
+    "unknown_is_incident": true,
+    "never_fill_or_silently_reconstruct": true
+  },
+  "qualification": {
+    "minimum_complete_sessions": 5,
+    "must_include_weekly_close": true,
+    "must_include_weekly_reopen": true,
+    "must_include_rollover": true,
+    "discard_bad_sessions": false,
+    "g4_immediate_completion_forbidden": true
+  }
+}

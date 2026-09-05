@@ -1,0 +1,61 @@
+{
+  "experiment_id": "ML-XAUUSD-0830-V1",
+  "frozen_before_execution": true,
+  "partition": "DEV",
+  "dataset_version": "DATASET-V2-e4a8cc6b19c1ae75ddc74bbe",
+  "symbol": "XAUUSD",
+  "broker_symbol": "GOLD",
+  "decision_time_cot": "08:30",
+  "horizon_minutes": 30,
+  "seed": 20260903,
+  "cpu_threads_per_model": 2,
+  "early_stopping_rounds": 20,
+  "label": {
+    "classes": ["DOWN", "NO_TRADE", "UP"],
+    "atr_multiple": 0.25,
+    "definition": "UP/DOWN only when that direction's 30m proxy-net return exceeds 0.25 causal ATR; otherwise NO_TRADE"
+  },
+  "decision": {
+    "minimum_probability": 0.50,
+    "maximum_probability_std": 0.10
+  },
+  "walk_forward": {
+    "first_test_year": 2016,
+    "embargo_minutes": 30,
+    "scheme": "expanding annual DEV; chronological 70/15/15 fit/early-stop/calibration"
+  },
+  "models": {
+    "xgboost": {"iterations": 240, "depth": 3, "learning_rate": 0.035},
+    "lightgbm": {"iterations": 240, "depth": 3, "learning_rate": 0.035},
+    "catboost": {"iterations": 240, "depth": 3, "learning_rate": 0.035}
+  },
+  "promotion": {
+    "minimum_balanced_accuracy": 0.3533333333333333,
+    "minimum_trades": 40,
+    "require_log_loss_below_climatology": true,
+    "require_positive_net_after_costs": true,
+    "require_all_skeptic_tests": true,
+    "require_real_costs_and_slippage_for_validation_ready": true
+  },
+  "hypothesis": {
+    "id": "HYPOTHESIS-ML-XAUUSD-0830-DIRECTION-V1",
+    "question": "Does information available by 08:30 COT predict a monetizable 30m direction on XAUUSD after costs?",
+    "target_variable": "ML_CLASS_DOWN_NO_TRADE_UP_30M_ATR025_NET_COST",
+    "population": "One GOLD/XAUUSD 08:30 COT decision per DEV session",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "condition": {"type": "minute_equals", "field": "state_minute_of_session", "value": 30},
+    "primary_metric": "purged expanding-walk-forward ensemble balanced accuracy and net return after costs",
+    "secondary_metrics": ["log loss", "Brier score", "calibration error", "MFE MAE errors", "model disagreement"],
+    "null": "Causal pre-08:30 features do not improve multiclass probability quality or net return over climatology after costs",
+    "expected_direction": "GREATER",
+    "rejection_criterion": "Reject if ensemble fails frozen predictive or economic gates",
+    "survival_criterion": "Pass predictive, economic, temporal, cost, calibration, disagreement and Skeptic gates without post-hoc tuning",
+    "planned_comparisons": 4,
+    "action": "LONG_SHORT_OR_WAIT",
+    "effect_unit": "net return",
+    "minimum_effect": 0.0,
+    "family": "ML_0830",
+    "proposal_type": "FALSIFICATION"
+  },
+  "output_report": "reports/evidence/ML_XAUUSD_0830_V1.json"
+}

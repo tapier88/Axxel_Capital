@@ -1,0 +1,35 @@
+{
+  "campaign_id": "ECONOMIC-DISCOVERY-V1",
+  "mode": "RESEARCH_ONLY",
+  "partition": "DEV",
+  "proposed_hypotheses": 24,
+  "first_test_year": 2016,
+  "minimum_rows": 500,
+  "minimum_sessions": 100,
+  "minimum_years": 3,
+  "primary_metric": "EXPECTED_NET_RETURN",
+  "cost_multipliers": [0.75, 1.0, 1.25, 1.5, 2.0],
+  "purging": "signal horizon in minutes",
+  "embargo": "signal horizon in minutes",
+  "random_split_forbidden": true,
+  "complexity_penalty_per_condition": 0.08,
+  "signals": [
+    {"id":"DISC-09","field":"state_return_15m","operator":"gte","threshold":0.0008073086832424027,"action":"ENTER_SHORT","horizon":15},
+    {"id":"DISC-10","field":"state_return_15m","operator":"lte","threshold":-0.000813140348024044,"action":"ENTER_LONG","horizon":15},
+    {"id":"DISC-15","field":"state_distance_recent_high","operator":"lte","threshold":0.00023706099218618424,"action":"ENTER_SHORT","horizon":30},
+    {"id":"DISC-16","field":"state_distance_recent_low","operator":"lte","threshold":0.0002466731106382834,"action":"ENTER_LONG","horizon":30}
+  ],
+  "filters": [
+    {"id":"LOW_COST","family":"signal + low cost / wait until spread normalizes","rule":"state_spread_points <= expanding-train q25"},
+    {"id":"HIGH_SIGNAL_MAGNITUDE","family":"signal + high signal magnitude","rule":"return abs >= 1.25x threshold; distance <= 0.75x threshold"},
+    {"id":"FAVORABLE_VOLATILITY","family":"signal + favorable volatility","rule":"expanding-train q25 <= state_volatility_15m_causal <= q75"},
+    {"id":"LOW_COST_ATR","family":"signal + cost/ATR low","rule":"state_spread_price/state_atr_14_causal <= expanding-train q25"},
+    {"id":"SELECTED_TIME_WINDOW","family":"signal + selected time window","rule":"60 <= state_minute_of_session <= 210"},
+    {"id":"RANGE_REGIME","family":"signal + favorable regime","rule":"state_regime_v0 == RANGE"}
+  ],
+  "rejection_criteria": ["expected_net_return <= 0 at 1x", "CI95 lower bound <= 0", "insufficient support", "temporal instability", "outlier dependence", "small-regime dependence", "fails economic skeptic"],
+  "validation_access": false,
+  "locked_oos_access": false,
+  "ea": false,
+  "live_trading": false
+}

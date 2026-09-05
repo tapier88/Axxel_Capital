@@ -1,0 +1,19 @@
+{
+  "source": "data/raw/gold_m1/mt5-xmglobal-gold-m1-v1/mt5-xmglobal-gold-m1-v1_d988b7cc2b957c0e.parquet",
+  "legacy_dev_rowgroups": true,
+  "metadata": {
+    "source_id": "MT5-XMGLOBAL-GOLD-M1-V1-LEGACY-DEV-EXTRACT",
+    "broker": "XM Global Limited",
+    "server": "XMGlobal-MT5 6",
+    "symbol_exact": "GOLD",
+    "symbol_international": "XAUUSD",
+    "timeframe": "M1",
+    "timezone": "UTC",
+    "timestamp_semantics": "BAR_OPEN",
+    "point": 0.01,
+    "digits": 2,
+    "legacy_transformed": true,
+    "source_transformations": ["monthly concatenation", "duplicate boundaries removed before legacy RAW", "POSIX seconds to UTC"],
+    "parent_file_sha256_claimed_not_reverified": "992c9d2059b154d07e2aa532830f7aba2965bc2243cfae7150cfef3e57864e69"
+  }
+}

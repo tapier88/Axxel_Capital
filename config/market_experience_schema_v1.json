@@ -1,0 +1,27 @@
+{
+  "schema_version": "market-experience-v1",
+  "record": [
+    "experience_id", "session_id", "dataset_id", "schema_version", "source",
+    "source_raw", "source_bars_hash", "timestamp_utc", "partition", "state",
+    "action", "outcome", "cost", "outcome_status", "data_quality",
+    "counterfactual", "execution_real", "hypothesis_id", "experiment_id",
+    "created_at", "hash"
+  ],
+  "state_boundary": "FEATURES_AVAILABLE_AT_DECISION_TIME",
+  "outcome_boundary": "FUTURE INFORMATION — LABEL ONLY",
+  "actions": ["WAIT", "LONG", "SHORT"],
+  "execution_semantics": "All actions are counterfactual and are never real orders",
+  "state_feature_rationale": {
+    "recent_ohlc": "Completed bar information available at decision time",
+    "returns": "Causal price changes at multiple available lookbacks",
+    "bar_range": "Current completed-bar dispersion",
+    "atr_14_causal": "Causal range scale including gaps from previous closes",
+    "realized_volatility_6h_causal": "Recent variability using past and current completed bars only",
+    "spread": "Observed transaction-cost proxy when the source provides it",
+    "tick_volume": "Activity proxy supplied by the source",
+    "distances": "Location relative to rolling causal extrema",
+    "momentum_3h_causal": "Direction over completed bars",
+    "regime_v0": "Transparent causal classification, not a trading signal",
+    "data_quality": "Availability flags needed to interpret every record"
+  }
+}

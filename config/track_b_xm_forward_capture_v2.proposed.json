@@ -1,0 +1,197 @@
+{
+  "schema_version": "AXXEL-TRACK-B-CAPTURE-PROPOSAL-2",
+  "config_id": "TRACK_B_XM_FORWARD_CAPTURE_V2",
+  "status": "PROPOSED_NOT_APPROVED",
+  "scope": {
+    "track": "B",
+    "partition": "FORWARD_EXECUTION",
+    "broker_company_contains": "XM",
+    "server": "XMGlobal-MT5 6",
+    "symbol": "GOLD",
+    "instrument": "XAUUSD",
+    "environment": "DEMO",
+    "mode": "READ_ONLY",
+    "orders_authorized": false,
+    "fills_authorized": false,
+    "slippage_observed": false,
+    "research_authorized": false
+  },
+  "polling": {
+    "api": "MetaTrader5.copy_ticks_range",
+    "flags": "COPY_TICKS_ALL",
+    "cadence_seconds": 30,
+    "maximum_request_span_seconds": 60,
+    "overlap_milliseconds": 2000,
+    "claim_tick_completeness": false
+  },
+  "symbol_specification": {
+    "snapshot_cadence_seconds": 900,
+    "snapshot_on_start": true,
+    "snapshot_on_reconnect": true,
+    "change_creates_new_interval": true,
+    "retroactive_application": false
+  },
+  "batch": {
+    "maximum_records": 100000,
+    "flush_commit_cadence": "EVERY_RESPONSE",
+    "raw_format": "NUMPY_NPY_ALLOW_PICKLE_FALSE",
+    "derived_format": "PARQUET_ZSTD",
+    "checkpoint_after_durable_commit_only": true
+  },
+  "timeouts": {
+    "mt5_initialize_milliseconds": 10000,
+    "mt5_call_observation_threshold_milliseconds": 10000,
+    "utc_reference_milliseconds": 2000
+  },
+  "backpressure": {
+    "maximum_tolerated_lag_seconds": 120,
+    "maximum_tolerated_backlog_records": 100000,
+    "disk_minimum_free_bytes": 5368709120,
+    "on_threshold": "OPEN_PARENT_RECOVER_SAME_WORKER",
+    "normal_lag_seconds": 30,
+    "recovery_minimum_delay_seconds": 1,
+    "recovery_maximum_lag_seconds": 21600,
+    "no_durable_progress_stop_seconds": 900,
+    "persistent_recovery_until_normal": true,
+    "one_parent_per_episode": true,
+    "recovery_does_not_certify_continuity": true
+  },
+  "retention": {
+    "policy": "NO_AUTOMATIC_DELETION_DURING_QUALIFICATION",
+    "minimum_days": 30,
+    "preserve_failures_and_partial_staging": true
+  },
+  "utc_reference": {
+    "strategy": "SNTP_INDEPENDENT_OF_MT5",
+    "servers": [
+      "time.cloudflare.com",
+      "time.google.com"
+    ],
+    "refresh_cadence_seconds": 5,
+    "required_responses": 1,
+    "maximum_uncertainty_milliseconds": 250,
+    "maximum_source_disagreement_milliseconds": 100,
+    "failure_action": "PRESERVE_RAW_SUSPEND_TEMPORAL_ELIGIBILITY",
+    "bracket_every_request": true,
+    "retrospective_validation": false,
+    "missing_bracket_action": "SUSPEND_TEMPORAL_ELIGIBILITY",
+    "missing_heartbeat_action": "SUSPEND_FROM_LAST_VALID_EVIDENCE"
+  },
+  "reconnection": {
+    "after_exhausted_retries": true,
+    "new_session_identity": true,
+    "snapshot_symbol_specification": true,
+    "recovery_label": "RECOVERED_AFTER_GAP",
+    "never_request_before_t0": true
+  },
+  "retry": {
+    "maximum_attempts": 3,
+    "backoff_seconds": [
+      1,
+      2,
+      4
+    ],
+    "preserve_every_attempt": true,
+    "retry_on_none": true,
+    "retry_on_exception": true,
+    "retry_on_empty": false
+  },
+  "incident_classification": {
+    "classes": [
+      "EMPTY_RESPONSE",
+      "API_ERROR",
+      "API_TIMEOUT_THRESHOLD_EXCEEDED",
+      "RECONNECT",
+      "GAP_OR_INTERRUPTION",
+      "RECOVERED_AFTER_GAP",
+      "DUPLICATE_RESPONSE",
+      "BACKLOG_EXCEEDED",
+      "BATCH_RECORD_LIMIT_EXCEEDED",
+      "DISK_THRESHOLD",
+      "UTC_REFERENCE_UNAVAILABLE",
+      "UTC_UNCERTAINTY_EXCEEDED",
+      "UTC_SOURCE_DISAGREEMENT",
+      "CLOCK_INCONSISTENCY",
+      "SYMBOL_SPECIFICATION_CHANGE",
+      "SERVER_ACCOUNT_IDENTITY_CHANGE",
+      "SCOPE_REVOKED",
+      "PARTIAL_STAGING_RECOVERED",
+      "BACKLOG_EPISODE",
+      "RECOVERY_CHILD",
+      "WORKER_HEARTBEAT_ABSENT",
+      "HOST_SUSPEND_OBSERVED",
+      "HOST_RESUME_OBSERVED",
+      "HOST_EVIDENCE_UNAVAILABLE",
+      "CHECKPOINT_RECONCILIATION",
+      "RECOVERY_BUDGET_EXHAUSTED",
+      "CHAIN_FORK",
+      "COMMIT_INTEGRITY_FAILURE"
+    ],
+    "unknown_is_incident": true,
+    "never_fill_or_silently_reconstruct": true
+  },
+  "qualification": {
+    "minimum_complete_sessions": 5,
+    "must_include_weekly_close": true,
+    "must_include_weekly_reopen": true,
+    "must_include_rollover": true,
+    "discard_bad_sessions": false,
+    "g4_immediate_completion_forbidden": true
+  },
+  "activation_authorized": false,
+  "t0": null,
+  "based_on_v1_sha256": "814d9cee5f5118941d4ef05417aed6b2918201991090786601dc2c1c07750341",
+  "proposed_at_utc": "2026-09-05T00:07:56.037405+00:00",
+  "heartbeat": {
+    "cadence_seconds": 5,
+    "absence_threshold_seconds": 30,
+    "independent_of_api_call": true,
+    "missing_cause": "UNKNOWN_UNLESS_HOST_EVIDENCE",
+    "restart_live_process": false
+  },
+  "host_observation": {
+    "cadence_seconds": 5,
+    "preserve_event_xml": true,
+    "preserve_record_id": true,
+    "require_boot_id": true,
+    "unavailable_label": "NOT_OBSERVABLE",
+    "automatic_power_changes": false,
+    "approved_non_suspending_host_required": true
+  },
+  "supervisor": {
+    "policy_version": "TRACK_B_V2_PROPOSED_1",
+    "restart_live_worker": false,
+    "dead_worker_requires_lock_and_reconciliation": true,
+    "maximum_restarts": 3,
+    "restart_window_seconds": 300,
+    "hard_stop_auto_restart": false,
+    "pid_and_creation_time_required": true
+  },
+  "custody_v2": {
+    "immutable_checkpoint_journal": true,
+    "reconcile_commit_chain_before_request": true,
+    "timestamp_stages": [
+      "request",
+      "raw",
+      "descriptor",
+      "manifest",
+      "commit",
+      "checkpoint",
+      "derived"
+    ],
+    "timestamp_domains": [
+      "local_wall",
+      "monotonic",
+      "boot_id",
+      "utc_evidence_or_null"
+    ],
+    "missing_completion_timestamp": "UNKNOWN_NOT_MTIME",
+    "duplicate_timestamp_deduplication": false
+  },
+  "storage_v2": {
+    "exact_root": null,
+    "exact_root_requires_preregistration": true,
+    "requirement": "APPROVED_LOCAL_NTFS_OUTSIDE_ACTIVE_SYNC",
+    "move_v1": false
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "memory": {
+    "min_evidence": 2,
+    "long_term_threshold": 4
+  },
+  "value": {
+    "dry_run_cost": 0.05,
+    "weights": {
+      "information": 0.4,
+      "reproducibility": 0.25,
+      "uncertainty": 0.35
+    }
+  }
+}

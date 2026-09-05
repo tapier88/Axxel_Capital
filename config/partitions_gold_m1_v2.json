@@ -1,0 +1,19 @@
+{
+  "partition_policy_id": "GOLD-M1-2015-2024-PARTITIONS-V1",
+  "created_before_outcome_analysis": true,
+  "frozen": true,
+  "timezone": "UTC",
+  "DEV": {
+    "from": "2015-01-01T00:00:00Z",
+    "to_exclusive": "2020-01-01T00:00:00Z"
+  },
+  "VALIDATION": {
+    "from": "2020-01-01T00:00:00Z",
+    "to_exclusive": "2023-01-01T00:00:00Z"
+  },
+  "LOCKED_OOS": {
+    "from": "2023-01-01T00:00:00Z",
+    "to_exclusive": "2025-01-01T00:00:00Z"
+  },
+  "rationale": "Chronological 5/3/2 year split chosen before inspecting outcomes; final two calendar years remain locked."
+}

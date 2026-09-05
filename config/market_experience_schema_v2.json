@@ -1,0 +1,30 @@
+{
+  "schema_version": "market-experience-v2",
+  "storage": "Parquet, one immutable file per temporal partition",
+  "identity": ["experience_id", "session_id", "source_id", "dataset_version", "record_hash"],
+  "state": {
+    "prefix": "state_",
+    "boundary": "Only observations available before decision_timestamp_utc",
+    "raw_context": ["open", "high", "low", "close", "tick_volume", "spread", "real_volume"]
+  },
+  "action": {
+    "values": ["WAIT", "LONG", "SHORT"],
+    "counterfactual": true,
+    "execution_real": false
+  },
+  "outcome": {
+    "prefixes": ["label_", "outcome_"],
+    "horizons_minutes": [5, 15, 30, 60],
+    "boundary": "Future information; forbidden in state and retrieval distance"
+  },
+  "cost": {
+    "prefix": "cost_",
+    "methods": ["NO_POSITION", "REAL_TICK_COST", "PROXY_COST"],
+    "slippage_missing_value": "null",
+    "slippage_missing_status": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+  },
+  "partitions": ["DEV", "VALIDATION", "LOCKED_OOS"],
+  "discovery_default": "DEV",
+  "locked_oos_requires_explicit_access": true,
+  "research_hard_lock": "LOCKED_OOS denied even with allow_locked; default replay/checksums are DEV-only"
+}

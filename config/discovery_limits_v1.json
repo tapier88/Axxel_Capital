@@ -1,0 +1,18 @@
+{
+  "campaign_id": "DISCOVERY-CAMPAIGN-DEV-V1",
+  "seed": 20260903,
+  "proposals": 24,
+  "max_tests_per_iteration": 1,
+  "campaign_iterations": 24,
+  "max_parameter_perturbations": 4,
+  "bootstrap_resamples": 1000,
+  "permutations": 2000,
+  "estimated_compute_budget": 24.0,
+  "minimum_rows": 5000,
+  "minimum_sessions": 200,
+  "minimum_years": 3,
+  "max_condition_depth": 2,
+  "partition": "DEV",
+  "validation_allowed": false,
+  "locked_oos_allowed": false
+}

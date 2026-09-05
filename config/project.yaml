@@ -1,0 +1,4 @@
+project: MQL5_MCP_EA
+mode: RESEARCH_ONLY
+live_trading: false
+automatic_promotion_to_live: false

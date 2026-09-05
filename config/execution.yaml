@@ -1,0 +1,4 @@
+live_enabled: false
+demo_required: true
+real_orders_enabled: false
+automatic_promotion_to_live: false
