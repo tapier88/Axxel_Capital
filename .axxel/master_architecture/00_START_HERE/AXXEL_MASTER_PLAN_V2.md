@@ -29,7 +29,7 @@ Su estado permanente es:
 ```yaml
 phase: PHASE_1_FOUNDATION
 primary_bottleneck: G3_HISTORICAL_ROUTE_AND_G4_XM_FORWARD_QUALIFICATION
-current_task: AXXEL_GITHUB_BASELINE_PUBLICATION
+current_task: AXXEL_GITHUB_BASELINE_PUBLISHED
 north_star: REPRODUCIBLE_RISK_ADJUSTED_NET_EDGE
 human_role: HUMAN_ON_THE_LOOP
 real_deployment: BLOCKED

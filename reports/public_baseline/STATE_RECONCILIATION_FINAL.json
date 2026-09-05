@@ -1,0 +1,18 @@
+{
+  "status": "PUBLICATION_COMPLETE_NO_GATE_CHANGE",
+  "current_task": "AXXEL_GITHUB_BASELINE_PUBLISHED",
+  "next_best_action": "REVIEW_G3_G4_BLOCKERS_UNDER_SEPARATE_AUTHORIZATION",
+  "publication": {
+    "scope": "DOCUMENTATION_CODE_TESTS_SAFE_AGGREGATE_EVIDENCE",
+    "remote": "https://github.com/tapier88/Axxel_Capital",
+    "branch": "main",
+    "phase_advance": false,
+    "private_evidence": "PRESERVED_LOCAL_ONLY",
+    "status": "PUBLISHED",
+    "preparation_branch": "baseline/axxel-foundation-publication",
+    "verified_publication_commit": "49408b26aa0db76c4c7c09b61aeac381e2d83631"
+  },
+  "source_state_sha256": "d46eb12e14ae2ee4e63c1e9e93da57dd640fe57256f72b06c4ade63a8c2bf298",
+  "v1_v2_objects_identical_to_prepublication": true,
+  "previous_administrative_receipt": "STATE_RECONCILIATION.json"
+}

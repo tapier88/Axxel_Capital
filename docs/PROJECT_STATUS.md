@@ -19,7 +19,7 @@ FOUNDATION_SCOPE_READINESS_V1 implementado en SHADOW: G1 de implementación/prue
 G5 y G6 en SHADOW; esto no es certificación científica. ADR-FOUNDATION-001 aprobado.
 Track B V2 aceptado con 44 pruebas integradas dentro de 326 pruebas de aquella entrega.
 El mantenimiento del ZIP añadió cinco pruebas. Resultado de esta publicación en
-[verificación](../reports/public_baseline/VERIFICATION.json); los conteos anteriores
+[verificación](../reports/public_baseline/VERIFICATION_FINAL.json); los conteos anteriores
 son hitos históricos, no resultados nuevos inferidos.
 
 Track A necesita una ruta histórica documentada y aprobada, no otra compra por defecto.

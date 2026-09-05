@@ -14,7 +14,7 @@
 
 Esta vista vigente sustituye prioridades administrativas anteriores, no las decisiones
 históricas. Autoridad: estado canónico, ADR aprobado, aceptación V2 y readiness preservado.
-Tarea: AXXEL_GITHUB_BASELINE_PUBLICATION. Siguiente: REVIEW_G3_G4_BLOCKERS_UNDER_SEPARATE_AUTHORIZATION.
+Tarea: AXXEL_GITHUB_BASELINE_PUBLISHED. Siguiente: REVIEW_G3_G4_BLOCKERS_UNDER_SEPARATE_AUTHORIZATION.
 G1 demostrado para implementación/test; G2 ADR aprobado; G5/G6 SHADOW; G3 no establecido,
 G4 no cumplido. No T0 V2, trading, captura o permiso científico por esta reconciliación.
 Data Engine V1 ya está implementado; certificación sigue IN_PROGRESS.

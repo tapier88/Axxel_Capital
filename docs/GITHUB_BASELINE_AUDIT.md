@@ -40,3 +40,12 @@ is part of this publication. Remote verification and final commit are reported a
 Formatting check: original CRLF and historical Markdown hard breaks/blank lines are
 preserved for scientific hashes. Whitespace diagnostics are retained locally; they
 are not test failures and no evidence was normalized for a cosmetic Git check.
+
+## Publication checkpoint
+
+Published and verified on main and preparation branch at 49408b26aa0db76c4c7c09b61aeac381e2d83631.
+A concurrent remote README commit fb78e01fb3c25e17fd9e48dbf238b8480bf8e74e
+was merged; its project keywords and history were preserved. Both updates were
+pushed atomically, without force. Final administrative receipt and ZIP use new
+filenames; prior verification/ZIP receipts remain preserved. No source/test/config
+changed after the successful public-export suite.

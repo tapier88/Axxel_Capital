@@ -18,4 +18,4 @@
 
 No se reescribieron informes históricos para que coincidan con el presente. Se conservan
 snapshots previos locales, decisiones y fallos; las vistas actuales distinguen historia
-de autorización vigente. [Resultado de publicación](../reports/public_baseline/VERIFICATION.json).
+de autorización vigente. [Resultado de publicación](../reports/public_baseline/VERIFICATION_FINAL.json).

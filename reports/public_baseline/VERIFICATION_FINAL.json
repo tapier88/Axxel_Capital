@@ -1,0 +1,51 @@
+{
+  "result": "AXXEL_GITHUB_BASELINE_PUBLISHED",
+  "local_full_suite": {
+    "tests": "331",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "347.457"
+  },
+  "public_export_full_suite": {
+    "tests": "331",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "366.166"
+  },
+  "public_export_contains_private_data": false,
+  "test_code_matches_export": true,
+  "test_kind": "Synthetic computation and immutable aggregate-documentary assertions; no new market/holdout research",
+  "source_xml_local_sha256": "9fe67dba9d378f4e99f28d6977ef2c21a923665aa4097f427f07a05d497c8a15",
+  "source_xml_export_sha256": "e7b4da41ba33b303db0c2c281a8902434256e75ba06b06203d73cd9c50eb0c78",
+  "xml_scope": "Original XMLs retained local-only; host metadata omitted from this public summary",
+  "secret_scan": "NO_KNOWN_SECRET_OR_BLOCKING_PATTERN_MATCH_IN_REVIEWED_INDEX",
+  "secret_scan_limit": "Pattern and known-value scan, not universal proof of absence",
+  "json_validation": "PASS",
+  "current_document_links": "PASS",
+  "canonical_master": "PASS_34_FILES",
+  "initial_local_inventory": {
+    "files": 3712,
+    "bytes": 1324210535,
+    "above_10_MiB": 14,
+    "above_50_MiB": 4
+  },
+  "v1_artifacts_preserved": 2676,
+  "frozen_v2_config_sha256": "afc49d5273841e8fafbfc083225114ff0193fec6e9b32480ac349abb52bc3d87",
+  "g3": "NOT_ESTABLISHED",
+  "g4": false,
+  "v2_activation": false,
+  "v2_t0": null,
+  "data_engine_certified": false,
+  "control_tower": "BLOCKED",
+  "no_phase_advance": true,
+  "remote_base_commit": "b990282991041da8c4f1d5a655a43fe643c451d4",
+  "publication_branch": "baseline/axxel-foundation-publication",
+  "publication_status": "PUBLISHED_AND_REMOTE_VERIFIED",
+  "verified_publication_commit": "49408b26aa0db76c4c7c09b61aeac381e2d83631",
+  "published_branch": "main",
+  "preserved_concurrent_remote_commit": "fb78e01fb3c25e17fd9e48dbf238b8480bf8e74e",
+  "final_master_receipt": "reports/public_baseline/MASTER_ARCHITECTURE_EXPORT_FINAL.json",
+  "final_master_zip_sha256": "094d5e89645fb512baeddfa9d911f7531afe6049f226f42f8c3ca48a90f48410"
+}

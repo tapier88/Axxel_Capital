@@ -6,7 +6,7 @@
   "human_role": "HUMAN_ON_THE_LOOP",
   "phase": "PHASE_1_FOUNDATION",
   "primary_bottleneck": "G3_HISTORICAL_ROUTE_AND_G4_XM_FORWARD_QUALIFICATION",
-  "current_task": "AXXEL_GITHUB_BASELINE_PUBLICATION",
+  "current_task": "AXXEL_GITHUB_BASELINE_PUBLISHED",
   "next_best_action": "REVIEW_G3_G4_BLOCKERS_UNDER_SEPARATE_AUTHORIZATION",
   "real_deployment": {
     "status": "BLOCKED",
@@ -258,8 +258,11 @@
   "publication_baseline": {
     "scope": "DOCUMENTATION_CODE_TESTS_SAFE_AGGREGATE_EVIDENCE",
     "remote": "https://github.com/tapier88/Axxel_Capital",
-    "branch": "baseline/axxel-foundation-publication",
+    "branch": "main",
     "phase_advance": false,
-    "private_evidence": "PRESERVED_LOCAL_ONLY"
+    "private_evidence": "PRESERVED_LOCAL_ONLY",
+    "status": "PUBLISHED",
+    "preparation_branch": "baseline/axxel-foundation-publication",
+    "verified_publication_commit": "49408b26aa0db76c4c7c09b61aeac381e2d83631"
   }
 }

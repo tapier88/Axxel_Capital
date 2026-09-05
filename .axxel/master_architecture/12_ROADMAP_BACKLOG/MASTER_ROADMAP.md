@@ -4,7 +4,7 @@
 
 Data Engine IMPLEMENTED; SHADOW implementado. AHORA G3 NOT_ESTABLISHED y G4 false.
 V1 revocada; V2 IMPLEMENTED_AWAITING_START_APPROVAL, activation=false, T0=null.
-DATA_ENGINE_CERTIFIED=false; Control Tower BLOCKED. Tarea actual: publicacion GitHub.
+DATA_ENGINE_CERTIFIED=false; Control Tower BLOCKED. Publicacion GitHub: COMPLETADA; no avance de fase.
 Despues, revisar blockers G3/G4 bajo autorizacion separada. Los epics siguientes son
 desglose del roadmap; no todos estan implementados ni autorizados.
 
