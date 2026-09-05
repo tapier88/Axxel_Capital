@@ -1,0 +1,65 @@
+# Private local connections and credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+credentials*
+secrets*
+.mcp.json
+.codex/
+.obsidian/
+# Generated/runtime
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+*.log
+logs/
+temp/
+tmp/
+runtime/
+staging/
+checkpoints/
+# Private market payloads, holdouts and trained artifacts
+/data/
+/models/
+/experiments/
+*.parquet
+*.csv
+*.npy
+*.npz
+*.bin
+*.ex5
+*.dll
+*.exe
+*.sqlite*
+*.db
+*.zip
+# Publish only explicitly reviewed metadata from the legacy store
+/experience_store/*
+!/experience_store/v2/
+/experience_store/v2/*
+!/experience_store/v2/index.json
+!/experience_store/v2/dataset-v2-e4a8cc6b19c1ae75ddc74bbe/
+/experience_store/v2/dataset-v2-e4a8cc6b19c1ae75ddc74bbe/*
+!/experience_store/v2/dataset-v2-e4a8cc6b19c1ae75ddc74bbe/manifest.json
+# Preserve private evidence locally; publish reviewed reports and safe summaries
+/reports/*
+!/reports/*.md
+!/reports/*.json
+!/reports/evidence/
+!/reports/validation/
+!/reports/foundation_scope_shadow/
+!/reports/public_baseline/
+/reports/evidence/data_integrity_registry.json
+/reports/evidence/*.parquet
+# Historical documentation index describes pre-publication files; retained locally
+/DOCUMENTATION_MANIFEST.json
+
+/memory_db/episodic/
+/memory_db/working/

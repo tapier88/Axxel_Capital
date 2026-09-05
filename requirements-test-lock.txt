@@ -1,0 +1,5 @@
+# Reproduce the audited synthetic/documentary suite on Windows / Python 3.13.
+-r requirements-data-engine-lock.txt
+-r requirements-ml-lock.txt
+psutil==7.2.2
+PyYAML==6.0.3

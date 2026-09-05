@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "metaeditor": {"type": "http", "url": "http://127.0.0.1:22345/mcp", "headers": {"Authorization": "Bearer <local-token>"}},
+    "terminal": {"type": "http", "url": "http://127.0.0.1:22344/mcp", "headers": {"Authorization": "Bearer <local-token>"}},
+    "marketdata": {"type": "http", "url": "https://www.metatrader.com/mcp", "headers": {"Authorization": "Bearer <marketdata-token>"}}
+  }
+}

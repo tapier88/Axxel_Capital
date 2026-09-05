@@ -1,0 +1,6 @@
+# Tested local Data Engine V1 runtime; no broker connection or GPU required.
+numpy==2.2.6
+pandas==2.3.3
+pyarrow==23.0.0
+pandera[pandas]==0.29.0
+duckdb==1.4.4
