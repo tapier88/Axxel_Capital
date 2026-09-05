@@ -1,2 +1,4 @@
 # Axxel_Capital
-agente autonomo 
+agente_trading_algoritmico
+automejora_continua
+
