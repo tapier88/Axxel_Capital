@@ -1,0 +1,33 @@
+{
+  "result": "PASS",
+  "policy": "FOUNDATION_SCOPE_READINESS_V1",
+  "mode": "SHADOW",
+  "fixtures_only": true,
+  "relevant_tests": {
+    "tests": 134,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "full_suite": {
+    "tests": 253,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "initial_failure_preserved": true,
+  "historical_evidence_hash_mismatches": [],
+  "unexpected_baseline_modifications": [],
+  "protected_state": {
+    "XM_LEGACY": "EXPLORATORY_ONLY",
+    "HISTDATA": "EXPLORATORY_ONLY",
+    "DATA_ENGINE_CERTIFIED": false,
+    "CONTROL_TOWER_ALLOWED": false,
+    "G3": "NOT_ESTABLISHED",
+    "G4": "NOT_STARTED"
+  },
+  "historical_or_holdout_dataset_access": "NONE; tests used temp synthetic fixtures",
+  "network_access": "NONE",
+  "source_acquisition": "NONE",
+  "research_ml_or_market_backtest": "NONE; mandatory regression used existing synthetic unit fixtures only"
+}

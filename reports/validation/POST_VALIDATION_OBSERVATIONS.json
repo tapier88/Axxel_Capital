@@ -1,0 +1,7 @@
+{
+  "discovery_feedback_allowed": false,
+  "observations": [],
+  "policy": "Notes are not confirmatory evidence and must return to DEV as NEW_HYPOTHESIS before testing",
+  "status": "QUARANTINED",
+  "validation_reuse_allowed": false
+}

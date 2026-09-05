@@ -1,0 +1,52 @@
+{
+  "conclusion": "CONFIRMED_REJECTION",
+  "detrended_effects": {
+    "month": 6.972467770897702e-05,
+    "regime": 6.950066077124936e-05,
+    "year": 6.972467770897702e-05
+  },
+  "diagnostic_id": "VOLATILITY-SLOW-STRUCTURE-DIAGNOSTIC-V1",
+  "horizon_effects": {
+    "15": 8.52720868207822e-05,
+    "30": 6.972467770897702e-05,
+    "60": 4.479217059457373e-05
+  },
+  "interpretation": "Statistical volatility structure only; not a directional signal or tradable edge",
+  "locked_oos_inspected": false,
+  "maximum_shift_to_original_ratio": 0.9726777174577375,
+  "original_effect": 6.972467770897702e-05,
+  "partition": "DEV",
+  "prior_slow_volatility_controlled_effect": 3.0983176322756436e-05,
+  "purging_embargo_nonoverlap_offsets": [
+    8.981653899835546e-05,
+    7.92677751622313e-05,
+    7.538086114278815e-05
+  ],
+  "stationary_bootstrap": {
+    "confidence_interval_90": [
+      6.263884450503196e-05,
+      7.722616656763488e-05
+    ],
+    "confidence_interval_95": [
+      6.134032327425409e-05,
+      7.881248272146561e-05
+    ],
+    "distribution_mean": 6.986897439606546e-05,
+    "favorable_resample_proportion": 1.0,
+    "mean_block_size": 20,
+    "median": 6.995667527480895e-05,
+    "method": "STATIONARY_SESSION_BOOTSTRAP",
+    "observed": 6.972467770897702e-05,
+    "resamples": 1000,
+    "seed": 20260903,
+    "sign_stability": 1.0
+  },
+  "temporal_shifts_sessions": {
+    "1": 6.781964036444415e-05,
+    "10": 6.486311818463983e-05,
+    "20": 6.227466362261234e-05,
+    "5": 6.568484155819729e-05,
+    "60": 5.984908096254494e-05
+  },
+  "validation_inspected": false
+}

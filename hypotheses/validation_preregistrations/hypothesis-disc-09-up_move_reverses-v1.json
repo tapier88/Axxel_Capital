@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-09-03T02:24:16.317452+00:00",
+  "evidence_artifact": "reports/evidence/hypothesis-disc-09-up_move_reverses-v1_b7a83b686d8e9481.json",
+  "evidence_hash": "7e3aa200df9aae021b1d6f27eb0501a02a2489a7604700d33389bc641e745210",
+  "hypothesis_id": "HYPOTHESIS-DISC-09-UP_MOVE_REVERSES-V1",
+  "locked_oos_authorized": false,
+  "partition_authorized": "VALIDATION",
+  "spec_hash": "ab18da50363cf9c0d93b7cdb84ac903319da0b732bd304f3180efc831b76d2af"
+}

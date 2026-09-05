@@ -1,0 +1,75 @@
+{
+  "scope": "Administrative views only; no V1/V2 entity changes",
+  "authorities": [
+    "human publication request",
+    "canonical state",
+    "TRACK_B_V2_IMPLEMENTATION_ACCEPTANCE_2026-09-04.md",
+    "preserved start-readiness report"
+  ],
+  "changes": [
+    {
+      "field": "/capabilities/implemented_not_certified",
+      "before": null,
+      "after": [
+        "data_engine_v1",
+        "track_b_forward_capture_v2"
+      ]
+    },
+    {
+      "field": "/capabilities/implementing",
+      "before": [
+        "data_engine_v1",
+        "xgboost",
+        "lightgbm",
+        "catboost",
+        "ensemble_calibration"
+      ],
+      "after": [
+        "xgboost",
+        "lightgbm",
+        "catboost",
+        "ensemble_calibration"
+      ]
+    },
+    {
+      "field": "/capability_scope_note",
+      "before": null,
+      "after": "Module implementation or historical research results do not authorize present scientific consumption or future autonomous layers."
+    },
+    {
+      "field": "/current_task",
+      "before": "TRACK_B_V2_START_READINESS_BLOCKED",
+      "after": "AXXEL_GITHUB_BASELINE_PUBLICATION"
+    },
+    {
+      "field": "/foundation_recovery_policy/implementation_status",
+      "before": "NOT_IMPLEMENTED",
+      "after": "SHADOW_IMPLEMENTED"
+    },
+    {
+      "field": "/foundation_scope_readiness_v1/g4",
+      "before": "NOT_STARTED",
+      "after": "NOT_FULFILLED_V1_REVOKED_V2_NOT_STARTED"
+    },
+    {
+      "field": "/next_best_action",
+      "before": "APPROVE_POWER_CHANGES_AND_REVIEW_OPERATIONAL_BINDING_T0_SUPERVISOR_BEFORE_START_AUTHORIZATION",
+      "after": "REVIEW_G3_G4_BLOCKERS_UNDER_SEPARATE_AUTHORIZATION"
+    },
+    {
+      "field": "/publication_baseline",
+      "before": null,
+      "after": {
+        "scope": "DOCUMENTATION_CODE_TESTS_SAFE_AGGREGATE_EVIDENCE",
+        "remote": "https://github.com/tapier88/Axxel_Capital",
+        "branch": "baseline/axxel-foundation-publication",
+        "phase_advance": false,
+        "private_evidence": "PRESERVED_LOCAL_ONLY"
+      }
+    }
+  ],
+  "v1_v2_objects_unchanged": true,
+  "prior_source_state_sha256": "3874a3f74d5b031e24ef2ad6d2e1f84a1d1922aae46d57be27328b59f607829f",
+  "current_source_state_sha256": "c68a374fe8c857412a3bfdfd79649303ec7fe23ad7cf0abd89b1239b7b1634ae",
+  "snapshots": "Retained locally under reports/github_baseline_audit/before; never overwritten"
+}

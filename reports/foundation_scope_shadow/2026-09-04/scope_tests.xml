@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="80" time="2.778" timestamp="2026-09-04T12:53:02.399948-05:00" hostname="hp"><testcase classname="tests.data_quality.test_scope_readiness" name="test_allow_and_cache_reauthorize_before_access" time="0.068" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[capability-UNKNOWN]" time="0.014" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[capability-RESEARCH_ML]" time="0.018" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[fields-value2]" time="0.016" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[fields-value3]" time="0.014" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[fields-value4]" time="0.013" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[period-value5]" time="0.012" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[period-value6]" time="0.012" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[instrument-value7]" time="0.012" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[instrument-value8]" time="0.012" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[environment-LIVE]" time="0.012" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[purpose-ML]" time="0.012" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[consumer-rogue]" time="0.013" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[certificate_id-SC1-unknown]" time="0.011" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[certificate_id-../raw]" time="0.012" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[certificate_id-DE1-0000000000000000000000000000000000000000000000000000000000000000]" time="0.012" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[partition-VALIDATION]" time="0.015" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[partition-LOCKED_OOS]" time="0.012" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[partition-RAW]" time="0.012" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[partition-FORWARD_EXECUTION]" time="0.014" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[capability-value19]" time="0.012" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[period-None]" time="0.011" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_request_denials_are_pre_io[period-value21]" time="0.012" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_no_fallback_cache_or_filter_after_read_arguments[raw_fallback]" time="0.012" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_no_fallback_cache_or_filter_after_read_arguments[path]" time="0.012" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_no_fallback_cache_or_filter_after_read_arguments[cache_id]" time="0.012" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_no_fallback_cache_or_filter_after_read_arguments[filter]" time="0.013" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_no_fallback_cache_or_filter_after_read_arguments[where]" time="0.012" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_no_fallback_cache_or_filter_after_read_arguments[manifest]" time="0.012" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_no_fallback_cache_or_filter_after_read_arguments[now]" time="0.012" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_no_fallback_cache_or_filter_after_read_arguments[parent_override]" time="0.013" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_missing_request_field_and_unconfigured_deny" time="0.017" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_inactive_certificates[revoked]" time="0.016" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_inactive_certificates[expired]" time="0.015" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_inactive_certificates[future]" time="0.015" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_invalid_manifest_never_admitted[missing]" time="0.005" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_invalid_manifest_never_admitted[version]" time="0.005" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_invalid_manifest_never_admitted[capability]" time="0.005" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_invalid_manifest_never_admitted[raw_path]" time="0.005" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_invalid_manifest_never_admitted[track]" time="0.005" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_invalid_manifest_never_admitted[holdout]" time="0.006" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_invalid_manifest_never_admitted[origin]" time="0.007" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_invalid_manifest_never_admitted[legacy]" time="0.006" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_each_research_capability_is_explicit_metadata_only[RESEARCH_PRICE]" time="0.006" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_each_research_capability_is_explicit_metadata_only[RESEARCH_FEATURES]" time="0.007" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_each_research_capability_is_explicit_metadata_only[RESEARCH_LABELS]" time="0.006" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_each_research_capability_is_explicit_metadata_only[RESEARCH_ML]" time="0.006" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_each_research_capability_is_explicit_metadata_only[RESEARCH_WALK_FORWARD]" time="0.005" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_each_research_capability_is_explicit_metadata_only[RESEARCH_BACKTEST_PRICE]" time="0.006" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_track_b_quotes_do_not_grant_research_or_fees" time="0.029" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_track_b_cannot_relabel_existing_partitions[2016]" time="0.006" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_track_b_cannot_relabel_existing_partitions[2020]" time="0.007" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_track_b_cannot_relabel_existing_partitions[2023]" time="0.006" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_track_b_cannot_relabel_existing_partitions[2024]" time="0.005" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_a_cannot_certify_xm_cost_fields" time="0.006" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_derivatives_intersect_every_dimension[union]" time="0.010" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_derivatives_intersect_every_dimension[concat]" time="0.010" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_derivatives_intersect_every_dimension[copy]" time="0.009" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_derivatives_intersect_every_dimension[rename]" time="0.008" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_derivatives_intersect_every_dimension[cache]" time="0.008" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_derivatives_intersect_every_dimension[features]" time="0.010" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_derivatives_intersect_every_dimension[labels]" time="0.010" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_derivatives_intersect_every_dimension[experiences]" time="0.008" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_derivatives_intersect_every_dimension[model]" time="0.008" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_derivatives_intersect_every_dimension[select]" time="0.009" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_parent_revocation_blocks_cached_grandchild_and_new_derivation" time="0.017" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_parent_expiry_rechecked_on_cache_hit" time="0.019" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_invalid_parent_or_widened_manifest_denied_at_admission[unknown]" time="0.006" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_invalid_parent_or_widened_manifest_denied_at_admission[revision]" time="0.005" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_invalid_parent_or_widened_manifest_denied_at_admission[cycle]" time="0.005" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_invalid_parent_or_widened_manifest_denied_at_admission[expanded_fields]" time="0.006" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_invalid_parent_or_widened_manifest_denied_at_admission[expanded_period]" time="0.006" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_invalid_parent_or_widened_manifest_denied_at_admission[expanded_consumers]" time="0.006" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_cross_track_join_denied_and_no_new_id_bypass" time="0.009" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_trusted_manifest_and_derived_return_cannot_be_mutated_by_consumer" time="0.016" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_tamper_and_missing_payload_fail_without_fallback" time="0.022"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'INTEGRITY'&#10;  Actual message: 'DENY: ARTIFACT_UNAVAILABLE_OR_INVALID'">self = &lt;src.data.engine.DataEngine object at 0x000002748BC6B9D0&gt;
+request = {'capability': 'RESEARCH_PRICE', 'certificate_id': 'SC1-a', 'consumer': 'fixture-reader', 'environment': 'RESEARCH', ...}
+
+    def read_scope_shadow(self, request):
+        """Authorize the entire ancestry BEFORE path resolution, hashing or cache use."""
+        context = self._scope_shadow
+        if context is None:
+            deny('SHADOW_NOT_CONFIGURED')
+        request = deepcopy(request)
+        with context.lock:
+            decision = context.authorize(request, physical=True)
+            if decision['decision'] != 'ALLOW':
+                deny(decision['reason'])
+            manifest = context._authorize(request, physical=True)
+            artifact = manifest['artifact']
+            key = (manifest['certificate_id'], artifact['sha256'], tuple(request['fields']))
+            if key in context._cache:
+                return context._cache[key].copy(deep=True)
+            # Authorization above includes the full physical fragment's scope.
+            path = self._path(artifact['path'])
+            expected = self.root / artifact['path']  # lexical: do not resolve this too
+            if path != expected:
+                deny('ARTIFACT_REDIRECTION_DENIED')
+            try:
+                if file_hash(path) != artifact['sha256']:
+&gt;                   deny('ARTIFACT_INTEGRITY_FAILURE')
+
+src\data\engine.py:118: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+reason = 'ARTIFACT_INTEGRITY_FAILURE'
+
+    def deny(reason):
+&gt;       raise ScopeDenied(reason)
+E       src.data.scope.ScopeDenied: DENY: ARTIFACT_INTEGRITY_FAILURE
+
+src\data\scope.py:59: ScopeDenied
+
+The above exception was the direct cause of the following exception:
+
+ready = (&lt;src.data.engine.DataEngine object at 0x000002748BC6B9D0&gt;, {'artifact': {'fields': ['close'], 'kind': 'dataset', 'pat...apability': 'RESEARCH_PRICE', 'certificate_id': 'SC1-a', 'consumer': 'fixture-reader', 'environment': 'RESEARCH', ...})
+
+    def test_tamper_and_missing_payload_fail_without_fallback(ready):
+        engine, m, r = ready
+        path = engine.root / m['artifact']['path']
+        path.write_bytes(b'altered fixture')
+        with patch('src.data.engine.pq.read_table', side_effect=AssertionError('no payload after failed hash')):
+&gt;           with pytest.raises(ScopeDenied, match='INTEGRITY'): engine.read_scope_shadow(r)
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\data_quality\test_scope_readiness.py:288: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;src.data.engine.DataEngine object at 0x000002748BC6B9D0&gt;
+request = {'capability': 'RESEARCH_PRICE', 'certificate_id': 'SC1-a', 'consumer': 'fixture-reader', 'environment': 'RESEARCH', ...}
+
+    def read_scope_shadow(self, request):
+        """Authorize the entire ancestry BEFORE path resolution, hashing or cache use."""
+        context = self._scope_shadow
+        if context is None:
+            deny('SHADOW_NOT_CONFIGURED')
+        request = deepcopy(request)
+        with context.lock:
+            decision = context.authorize(request, physical=True)
+            if decision['decision'] != 'ALLOW':
+                deny(decision['reason'])
+            manifest = context._authorize(request, physical=True)
+            artifact = manifest['artifact']
+            key = (manifest['certificate_id'], artifact['sha256'], tuple(request['fields']))
+            if key in context._cache:
+                return context._cache[key].copy(deep=True)
+            # Authorization above includes the full physical fragment's scope.
+            path = self._path(artifact['path'])
+            expected = self.root / artifact['path']  # lexical: do not resolve this too
+            if path != expected:
+                deny('ARTIFACT_REDIRECTION_DENIED')
+            try:
+                if file_hash(path) != artifact['sha256']:
+                    deny('ARTIFACT_INTEGRITY_FAILURE')
+                frame = pq.read_table(path, columns=request['fields']).to_pandas()
+                if file_hash(path) != artifact['sha256']:
+                    deny('ARTIFACT_CHANGED_DURING_READ')
+            except (OSError, pa.ArrowException) as exc:
+&gt;               raise ScopeDenied('ARTIFACT_UNAVAILABLE_OR_INVALID') from exc
+E               src.data.scope.ScopeDenied: DENY: ARTIFACT_UNAVAILABLE_OR_INVALID
+
+src\data\engine.py:123: ScopeDenied
+
+During handling of the above exception, another exception occurred:
+
+ready = (&lt;src.data.engine.DataEngine object at 0x000002748BC6B9D0&gt;, {'artifact': {'fields': ['close'], 'kind': 'dataset', 'pat...apability': 'RESEARCH_PRICE', 'certificate_id': 'SC1-a', 'consumer': 'fixture-reader', 'environment': 'RESEARCH', ...})
+
+    def test_tamper_and_missing_payload_fail_without_fallback(ready):
+        engine, m, r = ready
+        path = engine.root / m['artifact']['path']
+        path.write_bytes(b'altered fixture')
+        with patch('src.data.engine.pq.read_table', side_effect=AssertionError('no payload after failed hash')):
+&gt;           with pytest.raises(ScopeDenied, match='INTEGRITY'): engine.read_scope_shadow(r)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           AssertionError: Regex pattern did not match.
+E             Expected regex: 'INTEGRITY'
+E             Actual message: 'DENY: ARTIFACT_UNAVAILABLE_OR_INVALID'
+
+tests\data_quality\test_scope_readiness.py:288: AssertionError</failure></testcase><testcase classname="tests.data_quality.test_scope_readiness" name="test_resolved_path_redirect_cannot_read_raw" time="0.011" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_exploratory_status_is_not_promoted[XM_LEGACY]" time="0.006" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_exploratory_status_is_not_promoted[HISTDATA]" time="0.005" /><testcase classname="tests.data_quality.test_scope_readiness" name="test_scoped_id_cannot_enter_v1_reader" time="0.012" /></testsuite></testsuites>

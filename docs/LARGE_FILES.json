@@ -1,0 +1,104 @@
+{
+  "above_10_MiB": 14,
+  "above_50_MiB": 4,
+  "files": [
+    {
+      "path": "data/engine/datasets/DE1-0c31006bc9f6159f6db73f25fb9d9e080185a1dd259d18b28d3cca2b73793bf1/bronze.parquet",
+      "bytes": 22249147,
+      "classification": "LARGE_DATA",
+      "publish": false,
+      "reason": "Private historical/derived payload; metadata-only inventory; no LFS needed"
+    },
+    {
+      "path": "data/engine/datasets/DE1-0c31006bc9f6159f6db73f25fb9d9e080185a1dd259d18b28d3cca2b73793bf1/silver.parquet",
+      "bytes": 22260527,
+      "classification": "LARGE_DATA",
+      "publish": false,
+      "reason": "Private historical/derived payload; metadata-only inventory; no LFS needed"
+    },
+    {
+      "path": "data/engine/datasets/DE1-658ff72ef8932e5b4d50118751d039fc11015010ec6f1101c3dce81805b58706/bronze.parquet",
+      "bytes": 22249147,
+      "classification": "LARGE_DATA",
+      "publish": false,
+      "reason": "Private historical/derived payload; metadata-only inventory; no LFS needed"
+    },
+    {
+      "path": "data/engine/datasets/DE1-658ff72ef8932e5b4d50118751d039fc11015010ec6f1101c3dce81805b58706/silver.parquet",
+      "bytes": 22260527,
+      "classification": "LARGE_DATA",
+      "publish": false,
+      "reason": "Private historical/derived payload; metadata-only inventory; no LFS needed"
+    },
+    {
+      "path": "data/engine/datasets/DE1-948e75847bb0f7feab34b8cc2f7740c671202e9de5503a2e1dc4680535bf4250/bronze.parquet",
+      "bytes": 22249147,
+      "classification": "LARGE_DATA",
+      "publish": false,
+      "reason": "Private historical/derived payload; metadata-only inventory; no LFS needed"
+    },
+    {
+      "path": "data/engine/datasets/DE1-948e75847bb0f7feab34b8cc2f7740c671202e9de5503a2e1dc4680535bf4250/silver.parquet",
+      "bytes": 22260527,
+      "classification": "LARGE_DATA",
+      "publish": false,
+      "reason": "Private historical/derived payload; metadata-only inventory; no LFS needed"
+    },
+    {
+      "path": "data/engine/raw/DEV/13a5809f4273af3dfb551b22d9978948af48b51e6a5f0a6a0611c8f5cd18bbe8.parquet",
+      "bytes": 19138680,
+      "classification": "LARGE_DATA",
+      "publish": false,
+      "reason": "Private historical/derived payload; metadata-only inventory; no LFS needed"
+    },
+    {
+      "path": "data/external/histdata/extracted/HISTDATA_COM_ASCII_XAUUSD_M12015/DAT_ASCII_XAUUSD_M1_2015.csv",
+      "bytes": 23209956,
+      "classification": "LARGE_DATA",
+      "publish": false,
+      "reason": "Private historical/derived payload; metadata-only inventory; no LFS needed"
+    },
+    {
+      "path": "data/external/histdata/extracted/HISTDATA_COM_ASCII_XAUUSD_M12016/DAT_ASCII_XAUUSD_M1_2016.csv",
+      "bytes": 23325390,
+      "classification": "LARGE_DATA",
+      "publish": false,
+      "reason": "Private historical/derived payload; metadata-only inventory; no LFS needed"
+    },
+    {
+      "path": "data/external/histdata/extracted/HISTDATA_COM_ASCII_XAUUSD_M12017/DAT_ASCII_XAUUSD_M1_2017.csv",
+      "bytes": 23255760,
+      "classification": "LARGE_DATA",
+      "publish": false,
+      "reason": "Private historical/derived payload; metadata-only inventory; no LFS needed"
+    },
+    {
+      "path": "data/raw/gold_m1/mt5-xmglobal-gold-m1-v1/mt5-xmglobal-gold-m1-v1_d988b7cc2b957c0e.parquet",
+      "bytes": 58608730,
+      "classification": "LARGE_DATA",
+      "publish": false,
+      "reason": "Private historical/derived payload; metadata-only inventory; no LFS needed"
+    },
+    {
+      "path": "experience_store/v2/dataset-v2-e4a8cc6b19c1ae75ddc74bbe/dev.parquet",
+      "bytes": 493658460,
+      "classification": "LARGE_DATA",
+      "publish": false,
+      "reason": "Private historical/derived payload; metadata-only inventory; no LFS needed"
+    },
+    {
+      "path": "experience_store/v2/dataset-v2-e4a8cc6b19c1ae75ddc74bbe/locked_oos.parquet",
+      "bytes": 204598656,
+      "classification": "LARGE_DATA",
+      "publish": false,
+      "reason": "Private historical/derived payload; metadata-only inventory; no LFS needed"
+    },
+    {
+      "path": "experience_store/v2/dataset-v2-e4a8cc6b19c1ae75ddc74bbe/validation.parquet",
+      "bytes": 305189561,
+      "classification": "LARGE_DATA",
+      "publish": false,
+      "reason": "Private historical/derived payload; metadata-only inventory; no LFS needed"
+    }
+  ]
+}

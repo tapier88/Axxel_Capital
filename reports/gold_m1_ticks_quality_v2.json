@@ -1,0 +1,210 @@
+{
+  "m1": {
+    "anomalous_jump_count": 8461,
+    "anomalous_jump_threshold_abs_return": 0.0014343930885061251,
+    "blocking_errors": false,
+    "daily_broker_pause_candidates_30_to_180m": 1994,
+    "duplicate_timestamps": 0,
+    "gap_duration_minutes_top": [
+      {
+        "count": 2493,
+        "minutes": 2
+      },
+      {
+        "count": 1870,
+        "minutes": 62
+      },
+      {
+        "count": 443,
+        "minutes": 2943
+      },
+      {
+        "count": 329,
+        "minutes": 3
+      },
+      {
+        "count": 94,
+        "minutes": 47
+      },
+      {
+        "count": 33,
+        "minutes": 305
+      },
+      {
+        "count": 27,
+        "minutes": 4
+      },
+      {
+        "count": 21,
+        "minutes": 215
+      },
+      {
+        "count": 19,
+        "minutes": 2883
+      },
+      {
+        "count": 18,
+        "minutes": 5
+      },
+      {
+        "count": 18,
+        "minutes": 3003
+      },
+      {
+        "count": 17,
+        "minutes": 63
+      },
+      {
+        "count": 10,
+        "minutes": 6
+      },
+      {
+        "count": 8,
+        "minutes": 7
+      },
+      {
+        "count": 8,
+        "minutes": 4382
+      }
+    ],
+    "gaps_over_one_minute": 5493,
+    "incomplete_research_sessions": 39,
+    "incomplete_session_examples": [
+      {
+        "date": "2015-01-09",
+        "minutes": 269
+      },
+      {
+        "date": "2015-02-16",
+        "minutes": 269
+      },
+      {
+        "date": "2015-02-26",
+        "minutes": 270
+      },
+      {
+        "date": "2015-03-04",
+        "minutes": 262
+      },
+      {
+        "date": "2015-03-12",
+        "minutes": 268
+      },
+      {
+        "date": "2015-05-26",
+        "minutes": 270
+      },
+      {
+        "date": "2015-06-12",
+        "minutes": 270
+      },
+      {
+        "date": "2015-07-01",
+        "minutes": 270
+      },
+      {
+        "date": "2015-07-03",
+        "minutes": 270
+      },
+      {
+        "date": "2015-07-06",
+        "minutes": 270
+      },
+      {
+        "date": "2015-08-26",
+        "minutes": 268
+      },
+      {
+        "date": "2016-01-25",
+        "minutes": 264
+      },
+      {
+        "date": "2016-01-26",
+        "minutes": 270
+      },
+      {
+        "date": "2016-07-13",
+        "minutes": 270
+      },
+      {
+        "date": "2016-09-01",
+        "minutes": 270
+      },
+      {
+        "date": "2016-12-27",
+        "minutes": 270
+      },
+      {
+        "date": "2017-01-25",
+        "minutes": 270
+      },
+      {
+        "date": "2017-03-10",
+        "minutes": 270
+      },
+      {
+        "date": "2017-04-04",
+        "minutes": 270
+      },
+      {
+        "date": "2017-04-05",
+        "minutes": 270
+      }
+    ],
+    "invalid_ohlc": 0,
+    "largest_gap_minutes": 4868,
+    "negative_spread": 0,
+    "negative_tick_volume": 0,
+    "nonpositive_prices": 0,
+    "nulls": {
+      "close": 0,
+      "high": 0,
+      "low": 0,
+      "open": 0,
+      "real_volume": 0,
+      "spread": 0,
+      "symbol": 0,
+      "tick_volume": 0,
+      "timestamp_utc": 0
+    },
+    "real_volume_nonzero": 178726,
+    "research_sessions_observed": 2580,
+    "rows": 3532606,
+    "synthetic_bar_candidates": 15944,
+    "timestamps_out_of_order": 0,
+    "timezone": "UTC POSIX; America/Bogota has no DST",
+    "two_decimal_digit_violations": 0,
+    "unexplained_short_gap_candidates_2_to_29m": 2911,
+    "weekend_or_multiday_gap_candidates": 527,
+    "zero_spread": 620
+  },
+  "ticks": {
+    "bid_greater_than_ask": 0,
+    "blocking_errors": false,
+    "duplicate_exact_ticks": 0,
+    "negative_spread": 0,
+    "nonpositive_bid_or_ask": 0,
+    "nulls": {
+      "ask": 0,
+      "bid": 0,
+      "flags": 0,
+      "last": 0,
+      "mid": 0,
+      "source_id": 0,
+      "spread_points": 0,
+      "spread_price": 0,
+      "timestamp_utc": 0,
+      "volume": 0,
+      "volume_real": 0
+    },
+    "rows": 56013,
+    "spread_points": {
+      "max": 77.99999999997453,
+      "median": 32.999999999992724,
+      "min": 25.999999999976353,
+      "p95": 39.99999999996362
+    },
+    "timestamps_out_of_order": 0,
+    "zero_spread": 0
+  }
+}

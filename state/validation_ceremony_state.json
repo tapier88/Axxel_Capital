@@ -1,0 +1,13 @@
+{
+  "authorization_consumed_at": "2026-09-03T14:01:38.364198+00:00",
+  "completed_at": "2026-09-03T14:01:52.091128+00:00",
+  "locked_oos_reads": 0,
+  "manifest_hash": "f343ce96e5b8001c8f7097b57f17de8963ba4f23dac98b82a2aa28b300c77843",
+  "prepared_at": "2026-09-03T14:01:04.486728+00:00",
+  "protocol_hash": "200002797d1fad69361ba7404fdeee6edc8b8a9001cdc92e4e7717199e044916",
+  "result_hash": "5697dcb882a6da87834bd7e5419224d9cb3706401089255d629d964dd1438fa4",
+  "result_path": "reports/validation/PROMPT_6_VALIDATION_CEREMONY.json",
+  "status": "CONSUMED",
+  "validation_authorizations": 1,
+  "validation_dataset_reads": 1
+}

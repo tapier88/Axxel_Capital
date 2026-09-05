@@ -1,0 +1,38 @@
+{
+  "id": "FOUNDATION-SCOPE-READINESS-V1-SHADOW-20260904",
+  "result": "FOUNDATION_SCOPE_READINESS_V1_SHADOW_IMPLEMENTED",
+  "generated_at": "2026-09-04",
+  "files": {
+    "src/data/scope.py": "7272a637496b2a5f3f24fd22d0d8478b0d4942d55f300a31331560e3c5154fc9",
+    "src/data/engine.py": "cc0dff2679544d117be59a4c2ed0cc3b731e42e5e936b0c69fcd28e1f0a4b9c1",
+    "tests/data_quality/test_scope_readiness.py": "541cb50ce650905e2c18cd6d67cd71c68c52d00af36291fb3c7beacc4838eb3d",
+    "AXXEL_EDGE_DISCOVERY_MD/02_DATA/DATA_ENGINE.md": "9bd40f6eef40be992a5fe1509a0ea9beecd8ada10399879930961ceef26b7559",
+    ".axxel/master_architecture/13_STATE/AXXEL_STATE.json": "1d671ce18e56b7d3e33453929fad4be8b67a5065b2cd7299d217605d319db356",
+    ".axxel/master_architecture/12_ROADMAP_BACKLOG/MASTER_ROADMAP.md": "ea0e631da79d3ed42c0435085489f17241d605be66ada5a7da3098a9abf7e0e2",
+    ".axxel/master_architecture/12_ROADMAP_BACKLOG/DETAILED_TASK_BACKLOG.md": "066ad08cb260742360c4aae89d77d4ade10c5fd474426caa2bae440679be40a4",
+    "reports\\foundation_scope_shadow\\2026-09-04\\FOUNDATION_REPORT.md": "5c0e4118775d2128ae8e7d450b6eafb95a7685adc02b19a7e068d86b1c8a87d9",
+    "reports\\foundation_scope_shadow\\2026-09-04\\ALLOW_DENY_MATRIX.md": "7d0296123fbe884179572595c75ebf5c127e011dd75bb604a8567df4f0731ab9",
+    "reports\\foundation_scope_shadow\\2026-09-04\\MANIFEST_CONTRACT.json": "21ff82c920a354c5a751ff258bb22cf9c57bf6586e5f5a2601c41c4f42e00144",
+    "reports\\foundation_scope_shadow\\2026-09-04\\verification.json": "c1fc2842ee0cc08739658cb8869312455ddc2594f06a9552a09eb3b49be4d675",
+    "reports\\foundation_scope_shadow\\2026-09-04\\relevant_tests.xml": "a4412bb594da227f805700f0b5a9ee783ce9f443a2eda26e7b9ed877140b1249",
+    "reports\\foundation_scope_shadow\\2026-09-04\\full_suite.xml": "8ed35c0dc76a8e3a8c6dd9f96ae9c764d4f20309c0f2cbb82e0bb12a78325075",
+    "reports\\foundation_scope_shadow\\2026-09-04\\full_suite.log": "6fe17d4237cc9f91af03ee59734b102be9296538da755b51ed2635b71bbe46e6",
+    "reports\\foundation_scope_shadow\\2026-09-04\\scope_tests.xml": "47f0f03a84bfdbb85859a630e1ecb8415a0f15153e3c4433e917ec8d2122a6dc",
+    "reports\\foundation_scope_shadow\\2026-09-04\\scope_tests_initial_failure.xml": "47f0f03a84bfdbb85859a630e1ecb8415a0f15153e3c4433e917ec8d2122a6dc",
+    "reports\\foundation_scope_shadow\\2026-09-04\\baseline_code_config_tests.json": "badd687683f407896e9834512331751ae0f369b70094e08528d84149668dc6fd",
+    "reports\\foundation_scope_shadow\\2026-09-04\\historical_evidence_before.json": "525ac20a8715d85410ac85201bcac29af4d315736cc00e4c53aa88ab847c1d83",
+    "reports\\foundation_scope_shadow\\2026-09-04\\AXXEL_STATE_after.json": "1d671ce18e56b7d3e33453929fad4be8b67a5065b2cd7299d217605d319db356",
+    "reports\\foundation_scope_shadow\\2026-09-04\\DETAILED_TASK_BACKLOG_after.md": "066ad08cb260742360c4aae89d77d4ade10c5fd474426caa2bae440679be40a4",
+    "reports\\foundation_scope_shadow\\2026-09-04\\MASTER_ROADMAP_after.md": "ea0e631da79d3ed42c0435085489f17241d605be66ada5a7da3098a9abf7e0e2",
+    "reports\\foundation_scope_shadow\\2026-09-04\\DATA_ENGINE_after.md": "9bd40f6eef40be992a5fe1509a0ea9beecd8ada10399879930961ceef26b7559"
+  },
+  "limitations": [
+    "SHADOW_FIXTURES_ONLY",
+    "NO_REAL_CERTIFICATE",
+    "NO_PRODUCTION_CONSUMER_MIGRATION",
+    "G3_NOT_ESTABLISHED",
+    "G4_NOT_STARTED"
+  ],
+  "DATA_ENGINE_CERTIFIED": false,
+  "CONTROL_TOWER_ALLOWED": false
+}

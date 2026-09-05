@@ -1,0 +1,266 @@
+{
+  "base_rate": {
+    "baseline": -0.00025152492425464877,
+    "conditioned": -0.00021134881826809376,
+    "full": -0.0002954589979905923
+  },
+  "block_bootstrap": {
+    "block_size": 20,
+    "confidence_interval_90": [
+      1.2951626964348558e-05,
+      4.730214436815121e-05
+    ],
+    "confidence_interval_95": [
+      1.0190395640715809e-05,
+      5.036867329703532e-05
+    ],
+    "distribution_mean": 2.9547352776687166e-05,
+    "favorable_resample_proportion": 0.999,
+    "median": 2.946912637962764e-05,
+    "method": "MOVING_SESSION_BLOCK_BOOTSTRAP",
+    "observed": 4.0176105986555025e-05,
+    "resamples": 1000,
+    "seed": 20260904,
+    "sign_stability": 0.999
+  },
+  "bootstrap_stability": {
+    "confidence_interval_90": [
+      1.8932363570930243e-05,
+      6.0129052047958404e-05
+    ],
+    "confidence_interval_95": [
+      1.572020627348506e-05,
+      6.438607457850146e-05
+    ],
+    "distribution_mean": 3.977391887189671e-05,
+    "favorable_resample_proportion": 1.0,
+    "median": 3.989768181950946e-05,
+    "method": "SESSION_LEVEL_BOOTSTRAP",
+    "observed": 4.0176105986555025e-05,
+    "resamples": 1000,
+    "seed": 20260903,
+    "sign_stability": 1.0
+  },
+  "confidence_interval": {
+    "90": [
+      1.8932363570930243e-05,
+      6.0129052047958404e-05
+    ],
+    "95": [
+      1.572020627348506e-05,
+      6.438607457850146e-05
+    ]
+  },
+  "cost_stability": {
+    "applicable": true,
+    "favorable": {
+      "1.0": true,
+      "1.25": true,
+      "1.5": true,
+      "2.0": true
+    },
+    "favorable_proportion": 1.0,
+    "multipliers": {
+      "1.0": 4.0176105986555025e-05,
+      "1.25": 4.655406106416367e-05,
+      "1.5": 5.2932016141772314e-05,
+      "2.0": 6.56879262969896e-05
+    },
+    "survives_2x": true
+  },
+  "created_at": "2026-09-03T02:23:35.262461+00:00",
+  "data_quality": {
+    "blocking_errors": false,
+    "gaps_not_imputed": true,
+    "incomplete_sessions_flagged": 39,
+    "target_null_fraction": 0.0016407619091252706
+  },
+  "dataset_version": "DATASET-V2-e4a8cc6b19c1ae75ddc74bbe",
+  "effect_size": {
+    "basis_points": 0.4017610598655503,
+    "minimum_material_effect": 5e-05,
+    "unit": "return",
+    "value": 4.0176105986555025e-05
+  },
+  "evidence_report_id": "EVIDENCE-DISC-19-LOW_SPREAD_LONG-V1",
+  "evidence_score": {
+    "components": {
+      "bootstrap_stability": 1.0,
+      "cost_robustness": 1.0,
+      "data_quality": 1.0,
+      "effect_size": 0.8035221197311004,
+      "multiple_testing": 0.9970014992503748,
+      "negative_controls": 1.0,
+      "parameter_stability": 1.0,
+      "sample_size": 1.0,
+      "temporal_stability": 1.0
+    },
+    "interpretation": "Research evidence only; never a trading decision",
+    "value": 0.979902,
+    "weights": {
+      "bootstrap_stability": 0.15,
+      "cost_robustness": 0.1,
+      "data_quality": 0.1,
+      "effect_size": 0.1,
+      "multiple_testing": 0.15,
+      "negative_controls": 0.1,
+      "parameter_stability": 0.1,
+      "sample_size": 0.05,
+      "temporal_stability": 0.15
+    }
+  },
+  "hypothesis_id": "HYPOTHESIS-DISC-19-LOW_SPREAD_LONG-V1",
+  "locked_oos_inspected": false,
+  "multiple_testing": {
+    "global_hypotheses": 12,
+    "method": "planned-comparison penalty then Benjamini-Hochberg FDR",
+    "planned_comparisons": 3,
+    "strict_control_note": "Use Holm/Bonferroni when any false positive is unacceptable or the family is small and confirmatory."
+  },
+  "multiple_testing_adjusted_p": 0.0029985007496251873,
+  "negative_controls": {
+    "deterministic_random_session_condition_effect": 1.3501959711217145e-06,
+    "maximum_allowed_absolute_effect": 2.0088052993277513e-05,
+    "passed": true,
+    "permuted_sessions_p_value": 0.0004997501249375312,
+    "timestamp_shift_7_sessions_effect": 1.0216346615591797e-06
+  },
+  "p_value": 0.0004997501249375312,
+  "parameter_stability": {
+    "effects": {
+      "0.15": 3.322150687474577e-05,
+      "0.25": 4.0176105986555025e-05,
+      "declared": 4.0176105986555025e-05
+    },
+    "favorable": {
+      "0.15": true,
+      "0.25": true,
+      "declared": true
+    },
+    "favorable_proportion": 1.0,
+    "periods": 3
+  },
+  "partition": "DEV",
+  "permutation": {
+    "method": "PAIRED_SESSION_SIGN_FLIP",
+    "null_median": 6.011575368377624e-07,
+    "observed": 4.0176105986555025e-05,
+    "p_value": 0.0004997501249375312,
+    "permutations": 2000,
+    "seed": 20260905
+  },
+  "regime_stability": {
+    "effects": {
+      "RANGE": 2.157928501409897e-05,
+      "TREND_DOWN": 5.568642960144871e-05,
+      "TREND_UP": 1.6011234019988178e-05
+    },
+    "favorable": {
+      "RANGE": true,
+      "TREND_DOWN": true,
+      "TREND_UP": true
+    },
+    "favorable_proportion": 1.0,
+    "periods": 3
+  },
+  "rejection_reasons": [
+    "economic_materiality_failed"
+  ],
+  "sample_size": {
+    "baseline_sessions": 500,
+    "conditioned_sessions": 500,
+    "paired": true,
+    "rows": 348655,
+    "sessions": 500
+  },
+  "skeptic": {
+    "attempted": 8,
+    "attempts": [
+      {
+        "effect": 3.235651368535021e-05,
+        "name": "winsorization_5pct",
+        "survived": true
+      },
+      {
+        "effect": 6.662920157933706e-06,
+        "name": "remove_best_5pct_sessions",
+        "survived": true
+      },
+      {
+        "effect": 6.89526984625133e-05,
+        "name": "remove_worst_5pct_sessions",
+        "survived": true
+      },
+      {
+        "name": "temporal_concentration",
+        "survived": true
+      },
+      {
+        "applicable": true,
+        "name": "cost_2x",
+        "survived": true
+      },
+      {
+        "name": "few_outliers",
+        "outlier_absolute_share": 0.20772896592739376,
+        "survived": true
+      },
+      {
+        "name": "data_quality",
+        "survived": true
+      },
+      {
+        "name": "gap_sensitivity",
+        "note": "Outcomes crossing non-contiguous minute horizons were excluded, not imputed",
+        "survived": true
+      }
+    ],
+    "survival_proportion": 1.0,
+    "survived": 8
+  },
+  "spec_hash": "981ecbf8e44a7c08a6bcef9e5d44c1829659e6c44e0200549a597c28fcad56e7",
+  "state_transition_limit": "At most VALIDATION_READY; never VALIDATED in discovery",
+  "support": {
+    "condition_rows": 90099,
+    "condition_sessions": 500,
+    "condition_years": 4,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "passed": true
+  },
+  "temporal_stability": {
+    "effects": {
+      "2015": 0.0028310520016131937,
+      "2015-H1": 0.002402091213051564,
+      "2015-H2": 0.0032599390641865813,
+      "2016": 0.0006127453785883482,
+      "2016-H1": 0.0005634812903989162,
+      "2018": 3.722954509791918e-05,
+      "2018-H1": 2.921183632516332e-05,
+      "2018-H2": 4.395208553046064e-05,
+      "2019": 2.117882738838412e-05,
+      "2019-H1": 2.8216503353433504e-05,
+      "2019-H2": 1.4356042292496548e-05
+    },
+    "favorable": {
+      "2015": true,
+      "2015-H1": true,
+      "2015-H2": true,
+      "2016": true,
+      "2016-H1": true,
+      "2018": true,
+      "2018-H1": true,
+      "2018-H2": true,
+      "2019": true,
+      "2019-H1": true,
+      "2019-H2": true
+    },
+    "favorable_proportion": 1.0,
+    "periods": 11
+  },
+  "uncertainty": 4.86658683050164e-05,
+  "validation_inspected": false,
+  "verdict": "REJECTED",
+  "within_hypothesis_adjusted_p": 0.0014992503748125937
+}

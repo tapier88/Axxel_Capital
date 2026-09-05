@@ -1,0 +1,965 @@
+{
+  "edges": [
+    {
+      "created_at": "2026-09-03T02:21:40.510543+00:00",
+      "evidence": "Symmetric non-privileged temporal window",
+      "relation": "REFINES",
+      "source": "HYPOTHESIS-DISC-01-MID_MORNING_VOL-V1",
+      "target": "HYPOTHESIS-CAL-0830-EXPANSION-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:21:40.540942+00:00",
+      "evidence": "Symmetric non-privileged temporal window",
+      "relation": "REFINES",
+      "source": "HYPOTHESIS-DISC-02-LATE_SESSION_VOL-V1",
+      "target": "HYPOTHESIS-CAL-0830-EXPANSION-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:21:40.570879+00:00",
+      "evidence": "New horizon/threshold after slow-structure falsification",
+      "relation": "REFINES",
+      "source": "HYPOTHESIS-DISC-03-HIGH_VOL_SHORT_HORIZON-V1",
+      "target": "HYPOTHESIS-CAL-VOL-PERSISTENCE-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:21:40.600180+00:00",
+      "evidence": "New horizon/threshold after slow-structure falsification",
+      "relation": "REFINES",
+      "source": "HYPOTHESIS-DISC-04-LOW_VOL_LONG_HORIZON-V1",
+      "target": "HYPOTHESIS-CAL-VOL-PERSISTENCE-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:21:44.234181+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "FALSIFIES",
+      "source": "EVIDENCE-DISC-07-POSITIVE_MOMENTUM_LONG-V1",
+      "target": "HYPOTHESIS-DISC-07-POSITIVE_MOMENTUM_LONG-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:21:47.679957+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "SUPPORTS",
+      "source": "EVIDENCE-DISC-09-UP_MOVE_REVERSES-V1",
+      "target": "HYPOTHESIS-DISC-09-UP_MOVE_REVERSES-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:21:50.831320+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "FALSIFIES",
+      "source": "EVIDENCE-DISC-11-UP_CONTINUES-V1",
+      "target": "HYPOTHESIS-DISC-11-UP_CONTINUES-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:21:54.189498+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "FALSIFIES",
+      "source": "EVIDENCE-DISC-13-NEAR_HIGH_BREAKS-V1",
+      "target": "HYPOTHESIS-DISC-13-NEAR_HIGH_BREAKS-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:21:57.209435+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "SUPPORTS",
+      "source": "EVIDENCE-DISC-15-NEAR_HIGH_REVERTS-V1",
+      "target": "HYPOTHESIS-DISC-15-NEAR_HIGH_REVERTS-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:22:50.256242+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "SUPPORTS",
+      "source": "EVIDENCE-DISC-10-DOWN_MOVE_REVERSES-V1",
+      "target": "HYPOTHESIS-DISC-10-DOWN_MOVE_REVERSES-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:23:32.493943+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "SUPPORTS",
+      "source": "EVIDENCE-DISC-16-NEAR_LOW_REVERTS-V1",
+      "target": "HYPOTHESIS-DISC-16-NEAR_LOW_REVERTS-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:23:35.430760+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "FALSIFIES",
+      "source": "EVIDENCE-DISC-19-LOW_SPREAD_LONG-V1",
+      "target": "HYPOTHESIS-DISC-19-LOW_SPREAD_LONG-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:23:38.209241+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "FALSIFIES",
+      "source": "EVIDENCE-DISC-01-MID_MORNING_VOL-V1",
+      "target": "HYPOTHESIS-DISC-01-MID_MORNING_VOL-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:23:40.482523+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "FALSIFIES",
+      "source": "EVIDENCE-DISC-03-HIGH_VOL_SHORT_HORIZON-V1",
+      "target": "HYPOTHESIS-DISC-03-HIGH_VOL_SHORT_HORIZON-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:23:42.686523+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "FALSIFIES",
+      "source": "EVIDENCE-DISC-05-HIGH_RANGE_UP_EXCURSION-V1",
+      "target": "HYPOTHESIS-DISC-05-HIGH_RANGE_UP_EXCURSION-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:23:44.809157+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "FALSIFIES",
+      "source": "EVIDENCE-DISC-17-UP_REGIME_EXPANDS-V1",
+      "target": "HYPOTHESIS-DISC-17-UP_REGIME_EXPANDS-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:23:46.989889+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "FALSIFIES",
+      "source": "EVIDENCE-DISC-23-HIGH_TICK_ACTIVITY-V1",
+      "target": "HYPOTHESIS-DISC-23-HIGH_TICK_ACTIVITY-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:23:50.091446+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "FALSIFIES",
+      "source": "EVIDENCE-DISC-22-UP_REGIME_HIGH_RANGE-V1",
+      "target": "HYPOTHESIS-DISC-22-UP_REGIME_HIGH_RANGE-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:23:52.140829+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "FALSIFIES",
+      "source": "EVIDENCE-DISC-21-LATE_HIGH_VOL-V1",
+      "target": "HYPOTHESIS-DISC-21-LATE_HIGH_VOL-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:23:54.468073+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "FALSIFIES",
+      "source": "EVIDENCE-DISC-24-LOW_TICK_ACTIVITY-V1",
+      "target": "HYPOTHESIS-DISC-24-LOW_TICK_ACTIVITY-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:23:56.543455+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "FALSIFIES",
+      "source": "EVIDENCE-DISC-18-RANGE_REGIME_QUIET-V1",
+      "target": "HYPOTHESIS-DISC-18-RANGE_REGIME_QUIET-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:23:58.846078+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "FALSIFIES",
+      "source": "EVIDENCE-DISC-04-LOW_VOL_LONG_HORIZON-V1",
+      "target": "HYPOTHESIS-DISC-04-LOW_VOL_LONG_HORIZON-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:24:01.243736+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "FALSIFIES",
+      "source": "EVIDENCE-DISC-02-LATE_SESSION_VOL-V1",
+      "target": "HYPOTHESIS-DISC-02-LATE_SESSION_VOL-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:24:05.025908+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "FALSIFIES",
+      "source": "EVIDENCE-DISC-08-NEGATIVE_MOMENTUM_SHORT-V1",
+      "target": "HYPOTHESIS-DISC-08-NEGATIVE_MOMENTUM_SHORT-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:24:08.115858+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "FALSIFIES",
+      "source": "EVIDENCE-DISC-12-DOWN_CONTINUES-V1",
+      "target": "HYPOTHESIS-DISC-12-DOWN_CONTINUES-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:24:11.071065+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "FALSIFIES",
+      "source": "EVIDENCE-DISC-14-NEAR_LOW_BREAKS-V1",
+      "target": "HYPOTHESIS-DISC-14-NEAR_LOW_BREAKS-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:24:13.854103+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "FALSIFIES",
+      "source": "EVIDENCE-DISC-20-HIGH_SPREAD_LONG-V1",
+      "target": "HYPOTHESIS-DISC-20-HIGH_SPREAD_LONG-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:24:16.177391+00:00",
+      "evidence": "Evidence Engine V1 verdict",
+      "relation": "FALSIFIES",
+      "source": "EVIDENCE-DISC-06-HIGH_RANGE_DOWN_EXCURSION-V1",
+      "target": "HYPOTHESIS-DISC-06-HIGH_RANGE_DOWN_EXCURSION-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:41.889526+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-REVERSAL",
+      "target": "HYPOTHESIS-DISC-09-UP_MOVE_REVERSES-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:41.908713+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-09-UP_MOVE_REVERSES-V1",
+      "target": "FAMILY-REVERSAL"
+    },
+    {
+      "created_at": "2026-09-03T02:25:41.958686+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-REVERSAL",
+      "target": "HYPOTHESIS-DISC-10-DOWN_MOVE_REVERSES-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:41.976419+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-10-DOWN_MOVE_REVERSES-V1",
+      "target": "FAMILY-REVERSAL"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.026181+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-MEAN_REVERSION",
+      "target": "HYPOTHESIS-DISC-15-NEAR_HIGH_REVERTS-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.044040+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-15-NEAR_HIGH_REVERTS-V1",
+      "target": "FAMILY-MEAN_REVERSION"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.099576+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-MEAN_REVERSION",
+      "target": "HYPOTHESIS-DISC-16-NEAR_LOW_REVERTS-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.120419+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-16-NEAR_LOW_REVERTS-V1",
+      "target": "FAMILY-MEAN_REVERSION"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.176967+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-MOMENTUM",
+      "target": "HYPOTHESIS-DISC-07-POSITIVE_MOMENTUM_LONG-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.196741+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-07-POSITIVE_MOMENTUM_LONG-V1",
+      "target": "FAMILY-MOMENTUM"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.251131+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-MOMENTUM",
+      "target": "HYPOTHESIS-DISC-08-NEGATIVE_MOMENTUM_SHORT-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.270482+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-08-NEGATIVE_MOMENTUM_SHORT-V1",
+      "target": "FAMILY-MOMENTUM"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.327227+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-CONTINUATION",
+      "target": "HYPOTHESIS-DISC-11-UP_CONTINUES-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.349744+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-11-UP_CONTINUES-V1",
+      "target": "FAMILY-CONTINUATION"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.403510+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-CONTINUATION",
+      "target": "HYPOTHESIS-DISC-12-DOWN_CONTINUES-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.420310+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-12-DOWN_CONTINUES-V1",
+      "target": "FAMILY-CONTINUATION"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.478114+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-BREAKOUT",
+      "target": "HYPOTHESIS-DISC-13-NEAR_HIGH_BREAKS-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.497175+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-13-NEAR_HIGH_BREAKS-V1",
+      "target": "FAMILY-BREAKOUT"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.553287+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-BREAKOUT",
+      "target": "HYPOTHESIS-DISC-14-NEAR_LOW_BREAKS-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.571063+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-14-NEAR_LOW_BREAKS-V1",
+      "target": "FAMILY-BREAKOUT"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.624710+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-COST",
+      "target": "HYPOTHESIS-DISC-19-LOW_SPREAD_LONG-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.645163+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-19-LOW_SPREAD_LONG-V1",
+      "target": "FAMILY-COST"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.699036+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-COST",
+      "target": "HYPOTHESIS-DISC-20-HIGH_SPREAD_LONG-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.716353+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-20-HIGH_SPREAD_LONG-V1",
+      "target": "FAMILY-COST"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.780892+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-TEMPORAL",
+      "target": "HYPOTHESIS-DISC-01-MID_MORNING_VOL-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.805731+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-01-MID_MORNING_VOL-V1",
+      "target": "FAMILY-TEMPORAL"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.879768+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-TEMPORAL",
+      "target": "HYPOTHESIS-DISC-02-LATE_SESSION_VOL-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.899463+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-02-LATE_SESSION_VOL-V1",
+      "target": "FAMILY-TEMPORAL"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.969317+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-VOLATILITY",
+      "target": "HYPOTHESIS-DISC-03-HIGH_VOL_SHORT_HORIZON-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:42.985910+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-03-HIGH_VOL_SHORT_HORIZON-V1",
+      "target": "FAMILY-VOLATILITY"
+    },
+    {
+      "created_at": "2026-09-03T02:25:43.022943+00:00",
+      "evidence": "New specification replaces reuse of rejected candidate",
+      "relation": "REPLACES",
+      "source": "HYPOTHESIS-DISC-03-HIGH_VOL_SHORT_HORIZON-V1",
+      "target": "HYPOTHESIS-CAL-VOL-PERSISTENCE-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:43.102690+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-VOLATILITY",
+      "target": "HYPOTHESIS-DISC-04-LOW_VOL_LONG_HORIZON-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:43.131436+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-04-LOW_VOL_LONG_HORIZON-V1",
+      "target": "FAMILY-VOLATILITY"
+    },
+    {
+      "created_at": "2026-09-03T02:25:43.177284+00:00",
+      "evidence": "New specification replaces reuse of rejected candidate",
+      "relation": "REPLACES",
+      "source": "HYPOTHESIS-DISC-04-LOW_VOL_LONG_HORIZON-V1",
+      "target": "HYPOTHESIS-CAL-VOL-PERSISTENCE-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:43.227676+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-RANGE",
+      "target": "HYPOTHESIS-DISC-05-HIGH_RANGE_UP_EXCURSION-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:43.245451+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-05-HIGH_RANGE_UP_EXCURSION-V1",
+      "target": "FAMILY-RANGE"
+    },
+    {
+      "created_at": "2026-09-03T02:25:43.298312+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-RANGE",
+      "target": "HYPOTHESIS-DISC-06-HIGH_RANGE_DOWN_EXCURSION-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:43.315114+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-06-HIGH_RANGE_DOWN_EXCURSION-V1",
+      "target": "FAMILY-RANGE"
+    },
+    {
+      "created_at": "2026-09-03T02:25:43.367841+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-REGIME",
+      "target": "HYPOTHESIS-DISC-17-UP_REGIME_EXPANDS-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:43.386292+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-17-UP_REGIME_EXPANDS-V1",
+      "target": "FAMILY-REGIME"
+    },
+    {
+      "created_at": "2026-09-03T02:25:43.449499+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-REGIME",
+      "target": "HYPOTHESIS-DISC-18-RANGE_REGIME_QUIET-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:43.467735+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-18-RANGE_REGIME_QUIET-V1",
+      "target": "FAMILY-REGIME"
+    },
+    {
+      "created_at": "2026-09-03T02:25:43.521976+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-DATA_QUALITY",
+      "target": "HYPOTHESIS-DISC-23-HIGH_TICK_ACTIVITY-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:43.541980+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-23-HIGH_TICK_ACTIVITY-V1",
+      "target": "FAMILY-DATA_QUALITY"
+    },
+    {
+      "created_at": "2026-09-03T02:25:43.616498+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-DATA_QUALITY",
+      "target": "HYPOTHESIS-DISC-24-LOW_TICK_ACTIVITY-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:43.656475+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-24-LOW_TICK_ACTIVITY-V1",
+      "target": "FAMILY-DATA_QUALITY"
+    },
+    {
+      "created_at": "2026-09-03T02:25:43.754484+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-CROSS_FEATURE",
+      "target": "HYPOTHESIS-DISC-22-UP_REGIME_HIGH_RANGE-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:43.776051+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-22-UP_REGIME_HIGH_RANGE-V1",
+      "target": "FAMILY-CROSS_FEATURE"
+    },
+    {
+      "created_at": "2026-09-03T02:25:43.843935+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "PARENT",
+      "source": "FAMILY-CROSS_FEATURE",
+      "target": "HYPOTHESIS-DISC-21-LATE_HIGH_VOL-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:43.865698+00:00",
+      "evidence": "Taxonomy membership",
+      "relation": "CHILD",
+      "source": "HYPOTHESIS-DISC-21-LATE_HIGH_VOL-V1",
+      "target": "FAMILY-CROSS_FEATURE"
+    },
+    {
+      "created_at": "2026-09-03T02:25:45.093681+00:00",
+      "evidence": "Shifted outcomes retained slow structure",
+      "relation": "FALSIFIES",
+      "source": "VOLATILITY-SLOW-STRUCTURE-DIAGNOSTIC-V1",
+      "target": "HYPOTHESIS-CAL-VOL-PERSISTENCE-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:45.112480+00:00",
+      "evidence": "Same state, opposite action interpretation",
+      "relation": "CONTRADICTS",
+      "source": "HYPOTHESIS-DISC-13-NEAR_HIGH_BREAKS-V1",
+      "target": "HYPOTHESIS-DISC-15-NEAR_HIGH_REVERTS-V1"
+    },
+    {
+      "created_at": "2026-09-03T02:25:45.133795+00:00",
+      "evidence": "Same state, opposite action interpretation",
+      "relation": "CONTRADICTS",
+      "source": "HYPOTHESIS-DISC-14-NEAR_LOW_BREAKS-V1",
+      "target": "HYPOTHESIS-DISC-16-NEAR_LOW_REVERTS-V1"
+    },
+    {
+      "created_at": "2026-09-03T17:44:03.695768+00:00",
+      "evidence": "reports/evidence/hypothesis-ml-xauusd-0830-direction-v1_68bcc5b689dfdaa5.json",
+      "relation": "REFINES",
+      "source": "HYPOTHESIS-ML-XAUUSD-0830-DIRECTION-V1",
+      "target": "HYPOTHESIS-CAL-0830-EXPANSION-V1"
+    },
+    {
+      "created_at": "2026-09-03T18:50:05.277606+00:00",
+      "evidence": "reports\\evidence\\hypothesis-ml-xauusd-0830-direction-v1_51a2c004825826a0.json",
+      "relation": "FALSIFIES",
+      "source": "ML-XAUUSD-0830-V1",
+      "target": "HYPOTHESIS-ML-XAUUSD-0830-DIRECTION-V1"
+    }
+  ],
+  "nodes": [
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-07-POSITIVE_MOMENTUM_LONG-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:21:44.220763+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-09-UP_MOVE_REVERSES-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:21:47.664243+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-11-UP_CONTINUES-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:21:50.815256+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-13-NEAR_HIGH_BREAKS-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:21:54.171645+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-15-NEAR_HIGH_REVERTS-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:21:57.171317+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-10-DOWN_MOVE_REVERSES-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:22:50.237544+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-16-NEAR_LOW_REVERTS-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:23:32.475394+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-19-LOW_SPREAD_LONG-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:23:35.415214+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-01-MID_MORNING_VOL-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:23:38.194515+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-03-HIGH_VOL_SHORT_HORIZON-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:23:40.463702+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-05-HIGH_RANGE_UP_EXCURSION-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:23:42.665675+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-17-UP_REGIME_EXPANDS-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:23:44.785621+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-23-HIGH_TICK_ACTIVITY-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:23:46.971707+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-22-UP_REGIME_HIGH_RANGE-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:23:50.075150+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-21-LATE_HIGH_VOL-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:23:52.124778+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-24-LOW_TICK_ACTIVITY-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:23:54.443206+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-18-RANGE_REGIME_QUIET-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:23:56.524420+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-04-LOW_VOL_LONG_HORIZON-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:23:58.826364+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-02-LATE_SESSION_VOL-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:24:01.213311+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-08-NEGATIVE_MOMENTUM_SHORT-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:24:05.008560+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-12-DOWN_CONTINUES-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:24:08.095476+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-14-NEAR_LOW_BREAKS-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:24:11.046283+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-20-HIGH_SPREAD_LONG-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:24:13.828351+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "EVIDENCE-DISC-06-HIGH_RANGE_DOWN_EXCURSION-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T02:24:16.149007+00:00"
+    },
+    {
+      "family": "REVERSAL",
+      "id": "HYPOTHESIS-DISC-09-UP_MOVE_REVERSES-V1",
+      "status": "VALIDATION_READY",
+      "updated_at": "2026-09-03T13:44:10.985420+00:00"
+    },
+    {
+      "family": "REVERSAL",
+      "id": "HYPOTHESIS-DISC-10-DOWN_MOVE_REVERSES-V1",
+      "status": "VALIDATION_READY",
+      "updated_at": "2026-09-03T13:44:11.394742+00:00"
+    },
+    {
+      "family": "REVERSAL",
+      "id": "FAMILY-REVERSAL",
+      "status": "ACTIVE",
+      "updated_at": "2026-09-03T13:44:07.548324+00:00"
+    },
+    {
+      "family": "MEAN_REVERSION",
+      "id": "HYPOTHESIS-DISC-15-NEAR_HIGH_REVERTS-V1",
+      "status": "VALIDATION_READY",
+      "updated_at": "2026-09-03T13:44:11.199398+00:00"
+    },
+    {
+      "family": "MEAN_REVERSION",
+      "id": "HYPOTHESIS-DISC-16-NEAR_LOW_REVERTS-V1",
+      "status": "VALIDATION_READY",
+      "updated_at": "2026-09-03T13:44:11.497866+00:00"
+    },
+    {
+      "family": "MEAN_REVERSION",
+      "id": "FAMILY-MEAN_REVERSION",
+      "status": "ACTIVE",
+      "updated_at": "2026-09-03T13:44:07.768587+00:00"
+    },
+    {
+      "family": "MOMENTUM",
+      "id": "HYPOTHESIS-DISC-07-POSITIVE_MOMENTUM_LONG-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T13:44:10.882949+00:00"
+    },
+    {
+      "family": "MOMENTUM",
+      "id": "HYPOTHESIS-DISC-08-NEGATIVE_MOMENTUM_SHORT-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T13:44:12.183559+00:00"
+    },
+    {
+      "family": "MOMENTUM",
+      "id": "FAMILY-MOMENTUM",
+      "status": "ACTIVE",
+      "updated_at": "2026-09-03T13:44:08.008012+00:00"
+    },
+    {
+      "family": "CONTINUATION",
+      "id": "HYPOTHESIS-DISC-11-UP_CONTINUES-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T13:44:11.048639+00:00"
+    },
+    {
+      "family": "CONTINUATION",
+      "id": "HYPOTHESIS-DISC-12-DOWN_CONTINUES-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T13:44:12.270452+00:00"
+    },
+    {
+      "family": "CONTINUATION",
+      "id": "FAMILY-CONTINUATION",
+      "status": "ACTIVE",
+      "updated_at": "2026-09-03T13:44:08.248100+00:00"
+    },
+    {
+      "family": "BREAKOUT",
+      "id": "HYPOTHESIS-DISC-13-NEAR_HIGH_BREAKS-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T13:44:11.106992+00:00"
+    },
+    {
+      "family": "BREAKOUT",
+      "id": "HYPOTHESIS-DISC-14-NEAR_LOW_BREAKS-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T13:44:12.395667+00:00"
+    },
+    {
+      "family": "BREAKOUT",
+      "id": "FAMILY-BREAKOUT",
+      "status": "ACTIVE",
+      "updated_at": "2026-09-03T13:44:08.495132+00:00"
+    },
+    {
+      "family": "COST",
+      "id": "HYPOTHESIS-DISC-19-LOW_SPREAD_LONG-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T13:44:11.285406+00:00"
+    },
+    {
+      "family": "COST",
+      "id": "HYPOTHESIS-DISC-20-HIGH_SPREAD_LONG-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T13:44:12.467334+00:00"
+    },
+    {
+      "family": "COST",
+      "id": "FAMILY-COST",
+      "status": "ACTIVE",
+      "updated_at": "2026-09-03T13:44:08.774352+00:00"
+    },
+    {
+      "family": "TEMPORAL",
+      "id": "HYPOTHESIS-DISC-01-MID_MORNING_VOL-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T13:44:11.551027+00:00"
+    },
+    {
+      "family": "TEMPORAL",
+      "id": "HYPOTHESIS-DISC-02-LATE_SESSION_VOL-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T13:44:12.121382+00:00"
+    },
+    {
+      "family": "TEMPORAL",
+      "id": "FAMILY-TEMPORAL",
+      "status": "ACTIVE",
+      "updated_at": "2026-09-03T13:44:09.071656+00:00"
+    },
+    {
+      "family": "VOLATILITY",
+      "id": "HYPOTHESIS-DISC-03-HIGH_VOL_SHORT_HORIZON-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T13:44:11.620106+00:00"
+    },
+    {
+      "family": "VOLATILITY",
+      "id": "HYPOTHESIS-DISC-04-LOW_VOL_LONG_HORIZON-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T13:44:12.082814+00:00"
+    },
+    {
+      "family": "VOLATILITY",
+      "id": "FAMILY-VOLATILITY",
+      "status": "ACTIVE",
+      "updated_at": "2026-09-03T13:44:09.477739+00:00"
+    },
+    {
+      "family": "RANGE",
+      "id": "HYPOTHESIS-DISC-05-HIGH_RANGE_UP_EXCURSION-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T13:44:11.680290+00:00"
+    },
+    {
+      "family": "RANGE",
+      "id": "HYPOTHESIS-DISC-06-HIGH_RANGE_DOWN_EXCURSION-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T13:44:12.518678+00:00"
+    },
+    {
+      "family": "RANGE",
+      "id": "FAMILY-RANGE",
+      "status": "ACTIVE",
+      "updated_at": "2026-09-03T13:44:09.881869+00:00"
+    },
+    {
+      "family": "REGIME",
+      "id": "HYPOTHESIS-DISC-17-UP_REGIME_EXPANDS-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T13:44:11.747979+00:00"
+    },
+    {
+      "family": "REGIME",
+      "id": "HYPOTHESIS-DISC-18-RANGE_REGIME_QUIET-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T13:44:12.045757+00:00"
+    },
+    {
+      "family": "REGIME",
+      "id": "FAMILY-REGIME",
+      "status": "ACTIVE",
+      "updated_at": "2026-09-03T13:44:10.121017+00:00"
+    },
+    {
+      "family": "DATA_QUALITY",
+      "id": "HYPOTHESIS-DISC-23-HIGH_TICK_ACTIVITY-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T13:44:11.837373+00:00"
+    },
+    {
+      "family": "DATA_QUALITY",
+      "id": "HYPOTHESIS-DISC-24-LOW_TICK_ACTIVITY-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T13:44:12.008221+00:00"
+    },
+    {
+      "family": "DATA_QUALITY",
+      "id": "FAMILY-DATA_QUALITY",
+      "status": "ACTIVE",
+      "updated_at": "2026-09-03T13:44:10.450342+00:00"
+    },
+    {
+      "family": "CROSS_FEATURE",
+      "id": "HYPOTHESIS-DISC-22-UP_REGIME_HIGH_RANGE-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T13:44:11.898765+00:00"
+    },
+    {
+      "family": "CROSS_FEATURE",
+      "id": "HYPOTHESIS-DISC-21-LATE_HIGH_VOL-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T13:44:11.961544+00:00"
+    },
+    {
+      "family": "CROSS_FEATURE",
+      "id": "FAMILY-CROSS_FEATURE",
+      "status": "ACTIVE",
+      "updated_at": "2026-09-03T13:44:10.723489+00:00"
+    },
+    {
+      "family": "EVIDENCE",
+      "id": "VOLATILITY-SLOW-STRUCTURE-DIAGNOSTIC-V1",
+      "status": "CONFIRMED_REJECTION",
+      "updated_at": "2026-09-03T13:44:12.540482+00:00"
+    },
+    {
+      "family": "ML_0830",
+      "id": "HYPOTHESIS-ML-XAUUSD-0830-DIRECTION-V1",
+      "status": "REJECTED",
+      "updated_at": "2026-09-03T19:36:00.546673+00:00"
+    },
+    {
+      "family": "ML_EVIDENCE",
+      "id": "ML-XAUUSD-0830-V1",
+      "status": "COMPLETED",
+      "updated_at": "2026-09-03T19:36:00.578848+00:00"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "active_hypothesis": "HYPOTHESIS-20260903T015024882137Z-be499f56e5",
+  "discovery_campaign": "DISCOVERY-CAMPAIGN-DEV-V1",
+  "discovery_status_counts": {
+    "REJECTED": 20,
+    "VALIDATION_READY": 4
+  },
+  "evidence_registry_count": 4,
+  "evidence_status_counts": {
+    "DEV_SURVIVOR": 0,
+    "REJECTED": 4,
+    "VALIDATION_READY": 0
+  },
+  "hypothesis_count": 3,
+  "locked_oos_inspected": false,
+  "opportunity_campaign": {
+    "id": "OPPORTUNITY-DISCOVERY-V1",
+    "locked_oos_inspected": false,
+    "reversal_family": "CLOSED",
+    "status_counts": {
+      "REJECTED": 12,
+      "VOLATILITY_OPPORTUNITY_ONLY": 18
+    },
+    "validation_inspected": false
+  },
+  "uncertainties": [
+    "Full-history tick bid/ask is unavailable; most costs use an explicit spread proxy",
+    "Slippage is unavailable and remains null",
+    "No market edge is tested or claimed"
+  ],
+  "updated_at": "2026-09-03T14:01:52.084549+00:00",
+  "validation_ceremony": "CONSUMED",
+  "validation_inspected": true,
+  "validation_verdict_counts": {
+    "VALIDATED_ECONOMIC_CANDIDATE": 0,
+    "VALIDATED_PREDICTIVE_RELATIONSHIP_NO_TRADE": 4,
+    "VALIDATION_FAILED": 0
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "bootstrap": {
+    "mean_or_fixed_block_sessions": 20,
+    "moving_block_resamples": 2000,
+    "session_resamples": 2000,
+    "stationary_resamples": 2000
+  },
+  "ceremony_id": "VALIDATION-CEREMONY-REVERSAL-RELATIVE-V1",
+  "confidence_intervals": [
+    0.9,
+    0.95
+  ],
+  "cost_multipliers": [
+    1.0,
+    1.25,
+    1.5,
+    2.0
+  ],
+  "created_at": "2026-09-03T14:01:04.481835+00:00",
+  "economic_gate": {
+    "absolute_conditional_net_return_gt": 0.0,
+    "note": "positive relative effect alone never passes this gate"
+  },
+  "expected_direction": "GREATER for all four frozen effects",
+  "family": "REVERSAL_RELATIVE_V1",
+  "manifest_hash": "f343ce96e5b8001c8f7097b57f17de8963ba4f23dac98b82a2aa28b300c77843",
+  "multiple_testing": {
+    "alpha": 0.05,
+    "complementary": "Benjamini-Hochberg FDR",
+    "primary": "Holm family-wise correction"
+  },
+  "number_of_hypotheses": 4,
+  "partition": "VALIDATION",
+  "period": {
+    "from": "2020-01-01T00:00:00Z",
+    "to_exclusive": "2023-01-01T00:00:00Z"
+  },
+  "permutation": {
+    "method": "paired session sign flip",
+    "permutations": 4000
+  },
+  "predictive_replication_gate": {
+    "bootstrap_favorable_gte": 0.9,
+    "ci95_lower_bound_gt": 0.0,
+    "holm_p_lte": 0.05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "same_direction": true,
+    "sign_stability_gte": 0.9,
+    "skeptic_survival_gte": 0.75,
+    "slow_structure_control_required": true,
+    "temporal_sign_consistency_gte": 0.6,
+    "year_concentration_lte": 0.6
+  },
+  "primary_metric": "paired session-weighted difference in mean net tradable return: frozen condition minus same-session complement",
+  "prohibitions": [
+    "discovery",
+    "parameter search",
+    "threshold mutation",
+    "subgroup selection",
+    "LOCKED_OOS",
+    "EA",
+    "orders",
+    "live promotion"
+  ],
+  "protocol_hash": "200002797d1fad69361ba7404fdeee6edc8b8a9001cdc92e4e7717199e044916",
+  "regimes": [
+    "RANGE",
+    "TREND_UP",
+    "TREND_DOWN"
+  ],
+  "rejection_rule": "VALIDATION_FAILED if any predictive gate fails; no rescue or mutation",
+  "secondary_metrics": [
+    "gross/net conditional return",
+    "spread cost",
+    "MFE",
+    "MAE",
+    "hit rate",
+    "payoff",
+    "frequency",
+    "regime stability"
+  ],
+  "skeptic_tests": [
+    "winsorization",
+    "remove_best_5pct",
+    "remove_worst_5pct",
+    "temporal_concentration",
+    "outlier_dependency",
+    "gap_sensitivity",
+    "data_quality",
+    "2x_cost",
+    "shift_7_sessions_slow_structure"
+  ],
+  "temporal_windows": [
+    "2020",
+    "2020-H1",
+    "2020-H2",
+    "2021",
+    "2021-H1",
+    "2021-H2",
+    "2022",
+    "2022-H1",
+    "2022-H2"
+  ],
+  "verdicts": [
+    "VALIDATION_FAILED",
+    "VALIDATED_PREDICTIVE_RELATIONSHIP_NO_TRADE",
+    "VALIDATED_ECONOMIC_CANDIDATE"
+  ]
+}

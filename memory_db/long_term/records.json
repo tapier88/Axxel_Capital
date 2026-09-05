@@ -1,0 +1,113 @@
+[
+  {
+    "confidence": 0.9,
+    "content": "4/4 frozen reversal-relative hypotheses replicated independently; economic status is preserved separately.",
+    "created_at": "2026-09-03T14:01:51.935867+00:00",
+    "evidence_ids": [
+      "5697dcb882a6da87834bd7e5419224d9cb3706401089255d629d964dd1438fa4",
+      "HYPOTHESIS-DISC-09-UP_MOVE_REVERSES-V1",
+      "HYPOTHESIS-DISC-10-DOWN_MOVE_REVERSES-V1",
+      "HYPOTHESIS-DISC-15-NEAR_HIGH_REVERTS-V1",
+      "HYPOTHESIS-DISC-16-NEAR_LOW_REVERTS-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T140151963326Z-61adb5ab88",
+    "promoted_at": "2026-09-03T14:01:51.963423+00:00",
+    "source_memory_id": "MEMORY-20260903T140151935753Z-7582b3623a",
+    "status": "active",
+    "tags": [
+      "independent-replication",
+      "prompt-6",
+      "reversal-relative-v1",
+      "validation"
+    ],
+    "type": "long_term"
+  },
+  {
+    "confidence": 0.95,
+    "content": "Four frozen extreme-reversal conditions replicated their positive relative effect in independent VALIDATION 2020-2022, but all four absolute conditional net returns remained negative after the frozen spread-cost model. Conclusion: reproducible relative market relationship; NO_TRADE and not a tradable edge.",
+    "created_at": "2026-09-03T14:03:45.852870+00:00",
+    "evidence_ids": [
+      "5697dcb882a6da87834bd7e5419224d9cb3706401089255d629d964dd1438fa4",
+      "HYPOTHESIS-DISC-09-UP_MOVE_REVERSES-V1",
+      "HYPOTHESIS-DISC-10-DOWN_MOVE_REVERSES-V1",
+      "HYPOTHESIS-DISC-15-NEAR_HIGH_REVERTS-V1",
+      "HYPOTHESIS-DISC-16-NEAR_LOW_REVERTS-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T140345872796Z-c1bacc995f",
+    "promoted_at": "2026-09-03T14:03:45.872893+00:00",
+    "source_memory_id": "MEMORY-20260903T140345852805Z-5dadd673d1",
+    "status": "active",
+    "tags": [
+      "independent-replication",
+      "no-trade",
+      "prompt-6",
+      "validated-relative-reversal-no-trade-v1",
+      "validation"
+    ],
+    "type": "long_term"
+  },
+  {
+    "confidence": 1.0,
+    "content": "Economic DEV campaign tested 24 preregistered ENTER/WAIT policies over four frozen relative-reversal signals. All were REJECTED. Best net policy NEW-ECO-DISC-15-LOW_COST_ATR-V1 returned -0.0001623489 at 1x proxy cost; low cost/ATR reduced losses but did not cross zero. WAIT remains optimal. DEV historical bid/ask ticks and slippage remain unavailable; no failed filter may be reused as a post-hoc rescue.",
+    "created_at": "2026-09-03T16:55:50.481945+00:00",
+    "evidence_ids": [
+      "ECONOMIC-DISCOVERY-V1",
+      "ca494c6ef74c6c1d8b33c1c5f5c2f17b24f14c7c3f5a9af8de2a78bb7873e933"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T165550506178Z-e0e379951d",
+    "promoted_at": "2026-09-03T16:55:50.506246+00:00",
+    "source_memory_id": "MEMORY-20260903T165550481866Z-196459d1d7",
+    "status": "active",
+    "tags": [
+      "dev-only",
+      "enter-vs-wait",
+      "no-trade",
+      "prompt-7-economic-campaign-v1",
+      "proxy-cost-only"
+    ],
+    "type": "long_term"
+  },
+  {
+    "confidence": 1.0,
+    "content": "REVERSAL_RELATIVE_VALIDATED_BUT_NOT_MONETIZABLE. DO_NOT_REOPEN_WITH_POSTHOC_FILTERS. Research Value is 0.01 unless genuinely new external evidence arrives.",
+    "created_at": "2026-09-03T17:09:04.771815+00:00",
+    "evidence_ids": [
+      "OPPORTUNITY-DISCOVERY-V1",
+      "f0d7ae49fb908b3bdbc67c5fc0d1c27ae05d62b2e531e31f787a1caf4ec3d8e3"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T170904784444Z-ab3784f171",
+    "promoted_at": "2026-09-03T17:09:04.784549+00:00",
+    "source_memory_id": "MEMORY-20260903T170904771658Z-34fa93e3c7",
+    "status": "active",
+    "tags": [
+      "dev-only",
+      "research-only",
+      "reversal-family-closed-v1"
+    ],
+    "type": "long_term"
+  },
+  {
+    "confidence": 1.0,
+    "content": "Prompt #8 tested 30 preregistered large-move hypotheses. Opportunity survivors=['OPP-01', 'OPP-02', 'OPP-03', 'OPP-11', 'OPP-12', 'OPP-13', 'OPP-14', 'OPP-16', 'OPP-17', 'OPP-18', 'OPP-19', 'OPP-21', 'OPP-24', 'OPP-25', 'OPP-26', 'OPP-27', 'OPP-28', 'OPP-30']; direction survivors=[]; DEV economic survivors=[]. Brokers were not mixed and WAIT remains mandatory where net direction failed.",
+    "created_at": "2026-09-03T17:09:04.813301+00:00",
+    "evidence_ids": [
+      "OPPORTUNITY-DISCOVERY-V1",
+      "f0d7ae49fb908b3bdbc67c5fc0d1c27ae05d62b2e531e31f787a1caf4ec3d8e3"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T170904825629Z-62e6260fd0",
+    "promoted_at": "2026-09-03T17:09:04.825730+00:00",
+    "source_memory_id": "MEMORY-20260903T170904813198Z-c39adc891a",
+    "status": "active",
+    "tags": [
+      "dev-only",
+      "prompt-8-opportunity-v1",
+      "research-only"
+    ],
+    "type": "long_term"
+  }
+]

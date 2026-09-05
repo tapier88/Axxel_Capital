@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-09-03T02:06:05.909049+00:00",
+  "evidence_artifact": "reports/evidence/hypothesis-cal-vol-persistence-v1_50d905a4272024e1.json",
+  "evidence_hash": "9aa47bf2c0c3d8e9f8d1969905162b62d3d373ec87aa5c5718193bcaf79685a3",
+  "hypothesis_id": "HYPOTHESIS-CAL-VOL-PERSISTENCE-V1",
+  "locked_oos_authorized": false,
+  "partition_authorized": "VALIDATION",
+  "spec_hash": "2c5985c3fc2b5b9c025f714097c226d65898d2a429f6b0dc2f95cf9097dc1fbb"
+}

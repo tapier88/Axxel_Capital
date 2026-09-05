@@ -1,0 +1,527 @@
+[
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:05:24.392438+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:05:28.518442+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:05:31.214541+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:05:53.812043+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:05:57.084089+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:05:59.865378+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:06:02.732386+00:00"
+  },
+  {
+    "allowed": false,
+    "component": "PROMPT_4_BARRIER_PROOF",
+    "partition": "VALIDATION",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:07:31.859686+00:00"
+  },
+  {
+    "allowed": false,
+    "component": "PROMPT_4_BARRIER_PROOF",
+    "partition": "LOCKED_OOS",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:07:31.877755+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:08:38.837307+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:08:42.064099+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:08:44.752180+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:08:47.160165+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "VolatilityDiagnostic",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:21:07.288367+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "IntradayStructure",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:21:11.863732+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "VolatilityDiagnostic",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:21:34.871423+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "IntradayStructure",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:21:38.003643+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:21:40.763423+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:21:44.288431+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:21:47.745245+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:21:50.894436+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:21:54.314723+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:21:57.353391+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "VolatilityDiagnostic",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:22:41.017481+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "IntradayStructure",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:22:43.926356+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:22:46.572883+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "VolatilityDiagnostic",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:23:23.552472+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "IntradayStructure",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:23:26.303111+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:23:28.950980+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:23:32.534538+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:23:35.503857+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:23:38.282805+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:23:40.554425+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:23:42.759051+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:23:44.893915+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:23:47.057802+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:23:50.158191+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:23:52.215811+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:23:54.573660+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:23:56.618632+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:23:58.934261+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:24:01.331277+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:24:05.097765+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:24:08.189055+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:24:11.144657+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "EvidenceEngine",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:24:13.941886+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "VolatilityDiagnostic",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:25:36.609356+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "IntradayStructure",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T02:25:39.618428+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "VolatilityDiagnostic",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T13:40:00.894241+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "IntradayStructure",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T13:40:08.704351+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "VolatilityDiagnostic",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T13:41:59.090407+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "IntradayStructure",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T13:42:05.563749+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "VolatilityDiagnostic",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T13:44:01.578249+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "IntradayStructure",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T13:44:05.061003+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ValidationCeremony.threshold_materialization",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T14:01:03.577158+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ValidationCeremony.threshold_materialization",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T14:01:04.385757+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ValidationCeremony.threshold_materialization",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T14:01:38.128410+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ValidationCeremony.threshold_materialization",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T14:01:38.243396+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ValidationCeremony.confirm_frozen_hypothesis",
+    "partition": "VALIDATION",
+    "phase": "VALIDATION",
+    "timestamp": "2026-09-03T14:01:38.417533+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ML_DATA_GATEWAY",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T17:43:36.086914+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ML_DATA_GATEWAY",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T17:43:54.098802+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ML_DATA_GATEWAY",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T18:46:07.754398+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ML_DATA_GATEWAY",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T18:49:34.177486+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ML_DATA_GATEWAY",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T18:49:55.970336+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ML_DATA_GATEWAY",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T18:51:45.931758+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ML_DATA_GATEWAY",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T18:54:07.971033+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ML_DATA_GATEWAY",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T18:54:50.782766+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ML_DATA_GATEWAY",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T18:56:17.698987+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ML_DATA_GATEWAY",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T18:58:06.260288+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ML_DATA_GATEWAY",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T18:59:32.404074+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ML_DATA_GATEWAY",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T19:00:25.109133+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ML_DATA_GATEWAY",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T19:31:13.150651+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ML_DATA_GATEWAY",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T19:34:02.109439+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ML_DATA_GATEWAY",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T19:35:45.961943+00:00"
+  },
+  {
+    "allowed": true,
+    "component": "ML_DATA_GATEWAY",
+    "partition": "DEV",
+    "phase": "DISCOVERY",
+    "timestamp": "2026-09-03T19:36:41.790595+00:00"
+  }
+]

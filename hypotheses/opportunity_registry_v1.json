@@ -1,0 +1,5182 @@
+[
+  {
+    "K": 2.0,
+    "baseline_opportunity_rate": 0.762385665956647,
+    "bh_fdr_q_value": 0.0,
+    "complexity": 1,
+    "condition": {
+      "field": "state_volatility_15m_causal",
+      "q": 0.75,
+      "type": "qgte"
+    },
+    "edge_to_cost_ratio": 6.782450351934933,
+    "excursion_distribution": {
+      "p50": 0.0015079476256006285,
+      "p75": 0.002231524766667217,
+      "p90": 0.003304365152311211,
+      "p95": 0.004243238456989572
+    },
+    "expected_cost": 0.00027379573899037027,
+    "expected_move_size": 0.0018570060062735219,
+    "family": "VOLATILITY_EXPANSION",
+    "frequency": 0.1486888503051891,
+    "horizon_minutes": 15,
+    "id": "OPP-01",
+    "lift_ci95": [
+      0.13204872778107205,
+      0.15413375896319867
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.9743583570087158,
+    "opportunity_rate_lift": 0.14309124337213536,
+    "opportunity_surplus": 0.0013094145282927811,
+    "opportunity_value": 0.7055270053022917,
+    "raw_p_value": 0.0,
+    "regime_stability": {
+      "RANGE": 0.0012859656832530067,
+      "TREND_DOWN": 0.001350091640589525,
+      "TREND_UP": 0.001277123698195682
+    },
+    "rejection_reasons": [],
+    "research_value_v3": 0.7700000000000001,
+    "sessions": 835,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.0010356187893024108,
+        "cost_2x": 0.0007618230503120405,
+        "gap_null_fraction": 0.001083449703857081,
+        "neighbor_stronger_surplus": 0.0012953860555510418,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0011391223208415068,
+        "random_condition_rate": 0.7627207387310201,
+        "regime_means": {
+          "RANGE": 0.0012859656832530067,
+          "TREND_DOWN": 0.001350091640589525,
+          "TREND_UP": 0.001277123698195682
+        },
+        "remove_best_5pct": 0.0010919837799153057,
+        "remove_top_10_sessions": 0.001236297710008795,
+        "selected_rate": 0.9743583570087158,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0012849025431720287,
+        "year_means": {
+          "2016": 0.0015352606338187844,
+          "2017": 0.0010152595109982779,
+          "2018": 0.0009896939116947959,
+          "2019": 0.0013045864267472412
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": true,
+    "status": "VOLATILITY_OPPORTUNITY_ONLY",
+    "support": 41534,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 0.13868258226818328,
+      "2017": 0.19490781359074624,
+      "2018": 0.12107698133832434,
+      "2019": 0.12564675953684695
+    },
+    "time_to_excursion": {
+      "median_minutes": 5.0,
+      "p75_minutes": 5.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.7891055259129987,
+        "eligible": 16243,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 6.758351754675372,
+        "learned_from_past": {
+          "field": "state_volatility_15m_causal",
+          "operator": "qgte",
+          "quantile": 0.75,
+          "threshold": 0.00035387147994266305
+        },
+        "opportunity_rate": 0.9765437419195961,
+        "purge_minutes": 15,
+        "rate_lift": 0.13868258226818328,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.6340437142775082,
+        "eligible": 5183,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 6.698212798821048,
+        "learned_from_past": {
+          "field": "state_volatility_15m_causal",
+          "operator": "qgte",
+          "quantile": 0.75,
+          "threshold": 0.00034879365994032636
+        },
+        "opportunity_rate": 0.9326644800308701,
+        "purge_minutes": 15,
+        "rate_lift": 0.19490781359074624,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.7993418699477788,
+        "eligible": 6517,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 6.207982837854818,
+        "learned_from_past": {
+          "field": "state_volatility_15m_causal",
+          "operator": "qgte",
+          "quantile": 0.75,
+          "threshold": 0.0003125330530432688
+        },
+        "opportunity_rate": 0.9745281571275126,
+        "purge_minutes": 15,
+        "rate_lift": 0.12107698133832434,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.8265640424040401,
+        "eligible": 13591,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 6.02812223777802,
+        "learned_from_past": {
+          "field": "state_volatility_15m_causal",
+          "operator": "qgte",
+          "quantile": 0.75,
+          "threshold": 0.00029082888052384744
+        },
+        "opportunity_rate": 0.9875653005665513,
+        "purge_minutes": 15,
+        "rate_lift": 0.12564675953684695,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 3.0,
+    "baseline_opportunity_rate": 0.7585121807149122,
+    "bh_fdr_q_value": 0.0,
+    "complexity": 1,
+    "condition": {
+      "field": "state_volatility_60m_causal",
+      "q": 0.75,
+      "type": "qgte"
+    },
+    "edge_to_cost_ratio": 9.929413975193015,
+    "excursion_distribution": {
+      "p50": 0.0022231828551430733,
+      "p75": 0.003290637780571703,
+      "p90": 0.004734812606881676,
+      "p95": 0.00598810551883674
+    },
+    "expected_cost": 0.0002736413865700724,
+    "expected_move_size": 0.002717098608000071,
+    "family": "VOLATILITY_EXPANSION",
+    "frequency": 0.13487031700288185,
+    "horizon_minutes": 30,
+    "id": "OPP-02",
+    "lift_ci95": [
+      0.12231920523974671,
+      0.14729629402424166
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.9795880448054362,
+    "opportunity_rate_lift": 0.13480774963199418,
+    "opportunity_surplus": 0.0018961744482898536,
+    "opportunity_value": 0.7121538002944047,
+    "raw_p_value": 0.0,
+    "regime_stability": {
+      "RANGE": 0.0018474913784096725,
+      "TREND_DOWN": 0.001965600322933273,
+      "TREND_UP": 0.0018476584174106343
+    },
+    "rejection_reasons": [],
+    "research_value_v3": 0.7700000000000001,
+    "sessions": 513,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.001485712368434745,
+        "cost_2x": 0.0010752502885796363,
+        "gap_null_fraction": 0.002866698518872432,
+        "neighbor_stronger_surplus": 0.001863466938808155,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0016150229989308372,
+        "random_condition_rate": 0.7626647068087563,
+        "regime_means": {
+          "RANGE": 0.0018474913784096725,
+          "TREND_DOWN": 0.001965600322933273,
+          "TREND_UP": 0.0018476584174106343
+        },
+        "remove_best_5pct": 0.0015979841389424042,
+        "remove_top_10_sessions": 0.0017716798248564943,
+        "selected_rate": 0.9795880448054362,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.001863293772507785,
+        "year_means": {
+          "2016": 0.0022046694818136066,
+          "2017": 0.0013067975432103271,
+          "2018": 0.001397323535969247,
+          "2019": 0.0019240505717058863
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": true,
+    "status": "VOLATILITY_OPPORTUNITY_ONLY",
+    "support": 37674,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 0.11983572816040466,
+      "2017": 0.23479393992228959,
+      "2018": 0.1264053277229353,
+      "2019": 0.10126554668342178
+    },
+    "time_to_excursion": {
+      "median_minutes": 5.0,
+      "p75_minutes": 15.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.788633470181813,
+        "eligible": 15233,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 9.384838495576064,
+        "learned_from_past": {
+          "field": "state_volatility_60m_causal",
+          "operator": "qgte",
+          "quantile": 0.75,
+          "threshold": 0.0003674053685710212
+        },
+        "opportunity_rate": 0.9844416726843038,
+        "purge_minutes": 30,
+        "rate_lift": 0.11983572816040466,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.6300514116667145,
+        "eligible": 4475,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 9.476804211420255,
+        "learned_from_past": {
+          "field": "state_volatility_60m_causal",
+          "operator": "qgte",
+          "quantile": 0.75,
+          "threshold": 0.0003593387675148024
+        },
+        "opportunity_rate": 0.9439106145251397,
+        "purge_minutes": 30,
+        "rate_lift": 0.23479393992228959,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.7856069819014235,
+        "eligible": 4924,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 8.86417012531122,
+        "learned_from_past": {
+          "field": "state_volatility_60m_causal",
+          "operator": "qgte",
+          "quantile": 0.75,
+          "threshold": 0.00032105350924264997
+        },
+        "opportunity_rate": 0.9742079610073111,
+        "purge_minutes": 30,
+        "rate_lift": 0.1264053277229353,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.829267943747407,
+        "eligible": 13042,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 8.603167483438853,
+        "learned_from_past": {
+          "field": "state_volatility_60m_causal",
+          "operator": "qgte",
+          "quantile": 0.75,
+          "threshold": 0.00029620308584999073
+        },
+        "opportunity_rate": 0.9881919950927772,
+        "purge_minutes": 30,
+        "rate_lift": 0.10126554668342178,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 3.0,
+    "baseline_opportunity_rate": 0.9134408505915835,
+    "bh_fdr_q_value": 0.0,
+    "complexity": 1,
+    "condition": {
+      "field": "state_atr_14_causal",
+      "q": 0.75,
+      "type": "qgte"
+    },
+    "edge_to_cost_ratio": 13.350738730051702,
+    "excursion_distribution": {
+      "p50": 0.003017390118047356,
+      "p75": 0.004375243504686642,
+      "p90": 0.006295232884233117,
+      "p95": 0.007863684101156376
+    },
+    "expected_cost": 0.00027157904029967265,
+    "expected_move_size": 0.0036257808115991116,
+    "family": "VOLATILITY_EXPANSION",
+    "frequency": 0.1858986521560134,
+    "horizon_minutes": 60,
+    "id": "OPP-03",
+    "lift_ci95": [
+      0.049000553096136094,
+      0.061243500845041036
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.9927592050531505,
+    "opportunity_rate_lift": 0.055122026970588565,
+    "opportunity_surplus": 0.002811043690700094,
+    "opportunity_value": 0.7759023784235292,
+    "raw_p_value": 0.0,
+    "regime_stability": {
+      "RANGE": 0.0028513299342486816,
+      "TREND_DOWN": 0.0028605860636492773,
+      "TREND_UP": 0.0027414771579185866
+    },
+    "rejection_reasons": [],
+    "research_value_v3": 0.7700000000000001,
+    "sessions": 827,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.0024036751302505847,
+        "cost_2x": 0.0019963065698010755,
+        "gap_null_fraction": 0.004852873209058696,
+        "neighbor_stronger_surplus": 0.0028161591739621025,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0025224724621526083,
+        "random_condition_rate": 0.9154738730485896,
+        "regime_means": {
+          "RANGE": 0.0028513299342486816,
+          "TREND_DOWN": 0.0028605860636492773,
+          "TREND_UP": 0.0027414771579185866
+        },
+        "remove_best_5pct": 0.002425507024835097,
+        "remove_top_10_sessions": 0.0026508772682330073,
+        "selected_rate": 0.9927592050531505,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0027751357911709436,
+        "year_means": {
+          "2016": 0.003187110447447388,
+          "2017": 0.0020864493163233956,
+          "2018": 0.002080514638353629,
+          "2019": 0.0028828206521935014
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": true,
+    "status": "VOLATILITY_OPPORTUNITY_ONLY",
+    "support": 51928,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 0.05050233757860263,
+      "2017": 0.10421262318975887,
+      "2018": 0.04324755312800004,
+      "2019": 0.03328113967028914
+    },
+    "time_to_excursion": {
+      "median_minutes": 5.0,
+      "p75_minutes": 15.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.9251863189666271,
+        "eligible": 20867,
+        "embargo_minutes": 60,
+        "initial_edge_to_cost": 13.591387421307504,
+        "learned_from_past": {
+          "field": "state_atr_14_causal",
+          "operator": "qgte",
+          "quantile": 0.75,
+          "threshold": 0.5835714285714013
+        },
+        "opportunity_rate": 0.9950160540566445,
+        "purge_minutes": 60,
+        "rate_lift": 0.05050233757860263,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.8462963494844472,
+        "eligible": 5459,
+        "embargo_minutes": 60,
+        "initial_edge_to_cost": 13.325105465209175,
+        "learned_from_past": {
+          "field": "state_atr_14_causal",
+          "operator": "qgte",
+          "quantile": 0.75,
+          "threshold": 0.605000000000002
+        },
+        "opportunity_rate": 0.9840630152042499,
+        "purge_minutes": 60,
+        "rate_lift": 0.10421262318975887,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.9339723871521568,
+        "eligible": 7169,
+        "embargo_minutes": 60,
+        "initial_edge_to_cost": 12.330471603343211,
+        "learned_from_past": {
+          "field": "state_atr_14_causal",
+          "operator": "qgte",
+          "quantile": 0.75,
+          "threshold": 0.5478571428571156
+        },
+        "opportunity_rate": 0.994420421258195,
+        "purge_minutes": 60,
+        "rate_lift": 0.04324755312800004,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.9480536202234653,
+        "eligible": 18433,
+        "embargo_minutes": 60,
+        "initial_edge_to_cost": 11.974232063405285,
+        "learned_from_past": {
+          "field": "state_atr_14_causal",
+          "operator": "qgte",
+          "quantile": 0.75,
+          "threshold": 0.5142857142856688
+        },
+        "opportunity_rate": 0.9921336733033147,
+        "purge_minutes": 60,
+        "rate_lift": 0.03328113967028914,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 2.0,
+    "baseline_opportunity_rate": 0.9088728587538261,
+    "bh_fdr_q_value": 1.0,
+    "complexity": 1,
+    "condition": {
+      "field": "state_distance_recent_high",
+      "q": 0.1,
+      "type": "qlte"
+    },
+    "edge_to_cost_ratio": 4.975055457214504,
+    "excursion_distribution": {
+      "p50": 0.001122616682137042,
+      "p75": 0.001734727205398572,
+      "p90": 0.0026107315106899316,
+      "p95": 0.0034025488353132687
+    },
+    "expected_cost": 0.0002850236423234684,
+    "expected_move_size": 0.0014180084271765265,
+    "family": "RANGE_BREAK",
+    "frequency": 0.13416507061413716,
+    "horizon_minutes": 30,
+    "id": "OPP-04",
+    "lift_ci95": [
+      -0.017373073664066513,
+      -0.0036130358064926926
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.8540171305067108,
+    "opportunity_rate_lift": -0.010493054735279603,
+    "opportunity_surplus": 0.0008479611425295897,
+    "opportunity_value": 0.8116055562117763,
+    "raw_p_value": 0.9986018773502066,
+    "regime_stability": {
+      "RANGE": 0.0006111906314864933,
+      "TREND_DOWN": 0.00030457527987751284,
+      "TREND_UP": 0.0008849384930672106
+    },
+    "rejection_reasons": [
+      "opportunity_rate_lift_ci_failed",
+      "temporal_stability_failed",
+      "bh_fdr_failed"
+    ],
+    "research_value_v3": 0.6200000000000001,
+    "sessions": 1026,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.0005629375002061214,
+        "cost_2x": 0.00027791385788265296,
+        "gap_null_fraction": 0.0029084505163166742,
+        "neighbor_stronger_surplus": 0.0008458926013427305,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0008624470743887878,
+        "random_condition_rate": 0.9105682477708015,
+        "regime_means": {
+          "RANGE": 0.0006111906314864933,
+          "TREND_DOWN": 0.00030457527987751284,
+          "TREND_UP": 0.0008849384930672106
+        },
+        "remove_best_5pct": 0.0006676847403118864,
+        "remove_top_10_sessions": 0.0008345370104700426,
+        "selected_rate": 0.8540171305067108,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0008317276133695797,
+        "year_means": {
+          "2016": 0.0011137450783996056,
+          "2017": 0.0006354828015941333,
+          "2018": 0.0008175512118930021,
+          "2019": 0.0008947386284317096
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support": 37477,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.011631365970506733,
+      "2017": -0.030628117878546277,
+      "2018": 0.007763109380579093,
+      "2019": -0.007258308271933202
+    },
+    "time_to_excursion": {
+      "median_minutes": 15.0,
+      "p75_minutes": 15.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.9181913113136023,
+        "eligible": 8396,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 5.870660379819419,
+        "learned_from_past": {
+          "field": "state_distance_recent_high",
+          "operator": "qlte",
+          "quantile": 0.1,
+          "threshold": 0.00033395798539413485
+        },
+        "opportunity_rate": 0.8627918056217246,
+        "purge_minutes": 30,
+        "rate_lift": -0.011631365970506733,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.8409972140046529,
+        "eligible": 11283,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 5.552050243264697,
+        "learned_from_past": {
+          "field": "state_distance_recent_high",
+          "operator": "qlte",
+          "quantile": 0.1,
+          "threshold": 0.00030788501640914817
+        },
+        "opportunity_rate": 0.7590179916688824,
+        "purge_minutes": 30,
+        "rate_lift": -0.030628117878546277,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.9362901495099792,
+        "eligible": 8603,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 4.863807918740169,
+        "learned_from_past": {
+          "field": "state_distance_recent_high",
+          "operator": "qlte",
+          "quantile": 0.1,
+          "threshold": 0.00026013596637187357
+        },
+        "opportunity_rate": 0.9210740439381611,
+        "purge_minutes": 30,
+        "rate_lift": 0.007763109380579093,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.9397559335612813,
+        "eligible": 9195,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 4.973798972082126,
+        "learned_from_past": {
+          "field": "state_distance_recent_high",
+          "operator": "qlte",
+          "quantile": 0.1,
+          "threshold": 0.0002487742651251505
+        },
+        "opportunity_rate": 0.899836867862969,
+        "purge_minutes": 30,
+        "rate_lift": -0.007258308271933202,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 2.0,
+    "baseline_opportunity_rate": 0.9088728587538261,
+    "bh_fdr_q_value": 1.0,
+    "complexity": 1,
+    "condition": {
+      "field": "state_distance_recent_low",
+      "q": 0.1,
+      "type": "qlte"
+    },
+    "edge_to_cost_ratio": 5.030095152865655,
+    "excursion_distribution": {
+      "p50": 0.0010869990224829716,
+      "p75": 0.0017248132080019006,
+      "p90": 0.002668670725909126,
+      "p95": 0.003470925164985709
+    },
+    "expected_cost": 0.00028278920675839185,
+    "expected_move_size": 0.0014224566181981102,
+    "family": "RANGE_BREAK",
+    "frequency": 0.12850877978055023,
+    "horizon_minutes": 30,
+    "id": "OPP-05",
+    "lift_ci95": [
+      -0.009156118951135581,
+      0.004209029614123291
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.8609075967351032,
+    "opportunity_rate_lift": -0.002473544668506145,
+    "opportunity_surplus": 0.0008568782046813264,
+    "opportunity_value": 0.8180211642651951,
+    "raw_p_value": 0.7659245702426122,
+    "regime_stability": {
+      "RANGE": 0.0006032432128227132,
+      "TREND_DOWN": 0.0008968758313900821,
+      "TREND_UP": 0.0003203721184693416
+    },
+    "rejection_reasons": [
+      "opportunity_rate_lift_ci_failed",
+      "temporal_stability_failed",
+      "bh_fdr_failed"
+    ],
+    "research_value_v3": 0.6200000000000001,
+    "sessions": 1026,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.0005740889979229347,
+        "cost_2x": 0.00029129979116454264,
+        "gap_null_fraction": 0.003788617433211689,
+        "neighbor_stronger_surplus": 0.0008533204909763183,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0008788361789799404,
+        "random_condition_rate": 0.9106025093064939,
+        "regime_means": {
+          "RANGE": 0.0006032432128227132,
+          "TREND_DOWN": 0.0008968758313900821,
+          "TREND_UP": 0.0003203721184693416
+        },
+        "remove_best_5pct": 0.0006606620490620004,
+        "remove_top_10_sessions": 0.0008350350670507518,
+        "selected_rate": 0.8609075967351032,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.000831731813670403,
+        "year_means": {
+          "2016": 0.001189162334522417,
+          "2017": 0.0006586140943668538,
+          "2018": 0.0008207399127045345,
+          "2019": 0.0008687036589457766
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support": 35897,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 0.007468412330760855,
+      "2017": -0.015158524405680827,
+      "2018": -0.0040571580453065,
+      "2019": 0.0018870258471015652
+    },
+    "time_to_excursion": {
+      "median_minutes": 15.0,
+      "p75_minutes": 15.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.9181913113136023,
+        "eligible": 7062,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 5.950493967472599,
+        "learned_from_past": {
+          "field": "state_distance_recent_low",
+          "operator": "qlte",
+          "quantile": 0.1,
+          "threshold": 0.00031751111230730937
+        },
+        "opportunity_rate": 0.8711413197394505,
+        "purge_minutes": 30,
+        "rate_lift": 0.007468412330760855,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.8409972140046529,
+        "eligible": 10638,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 5.73387732413869,
+        "learned_from_past": {
+          "field": "state_distance_recent_low",
+          "operator": "qlte",
+          "quantile": 0.1,
+          "threshold": 0.00031623668274387593
+        },
+        "opportunity_rate": 0.7775897725136304,
+        "purge_minutes": 30,
+        "rate_lift": -0.015158524405680827,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.9362901495099792,
+        "eligible": 9413,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 5.015558040483443,
+        "learned_from_past": {
+          "field": "state_distance_recent_low",
+          "operator": "qlte",
+          "quantile": 0.1,
+          "threshold": 0.00027446445132021024
+        },
+        "opportunity_rate": 0.9110804206947838,
+        "purge_minutes": 30,
+        "rate_lift": -0.0040571580453065,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.9397559335612813,
+        "eligible": 8784,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 5.0993837718562,
+        "learned_from_past": {
+          "field": "state_distance_recent_low",
+          "operator": "qlte",
+          "quantile": 0.1,
+          "threshold": 0.0002567328182514216
+        },
+        "opportunity_rate": 0.8998178506375227,
+        "purge_minutes": 30,
+        "rate_lift": 0.0018870258471015652,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 3.0,
+    "baseline_opportunity_rate": 0.7585121807149122,
+    "bh_fdr_q_value": 1.0,
+    "complexity": 1,
+    "condition": {
+      "field": "state_min_distance_extreme",
+      "q": 0.1,
+      "type": "qlte"
+    },
+    "edge_to_cost_ratio": 5.074943661792225,
+    "excursion_distribution": {
+      "p50": 0.0011116041364080012,
+      "p75": 0.0017450109408337472,
+      "p90": 0.002654657139624393,
+      "p95": 0.003498299777380894
+    },
+    "expected_cost": 0.0002828664257145962,
+    "expected_move_size": 0.0014355311743141112,
+    "family": "RANGE_BREAK",
+    "frequency": 0.13117940823742102,
+    "horizon_minutes": 30,
+    "id": "OPP-06",
+    "lift_ci95": [
+      -0.04147775687604839,
+      -0.024641460014002123
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.6682040225964031,
+    "opportunity_rate_lift": -0.03305960844502526,
+    "opportunity_surplus": 0.0005869318971703226,
+    "opportunity_value": 0.7935523132439798,
+    "raw_p_value": 0.9999999999999931,
+    "regime_stability": {
+      "RANGE": 0.00030198270605115895,
+      "TREND_DOWN": 0.0006140202054477396,
+      "TREND_UP": 0.0005921862098191727
+    },
+    "rejection_reasons": [
+      "opportunity_rate_lift_ci_failed",
+      "temporal_stability_failed",
+      "bh_fdr_failed"
+    ],
+    "research_value_v3": 0.6200000000000001,
+    "sessions": 1031,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.00016263225859842822,
+        "cost_2x": -0.00026166737997346604,
+        "gap_null_fraction": 0.0033021313757061375,
+        "neighbor_stronger_surplus": 0.0005826346741694304,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0006113542422444329,
+        "random_condition_rate": 0.7634057482121172,
+        "regime_means": {
+          "RANGE": 0.00030198270605115895,
+          "TREND_DOWN": 0.0006140202054477396,
+          "TREND_UP": 0.0005921862098191727
+        },
+        "remove_best_5pct": 0.0003932495192420242,
+        "remove_top_10_sessions": 0.0005676430331690384,
+        "selected_rate": 0.6682040225964031,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0005646556394198882,
+        "year_means": {
+          "2016": 0.0008675186033931643,
+          "2017": 0.00032015278892748197,
+          "2018": 0.0005798164007739218,
+          "2019": 0.0006724719785591633
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support": 36643,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.019812899899077002,
+      "2017": -0.05830637231538523,
+      "2018": -0.014813189833222834,
+      "2019": -0.039403827406332095
+    },
+    "time_to_excursion": {
+      "median_minutes": 15.0,
+      "p75_minutes": 30.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.788633470181813,
+        "eligible": 7788,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 6.125278386404991,
+        "learned_from_past": {
+          "field": "state_min_distance_extreme",
+          "operator": "qlte",
+          "quantile": 0.1,
+          "threshold": 0.00017711291081293052
+        },
+        "opportunity_rate": 0.7049306625577813,
+        "purge_minutes": 30,
+        "rate_lift": -0.019812899899077002,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.6300514116667145,
+        "eligible": 10896,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 5.84073281920708,
+        "learned_from_past": {
+          "field": "state_min_distance_extreme",
+          "operator": "qlte",
+          "quantile": 0.1,
+          "threshold": 0.0001689417489935065
+        },
+        "opportunity_rate": 0.5297356828193832,
+        "purge_minutes": 30,
+        "rate_lift": -0.05830637231538523,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.7856069819014235,
+        "eligible": 8801,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 5.053332698908357,
+        "learned_from_past": {
+          "field": "state_min_distance_extreme",
+          "operator": "qlte",
+          "quantile": 0.1,
+          "threshold": 0.00014734757483471982
+        },
+        "opportunity_rate": 0.7386660606749234,
+        "purge_minutes": 30,
+        "rate_lift": -0.014813189833222834,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.829267943747407,
+        "eligible": 9158,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 5.122985579343601,
+        "learned_from_past": {
+          "field": "state_min_distance_extreme",
+          "operator": "qlte",
+          "quantile": 0.1,
+          "threshold": 0.00013824021035619736
+        },
+        "opportunity_rate": 0.7340030574361214,
+        "purge_minutes": 30,
+        "rate_lift": -0.039403827406332095,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 2.0,
+    "baseline_opportunity_rate": 0.9088728587538261,
+    "bh_fdr_q_value": 1.0,
+    "complexity": 1,
+    "condition": {
+      "field": "state_volatility_15m_causal",
+      "q": 0.25,
+      "type": "qlte"
+    },
+    "edge_to_cost_ratio": 4.021469286434034,
+    "excursion_distribution": {
+      "p50": 0.0009273361085728625,
+      "p75": 0.0014155591545386898,
+      "p90": 0.002111068812180905,
+      "p95": 0.0027235421763029603
+    },
+    "expected_cost": 0.00029067388220492817,
+    "expected_move_size": 0.0011689360896556629,
+    "family": "POST_COMPRESSION_EXPANSION",
+    "frequency": 0.3643152487156998,
+    "horizon_minutes": 30,
+    "id": "OPP-07",
+    "lift_ci95": [
+      -0.061303848523514885,
+      -0.05186611191459097
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.8013776703417644,
+    "opportunity_rate_lift": -0.05658498021905293,
+    "opportunity_surplus": 0.0005875883252458068,
+    "opportunity_value": 0.7747320158247577,
+    "raw_p_value": 1.0,
+    "regime_stability": {
+      "RANGE": 0.0005670354505331408,
+      "TREND_DOWN": 0.0005811405764392104,
+      "TREND_UP": 0.0006039681703581855
+    },
+    "rejection_reasons": [
+      "opportunity_rate_lift_ci_failed",
+      "temporal_stability_failed",
+      "bh_fdr_failed"
+    ],
+    "research_value_v3": 0.6200000000000001,
+    "sessions": 1015,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.0002969144430408786,
+        "cost_2x": 6.2405608359505035e-06,
+        "gap_null_fraction": 0.003134642218422656,
+        "neighbor_stronger_surplus": 0.0005648489459818782,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0004733353472128372,
+        "random_condition_rate": 0.9089559237261644,
+        "regime_means": {
+          "RANGE": 0.0005670354505331408,
+          "TREND_DOWN": 0.0005811405764392104,
+          "TREND_UP": 0.0006039681703581855
+        },
+        "remove_best_5pct": 0.00044289202982413244,
+        "remove_top_10_sessions": 0.0005838889249691158,
+        "selected_rate": 0.8013776703417644,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0005685863988169447,
+        "year_means": {
+          "2016": 0.0007193714327226904,
+          "2017": 0.00052607320507472,
+          "2018": 0.0005991126922462318,
+          "2019": 0.0005550355430657289
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support": 101766,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.057884048756165,
+      "2017": -0.07488342528909779,
+      "2018": -0.045525166455546245,
+      "2019": -0.04795850890291023
+    },
+    "time_to_excursion": {
+      "median_minutes": 15.0,
+      "p75_minutes": 30.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.9181913113136023,
+        "eligible": 19659,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 4.307839839146729,
+        "learned_from_past": {
+          "field": "state_volatility_15m_causal",
+          "operator": "qlte",
+          "quantile": 0.25,
+          "threshold": 0.00016904633522505614
+        },
+        "opportunity_rate": 0.7851365786662597,
+        "purge_minutes": 30,
+        "rate_lift": -0.057884048756165,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.8409972140046529,
+        "eligible": 34819,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 4.107565933510383,
+        "learned_from_past": {
+          "field": "state_volatility_15m_causal",
+          "operator": "qlte",
+          "quantile": 0.25,
+          "threshold": 0.00016438052818796282
+        },
+        "opportunity_rate": 0.7366380424480887,
+        "purge_minutes": 30,
+        "rate_lift": -0.07488342528909779,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.9362901495099792,
+        "eligible": 24553,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 3.5636406689051343,
+        "learned_from_past": {
+          "field": "state_volatility_15m_causal",
+          "operator": "qlte",
+          "quantile": 0.25,
+          "threshold": 0.00014279972523746436
+        },
+        "opportunity_rate": 0.8628273530729442,
+        "purge_minutes": 30,
+        "rate_lift": -0.045525166455546245,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.9397559335612813,
+        "eligible": 22735,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 3.683440012054349,
+        "learned_from_past": {
+          "field": "state_volatility_15m_causal",
+          "operator": "qlte",
+          "quantile": 0.25,
+          "threshold": 0.00013704866137933386
+        },
+        "opportunity_rate": 0.8482076094127996,
+        "purge_minutes": 30,
+        "rate_lift": -0.04795850890291023,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 3.0,
+    "baseline_opportunity_rate": 0.9134408505915835,
+    "bh_fdr_q_value": 1.0,
+    "complexity": 1,
+    "condition": {
+      "field": "state_volatility_60m_causal",
+      "q": 0.25,
+      "type": "qlte"
+    },
+    "edge_to_cost_ratio": 6.553193909720863,
+    "excursion_distribution": {
+      "p50": 0.0014950334119072975,
+      "p75": 0.002296268985774944,
+      "p90": 0.0034218454526024024,
+      "p95": 0.004500808673053224
+    },
+    "expected_cost": 0.0002899238765382668,
+    "expected_move_size": 0.0018999273820132336,
+    "family": "POST_COMPRESSION_EXPANSION",
+    "frequency": 0.39186997690944564,
+    "horizon_minutes": 60,
+    "id": "OPP-08",
+    "lift_ci95": [
+      -0.040732541233940045,
+      -0.031165561870757127
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.824406420434302,
+    "opportunity_rate_lift": -0.035949051552348586,
+    "opportunity_surplus": 0.0010301557523984338,
+    "opportunity_value": 0.7912407587581212,
+    "raw_p_value": 1.0,
+    "regime_stability": {
+      "RANGE": 0.0010135373309794128,
+      "TREND_DOWN": 0.001028543216465442,
+      "TREND_UP": 0.001040312023098385
+    },
+    "rejection_reasons": [
+      "opportunity_rate_lift_ci_failed",
+      "temporal_stability_failed",
+      "bh_fdr_failed"
+    ],
+    "research_value_v3": 0.6200000000000001,
+    "sessions": 942,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.0005952699375910335,
+        "cost_2x": 0.00016038412278363332,
+        "gap_null_fraction": 0.0046134310223545855,
+        "neighbor_stronger_surplus": 0.0010014970009688217,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0008857705794385927,
+        "random_condition_rate": 0.914170187633456,
+        "regime_means": {
+          "RANGE": 0.0010135373309794128,
+          "TREND_DOWN": 0.001028543216465442,
+          "TREND_UP": 0.001040312023098385
+        },
+        "remove_best_5pct": 0.0007835671138082576,
+        "remove_top_10_sessions": 0.0010006431430194783,
+        "selected_rate": 0.824406420434302,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0010019510470561464,
+        "year_means": {
+          "2016": 0.0012746909360293248,
+          "2017": 0.0009007614365456241,
+          "2018": 0.0010643567120387652,
+          "2019": 0.0009854970133395908
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support": 109463,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.04084872362739796,
+      "2017": -0.04823515749719372,
+      "2018": -0.02303739574308608,
+      "2019": -0.0317503201961906
+    },
+    "time_to_excursion": {
+      "median_minutes": 30.0,
+      "p75_minutes": 60.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.9251863189666271,
+        "eligible": 20475,
+        "embargo_minutes": 60,
+        "initial_edge_to_cost": 7.358964754021481,
+        "learned_from_past": {
+          "field": "state_volatility_60m_causal",
+          "operator": "qlte",
+          "quantile": 0.25,
+          "threshold": 0.0001855336083830764
+        },
+        "opportunity_rate": 0.8024420024420025,
+        "purge_minutes": 60,
+        "rate_lift": -0.04084872362739796,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.8462963494844472,
+        "eligible": 37706,
+        "embargo_minutes": 60,
+        "initial_edge_to_cost": 6.8756664812117885,
+        "learned_from_past": {
+          "field": "state_volatility_60m_causal",
+          "operator": "qlte",
+          "quantile": 0.25,
+          "threshold": 0.00017993768219636583
+        },
+        "opportunity_rate": 0.76592584734525,
+        "purge_minutes": 60,
+        "rate_lift": -0.04823515749719372,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.9339723871521568,
+        "eligible": 27028,
+        "embargo_minutes": 60,
+        "initial_edge_to_cost": 5.968022266991953,
+        "learned_from_past": {
+          "field": "state_volatility_60m_causal",
+          "operator": "qlte",
+          "quantile": 0.25,
+          "threshold": 0.000156472204580293
+        },
+        "opportunity_rate": 0.8770164274086133,
+        "purge_minutes": 60,
+        "rate_lift": -0.02303739574308608,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.9480536202234653,
+        "eligible": 24254,
+        "embargo_minutes": 60,
+        "initial_edge_to_cost": 6.220132967992073,
+        "learned_from_past": {
+          "field": "state_volatility_60m_causal",
+          "operator": "qlte",
+          "quantile": 0.25,
+          "threshold": 0.0001487676832279064
+        },
+        "opportunity_rate": 0.8752370742970231,
+        "purge_minutes": 60,
+        "rate_lift": -0.0317503201961906,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 2.0,
+    "baseline_opportunity_rate": 0.762385665956647,
+    "bh_fdr_q_value": 1.0,
+    "complexity": 1,
+    "condition": {
+      "field": "state_bar_range",
+      "q": 0.25,
+      "type": "qlte"
+    },
+    "edge_to_cost_ratio": 2.674881690864296,
+    "excursion_distribution": {
+      "p50": 0.0006227911548648447,
+      "p75": 0.0009444739322650623,
+      "p90": 0.0014083050213632568,
+      "p95": 0.0018192222383265452
+    },
+    "expected_cost": 0.0002913917355622949,
+    "expected_move_size": 0.0007794384183247532,
+    "family": "POST_COMPRESSION_EXPANSION",
+    "frequency": 0.3005065602233877,
+    "horizon_minutes": 15,
+    "id": "OPP-09",
+    "lift_ci95": [
+      -0.14138662877934363,
+      -0.12855625349763108
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.5570036453741869,
+    "opportunity_rate_lift": -0.13497144113848736,
+    "opportunity_surplus": 0.0001966549472001632,
+    "opportunity_value": 0.6632551007188546,
+    "raw_p_value": 1.0,
+    "regime_stability": {
+      "RANGE": 0.00020378815522296108,
+      "TREND_DOWN": 0.00019464027909967552,
+      "TREND_UP": 0.00019460990526661275
+    },
+    "rejection_reasons": [
+      "opportunity_rate_lift_ci_failed",
+      "temporal_stability_failed",
+      "opportunity_skeptic_failed",
+      "bh_fdr_failed"
+    ],
+    "research_value_v3": 0.5820695306008346,
+    "sessions": 1029,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -9.473678836213172e-05,
+        "cost_2x": -0.0003861285239244267,
+        "gap_null_fraction": 0.0017988611183912702,
+        "neighbor_stronger_surplus": 0.00021022640815408154,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.00015517664336517302,
+        "random_condition_rate": 0.7635785015438854,
+        "regime_means": {
+          "RANGE": 0.00020378815522296108,
+          "TREND_DOWN": 0.00019464027909967552,
+          "TREND_UP": 0.00019460990526661275
+        },
+        "remove_best_5pct": 0.00010182168952735904,
+        "remove_top_10_sessions": 0.000195710781257351,
+        "selected_rate": 0.5570036453741869,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.00018688240063721826,
+        "year_means": {
+          "2016": 0.0002135664262672511,
+          "2017": 0.00011833719185167272,
+          "2018": 0.0002577052769758507,
+          "2019": 0.00022935531653050335
+        }
+      },
+      "failures": [
+        "cost_1_5x"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support": 83942,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.16733186705025657,
+      "2017": -0.1365364025330666,
+      "2018": -0.1075064081384488,
+      "2019": -0.12861795466486237
+    },
+    "time_to_excursion": {
+      "median_minutes": 15.0,
+      "p75_minutes": 15.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.7891055259129987,
+        "eligible": 14310,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 2.9071025841772777,
+        "learned_from_past": {
+          "field": "state_bar_range",
+          "operator": "qlte",
+          "quantile": 0.25,
+          "threshold": 0.2199999999997999
+        },
+        "opportunity_rate": 0.5215234102026555,
+        "purge_minutes": 15,
+        "rate_lift": -0.16733186705025657,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.6340437142775082,
+        "eligible": 28381,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 2.8458267646295825,
+        "learned_from_past": {
+          "field": "state_bar_range",
+          "operator": "qlte",
+          "quantile": 0.25,
+          "threshold": 0.2300000000000182
+        },
+        "opportunity_rate": 0.46305627003981537,
+        "purge_minutes": 15,
+        "rate_lift": -0.1365364025330666,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.7993418699477788,
+        "eligible": 22187,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 2.5595466408964747,
+        "learned_from_past": {
+          "field": "state_bar_range",
+          "operator": "qlte",
+          "quantile": 0.25,
+          "threshold": 0.21000000000003638
+        },
+        "opportunity_rate": 0.6535809257673413,
+        "purge_minutes": 15,
+        "rate_lift": -0.1075064081384488,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.8265640424040401,
+        "eligible": 19064,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 2.6070429128941983,
+        "learned_from_past": {
+          "field": "state_bar_range",
+          "operator": "qlte",
+          "quantile": 0.25,
+          "threshold": 0.20000000000004547
+        },
+        "opportunity_rate": 0.6110994544691565,
+        "purge_minutes": 15,
+        "rate_lift": -0.12861795466486237,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 3.0,
+    "baseline_opportunity_rate": 0.7585121807149122,
+    "bh_fdr_q_value": 1.0,
+    "complexity": 1,
+    "condition": {
+      "end": 30,
+      "start": 0,
+      "type": "minute"
+    },
+    "edge_to_cost_ratio": 3.378279630059478,
+    "excursion_distribution": {
+      "p50": 0.0007854989414466305,
+      "p75": 0.001187750570112969,
+      "p90": 0.0017190272184241244,
+      "p95": 0.0022471907297633544
+    },
+    "expected_cost": 0.0002887641988960689,
+    "expected_move_size": 0.0009755262110210331,
+    "family": "SESSION_TRANSITION",
+    "frequency": 0.11440743193656362,
+    "horizon_minutes": 30,
+    "id": "OPP-10",
+    "lift_ci95": [
+      -0.32384798559524647,
+      -0.2892552351210334
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.45196820827335876,
+    "opportunity_rate_lift": -0.30655161035813994,
+    "opportunity_surplus": 0.00010923361433282628,
+    "opportunity_value": 0.62,
+    "raw_p_value": 1.0,
+    "regime_stability": {
+      "RANGE": 7.093731914573748e-05,
+      "TREND_DOWN": 0.0001107192568756372,
+      "TREND_UP": 0.0001280762230567949
+    },
+    "rejection_reasons": [
+      "opportunity_rate_lift_ci_failed",
+      "temporal_stability_failed",
+      "opportunity_skeptic_failed",
+      "bh_fdr_failed"
+    ],
+    "research_value_v3": 0.6200000000000001,
+    "sessions": 1031,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.00032391268401127713,
+        "cost_2x": -0.0007570589823553805,
+        "gap_null_fraction": 0.003598472995806997,
+        "neighbor_stronger_surplus": 0.00016734892408492628,
+        "neighbor_time_window": "APPLIED",
+        "neighbor_weaker_surplus": 9.06857140503686e-05,
+        "random_condition_rate": 0.763752440573961,
+        "regime_means": {
+          "RANGE": 7.093731914573748e-05,
+          "TREND_DOWN": 0.0001107192568756372,
+          "TREND_UP": 0.0001280762230567949
+        },
+        "remove_best_5pct": 5.627411760350284e-07,
+        "remove_top_10_sessions": 7.822674089358145e-05,
+        "selected_rate": 0.45196820827335876,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 9.569780750697732e-05,
+        "year_means": {
+          "2016": 0.00025409032873500157,
+          "2017": -9.515408869300208e-05,
+          "2018": 0.00010948618820943959,
+          "2019": 0.00016782992434046594
+        }
+      },
+      "failures": [
+        "cost_1_5x"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support": 31958,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.28849988558801837,
+      "2017": -0.331139471702206,
+      "2018": -0.2881956033732376,
+      "2019": -0.31846678255725325
+    },
+    "time_to_excursion": {
+      "median_minutes": 15.0,
+      "p75_minutes": 30.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.788633470181813,
+        "eligible": 7997,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 3.6515293406766465,
+        "learned_from_past": {
+          "end": 30,
+          "start": 0
+        },
+        "opportunity_rate": 0.5001875703388771,
+        "purge_minutes": 30,
+        "rate_lift": -0.28849988558801837,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.6300514116667145,
+        "eligible": 7966,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 3.6923546359463946,
+        "learned_from_past": {
+          "end": 30,
+          "start": 0
+        },
+        "opportunity_rate": 0.2988953050464474,
+        "purge_minutes": 30,
+        "rate_lift": -0.331139471702206,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.7856069819014235,
+        "eligible": 7998,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 3.373686750095191,
+        "learned_from_past": {
+          "end": 30,
+          "start": 0
+        },
+        "opportunity_rate": 0.4973743435858965,
+        "purge_minutes": 30,
+        "rate_lift": -0.2881956033732376,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.829267943747407,
+        "eligible": 7997,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 3.386353765277606,
+        "learned_from_past": {
+          "end": 30,
+          "start": 0
+        },
+        "opportunity_rate": 0.5108165562085782,
+        "purge_minutes": 30,
+        "rate_lift": -0.31846678255725325,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 2.0,
+    "baseline_opportunity_rate": 0.9088728587538261,
+    "bh_fdr_q_value": 7.885656833399721e-10,
+    "complexity": 1,
+    "condition": {
+      "end": 120,
+      "start": 90,
+      "type": "minute"
+    },
+    "edge_to_cost_ratio": 5.299723563962062,
+    "excursion_distribution": {
+      "p50": 0.0012607120629397949,
+      "p75": 0.0018544897905434141,
+      "p90": 0.002665720885628691,
+      "p95": 0.0032990603646045353
+    },
+    "expected_cost": 0.00028535998402792344,
+    "expected_move_size": 0.0015123290315646235,
+    "family": "SESSION_TRANSITION",
+    "frequency": 0.11441459179837829,
+    "horizon_minutes": 30,
+    "id": "OPP-11",
+    "lift_ci95": [
+      0.014903328431838316,
+      0.02892217664298774
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.9307571964956195,
+    "opportunity_rate_lift": 0.021912752537413028,
+    "opportunity_surplus": 0.0009416090635087765,
+    "opportunity_value": 0.8024697979700696,
+    "raw_p_value": 4.468538872259842e-10,
+    "regime_stability": {
+      "RANGE": 0.0009163317442205523,
+      "TREND_DOWN": 0.0009285543570124763,
+      "TREND_UP": 0.0009670741237113241
+    },
+    "rejection_reasons": [],
+    "research_value_v3": 0.7699999998817153,
+    "sessions": 1031,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.0006562490794808531,
+        "cost_2x": 0.00037088909545292964,
+        "gap_null_fraction": 0.001032540675844806,
+        "neighbor_stronger_surplus": 0.0013880361346205032,
+        "neighbor_time_window": "APPLIED",
+        "neighbor_weaker_surplus": 0.0007411613118050653,
+        "random_condition_rate": 0.9113363084170075,
+        "regime_means": {
+          "RANGE": 0.0009163317442205523,
+          "TREND_DOWN": 0.0009285543570124763,
+          "TREND_UP": 0.0009670741237113241
+        },
+        "remove_best_5pct": 0.0007883369021184848,
+        "remove_top_10_sessions": 0.000905063471151031,
+        "selected_rate": 0.9307571964956195,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0009309742846351828,
+        "year_means": {
+          "2016": 0.0012475589173473627,
+          "2017": 0.0006645230440485626,
+          "2018": 0.0008169311327882522,
+          "2019": 0.0010353237191713842
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": true,
+    "status": "VOLATILITY_OPPORTUNITY_ONLY",
+    "support": 31960,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 0.018681141990555598,
+      "2017": 0.0196804934814827,
+      "2018": 0.016748207144016956,
+      "2019": 0.03253251536671341
+    },
+    "time_to_excursion": {
+      "median_minutes": 15.0,
+      "p75_minutes": 15.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.9181913113136023,
+        "eligible": 7998,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 6.394730344987771,
+        "learned_from_past": {
+          "end": 120,
+          "start": 90
+        },
+        "opportunity_rate": 0.9368592148037009,
+        "purge_minutes": 30,
+        "rate_lift": 0.018681141990555598,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.8409972140046529,
+        "eligible": 7966,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 6.016181996301225,
+        "learned_from_past": {
+          "end": 120,
+          "start": 90
+        },
+        "opportunity_rate": 0.8606577956314336,
+        "purge_minutes": 30,
+        "rate_lift": 0.0196804934814827,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.9362901495099792,
+        "eligible": 7998,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 5.368460810926211,
+        "learned_from_past": {
+          "end": 120,
+          "start": 90
+        },
+        "opportunity_rate": 0.9529882470617654,
+        "purge_minutes": 30,
+        "rate_lift": 0.016748207144016956,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.9397559335612813,
+        "eligible": 7998,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 5.352587402169337,
+        "learned_from_past": {
+          "end": 120,
+          "start": 90
+        },
+        "opportunity_rate": 0.9722430607651913,
+        "purge_minutes": 30,
+        "rate_lift": 0.03253251536671341,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 3.0,
+    "baseline_opportunity_rate": 0.9134408505915835,
+    "bh_fdr_q_value": 0.0,
+    "complexity": 1,
+    "condition": {
+      "end": 270,
+      "start": 210,
+      "type": "minute"
+    },
+    "edge_to_cost_ratio": 9.692886588539785,
+    "excursion_distribution": {
+      "p50": 0.002189896404753606,
+      "p75": 0.0033039803542276544,
+      "p90": 0.004821049325374687,
+      "p95": 0.006084058187292194
+    },
+    "expected_cost": 0.00027640547436502086,
+    "expected_move_size": 0.0026791669154716882,
+    "family": "SESSION_TRANSITION",
+    "frequency": 0.22503803676589043,
+    "horizon_minutes": 60,
+    "id": "OPP-12",
+    "lift_ci95": [
+      0.037498641550377826,
+      0.05147183624470619
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.9580980258029621,
+    "opportunity_rate_lift": 0.04448523889754201,
+    "opportunity_surplus": 0.0018499504923766253,
+    "opportunity_value": 0.7844118088819664,
+    "raw_p_value": 0.0,
+    "regime_stability": {
+      "RANGE": 0.0017903602652075035,
+      "TREND_DOWN": 0.0019377969083453485,
+      "TREND_UP": 0.0017927524480148668
+    },
+    "rejection_reasons": [],
+    "research_value_v3": 0.7700000000000001,
+    "sessions": 1031,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.001435342280829094,
+        "cost_2x": 0.0010207340692815626,
+        "gap_null_fraction": 0.008065414167766977,
+        "neighbor_stronger_surplus": 0.0017643626474595903,
+        "neighbor_time_window": "APPLIED",
+        "neighbor_weaker_surplus": 0.001983597083321194,
+        "random_condition_rate": 0.9151170663349656,
+        "regime_means": {
+          "RANGE": 0.0017903602652075035,
+          "TREND_DOWN": 0.0019377969083453485,
+          "TREND_UP": 0.0017927524480148668
+        },
+        "remove_best_5pct": 0.0015605441755011575,
+        "remove_top_10_sessions": 0.001774838019229483,
+        "selected_rate": 0.9580980258029621,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0018254521897039736,
+        "year_means": {
+          "2016": 0.0023573463731600837,
+          "2017": 0.001448052234367895,
+          "2018": 0.0014544084400804145,
+          "2019": 0.0021381424081700654
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": true,
+    "status": "VOLATILITY_OPPORTUNITY_ONLY",
+    "support": 62861,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 0.046110888517743094,
+      "2017": 0.07285605569180004,
+      "2018": 0.037710438978342996,
+      "2019": 0.0213735368084612
+    },
+    "time_to_excursion": {
+      "median_minutes": 15.0,
+      "p75_minutes": 30.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.9251863189666271,
+        "eligible": 15737,
+        "embargo_minutes": 60,
+        "initial_edge_to_cost": 10.942088892371105,
+        "learned_from_past": {
+          "end": 270,
+          "start": 210
+        },
+        "opportunity_rate": 0.9712778801550486,
+        "purge_minutes": 60,
+        "rate_lift": 0.046110888517743094,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.8462963494844472,
+        "eligible": 15672,
+        "embargo_minutes": 60,
+        "initial_edge_to_cost": 10.579498325695566,
+        "learned_from_past": {
+          "end": 270,
+          "start": 210
+        },
+        "opportunity_rate": 0.919218989280245,
+        "purge_minutes": 60,
+        "rate_lift": 0.07285605569180004,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.9339723871521568,
+        "eligible": 15731,
+        "embargo_minutes": 60,
+        "initial_edge_to_cost": 9.556428742267205,
+        "learned_from_past": {
+          "end": 270,
+          "start": 210
+        },
+        "opportunity_rate": 0.9715847689275952,
+        "purge_minutes": 60,
+        "rate_lift": 0.037710438978342996,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.9480536202234653,
+        "eligible": 15721,
+        "embargo_minutes": 60,
+        "initial_edge_to_cost": 9.437387187444278,
+        "learned_from_past": {
+          "end": 270,
+          "start": 210
+        },
+        "opportunity_rate": 0.9701672921569875,
+        "purge_minutes": 60,
+        "rate_lift": 0.0213735368084612,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 3.0,
+    "baseline_opportunity_rate": 0.7585121807149122,
+    "bh_fdr_q_value": 0.0,
+    "complexity": 1,
+    "condition": {
+      "field": "state_abs_return_15m",
+      "q": 0.9,
+      "type": "qgte"
+    },
+    "edge_to_cost_ratio": 9.824408294407581,
+    "excursion_distribution": {
+      "p50": 0.002138975633419884,
+      "p75": 0.0032688696439517446,
+      "p90": 0.0047621620886086225,
+      "p95": 0.006063562056796983
+    },
+    "expected_cost": 0.0002731041318726664,
+    "expected_move_size": 0.0026830864984068057,
+    "family": "EXTREME_EXCURSION",
+    "frequency": 0.06271680956557539,
+    "horizon_minutes": 30,
+    "id": "OPP-13",
+    "lift_ci95": [
+      0.14771327994911343,
+      0.17136715840917388
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.973057822935099,
+    "opportunity_rate_lift": 0.15954021917914366,
+    "opportunity_surplus": 0.0018637741027888069,
+    "opportunity_value": 0.5991598485706237,
+    "raw_p_value": 0.0,
+    "regime_stability": {
+      "TREND_DOWN": 0.0019478924528983392,
+      "TREND_UP": 0.0017730958813440567
+    },
+    "rejection_reasons": [],
+    "research_value_v3": 0.6954336191311509,
+    "sessions": 867,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.001454117904979807,
+        "cost_2x": 0.0010444617071708076,
+        "gap_null_fraction": 0.002226154460871054,
+        "neighbor_stronger_surplus": 0.0021132157029626853,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0015723644800696049,
+        "random_condition_rate": 0.76281179138322,
+        "regime_means": {
+          "TREND_DOWN": 0.0019478924528983392,
+          "TREND_UP": 0.0017730958813440567
+        },
+        "remove_best_5pct": 0.0015482157664162759,
+        "remove_top_10_sessions": 0.0016946857557811146,
+        "selected_rate": 0.973057822935099,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0018298686283065215,
+        "year_means": {
+          "2016": 0.002255646923448373,
+          "2017": 0.001438629956958617,
+          "2018": 0.0013468679152008373,
+          "2019": 0.0018864881232493126
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": true,
+    "status": "VOLATILITY_OPPORTUNITY_ONLY",
+    "support": 17519,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 0.144949334698328,
+      "2017": 0.23214881995090988,
+      "2018": 0.13104236357447527,
+      "2019": 0.13840878922292554
+    },
+    "time_to_excursion": {
+      "median_minutes": 5.0,
+      "p75_minutes": 15.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.788633470181813,
+        "eligible": 6621,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 10.22432647421229,
+        "learned_from_past": {
+          "field": "state_abs_return_15m",
+          "operator": "qgte",
+          "quantile": 0.9,
+          "threshold": 0.0020125374855775057
+        },
+        "opportunity_rate": 0.9779489503096209,
+        "purge_minutes": 30,
+        "rate_lift": 0.144949334698328,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.6300514116667145,
+        "eligible": 2465,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 10.07144083648541,
+        "learned_from_past": {
+          "field": "state_abs_return_15m",
+          "operator": "qgte",
+          "quantile": 0.9,
+          "threshold": 0.0019852812918347063
+        },
+        "opportunity_rate": 0.939553752535497,
+        "purge_minutes": 30,
+        "rate_lift": 0.23214881995090988,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.7856069819014235,
+        "eligible": 3229,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 9.292132682092792,
+        "learned_from_past": {
+          "field": "state_abs_return_15m",
+          "operator": "qgte",
+          "quantile": 0.9,
+          "threshold": 0.0017683298742890432
+        },
+        "opportunity_rate": 0.9640755651904614,
+        "purge_minutes": 30,
+        "rate_lift": 0.13104236357447527,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.829267943747407,
+        "eligible": 5204,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 9.020385374682068,
+        "learned_from_past": {
+          "field": "state_abs_return_15m",
+          "operator": "qgte",
+          "quantile": 0.9,
+          "threshold": 0.0016472518057744753
+        },
+        "opportunity_rate": 0.9882782475019216,
+        "purge_minutes": 30,
+        "rate_lift": 0.13840878922292554,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 2.0,
+    "baseline_opportunity_rate": 0.762385665956647,
+    "bh_fdr_q_value": 0.0,
+    "complexity": 1,
+    "condition": {
+      "field": "state_abs_return_5m",
+      "q": 0.9,
+      "type": "qgte"
+    },
+    "edge_to_cost_ratio": 6.867297793444917,
+    "excursion_distribution": {
+      "p50": 0.0014885567202134163,
+      "p75": 0.0022298160854944448,
+      "p90": 0.0033693051025847345,
+      "p95": 0.004395855602305304
+    },
+    "expected_cost": 0.00027328363456436186,
+    "expected_move_size": 0.0018767201006284493,
+    "family": "EXTREME_EXCURSION",
+    "frequency": 0.06560939373870084,
+    "horizon_minutes": 15,
+    "id": "OPP-14",
+    "lift_ci95": [
+      0.1647740222076771,
+      0.185186817071166
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.9740273912806242,
+    "opportunity_rate_lift": 0.17498041963942154,
+    "opportunity_surplus": 0.0013301528314997252,
+    "opportunity_value": 0.5940391486352149,
+    "raw_p_value": 0.0,
+    "regime_stability": {
+      "RANGE": 0.0013970116375486893,
+      "TREND_DOWN": 0.001393294815446013,
+      "TREND_UP": 0.0012484553964972986
+    },
+    "rejection_reasons": [],
+    "research_value_v3": 0.7012187874774017,
+    "sessions": 984,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.0010568691969353636,
+        "cost_2x": 0.0007835855623710015,
+        "gap_null_fraction": 0.000763900256452229,
+        "neighbor_stronger_surplus": 0.001491770497570551,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0011301597558622826,
+        "random_condition_rate": 0.7659966408408734,
+        "regime_means": {
+          "RANGE": 0.0013970116375486893,
+          "TREND_DOWN": 0.001393294815446013,
+          "TREND_UP": 0.0012484553964972986
+        },
+        "remove_best_5pct": 0.0010911544363547342,
+        "remove_top_10_sessions": 0.0012328588444335542,
+        "selected_rate": 0.9740273912806242,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0012985796821538402,
+        "year_means": {
+          "2016": 0.0016037755175834412,
+          "2017": 0.0010042849414488028,
+          "2018": 0.0009818550508324637,
+          "2019": 0.0013455107358453322
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": true,
+    "status": "VOLATILITY_OPPORTUNITY_ONLY",
+    "support": 18327,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 0.1638039188747642,
+      "2017": 0.24827364411225608,
+      "2018": 0.1486085425267983,
+      "2019": 0.14368321338856146
+    },
+    "time_to_excursion": {
+      "median_minutes": 5.0,
+      "p75_minutes": 5.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.7891055259129987,
+        "eligible": 7009,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 7.25860048030313,
+        "learned_from_past": {
+          "field": "state_abs_return_5m",
+          "operator": "qgte",
+          "quantile": 0.9,
+          "threshold": 0.0011238796905323819
+        },
+        "opportunity_rate": 0.9780282493936368,
+        "purge_minutes": 15,
+        "rate_lift": 0.1638039188747642,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.6340437142775082,
+        "eligible": 2659,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 7.114544675682185,
+        "learned_from_past": {
+          "field": "state_abs_return_5m",
+          "operator": "qgte",
+          "quantile": 0.9,
+          "threshold": 0.0011244967312403775
+        },
+        "opportunity_rate": 0.9379465964648364,
+        "purge_minutes": 15,
+        "rate_lift": 0.24827364411225608,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.7993418699477788,
+        "eligible": 3258,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 6.53898889091372,
+        "learned_from_past": {
+          "field": "state_abs_return_5m",
+          "operator": "qgte",
+          "quantile": 0.9,
+          "threshold": 0.0010057368423563758
+        },
+        "opportunity_rate": 0.9717618170656844,
+        "purge_minutes": 15,
+        "rate_lift": 0.1486085425267983,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.8265640424040401,
+        "eligible": 5401,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 6.347041170444928,
+        "learned_from_past": {
+          "field": "state_abs_return_5m",
+          "operator": "qgte",
+          "quantile": 0.9,
+          "threshold": 0.0009394720815208537
+        },
+        "opportunity_rate": 0.9879651916311795,
+        "purge_minutes": 15,
+        "rate_lift": 0.14368321338856146,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 3.0,
+    "baseline_opportunity_rate": 0.7585121807149122,
+    "bh_fdr_q_value": 1.0,
+    "complexity": 1,
+    "condition": {
+      "field": "state_min_distance_extreme",
+      "q": 0.05,
+      "type": "qlte"
+    },
+    "edge_to_cost_ratio": 5.150667218340527,
+    "excursion_distribution": {
+      "p50": 0.0011265571473868445,
+      "p75": 0.0017576865804216492,
+      "p90": 0.0026672461688457263,
+      "p95": 0.003555405068785962
+    },
+    "expected_cost": 0.00028095343331805144,
+    "expected_move_size": 0.001447097638871509,
+    "family": "EXTREME_EXCURSION",
+    "frequency": 0.06489698748814147,
+    "horizon_minutes": 30,
+    "id": "OPP-15",
+    "lift_ci95": [
+      -0.039692006147392,
+      -0.020063242151446004
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.6747021182700794,
+    "opportunity_rate_lift": -0.029877624149419003,
+    "opportunity_surplus": 0.0006042373389173546,
+    "opportunity_value": 0.7083403694008186,
+    "raw_p_value": 0.9999999987900066,
+    "regime_stability": {
+      "RANGE": 0.00034508851779973865,
+      "TREND_DOWN": 0.0006270058363012463,
+      "TREND_UP": 0.0005962234636324126
+    },
+    "rejection_reasons": [
+      "opportunity_rate_lift_ci_failed",
+      "temporal_stability_failed",
+      "bh_fdr_failed"
+    ],
+    "research_value_v3": 0.549793974976283,
+    "sessions": 1031,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.00018280718894027749,
+        "cost_2x": -0.0002386229610367997,
+        "gap_null_fraction": 0.0033097969991173876,
+        "neighbor_stronger_surplus": 0.000591553878649699,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0007245674290263537,
+        "random_condition_rate": 0.762815943856571,
+        "regime_means": {
+          "RANGE": 0.00034508851779973865,
+          "TREND_DOWN": 0.0006270058363012463,
+          "TREND_UP": 0.0005962234636324126
+        },
+        "remove_best_5pct": 0.000409445735806646,
+        "remove_top_10_sessions": 0.0005844956254062976,
+        "selected_rate": 0.6747021182700794,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0005844296754763251,
+        "year_means": {
+          "2016": 0.0008882263406969113,
+          "2017": 0.0003267445449815966,
+          "2018": 0.0006049930876261195,
+          "2019": 0.0006762376133792823
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support": 18128,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.015047869264952787,
+      "2017": -0.06021592274217246,
+      "2018": -0.004440631902313914,
+      "2019": -0.039923662992859946
+    },
+    "time_to_excursion": {
+      "median_minutes": 15.0,
+      "p75_minutes": 30.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.788633470181813,
+        "eligible": 3851,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 6.2091929493015785,
+        "learned_from_past": {
+          "field": "state_min_distance_extreme",
+          "operator": "qlte",
+          "quantile": 0.05,
+          "threshold": 9.018124627583269e-05
+        },
+        "opportunity_rate": 0.7130615424565048,
+        "purge_minutes": 30,
+        "rate_lift": -0.015047869264952787,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.6300514116667145,
+        "eligible": 5218,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 5.933764572857442,
+        "learned_from_past": {
+          "field": "state_min_distance_extreme",
+          "operator": "qlte",
+          "quantile": 0.05,
+          "threshold": 8.64716381924198e-05
+        },
+        "opportunity_rate": 0.5333461096205443,
+        "purge_minutes": 30,
+        "rate_lift": -0.06021592274217246,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.7856069819014235,
+        "eligible": 4204,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 5.153028154745347,
+        "learned_from_past": {
+          "field": "state_min_distance_extreme",
+          "operator": "qlte",
+          "quantile": 0.05,
+          "threshold": 7.758132462364246e-05
+        },
+        "opportunity_rate": 0.7509514747859182,
+        "purge_minutes": 30,
+        "rate_lift": -0.004440631902313914,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.829267943747407,
+        "eligible": 4855,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 5.227622373756977,
+        "learned_from_past": {
+          "field": "state_min_distance_extreme",
+          "operator": "qlte",
+          "quantile": 0.05,
+          "threshold": 7.47070239987994e-05
+        },
+        "opportunity_rate": 0.7301750772399588,
+        "purge_minutes": 30,
+        "rate_lift": -0.039923662992859946,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 3.0,
+    "baseline_opportunity_rate": 0.7585121807149122,
+    "bh_fdr_q_value": 0.0,
+    "complexity": 1,
+    "condition": {
+      "field": "state_abs_momentum_15m",
+      "q": 0.8,
+      "type": "qgte"
+    },
+    "edge_to_cost_ratio": 8.591771297552237,
+    "excursion_distribution": {
+      "p50": 0.0018833914668494852,
+      "p75": 0.0028642935302560565,
+      "p90": 0.004222409186097688,
+      "p95": 0.0053816176673172535
+    },
+    "expected_cost": 0.00027428322386349545,
+    "expected_move_size": 0.0023565787301904747,
+    "family": "MOMENTUM_BURST",
+    "frequency": 0.14321155601696886,
+    "horizon_minutes": 30,
+    "id": "OPP-16",
+    "lift_ci95": [
+      0.10643234259316578,
+      0.12872347102128737
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.9408809119088091,
+    "opportunity_rate_lift": 0.11757790680722657,
+    "opportunity_surplus": 0.0015337290585999883,
+    "opportunity_value": 0.7259376745542188,
+    "raw_p_value": 0.0,
+    "regime_stability": {
+      "RANGE": 0.0035381203404276774,
+      "TREND_DOWN": 0.0016178704054185785,
+      "TREND_UP": 0.0014477037674834252
+    },
+    "rejection_reasons": [],
+    "research_value_v3": 0.7700000000000001,
+    "sessions": 1007,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.0011223042228047455,
+        "cost_2x": 0.0007108793870095026,
+        "gap_null_fraction": 0.00204979502049795,
+        "neighbor_stronger_surplus": 0.0015723644800696049,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.001360583540314343,
+        "random_condition_rate": 0.7620308941479355,
+        "regime_means": {
+          "RANGE": 0.0035381203404276774,
+          "TREND_DOWN": 0.0016178704054185785,
+          "TREND_UP": 0.0014477037674834252
+        },
+        "remove_best_5pct": 0.0012535691715469272,
+        "remove_top_10_sessions": 0.0014355633470916375,
+        "selected_rate": 0.9408809119088091,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0015001275136480848,
+        "year_means": {
+          "2016": 0.0019097873995913407,
+          "2017": 0.0010914450017437845,
+          "2018": 0.001134528515714291,
+          "2019": 0.0016167199269830118
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": true,
+    "status": "VOLATILITY_OPPORTUNITY_ONLY",
+    "support": 40004,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 0.11858198859891457,
+      "2017": 0.13894680786630165,
+      "2018": 0.0984904242829252,
+      "2019": 0.1149058439827956
+    },
+    "time_to_excursion": {
+      "median_minutes": 5.0,
+      "p75_minutes": 15.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.788633470181813,
+        "eligible": 13755,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 9.209774365934866,
+        "learned_from_past": {
+          "field": "state_abs_momentum_15m",
+          "operator": "qgte",
+          "quantile": 0.8,
+          "threshold": 0.0013540361532771606
+        },
+        "opportunity_rate": 0.95092693565976,
+        "purge_minutes": 30,
+        "rate_lift": 0.11858198859891457,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.6300514116667145,
+        "eligible": 6539,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 9.031346956378899,
+        "learned_from_past": {
+          "field": "state_abs_momentum_15m",
+          "operator": "qgte",
+          "quantile": 0.8,
+          "threshold": 0.0013469064054014712
+        },
+        "opportunity_rate": 0.8652699189478513,
+        "purge_minutes": 30,
+        "rate_lift": 0.13894680786630165,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.7856069819014235,
+        "eligible": 8139,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 8.255859334570072,
+        "learned_from_past": {
+          "field": "state_abs_momentum_15m",
+          "operator": "qgte",
+          "quantile": 0.8,
+          "threshold": 0.0011918893148527678
+        },
+        "opportunity_rate": 0.9383216611377319,
+        "purge_minutes": 30,
+        "rate_lift": 0.0984904242829252,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.829267943747407,
+        "eligible": 11571,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 8.038569467582834,
+        "learned_from_past": {
+          "field": "state_abs_momentum_15m",
+          "operator": "qgte",
+          "quantile": 0.8,
+          "threshold": 0.0011117737752628144
+        },
+        "opportunity_rate": 0.9734681531414744,
+        "purge_minutes": 30,
+        "rate_lift": 0.1149058439827956,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 2.0,
+    "baseline_opportunity_rate": 0.9088728587538261,
+    "bh_fdr_q_value": 0.0,
+    "complexity": 1,
+    "condition": {
+      "field": "state_momentum_15m_causal",
+      "q": 0.8,
+      "type": "qgte"
+    },
+    "edge_to_cost_ratio": 7.2199527386896385,
+    "excursion_distribution": {
+      "p50": 0.0016128840979011507,
+      "p75": 0.0024224205921230327,
+      "p90": 0.0036677125626282405,
+      "p95": 0.0046933982968223546
+    },
+    "expected_cost": 0.00027703926517872346,
+    "expected_move_size": 0.0020002104013516894,
+    "family": "MOMENTUM_BURST",
+    "frequency": 0.1697460039021247,
+    "horizon_minutes": 30,
+    "id": "OPP-17",
+    "lift_ci95": [
+      0.03847744828202956,
+      0.05137993553307691
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.9706006411337945,
+    "opportunity_rate_lift": 0.044928691907553234,
+    "opportunity_surplus": 0.0014461318709942425,
+    "opportunity_value": 0.7840570464739575,
+    "raw_p_value": 0.0,
+    "regime_stability": {
+      "RANGE": 0.0035910752148621775,
+      "TREND_UP": 0.0014444065450752088
+    },
+    "rejection_reasons": [],
+    "research_value_v3": 0.7700000000000001,
+    "sessions": 1027,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.0011690926058155191,
+        "cost_2x": 0.0008920533406367954,
+        "gap_null_fraction": 0.0028682301332883416,
+        "neighbor_stronger_surplus": 0.0015108569184929424,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.001324101398393874,
+        "random_condition_rate": 0.9102478511224235,
+        "regime_means": {
+          "RANGE": 0.0035910752148621775,
+          "TREND_UP": 0.0014444065450752088
+        },
+        "remove_best_5pct": 0.0012168739114908646,
+        "remove_top_10_sessions": 0.0013905251160944664,
+        "selected_rate": 0.9706006411337945,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.001422105730429954,
+        "year_means": {
+          "2016": 0.0018486692265400916,
+          "2017": 0.0011299929557942955,
+          "2018": 0.0011359437284646828,
+          "2019": 0.0014774811459702085
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": true,
+    "status": "VOLATILITY_OPPORTUNITY_ONLY",
+    "support": 47416,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 0.04359180631347357,
+      "2017": 0.0707705535625353,
+      "2018": 0.02766775950346361,
+      "2019": 0.03782472149449929
+    },
+    "time_to_excursion": {
+      "median_minutes": 5.0,
+      "p75_minutes": 15.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.9181913113136023,
+        "eligible": 14511,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 8.359813138596357,
+        "learned_from_past": {
+          "field": "state_momentum_15m_causal",
+          "operator": "qgte",
+          "quantile": 0.8,
+          "threshold": 0.0007392508347424
+        },
+        "opportunity_rate": 0.9770518916683895,
+        "purge_minutes": 30,
+        "rate_lift": 0.04359180631347357,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.8409972140046529,
+        "eligible": 9251,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 7.99719417018286,
+        "learned_from_past": {
+          "field": "state_momentum_15m_causal",
+          "operator": "qgte",
+          "quantile": 0.8,
+          "threshold": 0.0007545203398491741
+        },
+        "opportunity_rate": 0.9373040752351097,
+        "purge_minutes": 30,
+        "rate_lift": 0.0707705535625353,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.9362901495099792,
+        "eligible": 10762,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 7.219172958985072,
+        "learned_from_past": {
+          "field": "state_momentum_15m_causal",
+          "operator": "qgte",
+          "quantile": 0.8,
+          "threshold": 0.0006682580207734824
+        },
+        "opportunity_rate": 0.9748188069132132,
+        "purge_minutes": 30,
+        "rate_lift": 0.02766775950346361,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.9397559335612813,
+        "eligible": 12892,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 7.057560299655557,
+        "learned_from_past": {
+          "field": "state_momentum_15m_causal",
+          "operator": "qgte",
+          "quantile": 0.8,
+          "threshold": 0.0006293772133451282
+        },
+        "opportunity_rate": 0.983710828420726,
+        "purge_minutes": 30,
+        "rate_lift": 0.03782472149449929,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 2.0,
+    "baseline_opportunity_rate": 0.9088728587538261,
+    "bh_fdr_q_value": 0.0,
+    "complexity": 1,
+    "condition": {
+      "field": "state_momentum_15m_causal",
+      "q": 0.2,
+      "type": "qlte"
+    },
+    "edge_to_cost_ratio": 7.627828557995473,
+    "excursion_distribution": {
+      "p50": 0.001680634183643568,
+      "p75": 0.0025782685018114404,
+      "p90": 0.0038147973178723977,
+      "p95": 0.004824486078152512
+    },
+    "expected_cost": 0.000276993966086531,
+    "expected_move_size": 0.0021128624849072707,
+    "family": "MOMENTUM_BURST",
+    "frequency": 0.161408344818945,
+    "horizon_minutes": 30,
+    "id": "OPP-18",
+    "lift_ci95": [
+      0.048623712022032646,
+      0.060235366735443406
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.9761793865193958,
+    "opportunity_rate_lift": 0.054429539378738026,
+    "opportunity_surplus": 0.0015588745527342087,
+    "opportunity_value": 0.7764563684970096,
+    "raw_p_value": 0.0,
+    "regime_stability": {
+      "RANGE": 0.003332909041084817,
+      "TREND_DOWN": 0.0015572960898030314
+    },
+    "rejection_reasons": [],
+    "research_value_v3": 0.7700000000000001,
+    "sessions": 1026,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.0012818805866476777,
+        "cost_2x": 0.0010048866205611467,
+        "gap_null_fraction": 0.0020183201366247476,
+        "neighbor_stronger_surplus": 0.0014035859574547164,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0016320838298593023,
+        "random_condition_rate": 0.9099934253780407,
+        "regime_means": {
+          "RANGE": 0.003332909041084817,
+          "TREND_DOWN": 0.0015572960898030314
+        },
+        "remove_best_5pct": 0.001296115489104863,
+        "remove_top_10_sessions": 0.0014827862558003209,
+        "selected_rate": 0.9761793865193958,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0015265004300588862,
+        "year_means": {
+          "2016": 0.001977595886861756,
+          "2017": 0.0012016473917630794,
+          "2018": 0.0012195708569075067,
+          "2019": 0.0016400104043667234
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": true,
+    "status": "VOLATILITY_OPPORTUNITY_ONLY",
+    "support": 45087,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 0.05128560104728906,
+      "2017": 0.08967235093648293,
+      "2018": 0.03333919825931035,
+      "2019": 0.04362544003579004
+    },
+    "time_to_excursion": {
+      "median_minutes": 5.0,
+      "p75_minutes": 15.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.9181913113136023,
+        "eligible": 13713,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 8.163271190033043,
+        "learned_from_past": {
+          "field": "state_momentum_15m_causal",
+          "operator": "qlte",
+          "quantile": 0.2,
+          "threshold": -0.0007836694921978803
+        },
+        "opportunity_rate": 0.9782687960329615,
+        "purge_minutes": 30,
+        "rate_lift": 0.05128560104728906,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.8409972140046529,
+        "eligible": 8815,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 8.0716018086043,
+        "learned_from_past": {
+          "field": "state_momentum_15m_causal",
+          "operator": "qlte",
+          "quantile": 0.2,
+          "threshold": -0.0007760986663675191
+        },
+        "opportunity_rate": 0.9490640952921157,
+        "purge_minutes": 30,
+        "rate_lift": 0.08967235093648293,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.9362901495099792,
+        "eligible": 10504,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 7.3224580630428395,
+        "learned_from_past": {
+          "field": "state_momentum_15m_causal",
+          "operator": "qlte",
+          "quantile": 0.2,
+          "threshold": -0.0006843815016337685
+        },
+        "opportunity_rate": 0.9821020563594821,
+        "purge_minutes": 30,
+        "rate_lift": 0.03333919825931035,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.9397559335612813,
+        "eligible": 12055,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 7.187348470396901,
+        "learned_from_past": {
+          "field": "state_momentum_15m_causal",
+          "operator": "qlte",
+          "quantile": 0.2,
+          "threshold": -0.0006421097753783078
+        },
+        "opportunity_rate": 0.9884695147241809,
+        "purge_minutes": 30,
+        "rate_lift": 0.04362544003579004,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 3.0,
+    "baseline_opportunity_rate": 0.7585121807149122,
+    "bh_fdr_q_value": 0.016050256281865405,
+    "complexity": 2,
+    "condition": {
+      "clauses": [
+        {
+          "field": "state_distance_recent_high",
+          "q": 0.1,
+          "type": "qlte"
+        },
+        {
+          "field": "state_momentum_15m_causal",
+          "q": 0.7,
+          "type": "qgte"
+        }
+      ],
+      "type": "all"
+    },
+    "edge_to_cost_ratio": 5.649077317401879,
+    "excursion_distribution": {
+      "p50": 0.0012745933035716002,
+      "p75": 0.0019276037565865015,
+      "p90": 0.0028902135924549566,
+      "p95": 0.003773726392688496
+    },
+    "expected_cost": 0.00028037909893485475,
+    "expected_move_size": 0.0015838832080664654,
+    "family": "BREAKOUT_CONTINUATION",
+    "frequency": 0.08527395421268369,
+    "horizon_minutes": 30,
+    "id": "OPP-19",
+    "lift_ci95": [
+      0.0023647013162580877,
+      0.026729348756591706
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.7578925272879933,
+    "opportunity_rate_lift": 0.014547025036424896,
+    "opportunity_surplus": 0.0007427459112619012,
+    "opportunity_value": 0.6915472655025693,
+    "raw_p_value": 0.009630153769119243,
+    "regime_stability": {
+      "RANGE": 0.0007511458170755066,
+      "TREND_UP": 0.0007427441442742673
+    },
+    "rejection_reasons": [],
+    "research_value_v3": 0.6581403699830876,
+    "sessions": 1024,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.000322177262859619,
+        "cost_2x": -9.839138554266313e-05,
+        "gap_null_fraction": 0.0019311502938706968,
+        "neighbor_stronger_surplus": 0.000803969312778619,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0006475293975129501,
+        "random_condition_rate": 0.7640370170560651,
+        "regime_means": {
+          "RANGE": 0.0007511458170755066,
+          "TREND_UP": 0.0007427441442742673
+        },
+        "remove_best_5pct": 0.0005536303916658763,
+        "remove_top_10_sessions": 0.0007177202487744345,
+        "selected_rate": 0.7578925272879933,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0007260703739590106,
+        "year_means": {
+          "2016": 0.0009853501526174426,
+          "2017": 0.0004924267858059883,
+          "2018": 0.0006541228550371629,
+          "2019": 0.0008478271937007755
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": true,
+    "status": "VOLATILITY_OPPORTUNITY_ONLY",
+    "support": 23820,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 0.012761326370026098,
+      "2017": 0.007745577236623489,
+      "2018": 0.023325400256974056,
+      "2019": 0.014499186792990972
+    },
+    "time_to_excursion": {
+      "median_minutes": 15.0,
+      "p75_minutes": 30.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.788633470181813,
+        "eligible": 5840,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 6.81341241911075,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_distance_recent_high",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00033395798539413485
+          },
+          "clause_2": {
+            "field": "state_momentum_15m_causal",
+            "operator": "qgte",
+            "quantile": 0.7,
+            "threshold": 0.00040827369362017585
+          }
+        },
+        "opportunity_rate": 0.7844178082191781,
+        "purge_minutes": 30,
+        "rate_lift": 0.012761326370026098,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.6300514116667145,
+        "eligible": 6079,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 6.346616610469565,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_distance_recent_high",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00030788501640914817
+          },
+          "clause_2": {
+            "field": "state_momentum_15m_causal",
+            "operator": "qgte",
+            "quantile": 0.7,
+            "threshold": 0.00042762338198136795
+          }
+        },
+        "opportunity_rate": 0.6242803092613917,
+        "purge_minutes": 30,
+        "rate_lift": 0.007745577236623489,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.7856069819014235,
+        "eligible": 5939,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 5.5085791832667255,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_distance_recent_high",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00026013596637187357
+          },
+          "clause_2": {
+            "field": "state_momentum_15m_causal",
+            "operator": "qgte",
+            "quantile": 0.7,
+            "threshold": 0.00038357372929522714
+          }
+        },
+        "opportunity_rate": 0.7902003704327328,
+        "purge_minutes": 30,
+        "rate_lift": 0.023325400256974056,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.829267943747407,
+        "eligible": 5962,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 5.503041867315803,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_distance_recent_high",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.0002487742651251505
+          },
+          "clause_2": {
+            "field": "state_momentum_15m_causal",
+            "operator": "qgte",
+            "quantile": 0.7,
+            "threshold": 0.0003653081465707862
+          }
+        },
+        "opportunity_rate": 0.8359610868835962,
+        "purge_minutes": 30,
+        "rate_lift": 0.014499186792990972,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 3.0,
+    "baseline_opportunity_rate": 0.7585121807149122,
+    "bh_fdr_q_value": 0.04890465732676205,
+    "complexity": 2,
+    "condition": {
+      "clauses": [
+        {
+          "field": "state_distance_recent_low",
+          "q": 0.1,
+          "type": "qlte"
+        },
+        {
+          "field": "state_momentum_15m_causal",
+          "q": 0.3,
+          "type": "qlte"
+        }
+      ],
+      "type": "all"
+    },
+    "edge_to_cost_ratio": 5.841477512842393,
+    "excursion_distribution": {
+      "p50": 0.0012658324374110752,
+      "p75": 0.0019604136550941814,
+      "p90": 0.0030087208081072563,
+      "p95": 0.0038810483375134037
+    },
+    "expected_cost": 0.00027830846376753426,
+    "expected_move_size": 0.0016257326327317632,
+    "family": "BREAKOUT_CONTINUATION",
+    "frequency": 0.07791003633629871,
+    "horizon_minutes": 30,
+    "id": "OPP-20",
+    "lift_ci95": [
+      -0.0005631505534339776,
+      0.02309325785971942
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.7523319395303957,
+    "opportunity_rate_lift": 0.011265053653142721,
+    "opportunity_surplus": 0.0007908072414291602,
+    "opportunity_value": 0.6757630479182326,
+    "raw_p_value": 0.030972949640282632,
+    "regime_stability": {
+      "RANGE": 0.0016983639259577174,
+      "TREND_DOWN": 0.0007905981944202395
+    },
+    "rejection_reasons": [
+      "opportunity_rate_lift_ci_failed"
+    ],
+    "research_value_v3": 0.638484374073583,
+    "sessions": 1021,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.0003733445457778588,
+        "cost_2x": -4.4118149873442595e-05,
+        "gap_null_fraction": 0.002343426917244865,
+        "neighbor_stronger_surplus": 0.0007145230835046615,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0008224422803155164,
+        "random_condition_rate": 0.7628548109186543,
+        "regime_means": {
+          "RANGE": 0.0016983639259577174,
+          "TREND_DOWN": 0.0007905981944202395
+        },
+        "remove_best_5pct": 0.0005748899813446044,
+        "remove_top_10_sessions": 0.0007516739431327311,
+        "selected_rate": 0.7523319395303957,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0007631127557563234,
+        "year_means": {
+          "2016": 0.0010927437028136135,
+          "2017": 0.0005412427994286956,
+          "2018": 0.0007074693553094928,
+          "2019": 0.0008745751082962113
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": true,
+    "status": "REJECTED",
+    "support": 21763,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 0.021357538839263907,
+      "2017": 0.0035741398840802383,
+      "2018": 0.010656186243003032,
+      "2019": 0.009502510092376883
+    },
+    "time_to_excursion": {
+      "median_minutes": 15.0,
+      "p75_minutes": 30.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.788633470181813,
+        "eligible": 4761,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 6.775283837869445,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_distance_recent_low",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00031751111230730937
+          },
+          "clause_2": {
+            "field": "state_momentum_15m_causal",
+            "operator": "qlte",
+            "quantile": 0.3,
+            "threshold": -0.0004579603201660287
+          }
+        },
+        "opportunity_rate": 0.7700063011972275,
+        "purge_minutes": 30,
+        "rate_lift": 0.021357538839263907,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.6300514116667145,
+        "eligible": 5637,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 6.498674962827438,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_distance_recent_low",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00031623668274387593
+          },
+          "clause_2": {
+            "field": "state_momentum_15m_causal",
+            "operator": "qlte",
+            "quantile": 0.3,
+            "threshold": -0.00044876797499393556
+          }
+        },
+        "opportunity_rate": 0.6324285967713322,
+        "purge_minutes": 30,
+        "rate_lift": 0.0035741398840802383,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.7856069819014235,
+        "eligible": 5898,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 5.674554079366781,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_distance_recent_low",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00027446445132021024
+          },
+          "clause_2": {
+            "field": "state_momentum_15m_causal",
+            "operator": "qlte",
+            "quantile": 0.3,
+            "threshold": -0.000398785667431989
+          }
+        },
+        "opportunity_rate": 0.7917938284164123,
+        "purge_minutes": 30,
+        "rate_lift": 0.010656186243003032,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.829267943747407,
+        "eligible": 5467,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 5.680780905777768,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_distance_recent_low",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.0002567328182514216
+          },
+          "clause_2": {
+            "field": "state_momentum_15m_causal",
+            "operator": "qlte",
+            "quantile": 0.3,
+            "threshold": -0.0003783123739667715
+          }
+        },
+        "opportunity_rate": 0.8179989025059448,
+        "purge_minutes": 30,
+        "rate_lift": 0.009502510092376883,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 3.0,
+    "baseline_opportunity_rate": 0.9134408505915835,
+    "bh_fdr_q_value": 0.0,
+    "complexity": 2,
+    "condition": {
+      "clauses": [
+        {
+          "field": "state_bar_range",
+          "q": 0.75,
+          "type": "qgte"
+        },
+        {
+          "field": "state_abs_momentum_15m",
+          "q": 0.75,
+          "type": "qgte"
+        }
+      ],
+      "type": "all"
+    },
+    "edge_to_cost_ratio": 13.308563189814839,
+    "excursion_distribution": {
+      "p50": 0.0029561789937398034,
+      "p75": 0.004342329918571024,
+      "p90": 0.0063349999844393885,
+      "p95": 0.007986006976865774
+    },
+    "expected_cost": 0.0002706138136791677,
+    "expected_move_size": 0.003601481039385983,
+    "family": "BREAKOUT_CONTINUATION",
+    "frequency": 0.09285266794350869,
+    "horizon_minutes": 60,
+    "id": "OPP-21",
+    "lift_ci95": [
+      0.04878979344863958,
+      0.06283989689336704
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.9911709141381039,
+    "opportunity_rate_lift": 0.05581484517100331,
+    "opportunity_surplus": 0.0027896395983484797,
+    "opportunity_value": 0.6774797937219691,
+    "raw_p_value": 0.0,
+    "regime_stability": {
+      "RANGE": 0.007004456643251984,
+      "TREND_DOWN": 0.0028643489978169997,
+      "TREND_UP": 0.002705915805995245
+    },
+    "rejection_reasons": [],
+    "research_value_v3": 0.6757053358870174,
+    "sessions": 999,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.002383718877829728,
+        "cost_2x": 0.001977798157310977,
+        "gap_null_fraction": 0.004318155530709026,
+        "neighbor_stronger_surplus": 0.0028294355279134043,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0025719299734305876,
+        "random_condition_rate": 0.9164156339370829,
+        "regime_means": {
+          "RANGE": 0.007004456643251984,
+          "TREND_DOWN": 0.0028643489978169997,
+          "TREND_UP": 0.002705915805995245
+        },
+        "remove_best_5pct": 0.0023851637610432567,
+        "remove_top_10_sessions": 0.0025665885147193638,
+        "selected_rate": 0.9911709141381039,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0027560880529803834,
+        "year_means": {
+          "2016": 0.0033009794330049634,
+          "2017": 0.0020302149739388525,
+          "2018": 0.002040413096129386,
+          "2019": 0.002883810801321398
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": true,
+    "status": "VOLATILITY_OPPORTUNITY_ONLY",
+    "support": 25937,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 0.05502319025114813,
+      "2017": 0.09893692301905886,
+      "2018": 0.03558665321516571,
+      "2019": 0.03485574154690022
+    },
+    "time_to_excursion": {
+      "median_minutes": 5.0,
+      "p75_minutes": 15.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.9251863189666271,
+        "eligible": 9811,
+        "embargo_minutes": 60,
+        "initial_edge_to_cost": 13.732357378950672,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_bar_range",
+            "operator": "qgte",
+            "quantile": 0.75,
+            "threshold": 0.5899999999999181
+          },
+          "clause_2": {
+            "field": "state_abs_momentum_15m",
+            "operator": "qgte",
+            "quantile": 0.75,
+            "threshold": 0.0011632693236930391
+          }
+        },
+        "opportunity_rate": 0.9946998267251045,
+        "purge_minutes": 60,
+        "rate_lift": 0.05502319025114813,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.8462963494844472,
+        "eligible": 3464,
+        "embargo_minutes": 60,
+        "initial_edge_to_cost": 13.52275077895711,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_bar_range",
+            "operator": "qgte",
+            "quantile": 0.75,
+            "threshold": 0.6000000000001364
+          },
+          "clause_2": {
+            "field": "state_abs_momentum_15m",
+            "operator": "qgte",
+            "quantile": 0.75,
+            "threshold": 0.001157409888154437
+          }
+        },
+        "opportunity_rate": 0.9771939953810623,
+        "purge_minutes": 60,
+        "rate_lift": 0.09893692301905886,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.9339723871521568,
+        "eligible": 4267,
+        "embargo_minutes": 60,
+        "initial_edge_to_cost": 12.510902439629271,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_bar_range",
+            "operator": "qgte",
+            "quantile": 0.75,
+            "threshold": 0.540000000000191
+          },
+          "clause_2": {
+            "field": "state_abs_momentum_15m",
+            "operator": "qgte",
+            "quantile": 0.75,
+            "threshold": 0.0010199259722998844
+          }
+        },
+        "opportunity_rate": 0.9913288024373096,
+        "purge_minutes": 60,
+        "rate_lift": 0.03558665321516571,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.9480536202234653,
+        "eligible": 8395,
+        "embargo_minutes": 60,
+        "initial_edge_to_cost": 12.183456306579183,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_bar_range",
+            "operator": "qgte",
+            "quantile": 0.75,
+            "threshold": 0.5099999999999909
+          },
+          "clause_2": {
+            "field": "state_abs_momentum_15m",
+            "operator": "qgte",
+            "quantile": 0.75,
+            "threshold": 0.0009532310198705485
+          }
+        },
+        "opportunity_rate": 0.9927337701012507,
+        "purge_minutes": 60,
+        "rate_lift": 0.03485574154690022,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 2.0,
+    "baseline_opportunity_rate": 0.762385665956647,
+    "bh_fdr_q_value": 1.0,
+    "complexity": 2,
+    "condition": {
+      "clauses": [
+        {
+          "field": "state_distance_recent_high",
+          "q": 0.1,
+          "type": "qlte"
+        },
+        {
+          "field": "state_return_1m",
+          "q": 0.25,
+          "type": "qlte"
+        }
+      ],
+      "type": "all"
+    },
+    "edge_to_cost_ratio": 3.246786661450098,
+    "excursion_distribution": {
+      "p50": 0.0007237982574566533,
+      "p75": 0.0011378626019993832,
+      "p90": 0.001723841657793639,
+      "p95": 0.0021246010555860755
+    },
+    "expected_cost": 0.00028343738253879024,
+    "expected_move_size": 0.0009202607129832731,
+    "family": "FAILED_BREAKOUT",
+    "frequency": 0.004507133012332862,
+    "horizon_minutes": 15,
+    "id": "OPP-22",
+    "lift_ci95": [
+      -0.06750365671027456,
+      -0.013305604507515327
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.6719618745035743,
+    "opportunity_rate_lift": -0.040404630608894945,
+    "opportunity_surplus": 0.00035338594790569253,
+    "opportunity_value": 0.4689441280437162,
+    "raw_p_value": 0.9982630442359302,
+    "regime_stability": {
+      "RANGE": 0.00017894087044757593,
+      "TREND_DOWN": 0.0002551168107556585,
+      "TREND_UP": 0.00038103012155689034
+    },
+    "rejection_reasons": [
+      "opportunity_rate_lift_ci_failed",
+      "temporal_stability_failed",
+      "opportunity_skeptic_failed",
+      "bh_fdr_failed"
+    ],
+    "research_value_v3": 0.3490142660246657,
+    "sessions": 637,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 6.994856536690228e-05,
+        "cost_2x": -0.00021348881717188798,
+        "gap_null_fraction": 0.0007942811755361397,
+        "neighbor_stronger_surplus": 0.00036581717390352233,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": null,
+        "random_condition_rate": 0.7704248366013072,
+        "regime_means": {
+          "RANGE": 0.00017894087044757593,
+          "TREND_DOWN": 0.0002551168107556585,
+          "TREND_UP": 0.00038103012155689034
+        },
+        "remove_best_5pct": 0.00024231116131415373,
+        "remove_top_10_sessions": 0.0003215745248837653,
+        "selected_rate": 0.6719618745035743,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0003400758208923001,
+        "year_means": {
+          "2016": 0.0004354240014161375,
+          "2017": 0.00022976303292298114,
+          "2018": 0.00036745273782301486,
+          "2019": 0.0004117417867807985
+        }
+      },
+      "failures": [
+        "neighbor_weaker_surplus"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support": 1259,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.06438400603104916,
+      "2017": -0.04992339293592952,
+      "2018": -0.003531064223260543,
+      "2019": -0.04292565540445556
+    },
+    "time_to_excursion": {
+      "median_minutes": 15.0,
+      "p75_minutes": 15.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.7891055259129987,
+        "eligible": 280,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 3.475504903108948,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_distance_recent_high",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00033395798539413485
+          },
+          "clause_2": {
+            "field": "state_return_1m",
+            "operator": "qlte",
+            "quantile": 0.25,
+            "threshold": -0.00015754952444924086
+          }
+        },
+        "opportunity_rate": 0.6714285714285714,
+        "purge_minutes": 15,
+        "rate_lift": -0.06438400603104916,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.6340437142775082,
+        "eligible": 365,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 3.2912672731375845,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_distance_recent_high",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00030788501640914817
+          },
+          "clause_2": {
+            "field": "state_return_1m",
+            "operator": "qlte",
+            "quantile": 0.25,
+            "threshold": -0.00015154715926593565
+          }
+        },
+        "opportunity_rate": 0.5506849315068493,
+        "purge_minutes": 15,
+        "rate_lift": -0.04992339293592952,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.7993418699477788,
+        "eligible": 307,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 2.8216426561334824,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_distance_recent_high",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00026013596637187357
+          },
+          "clause_2": {
+            "field": "state_return_1m",
+            "operator": "qlte",
+            "quantile": 0.25,
+            "threshold": -0.00013420862797536293
+          }
+        },
+        "opportunity_rate": 0.749185667752443,
+        "purge_minutes": 15,
+        "rate_lift": -0.003531064223260543,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.8265640424040401,
+        "eligible": 307,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 2.9852287147642222,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_distance_recent_high",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.0002487742651251505
+          },
+          "clause_2": {
+            "field": "state_return_1m",
+            "operator": "qlte",
+            "quantile": 0.25,
+            "threshold": -0.00012740381012321667
+          }
+        },
+        "opportunity_rate": 0.739413680781759,
+        "purge_minutes": 15,
+        "rate_lift": -0.04292565540445556,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 2.0,
+    "baseline_opportunity_rate": 0.762385665956647,
+    "bh_fdr_q_value": 1.0,
+    "complexity": 2,
+    "condition": {
+      "clauses": [
+        {
+          "field": "state_distance_recent_low",
+          "q": 0.1,
+          "type": "qlte"
+        },
+        {
+          "field": "state_return_1m",
+          "q": 0.75,
+          "type": "qgte"
+        }
+      ],
+      "type": "all"
+    },
+    "edge_to_cost_ratio": 3.195808527850374,
+    "excursion_distribution": {
+      "p50": 0.0007151568075398742,
+      "p75": 0.0010921662607054864,
+      "p90": 0.001586070921987011,
+      "p95": 0.0021200080350184166
+    },
+    "expected_cost": 0.00028151718750428907,
+    "expected_move_size": 0.0008996750285626598,
+    "family": "FAILED_BREAKOUT",
+    "frequency": 0.004414054808742191,
+    "horizon_minutes": 15,
+    "id": "OPP-23",
+    "lift_ci95": [
+      -0.08975752638964057,
+      -0.03131935271156528
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.6536901865369019,
+    "opportunity_rate_lift": -0.06053843955060293,
+    "opportunity_surplus": 0.0003366406535540817,
+    "opportunity_value": 0.45260438538137315,
+    "raw_p_value": 0.9999755564399793,
+    "regime_stability": {
+      "RANGE": 0.0002390613160961603,
+      "TREND_DOWN": 0.0003558096816463999,
+      "TREND_UP": 0.00014414198557334134
+    },
+    "rejection_reasons": [
+      "opportunity_rate_lift_ci_failed",
+      "temporal_stability_failed",
+      "bh_fdr_failed"
+    ],
+    "research_value_v3": 0.34882810961748434,
+    "sessions": 638,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 5.5123466049792644e-05,
+        "cost_2x": -0.0002263937214544964,
+        "gap_null_fraction": 0.0,
+        "neighbor_stronger_surplus": 0.0004286175631537517,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0001875021354427148,
+        "random_condition_rate": 0.7692946058091287,
+        "regime_means": {
+          "RANGE": 0.0002390613160961603,
+          "TREND_DOWN": 0.0003558096816463999,
+          "TREND_UP": 0.00014414198557334134
+        },
+        "remove_best_5pct": 0.00022127301665974275,
+        "remove_top_10_sessions": 0.000297016679934645,
+        "selected_rate": 0.6536901865369019,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.00031696390590499893,
+        "year_means": {
+          "2016": 0.0004123012261491522,
+          "2017": 0.0002154559438850341,
+          "2018": 0.0003720440778961248,
+          "2019": 0.00038861891471562483
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support": 1233,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.10819832340480266,
+      "2017": -0.04443831500905926,
+      "2018": -0.0544047125938108,
+      "2019": -0.04387587959872871
+    },
+    "time_to_excursion": {
+      "median_minutes": 15.0,
+      "p75_minutes": 15.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.7891055259129987,
+        "eligible": 216,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 4.062308157364212,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_distance_recent_low",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00031751111230730937
+          },
+          "clause_2": {
+            "field": "state_return_1m",
+            "operator": "qgte",
+            "quantile": 0.75,
+            "threshold": 0.00015281822272417145
+          }
+        },
+        "opportunity_rate": 0.6296296296296297,
+        "purge_minutes": 15,
+        "rate_lift": -0.10819832340480266,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.6340437142775082,
+        "eligible": 365,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 3.6672368925827272,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_distance_recent_low",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00031623668274387593
+          },
+          "clause_2": {
+            "field": "state_return_1m",
+            "operator": "qgte",
+            "quantile": 0.75,
+            "threshold": 0.000149954357710258
+          }
+        },
+        "opportunity_rate": 0.5671232876712329,
+        "purge_minutes": 15,
+        "rate_lift": -0.04443831500905926,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.7993418699477788,
+        "eligible": 362,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 3.1098063135743987,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_distance_recent_low",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00027446445132021024
+          },
+          "clause_2": {
+            "field": "state_return_1m",
+            "operator": "qgte",
+            "quantile": 0.75,
+            "threshold": 0.00013345067509240582
+          }
+        },
+        "opportunity_rate": 0.712707182320442,
+        "purge_minutes": 15,
+        "rate_lift": -0.0544047125938108,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.8265640424040401,
+        "eligible": 290,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 3.1136382990064777,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_distance_recent_low",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.0002567328182514216
+          },
+          "clause_2": {
+            "field": "state_return_1m",
+            "operator": "qgte",
+            "quantile": 0.75,
+            "threshold": 0.00012716498385012542
+          }
+        },
+        "opportunity_rate": 0.7068965517241379,
+        "purge_minutes": 15,
+        "rate_lift": -0.04387587959872871,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 3.0,
+    "baseline_opportunity_rate": 0.7585121807149122,
+    "bh_fdr_q_value": 0.0,
+    "complexity": 2,
+    "condition": {
+      "clauses": [
+        {
+          "field": "state_min_distance_extreme",
+          "q": 0.1,
+          "type": "qlte"
+        },
+        {
+          "field": "state_abs_return_1m",
+          "q": 0.75,
+          "type": "qgte"
+        }
+      ],
+      "type": "all"
+    },
+    "edge_to_cost_ratio": 7.220216168823615,
+    "excursion_distribution": {
+      "p50": 0.0015623708978374138,
+      "p75": 0.0023603513570377562,
+      "p90": 0.0035624037352306776,
+      "p95": 0.004658591140700794
+    },
+    "expected_cost": 0.0002723940765111767,
+    "expected_move_size": 0.001966744115517775,
+    "family": "FAILED_BREAKOUT",
+    "frequency": 0.030751606493994665,
+    "horizon_minutes": 30,
+    "id": "OPP-24",
+    "lift_ci95": [
+      0.08005507506319658,
+      0.09973766154918805
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.8722933643771827,
+    "opportunity_rate_lift": 0.08989636830619231,
+    "opportunity_surplus": 0.0011495618859842449,
+    "opportunity_value": 0.4949619215900328,
+    "raw_p_value": 0.0,
+    "regime_stability": {
+      "RANGE": 0.0009013359351451357,
+      "TREND_DOWN": 0.0012034166815280474,
+      "TREND_UP": 0.0011078734943120881
+    },
+    "rejection_reasons": [],
+    "research_value_v3": 0.5515032129879893,
+    "sessions": 1028,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.0007409707712174797,
+        "cost_2x": 0.00033237965645071464,
+        "gap_null_fraction": 0.0015133876600698488,
+        "neighbor_stronger_surplus": 0.0011771463215267098,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0009929032494833596,
+        "random_condition_rate": 0.7623121387283237,
+        "regime_means": {
+          "RANGE": 0.0009013359351451357,
+          "TREND_DOWN": 0.0012034166815280474,
+          "TREND_UP": 0.0011078734943120881
+        },
+        "remove_best_5pct": 0.0009042950964607352,
+        "remove_top_10_sessions": 0.0010938858317077076,
+        "selected_rate": 0.8722933643771827,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0011142907119967532,
+        "year_means": {
+          "2016": 0.0015112240541405658,
+          "2017": 0.0007827692939519333,
+          "2018": 0.0009211378313599755,
+          "2019": 0.0012723572179225587
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": true,
+    "status": "VOLATILITY_OPPORTUNITY_ONLY",
+    "support": 8590,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 0.08888542907206588,
+      "2017": 0.1031428669512887,
+      "2018": 0.07927663079634933,
+      "2019": 0.08824315808492637
+    },
+    "time_to_excursion": {
+      "median_minutes": 15.0,
+      "p75_minutes": 15.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.788633470181813,
+        "eligible": 2382,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 8.417210423757219,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_min_distance_extreme",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00017711291081293052
+          },
+          "clause_2": {
+            "field": "state_abs_return_1m",
+            "operator": "qgte",
+            "quantile": 0.75,
+            "threshold": 0.00029827096052592594
+          }
+        },
+        "opportunity_rate": 0.8942065491183879,
+        "purge_minutes": 30,
+        "rate_lift": 0.08888542907206588,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.6300514116667145,
+        "eligible": 1805,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 7.999563108278226,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_min_distance_extreme",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.0001689417489935065
+          },
+          "clause_2": {
+            "field": "state_abs_return_1m",
+            "operator": "qgte",
+            "quantile": 0.75,
+            "threshold": 0.000295517027367298
+          }
+        },
+        "opportunity_rate": 0.7578947368421053,
+        "purge_minutes": 30,
+        "rate_lift": 0.1031428669512887,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.7856069819014235,
+        "eligible": 2106,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 7.009131390325334,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_min_distance_extreme",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00014734757483471982
+          },
+          "clause_2": {
+            "field": "state_abs_return_1m",
+            "operator": "qgte",
+            "quantile": 0.75,
+            "threshold": 0.0002596031131977261
+          }
+        },
+        "opportunity_rate": 0.8817663817663818,
+        "purge_minutes": 30,
+        "rate_lift": 0.07927663079634933,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.829267943747407,
+        "eligible": 2297,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 6.865736737128303,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_min_distance_extreme",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00013824021035619736
+          },
+          "clause_2": {
+            "field": "state_abs_return_1m",
+            "operator": "qgte",
+            "quantile": 0.75,
+            "threshold": 0.0002450761964173376
+          }
+        },
+        "opportunity_rate": 0.9307792773182412,
+        "purge_minutes": 30,
+        "rate_lift": 0.08824315808492637,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 3.0,
+    "baseline_opportunity_rate": 0.5430325594716022,
+    "bh_fdr_q_value": 0.0,
+    "complexity": 2,
+    "condition": {
+      "clauses": [
+        {
+          "field": "state_bar_range",
+          "q": 0.8,
+          "type": "qgte"
+        },
+        {
+          "field": "state_min_distance_extreme",
+          "q": 0.1,
+          "type": "qlte"
+        }
+      ],
+      "type": "all"
+    },
+    "edge_to_cost_ratio": 5.8294153745616955,
+    "excursion_distribution": {
+      "p50": 0.0012702171742169583,
+      "p75": 0.0018842468025754833,
+      "p90": 0.002784608995116816,
+      "p95": 0.0035686874882059584
+    },
+    "expected_cost": 0.00026841614166026094,
+    "expected_move_size": 0.0015647091829748552,
+    "family": "LIQUIDITY_SWEEP_PROXY",
+    "frequency": 0.01982923729572019,
+    "horizon_minutes": 15,
+    "id": "OPP-25",
+    "lift_ci95": [
+      0.18121125942054075,
+      0.21208661692276617
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.7997833543961004,
+    "opportunity_rate_lift": 0.19664893817165346,
+    "opportunity_surplus": 0.0007594607579940723,
+    "opportunity_value": 0.38225394270197766,
+    "raw_p_value": 0.0,
+    "regime_stability": {
+      "RANGE": 0.0005944052862991363,
+      "TREND_DOWN": 0.0008164294043927878,
+      "TREND_UP": 0.0007070529892042245
+    },
+    "rejection_reasons": [],
+    "research_value_v3": 0.5296584745914403,
+    "sessions": 1008,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.0003568365455036808,
+        "cost_2x": -4.5787666986710594e-05,
+        "gap_null_fraction": 0.0005416140097490522,
+        "neighbor_stronger_surplus": 0.0007838578098296335,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0006587922023132216,
+        "random_condition_rate": 0.5326815136701069,
+        "regime_means": {
+          "RANGE": 0.0005944052862991363,
+          "TREND_DOWN": 0.0008164294043927878,
+          "TREND_UP": 0.0007070529892042245
+        },
+        "remove_best_5pct": 0.0005723325624941378,
+        "remove_top_10_sessions": 0.0007282878362743804,
+        "selected_rate": 0.7997833543961004,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0007327702952212772,
+        "year_means": {
+          "2016": 0.0009190948865466804,
+          "2017": 0.00045330814632372086,
+          "2018": 0.0006163315448007691,
+          "2019": 0.0008614822450154972
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": true,
+    "status": "VOLATILITY_OPPORTUNITY_ONLY",
+    "support": 5539,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 0.18017275527210078,
+      "2017": 0.20988105288064768,
+      "2018": 0.20172782405588727,
+      "2019": 0.19559793293434002
+    },
+    "time_to_excursion": {
+      "median_minutes": 5.0,
+      "p75_minutes": 15.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.5899266167908793,
+        "eligible": 1758,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 6.856560255047811,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_bar_range",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 0.650000000000091
+          },
+          "clause_2": {
+            "field": "state_min_distance_extreme",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00017711291081293052
+          }
+        },
+        "opportunity_rate": 0.810580204778157,
+        "purge_minutes": 15,
+        "rate_lift": 0.18017275527210078,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.38191113536490795,
+        "eligible": 938,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 6.363588841923454,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_bar_range",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 0.6800000000000637
+          },
+          "clause_2": {
+            "field": "state_min_distance_extreme",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.0001689417489935065
+          }
+        },
+        "opportunity_rate": 0.6492537313432836,
+        "purge_minutes": 15,
+        "rate_lift": 0.20988105288064768,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.5559052865011803,
+        "eligible": 1156,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 5.635772478933024,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_bar_range",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 0.6100000000001273
+          },
+          "clause_2": {
+            "field": "state_min_distance_extreme",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00014734757483471982
+          }
+        },
+        "opportunity_rate": 0.7949826989619377,
+        "purge_minutes": 15,
+        "rate_lift": 0.20172782405588727,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.6437717277786521,
+        "eligible": 1687,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 5.508754283750523,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_bar_range",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 0.5800000000001546
+          },
+          "clause_2": {
+            "field": "state_min_distance_extreme",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00013824021035619736
+          }
+        },
+        "opportunity_rate": 0.8755186721991701,
+        "purge_minutes": 15,
+        "rate_lift": 0.19559793293434002,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 3.0,
+    "baseline_opportunity_rate": 0.7585121807149122,
+    "bh_fdr_q_value": 0.0,
+    "complexity": 2,
+    "condition": {
+      "clauses": [
+        {
+          "field": "state_tick_volume",
+          "q": 0.8,
+          "type": "qgte"
+        },
+        {
+          "field": "state_min_distance_extreme",
+          "q": 0.1,
+          "type": "qlte"
+        }
+      ],
+      "type": "all"
+    },
+    "edge_to_cost_ratio": 5.786150208432343,
+    "excursion_distribution": {
+      "p50": 0.0014171337069655578,
+      "p75": 0.0021972146336164495,
+      "p90": 0.0032898586159623043,
+      "p95": 0.004335452462045507
+    },
+    "expected_cost": 0.0003129645275361081,
+    "expected_move_size": 0.0018108597662349817,
+    "family": "LIQUIDITY_SWEEP_PROXY",
+    "frequency": 0.03562747238978288,
+    "horizon_minutes": 30,
+    "id": "OPP-26",
+    "lift_ci95": [
+      0.07354290950611009,
+      0.09995316108493851
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.7468850482315113,
+    "opportunity_rate_lift": 0.0867480352955243,
+    "opportunity_surplus": 0.0008719661836266571,
+    "opportunity_value": 0.5096702527380377,
+    "raw_p_value": 0.0,
+    "regime_stability": {
+      "RANGE": 0.0005391628275789868,
+      "TREND_DOWN": 0.0009017815097537697,
+      "TREND_UP": 0.0008623081115523748
+    },
+    "rejection_reasons": [],
+    "research_value_v3": 0.5612549447795657,
+    "sessions": 709,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.000402519392322495,
+        "cost_2x": -6.69273989816672e-05,
+        "gap_null_fraction": 0.0015072347266881028,
+        "neighbor_stronger_surplus": 0.000923831055814534,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.000880357004895467,
+        "random_condition_rate": 0.7631526305261053,
+        "regime_means": {
+          "RANGE": 0.0005391628275789868,
+          "TREND_DOWN": 0.0009017815097537697,
+          "TREND_UP": 0.0008623081115523748
+        },
+        "remove_best_5pct": 0.000631886105187076,
+        "remove_top_10_sessions": 0.0008176778682702755,
+        "selected_rate": 0.7468850482315113,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0008415377947913604,
+        "year_means": {
+          "2016": 0.0015276398909563535,
+          "2017": 0.0005183904123174246,
+          "2018": 0.0009675307992044481,
+          "2019": 0.0017925908248341677
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": true,
+    "status": "VOLATILITY_OPPORTUNITY_ONLY",
+    "support": 9952,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 0.10600216784828574,
+      "2017": 0.04401076017968313,
+      "2018": 0.1110272292556895,
+      "2019": 0.1799517551224347
+    },
+    "time_to_excursion": {
+      "median_minutes": 15.0,
+      "p75_minutes": 30.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.788633470181813,
+        "eligible": 2917,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 9.562755279083964,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_tick_volume",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 124.0
+          },
+          "clause_2": {
+            "field": "state_min_distance_extreme",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00017711291081293052
+          }
+        },
+        "opportunity_rate": 0.8974974288652725,
+        "purge_minutes": 30,
+        "rate_lift": 0.10600216784828574,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.6300514116667145,
+        "eligible": 5795,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 8.859433729859434,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_tick_volume",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 159.0
+          },
+          "clause_2": {
+            "field": "state_min_distance_extreme",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.0001689417489935065
+          }
+        },
+        "opportunity_rate": 0.6381363244176014,
+        "purge_minutes": 30,
+        "rate_lift": 0.04401076017968313,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.7856069819014235,
+        "eligible": 1222,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 6.080157385330353,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_tick_volume",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 212.0
+          },
+          "clause_2": {
+            "field": "state_min_distance_extreme",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00014734757483471982
+          }
+        },
+        "opportunity_rate": 0.900163666121113,
+        "purge_minutes": 30,
+        "rate_lift": 0.1110272292556895,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.829267943747407,
+        "eligible": 18,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 6.239625278198773,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_tick_volume",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 207.0
+          },
+          "clause_2": {
+            "field": "state_min_distance_extreme",
+            "operator": "qlte",
+            "quantile": 0.1,
+            "threshold": 0.00013824021035619736
+          }
+        },
+        "opportunity_rate": 0.9444444444444444,
+        "purge_minutes": 30,
+        "rate_lift": 0.1799517551224347,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 3.0,
+    "baseline_opportunity_rate": 0.5430325594716022,
+    "bh_fdr_q_value": 1.149080830487037e-13,
+    "complexity": 2,
+    "condition": {
+      "clauses": [
+        {
+          "field": "state_spread_points",
+          "q": 0.8,
+          "type": "qgte"
+        },
+        {
+          "field": "state_bar_range",
+          "q": 0.8,
+          "type": "qgte"
+        }
+      ],
+      "type": "all"
+    },
+    "edge_to_cost_ratio": 5.457503578249511,
+    "excursion_distribution": {
+      "p50": 0.0015122385318172542,
+      "p75": 0.0022479002287091633,
+      "p90": 0.003231687353638719,
+      "p95": 0.00413740785088777
+    },
+    "expected_cost": 0.0003387899977512928,
+    "expected_move_size": 0.0018489476250028245,
+    "family": "LIQUIDITY_SWEEP_PROXY",
+    "frequency": 0.011663414896092506,
+    "horizon_minutes": 15,
+    "id": "OPP-27",
+    "lift_ci95": [
+      0.08402854762159623,
+      0.14442187709381285
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.7694904849600982,
+    "opportunity_rate_lift": 0.11422521235770454,
+    "opportunity_surplus": 0.000832577631748946,
+    "opportunity_value": 0.4277783673540676,
+    "raw_p_value": 6.128431095930864e-14,
+    "regime_stability": {
+      "RANGE": 0.0008200306723953595,
+      "TREND_DOWN": 0.0008641439680406083,
+      "TREND_UP": 0.0008047518741189551
+    },
+    "rejection_reasons": [],
+    "research_value_v3": 0.4467268297921678,
+    "sessions": 278,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.00032439263512200686,
+        "cost_2x": -0.0001837923615049323,
+        "gap_null_fraction": 0.0012277470841006752,
+        "neighbor_stronger_surplus": 0.0007738180618053471,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0006442347888456354,
+        "random_condition_rate": 0.5362542425177415,
+        "regime_means": {
+          "RANGE": 0.0008200306723953595,
+          "TREND_DOWN": 0.0008641439680406083,
+          "TREND_UP": 0.0008047518741189551
+        },
+        "remove_best_5pct": 0.0006135606380331767,
+        "remove_top_10_sessions": 0.0007529291958169493,
+        "selected_rate": 0.7694904849600982,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0007999200561443833,
+        "year_means": {
+          "2016": 0.0008427189047933782,
+          "2017": 0.0004200449819624683,
+          "2018": 0.00030525616882281993
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": true,
+    "status": "VOLATILITY_OPPORTUNITY_ONLY",
+    "support": 3258,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 0.10396174503556306,
+      "2017": 0.1867279157591782,
+      "2018": 0.12138464241785275,
+      "2019": null
+    },
+    "time_to_excursion": {
+      "median_minutes": 15.0,
+      "p75_minutes": 15.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.5899266167908793,
+        "eligible": 3184,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 6.243310304023271,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_spread_points",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 41.0
+          },
+          "clause_2": {
+            "field": "state_bar_range",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 0.650000000000091
+          }
+        },
+        "opportunity_rate": 0.7726130653266332,
+        "purge_minutes": 15,
+        "rate_lift": 0.10396174503556306,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.38191113536490795,
+        "eligible": 59,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 5.711660337569848,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_spread_points",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 43.0
+          },
+          "clause_2": {
+            "field": "state_bar_range",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 0.6800000000000637
+          }
+        },
+        "opportunity_rate": 0.6271186440677966,
+        "purge_minutes": 15,
+        "rate_lift": 0.1867279157591782,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.5559052865011803,
+        "eligible": 15,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 5.44109781096558,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_spread_points",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 43.0
+          },
+          "clause_2": {
+            "field": "state_bar_range",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 0.6100000000001273
+          }
+        },
+        "opportunity_rate": 0.6666666666666666,
+        "purge_minutes": 15,
+        "rate_lift": 0.12138464241785275,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.6437717277786521,
+        "eligible": 0,
+        "embargo_minutes": 15,
+        "initial_edge_to_cost": 5.37950427164333,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_spread_points",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 42.0
+          },
+          "clause_2": {
+            "field": "state_bar_range",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 0.5800000000001546
+          }
+        },
+        "opportunity_rate": null,
+        "purge_minutes": 15,
+        "rate_lift": null,
+        "test_year": 2019
+      }
+    ],
+    "years": 3
+  },
+  {
+    "K": 3.0,
+    "baseline_opportunity_rate": 0.7585121807149122,
+    "bh_fdr_q_value": 0.0,
+    "complexity": 1,
+    "condition": {
+      "field": "state_vol_ratio",
+      "q": 0.8,
+      "type": "qgte"
+    },
+    "edge_to_cost_ratio": 6.7531113368735225,
+    "excursion_distribution": {
+      "p50": 0.0014532529359125566,
+      "p75": 0.002282869429165373,
+      "p90": 0.0035410420549387336,
+      "p95": 0.004592362719736203
+    },
+    "expected_cost": 0.0002781800341945063,
+    "expected_move_size": 0.0018785807426107849,
+    "family": "VOLATILITY_REGIME_TRANSITION",
+    "frequency": 0.19249288488732166,
+    "horizon_minutes": 30,
+    "id": "OPP-28",
+    "lift_ci95": [
+      0.04075675980020696,
+      0.055976166391076956
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.8085921517574856,
+    "opportunity_rate_lift": 0.04836646309564196,
+    "opportunity_surplus": 0.0010440406400272658,
+    "opportunity_value": 0.7813068295234864,
+    "raw_p_value": 0.0,
+    "regime_stability": {
+      "RANGE": 0.000924910952879273,
+      "TREND_DOWN": 0.0011323728540174997,
+      "TREND_UP": 0.0010030849407234917
+    },
+    "rejection_reasons": [],
+    "research_value_v3": 0.7700000000000001,
+    "sessions": 1031,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.0006267705887355062,
+        "cost_2x": 0.00020950053744374678,
+        "gap_null_fraction": 0.0019341640319880974,
+        "neighbor_stronger_surplus": 0.001090545680873564,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0010059641721461702,
+        "random_condition_rate": 0.7600243237266897,
+        "regime_means": {
+          "RANGE": 0.000924910952879273,
+          "TREND_DOWN": 0.0011323728540174997,
+          "TREND_UP": 0.0010030849407234917
+        },
+        "remove_best_5pct": 0.0007936534279888811,
+        "remove_top_10_sessions": 0.000994535868884124,
+        "selected_rate": 0.8085921517574856,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0010146827758111298,
+        "year_means": {
+          "2016": 0.0014396228954680148,
+          "2017": 0.0007154358801669032,
+          "2018": 0.0008570057171150959,
+          "2019": 0.0011521425287618723
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": true,
+    "status": "VOLATILITY_OPPORTUNITY_ONLY",
+    "support": 53770,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 0.04202355572427611,
+      "2017": 0.0651407427782153,
+      "2018": 0.04664964396589313,
+      "2019": 0.039716926502100215
+    },
+    "time_to_excursion": {
+      "median_minutes": 15.0,
+      "p75_minutes": 15.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.788633470181813,
+        "eligible": 13162,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 7.977832075316226,
+        "learned_from_past": {
+          "field": "state_vol_ratio",
+          "operator": "qgte",
+          "quantile": 0.8,
+          "threshold": 1.2258425027409248
+        },
+        "opportunity_rate": 0.8270019753836803,
+        "purge_minutes": 30,
+        "rate_lift": 0.04202355572427611,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.6300514116667145,
+        "eligible": 13553,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 7.643541026102833,
+        "learned_from_past": {
+          "field": "state_vol_ratio",
+          "operator": "qgte",
+          "quantile": 0.8,
+          "threshold": 1.2188814410207585
+        },
+        "opportunity_rate": 0.6968936766767505,
+        "purge_minutes": 30,
+        "rate_lift": 0.0651407427782153,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.7856069819014235,
+        "eligible": 12484,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 6.8472578527009365,
+        "learned_from_past": {
+          "field": "state_vol_ratio",
+          "operator": "qgte",
+          "quantile": 0.8,
+          "threshold": 1.2167210313841066
+        },
+        "opportunity_rate": 0.8360301185517462,
+        "purge_minutes": 30,
+        "rate_lift": 0.04664964396589313,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.829267943747407,
+        "eligible": 14571,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 6.762664343530428,
+        "learned_from_past": {
+          "field": "state_vol_ratio",
+          "operator": "qgte",
+          "quantile": 0.8,
+          "threshold": 1.2106297202102057
+        },
+        "opportunity_rate": 0.8723491867407865,
+        "purge_minutes": 30,
+        "rate_lift": 0.039716926502100215,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 3.0,
+    "baseline_opportunity_rate": 0.9134408505915835,
+    "bh_fdr_q_value": 1.0,
+    "complexity": 1,
+    "condition": {
+      "field": "state_atr_range_ratio",
+      "q": 0.8,
+      "type": "qgte"
+    },
+    "edge_to_cost_ratio": 8.208846334212367,
+    "excursion_distribution": {
+      "p50": 0.0019113365645944001,
+      "p75": 0.002940455303734984,
+      "p90": 0.004286220514789516,
+      "p95": 0.005477639748622775
+    },
+    "expected_cost": 0.0002868195442505114,
+    "expected_move_size": 0.0023544575644012726,
+    "family": "VOLATILITY_REGIME_TRANSITION",
+    "frequency": 0.1837077344407253,
+    "horizon_minutes": 60,
+    "id": "OPP-29",
+    "lift_ci95": [
+      -0.015495981399156502,
+      -0.010480960635209102
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.8964065788448048,
+    "opportunity_rate_lift": -0.012988471017182802,
+    "opportunity_surplus": 0.0014939989316497383,
+    "opportunity_value": 0.8096092231862537,
+    "raw_p_value": 1.0,
+    "regime_stability": {
+      "RANGE": 0.0014546276903530798,
+      "TREND_DOWN": 0.0015135186021947157,
+      "TREND_UP": 0.001496215165845034
+    },
+    "rejection_reasons": [
+      "opportunity_rate_lift_ci_failed",
+      "temporal_stability_failed",
+      "bh_fdr_failed"
+    ],
+    "research_value_v3": 0.6200000000000001,
+    "sessions": 1031,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.0010637696152739713,
+        "cost_2x": 0.0006335402988982043,
+        "gap_null_fraction": 0.005709720165250604,
+        "neighbor_stronger_surplus": 0.0014771105054387586,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0015238172885547123,
+        "random_condition_rate": 0.9156286812274298,
+        "regime_means": {
+          "RANGE": 0.0014546276903530798,
+          "TREND_DOWN": 0.0015135186021947157,
+          "TREND_UP": 0.001496215165845034
+        },
+        "remove_best_5pct": 0.0012198667288561998,
+        "remove_top_10_sessions": 0.0014486408087976354,
+        "selected_rate": 0.8964065788448048,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.0014647365762180075,
+        "year_means": {
+          "2016": 0.0019596422947061134,
+          "2017": 0.0011421919443507327,
+          "2018": 0.0012869765456160747,
+          "2019": 0.0016075242099859255
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support": 51316,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.020371357577002765,
+      "2017": -0.014886102065538014,
+      "2018": -0.009276757335297417,
+      "2019": -0.007427022249995164
+    },
+    "time_to_excursion": {
+      "median_minutes": 15.0,
+      "p75_minutes": 30.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.9251863189666271,
+        "eligible": 12186,
+        "embargo_minutes": 60,
+        "initial_edge_to_cost": 9.312840727483913,
+        "learned_from_past": {
+          "field": "state_atr_range_ratio",
+          "operator": "qgte",
+          "quantile": 0.8,
+          "threshold": 1.714285714284746
+        },
+        "opportunity_rate": 0.9004595437387165,
+        "purge_minutes": 60,
+        "rate_lift": -0.020371357577002765,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.8462963494844472,
+        "eligible": 13075,
+        "embargo_minutes": 60,
+        "initial_edge_to_cost": 9.05387265221519,
+        "learned_from_past": {
+          "field": "state_atr_range_ratio",
+          "operator": "qgte",
+          "quantile": 0.8,
+          "threshold": 1.6722689075635826
+        },
+        "opportunity_rate": 0.8245506692160612,
+        "purge_minutes": 60,
+        "rate_lift": -0.014886102065538014,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.9339723871521568,
+        "eligible": 12664,
+        "embargo_minutes": 60,
+        "initial_edge_to_cost": 8.259920701548138,
+        "learned_from_past": {
+          "field": "state_atr_range_ratio",
+          "operator": "qgte",
+          "quantile": 0.8,
+          "threshold": 1.660714285713631
+        },
+        "opportunity_rate": 0.9238787113076438,
+        "purge_minutes": 60,
+        "rate_lift": -0.009276757335297417,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.9480536202234653,
+        "eligible": 13391,
+        "embargo_minutes": 60,
+        "initial_edge_to_cost": 8.243027120474794,
+        "learned_from_past": {
+          "field": "state_atr_range_ratio",
+          "operator": "qgte",
+          "quantile": 0.8,
+          "threshold": 1.6473214285717908
+        },
+        "opportunity_rate": 0.9368979165110896,
+        "purge_minutes": 60,
+        "rate_lift": -0.007427022249995164,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  },
+  {
+    "K": 3.0,
+    "baseline_opportunity_rate": 0.7585121807149122,
+    "bh_fdr_q_value": 0.0,
+    "complexity": 2,
+    "condition": {
+      "clauses": [
+        {
+          "field": "state_tick_volume",
+          "q": 0.8,
+          "type": "qgte"
+        },
+        {
+          "field": "state_volatility_15m_causal",
+          "q": 0.8,
+          "type": "qgte"
+        }
+      ],
+      "type": "all"
+    },
+    "edge_to_cost_ratio": 9.597111122729247,
+    "excursion_distribution": {
+      "p50": 0.002453942452281965,
+      "p75": 0.0036556486554557,
+      "p90": 0.005268094518491813,
+      "p95": 0.006621599048114592
+    },
+    "expected_cost": 0.0003110339901707936,
+    "expected_move_size": 0.0029850277666149828,
+    "family": "VOLATILITY_REGIME_TRANSITION",
+    "frequency": 0.05887196377109922,
+    "horizon_minutes": 30,
+    "id": "OPP-30",
+    "lift_ci95": [
+      0.13659712773581587,
+      0.16715362756837623
+    ],
+    "locked_oos_inspected": false,
+    "opportunity_rate": 0.9716023107327455,
+    "opportunity_rate_lift": 0.15187537765209605,
+    "opportunity_surplus": 0.002051925796102602,
+    "opportunity_value": 0.5156796073060711,
+    "raw_p_value": 0.0,
+    "regime_stability": {
+      "RANGE": 0.002032262944416973,
+      "TREND_DOWN": 0.0020705959835913613,
+      "TREND_UP": 0.0020394841157605433
+    },
+    "rejection_reasons": [],
+    "research_value_v3": 0.6077439275421984,
+    "sessions": 528,
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": 0.0015853748108464116,
+        "cost_2x": 0.0011188238255902213,
+        "gap_null_fraction": 0.002553967771359076,
+        "neighbor_stronger_surplus": 0.002070645451145851,
+        "neighbor_time_window": "NOT_APPLICABLE",
+        "neighbor_weaker_surplus": 0.0017293054550817034,
+        "random_condition_rate": 0.7625278900078394,
+        "regime_means": {
+          "RANGE": 0.002032262944416973,
+          "TREND_DOWN": 0.0020705959835913613,
+          "TREND_UP": 0.0020394841157605433
+        },
+        "remove_best_5pct": 0.0017282802994600306,
+        "remove_top_10_sessions": 0.0018496929714606123,
+        "selected_rate": 0.9716023107327455,
+        "synthetic_bar_flags": "NONE_PRESENT_GAPS_NOT_IMPUTED",
+        "winsorization": 0.002024180778771011,
+        "year_means": {
+          "2016": 0.002335366564406814,
+          "2017": 0.0013902693299027036,
+          "2018": 0.0016625296421693403,
+          "2019": 0.00211184572976301
+        }
+      },
+      "failures": [],
+      "passed": true
+    },
+    "stability_passed": true,
+    "status": "VOLATILITY_OPPORTUNITY_ONLY",
+    "support": 16445,
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 0.12894712528038724,
+      "2017": 0.1997637341827073,
+      "2018": 0.12011582922061766,
+      "2019": 0.1922187252969665
+    },
+    "time_to_excursion": {
+      "median_minutes": 5.0,
+      "p75_minutes": 15.0
+    },
+    "type": "NEW_OPPORTUNITY_HYPOTHESIS",
+    "validation_inspected": false,
+    "walk_forward": [
+      {
+        "baseline": 69907,
+        "baseline_rate": 0.788633470181813,
+        "eligible": 10822,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 10.876661785822074,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_tick_volume",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 124.0
+          },
+          "clause_2": {
+            "field": "state_volatility_15m_causal",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 0.00038706694910900936
+          }
+        },
+        "opportunity_rate": 0.9853077065237479,
+        "purge_minutes": 30,
+        "rate_lift": 0.12894712528038724,
+        "test_year": 2016
+      },
+      {
+        "baseline": 69634,
+        "baseline_rate": 0.6300514116667145,
+        "eligible": 3486,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 10.852632950654705,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_tick_volume",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 159.0
+          },
+          "clause_2": {
+            "field": "state_volatility_15m_causal",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 0.0003816776207059083
+          }
+        },
+        "opportunity_rate": 0.923407917383821,
+        "purge_minutes": 30,
+        "rate_lift": 0.1997637341827073,
+        "test_year": 2017
+      },
+      {
+        "baseline": 69895,
+        "baseline_rate": 0.7856069819014235,
+        "eligible": 2037,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 9.919760170297844,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_tick_volume",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 212.0
+          },
+          "clause_2": {
+            "field": "state_volatility_15m_causal",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 0.00034284333002540746
+          }
+        },
+        "opportunity_rate": 0.9808541973490427,
+        "purge_minutes": 30,
+        "rate_lift": 0.12011582922061766,
+        "test_year": 2018
+      },
+      {
+        "baseline": 69899,
+        "baseline_rate": 0.829267943747407,
+        "eligible": 100,
+        "embargo_minutes": 30,
+        "initial_edge_to_cost": 9.579614428765098,
+        "learned_from_past": {
+          "clause_1": {
+            "field": "state_tick_volume",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 207.0
+          },
+          "clause_2": {
+            "field": "state_volatility_15m_causal",
+            "operator": "qgte",
+            "quantile": 0.8,
+            "threshold": 0.00031908472460283175
+          }
+        },
+        "opportunity_rate": 0.98,
+        "purge_minutes": 30,
+        "rate_lift": 0.1922187252969665,
+        "test_year": 2019
+      }
+    ],
+    "years": 4
+  }
+]

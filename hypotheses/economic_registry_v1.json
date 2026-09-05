@@ -1,0 +1,4441 @@
+[
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.00023481319099242606,
+      "optimal_action": "WAIT",
+      "value_enter": -0.00023481319099242606,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_SHORT",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": -4.7878277205444574e-06,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.00017730685017445567,
+      "1.0": -0.00023481319099242611,
+      "1.25": -0.0002923195318103964,
+      "1.5": -0.00034982587262836687,
+      "2.0": -0.0004648385542643078
+    },
+    "cost_to_gross_ratio": 48.04378450896387,
+    "economic_filter": {
+      "family": "signal + low cost / wait until spread normalizes",
+      "id": "LOW_COST",
+      "rule": "state_spread_points <= expanding-train q25"
+    },
+    "eligible_signals": 39531,
+    "entered": 17609,
+    "entry_rate": 0.44544787635020616,
+    "historical_cost_quantiles": {
+      "p50": 0.00022760765776888903,
+      "p75": 0.00024495944903206435,
+      "p90": 0.0002591864888591102,
+      "p95": 0.00027528574014600645
+    },
+    "hit_rate": 0.4047362144357999,
+    "horizon_minutes": 15,
+    "id": "NEW-ECO-DISC-09-LOW_COST-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.0008320846747016672,
+    "mfe": 0.0007886382812661373,
+    "payoff": 0.7970250142634886,
+    "raw_p_value": 1.0,
+    "regime_stability": {
+      "RANGE": -0.001548730774532142,
+      "TREND_UP": -0.0002339901687602675
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.360322,
+    "sessions": 511,
+    "signal_frozen": true,
+    "signal_source": "DISC-09",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.00034982587262836687,
+        "cost_2x": -0.0004648385542643078,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "RANGE": -0.001548730774532142,
+          "TREND_UP": -0.0002339901687602675
+        },
+        "remove_best_10_sessions": -0.00024766676051759764,
+        "remove_best_5pct": -0.0003620523273776491,
+        "sample_concentration_top10_sessions": 0.00874552785507411,
+        "spread_perturbation_10pct": -0.00025781572731961425,
+        "stronger_signal_neighbor": -0.00023741177532053597,
+        "temporal_concentration": 0.08056999622781445,
+        "weaker_signal_neighbor": -0.00023481319099242611,
+        "winsorization": -0.0002364819783229868
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity",
+        "regime_dependence"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.0002787274597384518,
+      "2016-H1": -0.0002787274597384518,
+      "2016-H2": null,
+      "2018": -0.00025957795418377863,
+      "2018-H1": -0.00024295836835723893,
+      "2018-H2": -0.0002724405639229017,
+      "2019": -0.0002100726698987443,
+      "2019-H1": -0.00019478127235925236,
+      "2019-H2": -0.00022176871550800566
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.00028320242923712314,
+        -0.00018642395274772898
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.0020167710987006033,
+      "expected_costs": 0.0002300253632718816,
+      "expected_gross_return": -4.7878277205444574e-06,
+      "expected_net_return": -0.00023481319099242606,
+      "support": 17572,
+      "uncertainty": 2.4688386859539325e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.5545521236497938,
+    "waited": 21922,
+    "walk_forward": [
+      {
+        "eligible": 13355,
+        "embargo_minutes": 15,
+        "entered": 736,
+        "expected_net_return": -0.0002787274597384518,
+        "learned_from_past": {
+          "q25_spread_points": 34.0
+        },
+        "purge_minutes": 15,
+        "test_year": 2016,
+        "train_eligible": 12854,
+        "waited": 12619
+      },
+      {
+        "eligible": 8292,
+        "embargo_minutes": 15,
+        "entered": 0,
+        "expected_net_return": null,
+        "learned_from_past": {
+          "q25_spread_points": 35.0
+        },
+        "purge_minutes": 15,
+        "test_year": 2017,
+        "train_eligible": 26209,
+        "waited": 8292
+      },
+      {
+        "eligible": 8305,
+        "embargo_minutes": 15,
+        "entered": 7774,
+        "expected_net_return": -0.00025957795418377863,
+        "learned_from_past": {
+          "q25_spread_points": 37.0
+        },
+        "purge_minutes": 15,
+        "test_year": 2018,
+        "train_eligible": 34501,
+        "waited": 531
+      },
+      {
+        "eligible": 9579,
+        "embargo_minutes": 15,
+        "entered": 9099,
+        "expected_net_return": -0.0002100726698987443,
+        "learned_from_past": {
+          "q25_spread_points": 34.0
+        },
+        "purge_minutes": 15,
+        "test_year": 2019,
+        "train_eligible": 42806,
+        "waited": 480
+      }
+    ],
+    "years": 3
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.00025942321906534307,
+      "optimal_action": "WAIT",
+      "value_enter": -0.00025942321906534307,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_SHORT",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": 2.3922506395664827e-05,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.00018858678770009116,
+      "1.0": -0.00025942321906534307,
+      "1.25": -0.00033025965043059514,
+      "1.5": -0.0004010960817958471,
+      "2.0": -0.000542768944526351
+    },
+    "cost_to_gross_ratio": 11.844316008307352,
+    "economic_filter": {
+      "family": "signal + high signal magnitude",
+      "id": "HIGH_SIGNAL_MAGNITUDE",
+      "rule": "return abs >= 1.25x threshold; distance <= 0.75x threshold"
+    },
+    "eligible_signals": 39531,
+    "entered": 28502,
+    "entry_rate": 0.7210037691937973,
+    "historical_cost_quantiles": {
+      "p50": 0.0003058314410013905,
+      "p75": 0.00032539240290634195,
+      "p90": 0.00034383963947102244,
+      "p95": 0.00035581228629589704
+    },
+    "hit_rate": 0.4039014805978528,
+    "horizon_minutes": 15,
+    "id": "NEW-ECO-DISC-09-HIGH_SIGNAL_MAGNITUDE-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.0009752414680283354,
+    "mfe": 0.0009429736669619248,
+    "payoff": 0.825990306691791,
+    "raw_p_value": 1.0,
+    "regime_stability": {
+      "RANGE": 0.003643961908412645,
+      "TREND_UP": -0.0002596976704717399
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.361503,
+    "sessions": 1003,
+    "signal_frozen": true,
+    "signal_source": "DISC-09",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.0004010960817958471,
+        "cost_2x": -0.000542768944526351,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "RANGE": 0.003643961908412645,
+          "TREND_UP": -0.0002596976704717399
+        },
+        "remove_best_10_sessions": -0.000272843841230165,
+        "remove_best_5pct": -0.0004169257774815089,
+        "sample_concentration_top10_sessions": 0.005894323205389095,
+        "spread_perturbation_10pct": -0.000287757791611444,
+        "stronger_signal_neighbor": -0.00025942321906534307,
+        "temporal_concentration": 0.056394802284958016,
+        "weaker_signal_neighbor": -0.00025942321906534307,
+        "winsorization": -0.00025845916316181636
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity",
+        "regime_dependence"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.0002684494428989077,
+      "2016-H1": -0.0003373659270121438,
+      "2016-H2": -0.00014817481457389683,
+      "2017": -0.0003050952312552897,
+      "2017-H1": -0.0003471158058501055,
+      "2017-H2": -0.00024814259629024247,
+      "2018": -0.0002674643254481206,
+      "2018-H1": -0.00024365355276622624,
+      "2018-H2": -0.00028844717827737523,
+      "2019": -0.00020050843361450472,
+      "2019-H1": -0.00017082176666527817,
+      "2019-H2": -0.00022023840084793784
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.00030190580268914886,
+        -0.00021694063544153727
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.0023459996243699213,
+      "expected_costs": 0.00028334572546100795,
+      "expected_gross_return": 2.3922506395664827e-05,
+      "expected_net_return": -0.00025942321906534307,
+      "support": 28447,
+      "uncertainty": 2.167478756316623e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.2789962308062027,
+    "waited": 11029,
+    "walk_forward": [
+      {
+        "eligible": 13355,
+        "embargo_minutes": 15,
+        "entered": 10347,
+        "expected_net_return": -0.0002684494428989077,
+        "learned_from_past": {
+          "fixed_signal_factor": 1.25
+        },
+        "purge_minutes": 15,
+        "test_year": 2016,
+        "train_eligible": 12854,
+        "waited": 3008
+      },
+      {
+        "eligible": 8292,
+        "embargo_minutes": 15,
+        "entered": 5659,
+        "expected_net_return": -0.0003050952312552897,
+        "learned_from_past": {
+          "fixed_signal_factor": 1.25
+        },
+        "purge_minutes": 15,
+        "test_year": 2017,
+        "train_eligible": 26209,
+        "waited": 2633
+      },
+      {
+        "eligible": 8305,
+        "embargo_minutes": 15,
+        "entered": 5740,
+        "expected_net_return": -0.0002674643254481206,
+        "learned_from_past": {
+          "fixed_signal_factor": 1.25
+        },
+        "purge_minutes": 15,
+        "test_year": 2018,
+        "train_eligible": 34501,
+        "waited": 2565
+      },
+      {
+        "eligible": 9579,
+        "embargo_minutes": 15,
+        "entered": 6756,
+        "expected_net_return": -0.00020050843361450472,
+        "learned_from_past": {
+          "fixed_signal_factor": 1.25
+        },
+        "purge_minutes": 15,
+        "test_year": 2019,
+        "train_eligible": 42806,
+        "waited": 2823
+      }
+    ],
+    "years": 4
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.000246725927075696,
+      "optimal_action": "WAIT",
+      "value_enter": -0.000246725927075696,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_SHORT",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": 3.4017634334089856e-05,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.00017654003672324954,
+      "1.0": -0.000246725927075696,
+      "1.25": -0.00031691181742814244,
+      "1.5": -0.0003870977077805889,
+      "2.0": -0.0005274694884854818
+    },
+    "cost_to_gross_ratio": 8.252883156206021,
+    "economic_filter": {
+      "family": "signal + favorable volatility",
+      "id": "FAVORABLE_VOLATILITY",
+      "rule": "expanding-train q25 <= state_volatility_15m_causal <= q75"
+    },
+    "eligible_signals": 39531,
+    "entered": 18937,
+    "entry_rate": 0.479041764691002,
+    "historical_cost_quantiles": {
+      "p50": 0.0003024323118682379,
+      "p75": 0.0003250024375184295,
+      "p90": 0.0003438926504856041,
+      "p95": 0.0003558651563760189
+    },
+    "hit_rate": 0.40571368220943127,
+    "horizon_minutes": 15,
+    "id": "NEW-ECO-DISC-09-FAVORABLE_VOLATILITY-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.0009272433116509335,
+    "mfe": 0.0009187500245754239,
+    "payoff": 0.8297355130282201,
+    "raw_p_value": 1.0,
+    "regime_stability": {
+      "TREND_UP": -0.000246725927075696
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.360269,
+    "sessions": 923,
+    "signal_frozen": true,
+    "signal_source": "DISC-09",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.0003870977077805889,
+        "cost_2x": -0.0005274694884854818,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "TREND_UP": -0.000246725927075696
+        },
+        "remove_best_10_sessions": -0.00026569489788750894,
+        "remove_best_5pct": -0.00039407002755039485,
+        "sample_concentration_top10_sessions": 0.006812061044516027,
+        "spread_perturbation_10pct": -0.0002748002832166746,
+        "stronger_signal_neighbor": -0.00024822652346781753,
+        "temporal_concentration": 0.08326747049525526,
+        "weaker_signal_neighbor": -0.000246725927075696,
+        "winsorization": -0.00024619719584528517
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.0002317290951586591,
+      "2016-H1": -0.000324901817206707,
+      "2016-H2": -6.0219071843591976e-05,
+      "2017": -0.00036968220489964524,
+      "2017-H1": -0.000402754173424562,
+      "2017-H2": -0.0003155049262946944,
+      "2018": -0.00023010297942311999,
+      "2018-H1": -0.00015740128498569077,
+      "2018-H2": -0.0002953044990561377,
+      "2019": -0.00019575174577846064,
+      "2019-H1": -0.00020464091101661102,
+      "2019-H2": -0.00019014207839516186
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.00029538230625663546,
+        -0.00019806954789475652
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.002183940191920221,
+      "expected_costs": 0.0002807435614097858,
+      "expected_gross_return": 3.4017634334089856e-05,
+      "expected_net_return": -0.000246725927075696,
+      "support": 18917,
+      "uncertainty": 2.4824683255581367e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.520958235308998,
+    "waited": 20594,
+    "walk_forward": [
+      {
+        "eligible": 13355,
+        "embargo_minutes": 15,
+        "entered": 6744,
+        "expected_net_return": -0.0002317290951586591,
+        "learned_from_past": {
+          "q25": 0.0002455223192620197,
+          "q75": 0.0004675885706134379
+        },
+        "purge_minutes": 15,
+        "test_year": 2016,
+        "train_eligible": 12854,
+        "waited": 6611
+      },
+      {
+        "eligible": 8292,
+        "embargo_minutes": 15,
+        "entered": 3335,
+        "expected_net_return": -0.00036968220489964524,
+        "learned_from_past": {
+          "q25": 0.00023914728780924962,
+          "q75": 0.000454042421419085
+        },
+        "purge_minutes": 15,
+        "test_year": 2017,
+        "train_eligible": 26209,
+        "waited": 4957
+      },
+      {
+        "eligible": 8305,
+        "embargo_minutes": 15,
+        "entered": 4137,
+        "expected_net_return": -0.00023010297942311999,
+        "learned_from_past": {
+          "q25": 0.0002207002630736166,
+          "q75": 0.0004269949996624357
+        },
+        "purge_minutes": 15,
+        "test_year": 2018,
+        "train_eligible": 34501,
+        "waited": 4168
+      },
+      {
+        "eligible": 9579,
+        "embargo_minutes": 15,
+        "entered": 4721,
+        "expected_net_return": -0.00019575174577846064,
+        "learned_from_past": {
+          "q25": 0.0002104536236814584,
+          "q75": 0.0004057960050464728
+        },
+        "purge_minutes": 15,
+        "test_year": 2019,
+        "train_eligible": 42806,
+        "waited": 4858
+      }
+    ],
+    "years": 4
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.00024232811412825572,
+      "optimal_action": "WAIT",
+      "value_enter": -0.00024232811412825572,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_SHORT",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": 1.0580267414176791e-05,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.0001791010187426476,
+      "1.0": -0.00024232811412825572,
+      "1.25": -0.00030555520951386383,
+      "1.5": -0.000368782304899472,
+      "2.0": -0.0004952364956706883
+    },
+    "cost_to_gross_ratio": 23.903779710100107,
+    "economic_filter": {
+      "family": "signal + cost/ATR low",
+      "id": "LOW_COST_ATR",
+      "rule": "state_spread_price/state_atr_14_causal <= expanding-train q25"
+    },
+    "eligible_signals": 39531,
+    "entered": 9673,
+    "entry_rate": 0.24469403759075156,
+    "historical_cost_quantiles": {
+      "p50": 0.00023162267122698498,
+      "p75": 0.0003126810561261196,
+      "p90": 0.00032690582008180986,
+      "p95": 0.00033709872610972517
+    },
+    "hit_rate": 0.4336813811640649,
+    "horizon_minutes": 15,
+    "id": "NEW-ECO-DISC-09-LOW_COST_ATR-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.0012288270254074056,
+    "mfe": 0.0011919861746545026,
+    "payoff": 0.8479840213566548,
+    "raw_p_value": 0.9999999212291104,
+    "regime_stability": {
+      "RANGE": -0.0008635860454066996,
+      "TREND_UP": -0.00024071495996519373
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.351884,
+    "sessions": 513,
+    "signal_frozen": true,
+    "signal_source": "DISC-09",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.000368782304899472,
+        "cost_2x": -0.0004952364956706883,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "RANGE": -0.0008635860454066996,
+          "TREND_UP": -0.00024071495996519373
+        },
+        "remove_best_10_sessions": -0.0002677373292232518,
+        "remove_best_5pct": -0.000438688808410434,
+        "sample_concentration_top10_sessions": 0.008270443502532823,
+        "spread_perturbation_10pct": -0.000267618952282499,
+        "stronger_signal_neighbor": -0.00024453584678860033,
+        "temporal_concentration": 0.08746834025315954,
+        "weaker_signal_neighbor": -0.00024232811412825572,
+        "winsorization": -0.00024278522593856704
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity",
+        "regime_dependence"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.00027472740966989713,
+      "2016-H1": -0.00037786528898438163,
+      "2016-H2": -4.1949132685433984e-05,
+      "2017": -9.142177463323339e-05,
+      "2017-H1": -0.00033442599960767074,
+      "2017-H2": 8.146182820927677e-05,
+      "2018": -0.0003166008073898385,
+      "2018-H1": -0.00028625767040304785,
+      "2018-H2": -0.0003553013112495623,
+      "2019": -0.0002133763399542318,
+      "2019-H1": -0.00018912957095494715,
+      "2019-H2": -0.00022365238893160575
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.0003329090806610228,
+        -0.00015174714759548866
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.0028650683633774706,
+      "expected_costs": 0.0002529083815424325,
+      "expected_gross_return": 1.0580267414176791e-05,
+      "expected_net_return": -0.00024232811412825572,
+      "support": 9653,
+      "uncertainty": 4.62147788432485e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.7553059624092484,
+    "waited": 29858,
+    "walk_forward": [
+      {
+        "eligible": 13355,
+        "embargo_minutes": 15,
+        "entered": 2573,
+        "expected_net_return": -0.00027472740966989713,
+        "learned_from_past": {
+          "q25_cost_atr": 0.47588023795264267
+        },
+        "purge_minutes": 15,
+        "test_year": 2016,
+        "train_eligible": 12854,
+        "waited": 10782
+      },
+      {
+        "eligible": 8292,
+        "embargo_minutes": 15,
+        "entered": 697,
+        "expected_net_return": -9.142177463323339e-05,
+        "learned_from_past": {
+          "q25_cost_atr": 0.4984293193717183
+        },
+        "purge_minutes": 15,
+        "test_year": 2017,
+        "train_eligible": 26209,
+        "waited": 7595
+      },
+      {
+        "eligible": 8305,
+        "embargo_minutes": 15,
+        "entered": 1991,
+        "expected_net_return": -0.0003166008073898385,
+        "learned_from_past": {
+          "q25_cost_atr": 0.5297297297297037
+        },
+        "purge_minutes": 15,
+        "test_year": 2018,
+        "train_eligible": 34501,
+        "waited": 6314
+      },
+      {
+        "eligible": 9579,
+        "embargo_minutes": 15,
+        "entered": 4412,
+        "expected_net_return": -0.0002133763399542318,
+        "learned_from_past": {
+          "q25_cost_atr": 0.5309734513274624
+        },
+        "purge_minutes": 15,
+        "test_year": 2019,
+        "train_eligible": 42806,
+        "waited": 5167
+      }
+    ],
+    "years": 4
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.0002712785042414832,
+      "optimal_action": "WAIT",
+      "value_enter": -0.0002712785042414832,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_SHORT",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": 1.1079118632806537e-05,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.0002006890985229108,
+      "1.0": -0.00027127850424148316,
+      "1.25": -0.00034186790996005564,
+      "1.5": -0.000412457315678628,
+      "2.0": -0.0005536361271157729
+    },
+    "cost_to_gross_ratio": 25.485567239816042,
+    "economic_filter": {
+      "family": "signal + selected time window",
+      "id": "SELECTED_TIME_WINDOW",
+      "rule": "60 <= state_minute_of_session <= 210"
+    },
+    "eligible_signals": 39531,
+    "entered": 23266,
+    "entry_rate": 0.5885507576332498,
+    "historical_cost_quantiles": {
+      "p50": 0.0003034608328683718,
+      "p75": 0.0003249443532795432,
+      "p90": 0.00034443206284454547,
+      "p95": 0.00035684462928824043
+    },
+    "hit_rate": 0.39555574658299664,
+    "horizon_minutes": 15,
+    "id": "NEW-ECO-DISC-09-SELECTED_TIME_WINDOW-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.0009438843879592947,
+    "mfe": 0.0009032693314621601,
+    "payoff": 0.8236268942390406,
+    "raw_p_value": 1.0,
+    "regime_stability": {
+      "RANGE": -0.000818314089756674,
+      "TREND_UP": -0.00027083067468722455
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.360515,
+    "sessions": 988,
+    "signal_frozen": true,
+    "signal_source": "DISC-09",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.000412457315678628,
+        "cost_2x": -0.0005536361271157729,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "RANGE": -0.000818314089756674,
+          "TREND_UP": -0.00027083067468722455
+        },
+        "remove_best_10_sessions": -0.0002865628739267055,
+        "remove_best_5pct": -0.0004234941869162338,
+        "sample_concentration_top10_sessions": 0.006017364394395255,
+        "spread_perturbation_10pct": -0.00029951426652891224,
+        "stronger_signal_neighbor": -0.0002708998889170804,
+        "temporal_concentration": 0.051274901726568956,
+        "weaker_signal_neighbor": -0.00027127850424148316,
+        "winsorization": -0.00026916205617252836
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity",
+        "regime_dependence"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.0003100322712213552,
+      "2016-H1": -0.00036693708771001234,
+      "2016-H2": -0.00021843121971201887,
+      "2017": -0.0003061397155340606,
+      "2017-H1": -0.0003387472661872847,
+      "2017-H2": -0.00026681349281600943,
+      "2018": -0.0002520125409433614,
+      "2018-H1": -0.00017663556916612723,
+      "2018-H2": -0.0003170162735043713,
+      "2019": -0.0002039049486150808,
+      "2019-H1": -0.00015395304691966213,
+      "2019-H2": -0.00024111275108988457
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.0003187033172912781,
+        -0.00022385369119168834
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.0023203022288431764,
+      "expected_costs": 0.0002823576228742898,
+      "expected_gross_return": 1.1079118632806537e-05,
+      "expected_net_return": -0.0002712785042414832,
+      "support": 23228,
+      "uncertainty": 2.419633318867085e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.4114492423667501,
+    "waited": 16265,
+    "walk_forward": [
+      {
+        "eligible": 13355,
+        "embargo_minutes": 15,
+        "entered": 7949,
+        "expected_net_return": -0.0003100322712213552,
+        "learned_from_past": {
+          "end": 210,
+          "start": 60
+        },
+        "purge_minutes": 15,
+        "test_year": 2016,
+        "train_eligible": 12854,
+        "waited": 5406
+      },
+      {
+        "eligible": 8292,
+        "embargo_minutes": 15,
+        "entered": 4763,
+        "expected_net_return": -0.0003061397155340606,
+        "learned_from_past": {
+          "end": 210,
+          "start": 60
+        },
+        "purge_minutes": 15,
+        "test_year": 2017,
+        "train_eligible": 26209,
+        "waited": 3529
+      },
+      {
+        "eligible": 8305,
+        "embargo_minutes": 15,
+        "entered": 4939,
+        "expected_net_return": -0.0002520125409433614,
+        "learned_from_past": {
+          "end": 210,
+          "start": 60
+        },
+        "purge_minutes": 15,
+        "test_year": 2018,
+        "train_eligible": 34501,
+        "waited": 3366
+      },
+      {
+        "eligible": 9579,
+        "embargo_minutes": 15,
+        "entered": 5615,
+        "expected_net_return": -0.0002039049486150808,
+        "learned_from_past": {
+          "end": 210,
+          "start": 60
+        },
+        "purge_minutes": 15,
+        "test_year": 2019,
+        "train_eligible": 42806,
+        "waited": 3964
+      }
+    ],
+    "years": 4
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.0008635860454066996,
+      "optimal_action": "WAIT",
+      "value_enter": -0.0008635860454066996,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_SHORT",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": -0.0005891386965212275,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.0007949742081853314,
+      "1.0": -0.0008635860454066996,
+      "1.25": -0.0009321978826280677,
+      "1.5": -0.0010008097198494358,
+      "2.0": -0.0011380333942921717
+    },
+    "cost_to_gross_ratio": 0.4658450556822036,
+    "economic_filter": {
+      "family": "signal + favorable regime",
+      "id": "RANGE_REGIME",
+      "rule": "state_regime_v0 == RANGE"
+    },
+    "eligible_signals": 39531,
+    "entered": 25,
+    "entry_rate": 0.000632415066656548,
+    "historical_cost_quantiles": {
+      "p50": 0.0003020600495378859,
+      "p75": 0.00031800799790123943,
+      "p90": 0.0003261171375508015,
+      "p95": 0.0003410568444611721
+    },
+    "hit_rate": 0.28,
+    "horizon_minutes": 15,
+    "id": "NEW-ECO-DISC-09-RANGE_REGIME-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.0021445380849388967,
+    "mfe": 0.0020850358188393447,
+    "payoff": 1.0866591948634223,
+    "raw_p_value": 0.9248456687729368,
+    "regime_stability": {
+      "RANGE": -0.0008635860454066996
+    },
+    "rejection_reasons": [
+      "minimum_support_failed",
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": -0.072,
+    "sessions": 16,
+    "signal_frozen": true,
+    "signal_source": "DISC-09",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.0010008097198494358,
+        "cost_2x": -0.0011380333942921717,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": true,
+        "regime_means": {
+          "RANGE": -0.0008635860454066996
+        },
+        "remove_best_10_sessions": -0.002762501195063662,
+        "remove_best_5pct": -0.0014022208198308465,
+        "sample_concentration_top10_sessions": 0.56,
+        "spread_perturbation_10pct": -0.0008910307802952469,
+        "stronger_signal_neighbor": 0.003643961908412645,
+        "temporal_concentration": 0.8930626697897657,
+        "weaker_signal_neighbor": -0.0008635860454066996,
+        "winsorization": -0.0008921901447534775
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "temporal_concentration"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": false,
+    "temporal_stability": {
+      "2016": -0.0005450839537525441,
+      "2016-H1": -0.0007864718215075125,
+      "2016-H2": -0.00012265518518134926,
+      "2017": 0.0004807702919880197,
+      "2017-H1": 0.0002191914271795376,
+      "2017-H2": 0.0006115597243922608,
+      "2018": -0.0015025557341605017,
+      "2018-H1": -0.0007867989196775146,
+      "2018-H2": -0.0022183125486434888,
+      "2019": -0.0016041408229781108,
+      "2019-H1": -0.001125226663625659,
+      "2019-H2": -0.0019234169292130787
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.0020402956825374234,
+        0.00031312359172402395
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.004588591232245949,
+      "expected_costs": 0.0002744473488854721,
+      "expected_gross_return": -0.0005891386965212275,
+      "expected_net_return": -0.0008635860454066996,
+      "support": 25,
+      "uncertainty": 0.0006003620597605732,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.9993675849333434,
+    "waited": 39506,
+    "walk_forward": [
+      {
+        "eligible": 13355,
+        "embargo_minutes": 15,
+        "entered": 11,
+        "expected_net_return": -0.0005450839537525441,
+        "learned_from_past": {
+          "regime": "RANGE"
+        },
+        "purge_minutes": 15,
+        "test_year": 2016,
+        "train_eligible": 12854,
+        "waited": 13344
+      },
+      {
+        "eligible": 8292,
+        "embargo_minutes": 15,
+        "entered": 3,
+        "expected_net_return": 0.0004807702919880197,
+        "learned_from_past": {
+          "regime": "RANGE"
+        },
+        "purge_minutes": 15,
+        "test_year": 2017,
+        "train_eligible": 26209,
+        "waited": 8289
+      },
+      {
+        "eligible": 8305,
+        "embargo_minutes": 15,
+        "entered": 6,
+        "expected_net_return": -0.0015025557341605017,
+        "learned_from_past": {
+          "regime": "RANGE"
+        },
+        "purge_minutes": 15,
+        "test_year": 2018,
+        "train_eligible": 34501,
+        "waited": 8299
+      },
+      {
+        "eligible": 9579,
+        "embargo_minutes": 15,
+        "entered": 5,
+        "expected_net_return": -0.0016041408229781108,
+        "learned_from_past": {
+          "regime": "RANGE"
+        },
+        "purge_minutes": 15,
+        "test_year": 2019,
+        "train_eligible": 42806,
+        "waited": 9574
+      }
+    ],
+    "years": 4
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.00021267083242028587,
+      "optimal_action": "WAIT",
+      "value_enter": -0.00021267083242028587,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_LONG",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": 1.4501947216207316e-05,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.00015587763751116252,
+      "1.0": -0.00021267083242028587,
+      "1.25": -0.0002694640273294091,
+      "1.5": -0.0003262572222385324,
+      "2.0": -0.000439843612056779
+    },
+    "cost_to_gross_ratio": 15.66498458790457,
+    "economic_filter": {
+      "family": "signal + low cost / wait until spread normalizes",
+      "id": "LOW_COST",
+      "rule": "state_spread_points <= expanding-train q25"
+    },
+    "eligible_signals": 38859,
+    "entered": 17020,
+    "entry_rate": 0.43799377235646825,
+    "historical_cost_quantiles": {
+      "p50": 0.0002264236053261011,
+      "p75": 0.00024165015483711873,
+      "p90": 0.00025447159712042557,
+      "p95": 0.00026936066469847054
+    },
+    "hit_rate": 0.42596944770857814,
+    "horizon_minutes": 15,
+    "id": "NEW-ECO-DISC-10-LOW_COST-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.000909386542087304,
+    "mfe": 0.0008413092830209074,
+    "payoff": 0.8108956236818485,
+    "raw_p_value": 0.9999999999925073,
+    "regime_stability": {
+      "RANGE": 0.00018060944322986677,
+      "TREND_DOWN": -0.00021290226905634196
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.357646,
+    "sessions": 506,
+    "signal_frozen": true,
+    "signal_source": "DISC-10",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.0003262572222385324,
+        "cost_2x": -0.000439843612056779,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "RANGE": 0.00018060944322986677,
+          "TREND_DOWN": -0.00021290226905634196
+        },
+        "remove_best_10_sessions": -0.0002357200467915702,
+        "remove_best_5pct": -0.0003520244719614659,
+        "sample_concentration_top10_sessions": 0.010928319623971798,
+        "spread_perturbation_10pct": -0.00023538811038393518,
+        "stronger_signal_neighbor": -0.00020728710988987965,
+        "temporal_concentration": 0.10533741549994606,
+        "weaker_signal_neighbor": -0.00021267083242028587,
+        "winsorization": -0.00021371902678222668
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity",
+        "regime_dependence"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.00023326628955332558,
+      "2016-H1": -0.00023326628955332558,
+      "2016-H2": null,
+      "2018": -0.00021723442602519932,
+      "2018-H1": -0.00019120897227110494,
+      "2018-H2": -0.00024122469845731153,
+      "2019": -0.00020728146765084806,
+      "2019-H1": -0.00020155482979552952,
+      "2019-H2": -0.00021201585445158576
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.0002744420623996063,
+        -0.00015089960244096546
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.002166142954966241,
+      "expected_costs": 0.00022717277963649318,
+      "expected_gross_return": 1.4501947216207316e-05,
+      "expected_net_return": -0.00021267083242028587,
+      "support": 17003,
+      "uncertainty": 3.151593366291857e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.5620062276435317,
+    "waited": 21839,
+    "walk_forward": [
+      {
+        "eligible": 13248,
+        "embargo_minutes": 15,
+        "entered": 601,
+        "expected_net_return": -0.00023326628955332558,
+        "learned_from_past": {
+          "q25_spread_points": 34.0
+        },
+        "purge_minutes": 15,
+        "test_year": 2016,
+        "train_eligible": 13527,
+        "waited": 12647
+      },
+      {
+        "eligible": 8231,
+        "embargo_minutes": 15,
+        "entered": 0,
+        "expected_net_return": null,
+        "learned_from_past": {
+          "q25_spread_points": 34.0
+        },
+        "purge_minutes": 15,
+        "test_year": 2017,
+        "train_eligible": 26775,
+        "waited": 8231
+      },
+      {
+        "eligible": 8163,
+        "embargo_minutes": 15,
+        "entered": 7644,
+        "expected_net_return": -0.00021723442602519932,
+        "learned_from_past": {
+          "q25_spread_points": 36.0
+        },
+        "purge_minutes": 15,
+        "test_year": 2018,
+        "train_eligible": 35006,
+        "waited": 519
+      },
+      {
+        "eligible": 9217,
+        "embargo_minutes": 15,
+        "entered": 8775,
+        "expected_net_return": -0.00020728146765084806,
+        "learned_from_past": {
+          "q25_spread_points": 34.0
+        },
+        "purge_minutes": 15,
+        "test_year": 2019,
+        "train_eligible": 43169,
+        "waited": 442
+      }
+    ],
+    "years": 3
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.0002628004395293746,
+      "optimal_action": "WAIT",
+      "value_enter": -0.0002628004395293746,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_LONG",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": 1.9196654674822963e-05,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.0001923011659783252,
+      "1.0": -0.0002628004395293746,
+      "1.25": -0.000333299713080424,
+      "1.5": -0.0004037989866314734,
+      "2.0": -0.0005447975337335722
+    },
+    "cost_to_gross_ratio": 14.689908162699092,
+    "economic_filter": {
+      "family": "signal + high signal magnitude",
+      "id": "HIGH_SIGNAL_MAGNITUDE",
+      "rule": "return abs >= 1.25x threshold; distance <= 0.75x threshold"
+    },
+    "eligible_signals": 38859,
+    "entered": 28265,
+    "entry_rate": 0.7273733240690702,
+    "historical_cost_quantiles": {
+      "p50": 0.000305255337847846,
+      "p75": 0.00032458530070931233,
+      "p90": 0.0003403131011738454,
+      "p95": 0.0003518057540235689
+    },
+    "hit_rate": 0.4301079073058553,
+    "horizon_minutes": 15,
+    "id": "NEW-ECO-DISC-10-HIGH_SIGNAL_MAGNITUDE-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.001067119618988214,
+    "mfe": 0.0009777475998835742,
+    "payoff": 0.7718987157837576,
+    "raw_p_value": 1.0,
+    "regime_stability": {
+      "RANGE": -0.0012824744348926996,
+      "TREND_DOWN": -0.00026240318739730457
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.359471,
+    "sessions": 993,
+    "signal_frozen": true,
+    "signal_source": "DISC-10",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.0004037989866314734,
+        "cost_2x": -0.0005447975337335722,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "RANGE": -0.0012824744348926996,
+          "TREND_DOWN": -0.00026240318739730457
+        },
+        "remove_best_10_sessions": -0.00027937070759270473,
+        "remove_best_5pct": -0.00042317655928709877,
+        "sample_concentration_top10_sessions": 0.005236157792322661,
+        "spread_perturbation_10pct": -0.0002910001489497944,
+        "stronger_signal_neighbor": -0.0002628004395293746,
+        "temporal_concentration": 0.07128048109798123,
+        "weaker_signal_neighbor": -0.0002628004395293746,
+        "winsorization": -0.0002614487777296943
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity",
+        "regime_dependence"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.00034021890960553915,
+      "2016-H1": -0.00031521009122354566,
+      "2016-H2": -0.00037092941553683973,
+      "2017": -0.0002519751846227184,
+      "2017-H1": -0.0002410491453286244,
+      "2017-H2": -0.00026550511314002206,
+      "2018": -0.00020095670863628,
+      "2018-H1": -0.00016131278530844923,
+      "2018-H2": -0.0002437649812658804,
+      "2019": -0.00020316851519755122,
+      "2019-H1": -0.0001768649685275037,
+      "2019-H2": -0.00022164610233269818
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.00031544734096089445,
+        -0.00021015353809785472
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.002581868584631197,
+      "expected_costs": 0.00028199709420419753,
+      "expected_gross_return": 1.9196654674822963e-05,
+      "expected_net_return": -0.0002628004395293746,
+      "support": 28246,
+      "uncertainty": 2.686066399567341e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.27262667593092976,
+    "waited": 10594,
+    "walk_forward": [
+      {
+        "eligible": 13248,
+        "embargo_minutes": 15,
+        "entered": 10355,
+        "expected_net_return": -0.00034021890960553915,
+        "learned_from_past": {
+          "fixed_signal_factor": 1.25
+        },
+        "purge_minutes": 15,
+        "test_year": 2016,
+        "train_eligible": 13527,
+        "waited": 2893
+      },
+      {
+        "eligible": 8231,
+        "embargo_minutes": 15,
+        "entered": 5702,
+        "expected_net_return": -0.0002519751846227184,
+        "learned_from_past": {
+          "fixed_signal_factor": 1.25
+        },
+        "purge_minutes": 15,
+        "test_year": 2017,
+        "train_eligible": 26775,
+        "waited": 2529
+      },
+      {
+        "eligible": 8163,
+        "embargo_minutes": 15,
+        "entered": 5524,
+        "expected_net_return": -0.00020095670863628,
+        "learned_from_past": {
+          "fixed_signal_factor": 1.25
+        },
+        "purge_minutes": 15,
+        "test_year": 2018,
+        "train_eligible": 35006,
+        "waited": 2639
+      },
+      {
+        "eligible": 9217,
+        "embargo_minutes": 15,
+        "entered": 6684,
+        "expected_net_return": -0.00020316851519755122,
+        "learned_from_past": {
+          "fixed_signal_factor": 1.25
+        },
+        "purge_minutes": 15,
+        "test_year": 2019,
+        "train_eligible": 43169,
+        "waited": 2533
+      }
+    ],
+    "years": 4
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.0002598799604518434,
+      "optimal_action": "WAIT",
+      "value_enter": -0.0002598799604518434,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_LONG",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": 2.0636477233543716e-05,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.00018975085103049662,
+      "1.0": -0.0002598799604518434,
+      "1.25": -0.0003300090698731902,
+      "1.5": -0.000400138179294537,
+      "2.0": -0.0005403963981372305
+    },
+    "cost_to_gross_ratio": 13.593232726243587,
+    "economic_filter": {
+      "family": "signal + favorable volatility",
+      "id": "FAVORABLE_VOLATILITY",
+      "rule": "expanding-train q25 <= state_volatility_15m_causal <= q75"
+    },
+    "eligible_signals": 38859,
+    "entered": 18412,
+    "entry_rate": 0.4738155896960807,
+    "historical_cost_quantiles": {
+      "p50": 0.0003033468551342466,
+      "p75": 0.0003245673625335787,
+      "p90": 0.0003410784561005526,
+      "p95": 0.0003529983925971501
+    },
+    "hit_rate": 0.42510319356941123,
+    "horizon_minutes": 15,
+    "id": "NEW-ECO-DISC-10-FAVORABLE_VOLATILITY-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.0010049124425825953,
+    "mfe": 0.0009256480860521134,
+    "payoff": 0.7713766241134394,
+    "raw_p_value": 1.0,
+    "regime_stability": {
+      "TREND_DOWN": -0.0002598799604518434
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.359233,
+    "sessions": 900,
+    "signal_frozen": true,
+    "signal_source": "DISC-10",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.000400138179294537,
+        "cost_2x": -0.0005403963981372305,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "TREND_DOWN": -0.0002598799604518434
+        },
+        "remove_best_10_sessions": -0.00028147350945948926,
+        "remove_best_5pct": -0.0004087082195604232,
+        "sample_concentration_top10_sessions": 0.006028676949815338,
+        "spread_perturbation_10pct": -0.0002879316042203822,
+        "stronger_signal_neighbor": -0.0002555523628890063,
+        "temporal_concentration": 0.08233090691475044,
+        "weaker_signal_neighbor": -0.0002598799604518434,
+        "winsorization": -0.0002652500072740909
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.0003718050445195505,
+      "2016-H1": -0.0003428824720757038,
+      "2016-H2": -0.00040822978631079276,
+      "2017": -0.0002445100784199226,
+      "2017-H1": -0.00020048203193283597,
+      "2017-H2": -0.0003018355714324633,
+      "2018": -0.00017290499590920703,
+      "2018-H1": -0.00015731829212230376,
+      "2018-H2": -0.0001892780708377756,
+      "2019": -0.00018523663497991053,
+      "2019-H1": -0.0002978595850785985,
+      "2019-H2": -0.00010017874259768465
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.0003137130635878175,
+        -0.00020604685731586932
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.0024485349356737907,
+      "expected_costs": 0.00028051643768538714,
+      "expected_gross_return": 2.0636477233543716e-05,
+      "expected_net_return": -0.0002598799604518434,
+      "support": 18406,
+      "uncertainty": 2.746586894692555e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.5261844103039193,
+    "waited": 20447,
+    "walk_forward": [
+      {
+        "eligible": 13248,
+        "embargo_minutes": 15,
+        "entered": 6502,
+        "expected_net_return": -0.0003718050445195505,
+        "learned_from_past": {
+          "q25": 0.0002447622321554947,
+          "q75": 0.0004552801935350753
+        },
+        "purge_minutes": 15,
+        "test_year": 2016,
+        "train_eligible": 13527,
+        "waited": 6746
+      },
+      {
+        "eligible": 8231,
+        "embargo_minutes": 15,
+        "entered": 3529,
+        "expected_net_return": -0.0002445100784199226,
+        "learned_from_past": {
+          "q25": 0.0002436432198873626,
+          "q75": 0.00045651048602362817
+        },
+        "purge_minutes": 15,
+        "test_year": 2017,
+        "train_eligible": 26775,
+        "waited": 4702
+      },
+      {
+        "eligible": 8163,
+        "embargo_minutes": 15,
+        "entered": 3862,
+        "expected_net_return": -0.00017290499590920703,
+        "learned_from_past": {
+          "q25": 0.00022806203442903199,
+          "q75": 0.0004334831145204764
+        },
+        "purge_minutes": 15,
+        "test_year": 2018,
+        "train_eligible": 35006,
+        "waited": 4301
+      },
+      {
+        "eligible": 9217,
+        "embargo_minutes": 15,
+        "entered": 4519,
+        "expected_net_return": -0.00018523663497991053,
+        "learned_from_past": {
+          "q25": 0.00021596946018922382,
+          "q75": 0.00040994257203476656
+        },
+        "purge_minutes": 15,
+        "test_year": 2019,
+        "train_eligible": 43169,
+        "waited": 4698
+      }
+    ],
+    "years": 4
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.00022573076368883867,
+      "optimal_action": "WAIT",
+      "value_enter": -0.00022573076368883867,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_LONG",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": 2.8834887016661885e-05,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.00016208935101246353,
+      "1.0": -0.00022573076368883867,
+      "1.25": -0.0002893721763652138,
+      "1.5": -0.00035301358904158895,
+      "2.0": -0.00048029641439433917
+    },
+    "cost_to_gross_ratio": 8.82839078087606,
+    "economic_filter": {
+      "family": "signal + cost/ATR low",
+      "id": "LOW_COST_ATR",
+      "rule": "state_spread_price/state_atr_14_causal <= expanding-train q25"
+    },
+    "eligible_signals": 38859,
+    "entered": 10334,
+    "entry_rate": 0.26593581924393317,
+    "historical_cost_quantiles": {
+      "p50": 0.00023120811342243111,
+      "p75": 0.00031411212300689185,
+      "p90": 0.0003273151339124987,
+      "p95": 0.00033624664155666403
+    },
+    "hit_rate": 0.46080898006580223,
+    "horizon_minutes": 15,
+    "id": "NEW-ECO-DISC-10-LOW_COST_ATR-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.0013365409648362838,
+    "mfe": 0.0012367090497176865,
+    "payoff": 0.8088673266152799,
+    "raw_p_value": 0.9999477448161842,
+    "regime_stability": {
+      "RANGE": -0.0005044734302273977,
+      "TREND_DOWN": -0.00022499965313933982
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.347193,
+    "sessions": 540,
+    "signal_frozen": true,
+    "signal_source": "DISC-10",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.00035301358904158895,
+        "cost_2x": -0.00048029641439433917,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "RANGE": -0.0005044734302273977,
+          "TREND_DOWN": -0.00022499965313933982
+        },
+        "remove_best_10_sessions": -0.0002603432923254313,
+        "remove_best_5pct": -0.00042646818161828985,
+        "sample_concentration_top10_sessions": 0.008902651441842461,
+        "spread_perturbation_10pct": -0.00025118732875938874,
+        "stronger_signal_neighbor": -0.00022406586999526283,
+        "temporal_concentration": 0.09242970346182587,
+        "weaker_signal_neighbor": -0.00022573076368883867,
+        "winsorization": -0.00022424087832870096
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity",
+        "regime_dependence"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.0002937900914052225,
+      "2016-H1": -0.00026620955971458935,
+      "2016-H2": -0.00033322962536707414,
+      "2017": -0.00026527333910561865,
+      "2017-H1": -0.00028955346644939664,
+      "2017-H2": -0.00024344004630036094,
+      "2018": -0.00011900962542621755,
+      "2018-H1": -0.00016603255776522082,
+      "2018-H2": -4.1541963630507035e-05,
+      "2019": -0.00021839432300692157,
+      "2019-H1": -0.00013268432074110104,
+      "2019-H2": -0.0002563520152988732
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.0003397633941172554,
+        -0.00011169813326042192
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.003131772292404467,
+      "expected_costs": 0.00025456565070550055,
+      "expected_gross_return": 2.8834887016661885e-05,
+      "expected_net_return": -0.00022573076368883867,
+      "support": 10321,
+      "uncertainty": 5.81799134838861e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.7340641807560668,
+    "waited": 28525,
+    "walk_forward": [
+      {
+        "eligible": 13248,
+        "embargo_minutes": 15,
+        "entered": 3210,
+        "expected_net_return": -0.0002937900914052225,
+        "learned_from_past": {
+          "q25_cost_atr": 0.4872057318321515
+        },
+        "purge_minutes": 15,
+        "test_year": 2016,
+        "train_eligible": 13527,
+        "waited": 10038
+      },
+      {
+        "eligible": 8231,
+        "embargo_minutes": 15,
+        "entered": 735,
+        "expected_net_return": -0.00026527333910561865,
+        "learned_from_past": {
+          "q25_cost_atr": 0.48971193415639447
+        },
+        "purge_minutes": 15,
+        "test_year": 2017,
+        "train_eligible": 26775,
+        "waited": 7496
+      },
+      {
+        "eligible": 8163,
+        "embargo_minutes": 15,
+        "entered": 2020,
+        "expected_net_return": -0.00011900962542621755,
+        "learned_from_past": {
+          "q25_cost_atr": 0.5194805194805237
+        },
+        "purge_minutes": 15,
+        "test_year": 2018,
+        "train_eligible": 35006,
+        "waited": 6143
+      },
+      {
+        "eligible": 9217,
+        "embargo_minutes": 15,
+        "entered": 4369,
+        "expected_net_return": -0.00021839432300692157,
+        "learned_from_past": {
+          "q25_cost_atr": 0.5199275362319072
+        },
+        "purge_minutes": 15,
+        "test_year": 2019,
+        "train_eligible": 43169,
+        "waited": 4848
+      }
+    ],
+    "years": 4
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.0002385493586437976,
+      "optimal_action": "WAIT",
+      "value_enter": -0.0002385493586437976,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_LONG",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": 4.168828898997565e-05,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.00016848994673535433,
+      "1.0": -0.0002385493586437976,
+      "1.25": -0.000308608770552241,
+      "1.5": -0.00037866818246068423,
+      "2.0": -0.000518787006277571
+    },
+    "cost_to_gross_ratio": 6.722215145389131,
+    "economic_filter": {
+      "family": "signal + selected time window",
+      "id": "SELECTED_TIME_WINDOW",
+      "rule": "60 <= state_minute_of_session <= 210"
+    },
+    "eligible_signals": 38859,
+    "entered": 23000,
+    "entry_rate": 0.5918834761573896,
+    "historical_cost_quantiles": {
+      "p50": 0.0003023357571000177,
+      "p75": 0.0003243284471488126,
+      "p90": 0.0003406976855453105,
+      "p95": 0.00035344739436765106
+    },
+    "hit_rate": 0.4201739130434783,
+    "horizon_minutes": 15,
+    "id": "NEW-ECO-DISC-10-SELECTED_TIME_WINDOW-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.0009748453343772289,
+    "mfe": 0.0009256742371491511,
+    "payoff": 0.8145835079768687,
+    "raw_p_value": 1.0,
+    "regime_stability": {
+      "RANGE": -0.000882688999907123,
+      "TREND_DOWN": -0.0002381288104558129
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.359928,
+    "sessions": 982,
+    "signal_frozen": true,
+    "signal_source": "DISC-10",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.00037866818246068423,
+        "cost_2x": -0.000518787006277571,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "RANGE": -0.000882688999907123,
+          "TREND_DOWN": -0.0002381288104558129
+        },
+        "remove_best_10_sessions": -0.00025669361215133066,
+        "remove_best_5pct": -0.0003941389645940385,
+        "sample_concentration_top10_sessions": 0.005956521739130435,
+        "spread_perturbation_10pct": -0.000266573123407175,
+        "stronger_signal_neighbor": -0.00022485769174826334,
+        "temporal_concentration": 0.07418347708332927,
+        "weaker_signal_neighbor": -0.0002385493586437976,
+        "winsorization": -0.00024228142358044728
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity",
+        "regime_dependence"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.00027899249960814315,
+      "2016-H1": -0.0002617118078204327,
+      "2016-H2": -0.0003001737792004538,
+      "2017": -0.00025840765040311515,
+      "2017-H1": -0.0002775222977999529,
+      "2017-H2": -0.0002340465470931407,
+      "2018": -0.0002409951821626898,
+      "2018-H1": -0.00021340882764128545,
+      "2018-H2": -0.0002701601389517557,
+      "2019": -0.0001660103398741565,
+      "2019-H1": -0.0002536805262723731,
+      "2019-H2": -9.102925940199755e-05
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.00028890744732649727,
+        -0.00018819126996109795
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.0022877175703687985,
+      "expected_costs": 0.0002802376476337733,
+      "expected_gross_return": 4.168828898997565e-05,
+      "expected_net_return": -0.0002385493586437976,
+      "support": 22990,
+      "uncertainty": 2.5692902389132487e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.4081165238426105,
+    "waited": 15859,
+    "walk_forward": [
+      {
+        "eligible": 13248,
+        "embargo_minutes": 15,
+        "entered": 7428,
+        "expected_net_return": -0.00027899249960814315,
+        "learned_from_past": {
+          "end": 210,
+          "start": 60
+        },
+        "purge_minutes": 15,
+        "test_year": 2016,
+        "train_eligible": 13527,
+        "waited": 5820
+      },
+      {
+        "eligible": 8231,
+        "embargo_minutes": 15,
+        "entered": 4862,
+        "expected_net_return": -0.00025840765040311515,
+        "learned_from_past": {
+          "end": 210,
+          "start": 60
+        },
+        "purge_minutes": 15,
+        "test_year": 2017,
+        "train_eligible": 26775,
+        "waited": 3369
+      },
+      {
+        "eligible": 8163,
+        "embargo_minutes": 15,
+        "entered": 5070,
+        "expected_net_return": -0.0002409951821626898,
+        "learned_from_past": {
+          "end": 210,
+          "start": 60
+        },
+        "purge_minutes": 15,
+        "test_year": 2018,
+        "train_eligible": 35006,
+        "waited": 3093
+      },
+      {
+        "eligible": 9217,
+        "embargo_minutes": 15,
+        "entered": 5640,
+        "expected_net_return": -0.0001660103398741565,
+        "learned_from_past": {
+          "end": 210,
+          "start": 60
+        },
+        "purge_minutes": 15,
+        "test_year": 2019,
+        "train_eligible": 43169,
+        "waited": 3577
+      }
+    ],
+    "years": 4
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.0005044734302273977,
+      "optimal_action": "WAIT",
+      "value_enter": -0.0005044734302273977,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_LONG",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": -0.0002173110581210202,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.00043268283720080325,
+      "1.0": -0.0005044734302273977,
+      "1.25": -0.000576264023253992,
+      "1.5": -0.0006480546162805864,
+      "2.0": -0.0007916358023337752
+    },
+    "cost_to_gross_ratio": 1.3214346963717658,
+    "economic_filter": {
+      "family": "signal + favorable regime",
+      "id": "RANGE_REGIME",
+      "rule": "state_regime_v0 == RANGE"
+    },
+    "eligible_signals": 38859,
+    "entered": 27,
+    "entry_rate": 0.0006948197328804139,
+    "historical_cost_quantiles": {
+      "p50": 0.00031178750295815256,
+      "p75": 0.0003263148846205953,
+      "p90": 0.00034034272460408435,
+      "p95": 0.00034320869439729017
+    },
+    "hit_rate": 0.5555555555555556,
+    "horizon_minutes": 15,
+    "id": "NEW-ECO-DISC-10-RANGE_REGIME-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.002636602355588311,
+    "mfe": 0.0019443821670321838,
+    "payoff": 0.5135010238982946,
+    "raw_p_value": 0.7718501452735782,
+    "regime_stability": {
+      "RANGE": -0.0005044734302273977
+    },
+    "rejection_reasons": [
+      "minimum_support_failed",
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": -0.0695,
+    "sessions": 21,
+    "signal_frozen": true,
+    "signal_source": "DISC-10",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.0006480546162805864,
+        "cost_2x": -0.0007916358023337752,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": true,
+        "regime_means": {
+          "RANGE": -0.0005044734302273977
+        },
+        "remove_best_10_sessions": -0.002296359211361875,
+        "remove_best_5pct": -0.0008442169197380679,
+        "sample_concentration_top10_sessions": 0.4444444444444444,
+        "spread_perturbation_10pct": -0.0005331896674380355,
+        "stronger_signal_neighbor": -0.0012824744348926996,
+        "temporal_concentration": 0.8403869200855946,
+        "weaker_signal_neighbor": -0.0005044734302273977,
+        "winsorization": -0.0004991313526185397
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "temporal_concentration"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": false,
+    "temporal_stability": {
+      "2016": -0.0006596019910723425,
+      "2016-H1": -0.0019849015565315546,
+      "2016-H2": 0.0012336831024408175,
+      "2017": -0.00023862973331602007,
+      "2017-H1": -0.00374493669273693,
+      "2017-H2": 0.0032676772261048897,
+      "2018": -0.0002784050484114672,
+      "2018-H1": -0.0002784050484114672,
+      "2018-H2": null,
+      "2019": -0.0002359834646952011,
+      "2019-H1": 0.00014461956152707957,
+      "2019-H2": -0.0003882246751841133
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.001831761182210334,
+        0.0008228143217555384
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.006777491766081477,
+      "expected_costs": 0.0002871623721063775,
+      "expected_gross_return": -0.0002173110581210202,
+      "expected_net_return": -0.0005044734302273977,
+      "support": 27,
+      "uncertainty": 0.0006771876285627225,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.9993051802671196,
+    "waited": 38832,
+    "walk_forward": [
+      {
+        "eligible": 13248,
+        "embargo_minutes": 15,
+        "entered": 17,
+        "expected_net_return": -0.0006596019910723425,
+        "learned_from_past": {
+          "regime": "RANGE"
+        },
+        "purge_minutes": 15,
+        "test_year": 2016,
+        "train_eligible": 13527,
+        "waited": 13231
+      },
+      {
+        "eligible": 8231,
+        "embargo_minutes": 15,
+        "entered": 2,
+        "expected_net_return": -0.00023862973331602007,
+        "learned_from_past": {
+          "regime": "RANGE"
+        },
+        "purge_minutes": 15,
+        "test_year": 2017,
+        "train_eligible": 26775,
+        "waited": 8229
+      },
+      {
+        "eligible": 8163,
+        "embargo_minutes": 15,
+        "entered": 1,
+        "expected_net_return": -0.0002784050484114672,
+        "learned_from_past": {
+          "regime": "RANGE"
+        },
+        "purge_minutes": 15,
+        "test_year": 2018,
+        "train_eligible": 35006,
+        "waited": 8162
+      },
+      {
+        "eligible": 9217,
+        "embargo_minutes": 15,
+        "entered": 7,
+        "expected_net_return": -0.0002359834646952011,
+        "learned_from_past": {
+          "regime": "RANGE"
+        },
+        "purge_minutes": 15,
+        "test_year": 2019,
+        "train_eligible": 43169,
+        "waited": 9210
+      }
+    ],
+    "years": 4
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.0002152683105130144,
+      "optimal_action": "WAIT",
+      "value_enter": -0.0002152683105130144,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_SHORT",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": 1.988395518264136e-05,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.00015648024408910046,
+      "1.0": -0.00021526831051301443,
+      "1.25": -0.0002740563769369283,
+      "1.5": -0.00033284444336084234,
+      "2.0": -0.0004504205762086702
+    },
+    "cost_to_gross_ratio": 11.826231931006518,
+    "economic_filter": {
+      "family": "signal + low cost / wait until spread normalizes",
+      "id": "LOW_COST",
+      "rule": "state_spread_points <= expanding-train q25"
+    },
+    "eligible_signals": 30243,
+    "entered": 15423,
+    "entry_rate": 0.5099692490824324,
+    "historical_cost_quantiles": {
+      "p50": 0.00023359404576833465,
+      "p75": 0.00024938786614663705,
+      "p90": 0.00026487654269888804,
+      "p95": 0.0002788325118707819
+    },
+    "hit_rate": 0.4090643843610193,
+    "horizon_minutes": 30,
+    "id": "NEW-ECO-DISC-15-LOW_COST-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.0008324094062731333,
+    "mfe": 0.0008481674409903091,
+    "payoff": 0.8446714029841383,
+    "raw_p_value": 0.9999999999985058,
+    "regime_stability": {
+      "RANGE": -0.00013458008591197206,
+      "TREND_DOWN": -0.00029301964123738296,
+      "TREND_UP": -0.00022172866689770088
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.357907,
+    "sessions": 526,
+    "signal_frozen": true,
+    "signal_source": "DISC-15",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.00033284444336084234,
+        "cost_2x": -0.0004504205762086702,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "RANGE": -0.00013458008591197206,
+          "TREND_DOWN": -0.00029301964123738296,
+          "TREND_UP": -0.00022172866689770088
+        },
+        "remove_best_10_sessions": -0.00023041657781200758,
+        "remove_best_5pct": -0.00035366946281638475,
+        "sample_concentration_top10_sessions": 0.005381572975426311,
+        "spread_perturbation_10pct": -0.00023878353708258002,
+        "stronger_signal_neighbor": -0.00022428338242917224,
+        "temporal_concentration": 0.111177894343455,
+        "weaker_signal_neighbor": -0.00021526831051301443,
+        "winsorization": -0.00021467637584142356
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity",
+        "regime_dependence"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.0006401312792642313,
+      "2016-H1": -0.0006401312792642313,
+      "2016-H2": null,
+      "2018": -0.0002299577744803397,
+      "2018-H1": -0.00024152767676290812,
+      "2018-H2": -0.0002212452164861789,
+      "2019": -0.00018843782511438663,
+      "2019-H1": -0.0001963759859940227,
+      "2019-H2": -0.00017737177002164262
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.00027573119937681506,
+        -0.00015480542164921377
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.002124269782262191,
+      "expected_costs": 0.00023515226569565577,
+      "expected_gross_return": 1.988395518264136e-05,
+      "expected_net_return": -0.0002152683105130144,
+      "support": 15381,
+      "uncertainty": 3.084841268561257e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.4900307509175677,
+    "waited": 14820,
+    "walk_forward": [
+      {
+        "eligible": 5627,
+        "embargo_minutes": 30,
+        "entered": 238,
+        "expected_net_return": -0.0006401312792642313,
+        "learned_from_past": {
+          "q25_spread_points": 34.0
+        },
+        "purge_minutes": 30,
+        "test_year": 2016,
+        "train_eligible": 4680,
+        "waited": 5389
+      },
+      {
+        "eligible": 8295,
+        "embargo_minutes": 30,
+        "entered": 0,
+        "expected_net_return": null,
+        "learned_from_past": {
+          "q25_spread_points": 36.0
+        },
+        "purge_minutes": 30,
+        "test_year": 2017,
+        "train_eligible": 10307,
+        "waited": 8295
+      },
+      {
+        "eligible": 7581,
+        "embargo_minutes": 30,
+        "entered": 7379,
+        "expected_net_return": -0.0002299577744803397,
+        "learned_from_past": {
+          "q25_spread_points": 40.0
+        },
+        "purge_minutes": 30,
+        "test_year": 2018,
+        "train_eligible": 18602,
+        "waited": 202
+      },
+      {
+        "eligible": 8740,
+        "embargo_minutes": 30,
+        "entered": 7806,
+        "expected_net_return": -0.00018843782511438663,
+        "learned_from_past": {
+          "q25_spread_points": 33.0
+        },
+        "purge_minutes": 30,
+        "test_year": 2019,
+        "train_eligible": 26183,
+        "waited": 934
+      }
+    ],
+    "years": 3
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.0002605545987551905,
+      "optimal_action": "WAIT",
+      "value_enter": -0.0002605545987551905,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_SHORT",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": 1.7192036430988283e-05,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.00019111793995864576,
+      "1.0": -0.0002605545987551905,
+      "1.25": -0.00032999125755173517,
+      "1.5": -0.0003994279163482798,
+      "2.0": -0.0005383012339413692
+    },
+    "cost_to_gross_ratio": 16.155540171235696,
+    "economic_filter": {
+      "family": "signal + high signal magnitude",
+      "id": "HIGH_SIGNAL_MAGNITUDE",
+      "rule": "return abs >= 1.25x threshold; distance <= 0.75x threshold"
+    },
+    "eligible_signals": 30243,
+    "entered": 22129,
+    "entry_rate": 0.7317065105974936,
+    "historical_cost_quantiles": {
+      "p50": 0.0002669759137667377,
+      "p75": 0.00032204304105250086,
+      "p90": 0.0003435106399113007,
+      "p95": 0.00035830326003100105
+    },
+    "hit_rate": 0.3947760856794252,
+    "horizon_minutes": 30,
+    "id": "NEW-ECO-DISC-15-HIGH_SIGNAL_MAGNITUDE-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.0008825211668127977,
+    "mfe": 0.0008699768884716505,
+    "payoff": 0.8242413582849425,
+    "raw_p_value": 1.0,
+    "regime_stability": {
+      "RANGE": -0.00021996787161391437,
+      "TREND_DOWN": -7.048945138955527e-05,
+      "TREND_UP": -0.00026370182185428116
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.360811,
+    "sessions": 1020,
+    "signal_frozen": true,
+    "signal_source": "DISC-15",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.0003994279163482798,
+        "cost_2x": -0.0005383012339413692,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "RANGE": -0.00021996787161391437,
+          "TREND_DOWN": -7.048945138955527e-05,
+          "TREND_UP": -0.00026370182185428116
+        },
+        "remove_best_10_sessions": -0.0002684184803793825,
+        "remove_best_5pct": -0.00040796640292873015,
+        "sample_concentration_top10_sessions": 0.0020787202313706,
+        "spread_perturbation_10pct": -0.00028832926227380834,
+        "stronger_signal_neighbor": -0.0002605545987551905,
+        "temporal_concentration": 0.06999667203001196,
+        "weaker_signal_neighbor": -0.0002605545987551905,
+        "winsorization": -0.0002565951256210135
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity",
+        "regime_dependence"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.00029443283814540797,
+      "2016-H1": -0.0004612362526797028,
+      "2016-H2": -0.0001434671659639952,
+      "2017": -0.00031197086121307255,
+      "2017-H1": -0.0003004144055586653,
+      "2017-H2": -0.00032290507501258795,
+      "2018": -0.0002468633495046856,
+      "2018-H1": -0.0002518603755972024,
+      "2018-H2": -0.0002430216959305218,
+      "2019": -0.0002032593825321791,
+      "2019-H1": -0.00019207570148935905,
+      "2019-H2": -0.00021824915538740195
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.00030649991609387725,
+        -0.0002146092814165037
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.00224396014046566,
+      "expected_costs": 0.00027774663518617877,
+      "expected_gross_return": 1.7192036430988283e-05,
+      "expected_net_return": -0.0002605545987551905,
+      "support": 22075,
+      "uncertainty": 2.3441488438105504e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.26829348940250636,
+    "waited": 8114,
+    "walk_forward": [
+      {
+        "eligible": 5627,
+        "embargo_minutes": 30,
+        "entered": 4086,
+        "expected_net_return": -0.00029443283814540797,
+        "learned_from_past": {
+          "fixed_signal_factor": 0.75
+        },
+        "purge_minutes": 30,
+        "test_year": 2016,
+        "train_eligible": 4680,
+        "waited": 1541
+      },
+      {
+        "eligible": 8295,
+        "embargo_minutes": 30,
+        "entered": 6014,
+        "expected_net_return": -0.00031197086121307255,
+        "learned_from_past": {
+          "fixed_signal_factor": 0.75
+        },
+        "purge_minutes": 30,
+        "test_year": 2017,
+        "train_eligible": 10307,
+        "waited": 2281
+      },
+      {
+        "eligible": 7581,
+        "embargo_minutes": 30,
+        "entered": 5544,
+        "expected_net_return": -0.0002468633495046856,
+        "learned_from_past": {
+          "fixed_signal_factor": 0.75
+        },
+        "purge_minutes": 30,
+        "test_year": 2018,
+        "train_eligible": 18602,
+        "waited": 2037
+      },
+      {
+        "eligible": 8740,
+        "embargo_minutes": 30,
+        "entered": 6485,
+        "expected_net_return": -0.0002032593825321791,
+        "learned_from_past": {
+          "fixed_signal_factor": 0.75
+        },
+        "purge_minutes": 30,
+        "test_year": 2019,
+        "train_eligible": 26183,
+        "waited": 2255
+      }
+    ],
+    "years": 4
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.0002806308147794262,
+      "optimal_action": "WAIT",
+      "value_enter": -0.0002806308147794262,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_SHORT",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": -3.2878420086926786e-06,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.0002112950715867428,
+      "1.0": -0.00028063081477942614,
+      "1.25": -0.0003499665579721095,
+      "1.5": -0.0004193023011647929,
+      "2.0": -0.0005579737875501597
+    },
+    "cost_to_gross_ratio": 84.35410583521666,
+    "economic_filter": {
+      "family": "signal + favorable volatility",
+      "id": "FAVORABLE_VOLATILITY",
+      "rule": "expanding-train q25 <= state_volatility_15m_causal <= q75"
+    },
+    "eligible_signals": 30243,
+    "entered": 14486,
+    "entry_rate": 0.4789868729954039,
+    "historical_cost_quantiles": {
+      "p50": 0.0002653862117776573,
+      "p75": 0.00032078810600990373,
+      "p90": 0.00034347941687999244,
+      "p95": 0.0003605978063891155
+    },
+    "hit_rate": 0.4014910948502002,
+    "horizon_minutes": 30,
+    "id": "NEW-ECO-DISC-15-FAVORABLE_VOLATILITY-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.00093144673626104,
+    "mfe": 0.0008926656163867521,
+    "payoff": 0.7861243938902565,
+    "raw_p_value": 1.0,
+    "regime_stability": {
+      "RANGE": -0.00021346537274113427,
+      "TREND_DOWN": -0.0004370066448698452,
+      "TREND_UP": -0.0002856326796950939
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.357953,
+    "sessions": 956,
+    "signal_frozen": true,
+    "signal_source": "DISC-15",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.0004193023011647929,
+        "cost_2x": -0.0005579737875501597,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "RANGE": -0.00021346537274113427,
+          "TREND_DOWN": -0.0004370066448698452,
+          "TREND_UP": -0.0002856326796950939
+        },
+        "remove_best_10_sessions": -0.00029867945550858126,
+        "remove_best_5pct": -0.0004305592083032825,
+        "sample_concentration_top10_sessions": 0.00448709098439873,
+        "spread_perturbation_10pct": -0.00030836511205649956,
+        "stronger_signal_neighbor": -0.0002879579146284709,
+        "temporal_concentration": 0.09017012042924236,
+        "weaker_signal_neighbor": -0.00028063081477942614,
+        "winsorization": -0.00027596611650830945
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity",
+        "regime_dependence"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.00027332001461492377,
+      "2016-H1": -0.0003922410119375183,
+      "2016-H2": -0.00016322648628126147,
+      "2017": -0.00034759114035289544,
+      "2017-H1": -0.00037853301650008956,
+      "2017-H2": -0.00031316538494130454,
+      "2018": -0.00023806822664367857,
+      "2018-H1": -0.00025388679916889744,
+      "2018-H2": -0.00022511672900478024,
+      "2019": -0.00027023692834772506,
+      "2019-H1": -0.00023026876403298103,
+      "2019-H2": -0.0003169829107368224
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.00034086727372604255,
+        -0.00022039435583280984
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.002324379453656876,
+      "expected_costs": 0.0002773429727707335,
+      "expected_gross_return": -3.2878420086926786e-06,
+      "expected_net_return": -0.0002806308147794262,
+      "support": 14458,
+      "uncertainty": 3.07328872176614e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.5210131270045961,
+    "waited": 15757,
+    "walk_forward": [
+      {
+        "eligible": 5627,
+        "embargo_minutes": 30,
+        "entered": 2750,
+        "expected_net_return": -0.00027332001461492377,
+        "learned_from_past": {
+          "q25": 0.00012405418264008756,
+          "q75": 0.00025853615607653453
+        },
+        "purge_minutes": 30,
+        "test_year": 2016,
+        "train_eligible": 4680,
+        "waited": 2877
+      },
+      {
+        "eligible": 8295,
+        "embargo_minutes": 30,
+        "entered": 3645,
+        "expected_net_return": -0.00034759114035289544,
+        "learned_from_past": {
+          "q25": 0.0001223645223597829,
+          "q75": 0.00025720007275679957
+        },
+        "purge_minutes": 30,
+        "test_year": 2017,
+        "train_eligible": 10307,
+        "waited": 4650
+      },
+      {
+        "eligible": 7581,
+        "embargo_minutes": 30,
+        "entered": 4363,
+        "expected_net_return": -0.00023806822664367857,
+        "learned_from_past": {
+          "q25": 0.00010567974451307031,
+          "q75": 0.0002189731902957804
+        },
+        "purge_minutes": 30,
+        "test_year": 2018,
+        "train_eligible": 18602,
+        "waited": 3218
+      },
+      {
+        "eligible": 8740,
+        "embargo_minutes": 30,
+        "entered": 3728,
+        "expected_net_return": -0.00027023692834772506,
+        "learned_from_past": {
+          "q25": 0.0001067234722090398,
+          "q75": 0.00021314297603626284
+        },
+        "purge_minutes": 30,
+        "test_year": 2019,
+        "train_eligible": 26183,
+        "waited": 5012
+      }
+    ],
+    "years": 4
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.00016234885153909245,
+      "optimal_action": "WAIT",
+      "value_enter": -0.00016234885153909245,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_SHORT",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": 8.933599721580751e-05,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -9.942763935036746e-05,
+      "1.0": -0.00016234885153909245,
+      "1.25": -0.00022527006372781742,
+      "1.5": -0.0002881912759165424,
+      "2.0": -0.0004140337002939924
+    },
+    "cost_to_gross_ratio": 2.8172836997264272,
+    "economic_filter": {
+      "family": "signal + cost/ATR low",
+      "id": "LOW_COST_ATR",
+      "rule": "state_spread_price/state_atr_14_causal <= expanding-train q25"
+    },
+    "eligible_signals": 30243,
+    "entered": 8519,
+    "entry_rate": 0.281685018020699,
+    "historical_cost_quantiles": {
+      "p50": 0.00023711001141037325,
+      "p75": 0.0002957278417764915,
+      "p90": 0.0003260288520022519,
+      "p95": 0.00033952816622381116
+    },
+    "hit_rate": 0.4566263645967837,
+    "horizon_minutes": 30,
+    "id": "NEW-ECO-DISC-15-LOW_COST_ATR-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.001157428932072903,
+    "mfe": 0.0012169468662122829,
+    "payoff": 0.8850290275535456,
+    "raw_p_value": 0.9999461166625403,
+    "regime_stability": {
+      "RANGE": -0.00011829228545487949,
+      "TREND_DOWN": -0.0012926181633295198,
+      "TREND_UP": -0.00016350911175870694
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.353566,
+    "sessions": 837,
+    "signal_frozen": true,
+    "signal_source": "DISC-15",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.0002881912759165424,
+        "cost_2x": -0.0004140337002939924,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "RANGE": -0.00011829228545487949,
+          "TREND_DOWN": -0.0012926181633295198,
+          "TREND_UP": -0.00016350911175870694
+        },
+        "remove_best_10_sessions": -0.000183704265520125,
+        "remove_best_5pct": -0.00034707335786472466,
+        "sample_concentration_top10_sessions": 0.004108463434675432,
+        "spread_perturbation_10pct": -0.00018751733641458244,
+        "stronger_signal_neighbor": -0.00016837459887968095,
+        "temporal_concentration": 0.08793441233015324,
+        "weaker_signal_neighbor": -0.00016234885153909245,
+        "winsorization": -0.00016357642267545827
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity",
+        "regime_dependence"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.00010162823007600952,
+      "2016-H1": -0.000226729622677458,
+      "2016-H2": 0.00011505682352423514,
+      "2017": -6.850901965016911e-05,
+      "2017-H1": -0.00016779820808028616,
+      "2017-H2": 0.00010986766086281166,
+      "2018": -0.0002521484870823965,
+      "2018-H1": -0.00024604853343219296,
+      "2018-H2": -0.0002566922957373521,
+      "2019": -0.00012066486354955716,
+      "2019-H1": -0.00016119292082995113,
+      "2019-H2": -8.674613837378013e-05
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.00024452097636908614,
+        -8.017672670909877e-05
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.0026885968506100274,
+      "expected_costs": 0.0002516848487549,
+      "expected_gross_return": 8.933599721580751e-05,
+      "expected_net_return": -0.00016234885153909245,
+      "support": 8498,
+      "uncertainty": 4.1924553484690657e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.718314981979301,
+    "waited": 21724,
+    "walk_forward": [
+      {
+        "eligible": 5627,
+        "embargo_minutes": 30,
+        "entered": 1449,
+        "expected_net_return": -0.00010162823007600952,
+        "learned_from_past": {
+          "q25_cost_atr": 0.8881251090125711
+        },
+        "purge_minutes": 30,
+        "test_year": 2016,
+        "train_eligible": 4680,
+        "waited": 4178
+      },
+      {
+        "eligible": 8295,
+        "embargo_minutes": 30,
+        "entered": 650,
+        "expected_net_return": -6.850901965016911e-05,
+        "learned_from_past": {
+          "q25_cost_atr": 0.8791208791208942
+        },
+        "purge_minutes": 30,
+        "test_year": 2017,
+        "train_eligible": 10307,
+        "waited": 7645
+      },
+      {
+        "eligible": 7581,
+        "embargo_minutes": 30,
+        "entered": 3165,
+        "expected_net_return": -0.0002521484870823965,
+        "learned_from_past": {
+          "q25_cost_atr": 1.0381522567129757
+        },
+        "purge_minutes": 30,
+        "test_year": 2018,
+        "train_eligible": 18602,
+        "waited": 4416
+      },
+      {
+        "eligible": 8740,
+        "embargo_minutes": 30,
+        "entered": 3255,
+        "expected_net_return": -0.00012066486354955716,
+        "learned_from_past": {
+          "q25_cost_atr": 0.9481442177114957
+        },
+        "purge_minutes": 30,
+        "test_year": 2019,
+        "train_eligible": 26183,
+        "waited": 5485
+      }
+    ],
+    "years": 4
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.0002765833801760431,
+      "optimal_action": "WAIT",
+      "value_enter": -0.0002765833801760431,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_SHORT",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": -1.1631773430204385e-06,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.00020772832946778738,
+      "1.0": -0.0002765833801760431,
+      "1.25": -0.0003454384308842986,
+      "1.5": -0.00041429348159255434,
+      "2.0": -0.0005520035830090656
+    },
+    "cost_to_gross_ratio": 236.78264065721498,
+    "economic_filter": {
+      "family": "signal + selected time window",
+      "id": "SELECTED_TIME_WINDOW",
+      "rule": "60 <= state_minute_of_session <= 210"
+    },
+    "eligible_signals": 30243,
+    "entered": 16557,
+    "entry_rate": 0.5474655292133717,
+    "historical_cost_quantiles": {
+      "p50": 0.0002622477913818316,
+      "p75": 0.0003205526327440863,
+      "p90": 0.00034046018259275483,
+      "p95": 0.00035541494070667095
+    },
+    "hit_rate": 0.40568943649211814,
+    "horizon_minutes": 30,
+    "id": "NEW-ECO-DISC-15-SELECTED_TIME_WINDOW-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.0009905720680096527,
+    "mfe": 0.0009640937502455631,
+    "payoff": 0.8182316510989007,
+    "raw_p_value": 0.9999999999999998,
+    "regime_stability": {
+      "RANGE": -0.00020305334319548586,
+      "TREND_DOWN": -0.0004682152727719314,
+      "TREND_UP": -0.0002809654230580686
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.356714,
+    "sessions": 967,
+    "signal_frozen": true,
+    "signal_source": "DISC-15",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.00041429348159255434,
+        "cost_2x": -0.0005520035830090656,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "RANGE": -0.00020305334319548586,
+          "TREND_DOWN": -0.0004682152727719314,
+          "TREND_UP": -0.0002809654230580686
+        },
+        "remove_best_10_sessions": -0.00028968758953102746,
+        "remove_best_5pct": -0.0004412771019352565,
+        "sample_concentration_top10_sessions": 0.0027782810895693663,
+        "spread_perturbation_10pct": -0.0003041254004593453,
+        "stronger_signal_neighbor": -0.0002762347073656932,
+        "temporal_concentration": 0.06808715772659277,
+        "weaker_signal_neighbor": -0.0002765833801760431,
+        "winsorization": -0.0002709938406454983
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity",
+        "regime_dependence"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.00028604589773355434,
+      "2016-H1": -0.0004420390799916187,
+      "2016-H2": -0.00014698003321452456,
+      "2017": -0.00034863139495420364,
+      "2017-H1": -0.00030312002708289234,
+      "2017-H2": -0.0003940345570055641,
+      "2018": -0.00024674110010514686,
+      "2018-H1": -0.00022762280467387007,
+      "2018-H2": -0.00026206054526824613,
+      "2019": -0.00023422613702796423,
+      "2019-H1": -0.00020355628884929523,
+      "2019-H2": -0.0002747423032305619
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.00034301258783717614,
+        -0.00021015417251491007
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.0024443218153965204,
+      "expected_costs": 0.0002754202028330226,
+      "expected_gross_return": -1.1631773430204385e-06,
+      "expected_net_return": -0.0002765833801760431,
+      "support": 16519,
+      "uncertainty": 3.389245288833318e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.4525344707866283,
+    "waited": 13686,
+    "walk_forward": [
+      {
+        "eligible": 5627,
+        "embargo_minutes": 30,
+        "entered": 3156,
+        "expected_net_return": -0.00028604589773355434,
+        "learned_from_past": {
+          "end": 210,
+          "start": 60
+        },
+        "purge_minutes": 30,
+        "test_year": 2016,
+        "train_eligible": 4680,
+        "waited": 2471
+      },
+      {
+        "eligible": 8295,
+        "embargo_minutes": 30,
+        "entered": 4213,
+        "expected_net_return": -0.00034863139495420364,
+        "learned_from_past": {
+          "end": 210,
+          "start": 60
+        },
+        "purge_minutes": 30,
+        "test_year": 2017,
+        "train_eligible": 10307,
+        "waited": 4082
+      },
+      {
+        "eligible": 7581,
+        "embargo_minutes": 30,
+        "entered": 4460,
+        "expected_net_return": -0.00024674110010514686,
+        "learned_from_past": {
+          "end": 210,
+          "start": 60
+        },
+        "purge_minutes": 30,
+        "test_year": 2018,
+        "train_eligible": 18602,
+        "waited": 3121
+      },
+      {
+        "eligible": 8740,
+        "embargo_minutes": 30,
+        "entered": 4728,
+        "expected_net_return": -0.00023422613702796423,
+        "learned_from_past": {
+          "end": 210,
+          "start": 60
+        },
+        "purge_minutes": 30,
+        "test_year": 2019,
+        "train_eligible": 26183,
+        "waited": 4012
+      }
+    ],
+    "years": 4
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.00020649658579913153,
+      "optimal_action": "WAIT",
+      "value_enter": -0.00020649658579913153,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_SHORT",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": 7.119629465410075e-05,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.00013707336568582345,
+      "1.0": -0.00020649658579913153,
+      "1.25": -0.00027591980591243955,
+      "1.5": -0.00034534302602574765,
+      "2.0": -0.0004841894662523638
+    },
+    "cost_to_gross_ratio": 3.9003838865824707,
+    "economic_filter": {
+      "family": "signal + favorable regime",
+      "id": "RANGE_REGIME",
+      "rule": "state_regime_v0 == RANGE"
+    },
+    "eligible_signals": 30243,
+    "entered": 2458,
+    "entry_rate": 0.08127500578646299,
+    "historical_cost_quantiles": {
+      "p50": 0.0002635118668325002,
+      "p75": 0.0003212393414141067,
+      "p90": 0.00034526107767297767,
+      "p95": 0.00036000158339287826
+    },
+    "hit_rate": 0.3726606997558991,
+    "horizon_minutes": 30,
+    "id": "NEW-ECO-DISC-15-RANGE_REGIME-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.0006891173318067549,
+    "mfe": 0.0007521006745062836,
+    "payoff": 0.9428696746104246,
+    "raw_p_value": 0.9999999943583537,
+    "regime_stability": {
+      "RANGE": -0.00020649658579913153
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.355824,
+    "sessions": 634,
+    "signal_frozen": true,
+    "signal_source": "DISC-15",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.00034534302602574765,
+        "cost_2x": -0.0004841894662523638,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "RANGE": -0.00020649658579913153
+        },
+        "remove_best_10_sessions": -0.0002354359190865071,
+        "remove_best_5pct": -0.00034655551252043675,
+        "sample_concentration_top10_sessions": 0.006916192026037429,
+        "spread_perturbation_10pct": -0.00023426587384445474,
+        "stronger_signal_neighbor": -0.00021996787161391437,
+        "temporal_concentration": 0.09727282230956227,
+        "weaker_signal_neighbor": -0.00020649658579913153,
+        "winsorization": -0.00021711479934105732
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.00023291244235512033,
+      "2016-H1": -0.00030646229094333704,
+      "2016-H2": -0.0001924774545056741,
+      "2017": -0.00028353262115256105,
+      "2017-H1": -0.00019301283517676152,
+      "2017-H2": -0.0003493089576588937,
+      "2018": -9.76943646100793e-05,
+      "2018-H1": -4.3850907052794604e-05,
+      "2018-H2": -0.00014181126209249963,
+      "2019": -0.00019938636353930404,
+      "2019-H1": -0.0001132432592867097,
+      "2019-H2": -0.0003277934283158275
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.00027737539549690444,
+        -0.00013561777610135862
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.0017832526354398378,
+      "expected_costs": 0.00027769288045323225,
+      "expected_gross_return": 7.119629465410075e-05,
+      "expected_net_return": -0.00020649658579913153,
+      "support": 2446,
+      "uncertainty": 3.616265800906781e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.918724994213537,
+    "waited": 27785,
+    "walk_forward": [
+      {
+        "eligible": 5627,
+        "embargo_minutes": 30,
+        "entered": 334,
+        "expected_net_return": -0.00023291244235512033,
+        "learned_from_past": {
+          "regime": "RANGE"
+        },
+        "purge_minutes": 30,
+        "test_year": 2016,
+        "train_eligible": 4680,
+        "waited": 5293
+      },
+      {
+        "eligible": 8295,
+        "embargo_minutes": 30,
+        "entered": 761,
+        "expected_net_return": -0.00028353262115256105,
+        "learned_from_past": {
+          "regime": "RANGE"
+        },
+        "purge_minutes": 30,
+        "test_year": 2017,
+        "train_eligible": 10307,
+        "waited": 7534
+      },
+      {
+        "eligible": 7581,
+        "embargo_minutes": 30,
+        "entered": 564,
+        "expected_net_return": -9.76943646100793e-05,
+        "learned_from_past": {
+          "regime": "RANGE"
+        },
+        "purge_minutes": 30,
+        "test_year": 2018,
+        "train_eligible": 18602,
+        "waited": 7017
+      },
+      {
+        "eligible": 8740,
+        "embargo_minutes": 30,
+        "entered": 799,
+        "expected_net_return": -0.00019938636353930404,
+        "learned_from_past": {
+          "regime": "RANGE"
+        },
+        "purge_minutes": 30,
+        "test_year": 2019,
+        "train_eligible": 26183,
+        "waited": 7941
+      }
+    ],
+    "years": 4
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.00020784698656928642,
+      "optimal_action": "WAIT",
+      "value_enter": -0.00020784698656928642,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_LONG",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": 2.6055335056853173e-05,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.00014937140616275152,
+      "1.0": -0.00020784698656928642,
+      "1.25": -0.0002663225669758213,
+      "1.5": -0.0003247981473823562,
+      "2.0": -0.00044174930819542596
+    },
+    "cost_to_gross_ratio": 8.97713735462472,
+    "economic_filter": {
+      "family": "signal + low cost / wait until spread normalizes",
+      "id": "LOW_COST",
+      "rule": "state_spread_points <= expanding-train q25"
+    },
+    "eligible_signals": 29798,
+    "entered": 15402,
+    "entry_rate": 0.516880327538761,
+    "historical_cost_quantiles": {
+      "p50": 0.00023231542938666628,
+      "p75": 0.0002490130867714188,
+      "p90": 0.0002617148987642901,
+      "p95": 0.00027616056574384913
+    },
+    "hit_rate": 0.4175431762108817,
+    "horizon_minutes": 30,
+    "id": "NEW-ECO-DISC-16-LOW_COST-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.0008663079670404077,
+    "mfe": 0.0008195335368783728,
+    "payoff": 0.8263075976674286,
+    "raw_p_value": 0.9999999999961181,
+    "regime_stability": {
+      "RANGE": -0.0002330702842992407,
+      "TREND_DOWN": -0.0002043899914786299,
+      "TREND_UP": -0.000296266101598246
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.358093,
+    "sessions": 527,
+    "signal_frozen": true,
+    "signal_source": "DISC-16",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.0003247981473823562,
+        "cost_2x": -0.00044174930819542596,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "RANGE": -0.0002330702842992407,
+          "TREND_DOWN": -0.0002043899914786299,
+          "TREND_UP": -0.000296266101598246
+        },
+        "remove_best_10_sessions": -0.00022490178700097308,
+        "remove_best_5pct": -0.000348497230412008,
+        "sample_concentration_top10_sessions": 0.00558369042981431,
+        "spread_perturbation_10pct": -0.00023123721873190037,
+        "stronger_signal_neighbor": -0.00019882898732821405,
+        "temporal_concentration": 0.11512707965169117,
+        "weaker_signal_neighbor": -0.00020784698656928642,
+        "winsorization": -0.00020909914940482702
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity",
+        "regime_dependence"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": 4.781716300394661e-05,
+      "2016-H1": 4.781716300394661e-05,
+      "2016-H2": null,
+      "2018": -0.0002441892790901371,
+      "2018-H1": -0.00024318066705979053,
+      "2018-H2": -0.00024516477251650213,
+      "2019": -0.00017282302371584868,
+      "2019-H1": -0.0001927043874601312,
+      "2019-H2": -0.00014209038128670974
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.00026738076064785363,
+        -0.0001483132124907192
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.002116829047837728,
+      "expected_costs": 0.00023390232162613962,
+      "expected_gross_return": 2.6055335056853173e-05,
+      "expected_net_return": -0.00020784698656928642,
+      "support": 15364,
+      "uncertainty": 3.0374374529881234e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.483119672461239,
+    "waited": 14396,
+    "walk_forward": [
+      {
+        "eligible": 5260,
+        "embargo_minutes": 30,
+        "entered": 121,
+        "expected_net_return": 4.781716300394661e-05,
+        "learned_from_past": {
+          "q25_spread_points": 34.0
+        },
+        "purge_minutes": 30,
+        "test_year": 2016,
+        "train_eligible": 5125,
+        "waited": 5139
+      },
+      {
+        "eligible": 7982,
+        "embargo_minutes": 30,
+        "entered": 0,
+        "expected_net_return": null,
+        "learned_from_past": {
+          "q25_spread_points": 36.0
+        },
+        "purge_minutes": 30,
+        "test_year": 2017,
+        "train_eligible": 10385,
+        "waited": 7982
+      },
+      {
+        "eligible": 8143,
+        "embargo_minutes": 30,
+        "entered": 7918,
+        "expected_net_return": -0.0002441892790901371,
+        "learned_from_past": {
+          "q25_spread_points": 40.0
+        },
+        "purge_minutes": 30,
+        "test_year": 2018,
+        "train_eligible": 18367,
+        "waited": 225
+      },
+      {
+        "eligible": 8413,
+        "embargo_minutes": 30,
+        "entered": 7363,
+        "expected_net_return": -0.00017282302371584868,
+        "learned_from_past": {
+          "q25_spread_points": 33.0
+        },
+        "purge_minutes": 30,
+        "test_year": 2019,
+        "train_eligible": 26510,
+        "waited": 1050
+      }
+    ],
+    "years": 3
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.0002376224413737171,
+      "optimal_action": "WAIT",
+      "value_enter": -0.0002376224413737171,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_LONG",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": 3.9977322389867576e-05,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.00016822250043282096,
+      "1.0": -0.0002376224413737171,
+      "1.25": -0.0003070223823146133,
+      "1.5": -0.00037642232325550955,
+      "2.0": -0.0005152222051373019
+    },
+    "cost_to_gross_ratio": 6.943930888026247,
+    "economic_filter": {
+      "family": "signal + high signal magnitude",
+      "id": "HIGH_SIGNAL_MAGNITUDE",
+      "rule": "return abs >= 1.25x threshold; distance <= 0.75x threshold"
+    },
+    "eligible_signals": 29798,
+    "entered": 21866,
+    "entry_rate": 0.7338076380965165,
+    "historical_cost_quantiles": {
+      "p50": 0.0002648715778219607,
+      "p75": 0.0003220915019146263,
+      "p90": 0.0003440009993290856,
+      "p95": 0.0003579726166932494
+    },
+    "hit_rate": 0.40675020579895727,
+    "horizon_minutes": 30,
+    "id": "NEW-ECO-DISC-16-HIGH_SIGNAL_MAGNITUDE-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.000902760421102946,
+    "mfe": 0.0008689507671903382,
+    "payoff": 0.8240991462881733,
+    "raw_p_value": 1.0,
+    "regime_stability": {
+      "RANGE": -0.00029403842727780357,
+      "TREND_DOWN": -0.00023293120279567012,
+      "TREND_UP": -0.0003447467842682343
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.360861,
+    "sessions": 1021,
+    "signal_frozen": true,
+    "signal_source": "DISC-16",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.00037642232325550955,
+        "cost_2x": -0.0005152222051373019,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "RANGE": -0.00029403842727780357,
+          "TREND_DOWN": -0.00023293120279567012,
+          "TREND_UP": -0.0003447467842682343
+        },
+        "remove_best_10_sessions": -0.0002483590326312634,
+        "remove_best_5pct": -0.0003849416245163837,
+        "sample_concentration_top10_sessions": 0.0028811854019939634,
+        "spread_perturbation_10pct": -0.0002653824177500756,
+        "stronger_signal_neighbor": -0.0002376224413737171,
+        "temporal_concentration": 0.06670439317959748,
+        "weaker_signal_neighbor": -0.0002376224413737171,
+        "winsorization": -0.00023391798150615485
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity",
+        "regime_dependence"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.0003353185569096886,
+      "2016-H1": -8.276482857554346e-05,
+      "2016-H2": -0.00047219882188468326,
+      "2017": -0.0002558786439432737,
+      "2017-H1": -0.0002511299308068812,
+      "2017-H2": -0.0002605899912219389,
+      "2018": -0.00023563629478847028,
+      "2018-H1": -0.0002363499763090461,
+      "2018-H2": -0.000234946651592492,
+      "2019": -0.00016072241522715032,
+      "2019-H1": -0.00017579102564322028,
+      "2019-H2": -0.0001387834886736931
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.00028331828201307415,
+        -0.00019192660073436008
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.0022226076953136458,
+      "expected_costs": 0.0002775997637635847,
+      "expected_gross_return": 3.9977322389867576e-05,
+      "expected_net_return": -0.0002376224413737171,
+      "support": 21777,
+      "uncertainty": 2.3314204407835223e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.26619236190348344,
+    "waited": 7932,
+    "walk_forward": [
+      {
+        "eligible": 5260,
+        "embargo_minutes": 30,
+        "entered": 3866,
+        "expected_net_return": -0.0003353185569096886,
+        "learned_from_past": {
+          "fixed_signal_factor": 0.75
+        },
+        "purge_minutes": 30,
+        "test_year": 2016,
+        "train_eligible": 5125,
+        "waited": 1394
+      },
+      {
+        "eligible": 7982,
+        "embargo_minutes": 30,
+        "entered": 5864,
+        "expected_net_return": -0.0002558786439432737,
+        "learned_from_past": {
+          "fixed_signal_factor": 0.75
+        },
+        "purge_minutes": 30,
+        "test_year": 2017,
+        "train_eligible": 10385,
+        "waited": 2118
+      },
+      {
+        "eligible": 8143,
+        "embargo_minutes": 30,
+        "entered": 6018,
+        "expected_net_return": -0.00023563629478847028,
+        "learned_from_past": {
+          "fixed_signal_factor": 0.75
+        },
+        "purge_minutes": 30,
+        "test_year": 2018,
+        "train_eligible": 18367,
+        "waited": 2125
+      },
+      {
+        "eligible": 8413,
+        "embargo_minutes": 30,
+        "entered": 6118,
+        "expected_net_return": -0.00016072241522715032,
+        "learned_from_past": {
+          "fixed_signal_factor": 0.75
+        },
+        "purge_minutes": 30,
+        "test_year": 2019,
+        "train_eligible": 26510,
+        "waited": 2295
+      }
+    ],
+    "years": 4
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.0002495265967422393,
+      "optimal_action": "WAIT",
+      "value_enter": -0.0002495265967422393,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_LONG",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": 2.5264958802624322e-05,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.00018082870785602335,
+      "1.0": -0.0002495265967422393,
+      "1.25": -0.0003182244856284552,
+      "1.5": -0.00038692237451467106,
+      "2.0": -0.0005243181522871029
+    },
+    "cost_to_gross_ratio": 10.87639040663389,
+    "economic_filter": {
+      "family": "signal + favorable volatility",
+      "id": "FAVORABLE_VOLATILITY",
+      "rule": "expanding-train q25 <= state_volatility_15m_causal <= q75"
+    },
+    "eligible_signals": 29798,
+    "entered": 14662,
+    "entry_rate": 0.49204644607020603,
+    "historical_cost_quantiles": {
+      "p50": 0.00025857963472385826,
+      "p75": 0.0003194931319356537,
+      "p90": 0.00033977081242185075,
+      "p95": 0.00035489286970705907
+    },
+    "hit_rate": 0.4159050607011322,
+    "horizon_minutes": 30,
+    "id": "NEW-ECO-DISC-16-FAVORABLE_VOLATILITY-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.0009336939319507938,
+    "mfe": 0.0008803521310514097,
+    "payoff": 0.7872244526359257,
+    "raw_p_value": 1.0,
+    "regime_stability": {
+      "RANGE": -0.00030069684981826365,
+      "TREND_DOWN": -0.0002446957041275662,
+      "TREND_UP": -0.00034373291723221436
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.358346,
+    "sessions": 965,
+    "signal_frozen": true,
+    "signal_source": "DISC-16",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.00038692237451467106,
+        "cost_2x": -0.0005243181522871029,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "RANGE": -0.00030069684981826365,
+          "TREND_DOWN": -0.0002446957041275662,
+          "TREND_UP": -0.00034373291723221436
+        },
+        "remove_best_10_sessions": -0.0002653995047368193,
+        "remove_best_5pct": -0.00039303532224477434,
+        "sample_concentration_top10_sessions": 0.003751193561587778,
+        "spread_perturbation_10pct": -0.00027700575229672566,
+        "stronger_signal_neighbor": -0.00024822817848873147,
+        "temporal_concentration": 0.08041051207258813,
+        "weaker_signal_neighbor": -0.0002495265967422393,
+        "winsorization": -0.0002461783135767043
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity",
+        "regime_dependence"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.00031477724739421815,
+      "2016-H1": -9.59619963877805e-05,
+      "2016-H2": -0.000436645385874433,
+      "2017": -0.00027642635980407117,
+      "2017-H1": -0.0003024832957422759,
+      "2017-H2": -0.00025074930360146665,
+      "2018": -0.0002556857171238065,
+      "2018-H1": -0.00025067794230398363,
+      "2018-H2": -0.00026073916816503735,
+      "2019": -0.00017387846340729518,
+      "2019-H1": -0.0001751913696895719,
+      "2019-H2": -0.00017206014259697825
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.0003077945058768221,
+        -0.0001912586876076565
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.0022852644348210875,
+      "expected_costs": 0.0002747915555448636,
+      "expected_gross_return": 2.5264958802624322e-05,
+      "expected_net_return": -0.0002495265967422393,
+      "support": 14630,
+      "uncertainty": 2.972852506866469e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.5079535539297939,
+    "waited": 15136,
+    "walk_forward": [
+      {
+        "eligible": 5260,
+        "embargo_minutes": 30,
+        "entered": 2378,
+        "expected_net_return": -0.00031477724739421815,
+        "learned_from_past": {
+          "q25": 0.00012842281687513006,
+          "q75": 0.0002694331286472006
+        },
+        "purge_minutes": 30,
+        "test_year": 2016,
+        "train_eligible": 5125,
+        "waited": 2882
+      },
+      {
+        "eligible": 7982,
+        "embargo_minutes": 30,
+        "entered": 3687,
+        "expected_net_return": -0.00027642635980407117,
+        "learned_from_past": {
+          "q25": 0.00012239270411864325,
+          "q75": 0.0002666751306621918
+        },
+        "purge_minutes": 30,
+        "test_year": 2017,
+        "train_eligible": 10385,
+        "waited": 4295
+      },
+      {
+        "eligible": 8143,
+        "embargo_minutes": 30,
+        "entered": 4855,
+        "expected_net_return": -0.0002556857171238065,
+        "learned_from_past": {
+          "q25": 0.0001066391182698738,
+          "q75": 0.00022546666418533999
+        },
+        "purge_minutes": 30,
+        "test_year": 2018,
+        "train_eligible": 18367,
+        "waited": 3288
+      },
+      {
+        "eligible": 8413,
+        "embargo_minutes": 30,
+        "entered": 3742,
+        "expected_net_return": -0.00017387846340729518,
+        "learned_from_past": {
+          "q25": 0.0001061914026241535,
+          "q75": 0.00021067391875200393
+        },
+        "purge_minutes": 30,
+        "test_year": 2019,
+        "train_eligible": 26510,
+        "waited": 4671
+      }
+    ],
+    "years": 4
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.00017963496911344113,
+      "optimal_action": "WAIT",
+      "value_enter": -0.00017963496911344113,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_LONG",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": 6.746397118757379e-05,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.00011786023403818742,
+      "1.0": -0.00017963496911344116,
+      "1.25": -0.00024140970418869487,
+      "1.5": -0.0003031844392639487,
+      "2.0": -0.00042673390941445606
+    },
+    "cost_to_gross_ratio": 3.6626800342658776,
+    "economic_filter": {
+      "family": "signal + cost/ATR low",
+      "id": "LOW_COST_ATR",
+      "rule": "state_spread_price/state_atr_14_causal <= expanding-train q25"
+    },
+    "eligible_signals": 29798,
+    "entered": 7415,
+    "entry_rate": 0.24884220417477684,
+    "historical_cost_quantiles": {
+      "p50": 0.00023099721756935878,
+      "p75": 0.0002807806616300433,
+      "p90": 0.0003240866026465072,
+      "p95": 0.0003329438350864074
+    },
+    "hit_rate": 0.47282535401213754,
+    "horizon_minutes": 30,
+    "id": "NEW-ECO-DISC-16-LOW_COST_ATR-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.0013041468753575293,
+    "mfe": 0.001243668492747824,
+    "payoff": 0.8241994005219734,
+    "raw_p_value": 0.9998379010094522,
+    "regime_stability": {
+      "RANGE": -0.00015388723896865195,
+      "TREND_DOWN": -0.00018054935017214988,
+      "TREND_UP": 0.0005620621143993304
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.350413,
+    "sessions": 803,
+    "signal_frozen": true,
+    "signal_source": "DISC-16",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.0003031844392639487,
+        "cost_2x": -0.00042673390941445606,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "RANGE": -0.00015388723896865195,
+          "TREND_DOWN": -0.00018054935017214988,
+          "TREND_UP": 0.0005620621143993304
+        },
+        "remove_best_10_sessions": -0.0002087354538766499,
+        "remove_best_5pct": -0.0003731971344946329,
+        "sample_concentration_top10_sessions": 0.004315576534052596,
+        "spread_perturbation_10pct": -0.00020434486314354266,
+        "stronger_signal_neighbor": -0.00016733561707707575,
+        "temporal_concentration": 0.08115555624060689,
+        "weaker_signal_neighbor": -0.00017963496911344116,
+        "winsorization": -0.00018306601058921487
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity",
+        "regime_dependence"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.0002910594159442992,
+      "2016-H1": 2.550752908092155e-05,
+      "2016-H2": -0.0006523586466796055,
+      "2017": -0.000202115392910081,
+      "2017-H1": -9.063898847798723e-05,
+      "2017-H2": -0.0003912271504288114,
+      "2018": -0.00017006913078119305,
+      "2018-H1": -9.229524678904753e-05,
+      "2018-H2": -0.0002566671252419309,
+      "2019": -0.00013865913968227732,
+      "2019-H1": -0.00016536190297590866,
+      "2019-H2": -0.00011367627548524779
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.0002775680203449957,
+        -8.170191788188657e-05
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.003004495482267175,
+      "expected_costs": 0.00024709894030101496,
+      "expected_gross_return": 6.746397118757379e-05,
+      "expected_net_return": -0.00017963496911344113,
+      "support": 7402,
+      "uncertainty": 4.996584246507886e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.7511577958252231,
+    "waited": 22383,
+    "walk_forward": [
+      {
+        "eligible": 5260,
+        "embargo_minutes": 30,
+        "entered": 1182,
+        "expected_net_return": -0.0002910594159442992,
+        "learned_from_past": {
+          "q25_cost_atr": 0.8235294117647746
+        },
+        "purge_minutes": 30,
+        "test_year": 2016,
+        "train_eligible": 5125,
+        "waited": 4078
+      },
+      {
+        "eligible": 7982,
+        "embargo_minutes": 30,
+        "entered": 604,
+        "expected_net_return": -0.000202115392910081,
+        "learned_from_past": {
+          "q25_cost_atr": 0.8484848484847698
+        },
+        "purge_minutes": 30,
+        "test_year": 2017,
+        "train_eligible": 10385,
+        "waited": 7378
+      },
+      {
+        "eligible": 8143,
+        "embargo_minutes": 30,
+        "entered": 2711,
+        "expected_net_return": -0.00017006913078119305,
+        "learned_from_past": {
+          "q25_cost_atr": 1.0021052631580147
+        },
+        "purge_minutes": 30,
+        "test_year": 2018,
+        "train_eligible": 18367,
+        "waited": 5432
+      },
+      {
+        "eligible": 8413,
+        "embargo_minutes": 30,
+        "entered": 2918,
+        "expected_net_return": -0.00013865913968227732,
+        "learned_from_past": {
+          "q25_cost_atr": 0.9556313993174225
+        },
+        "purge_minutes": 30,
+        "test_year": 2019,
+        "train_eligible": 26510,
+        "waited": 5495
+      }
+    ],
+    "years": 4
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.00024285953104513208,
+      "optimal_action": "WAIT",
+      "value_enter": -0.00024285953104513208,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_LONG",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": 3.4900223869036645e-05,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.0001734195923165899,
+      "1.0": -0.00024285953104513208,
+      "1.25": -0.00031229946977367427,
+      "1.5": -0.0003817394085022164,
+      "2.0": -0.0005206192859593009
+    },
+    "cost_to_gross_ratio": 7.958681180856155,
+    "economic_filter": {
+      "family": "signal + selected time window",
+      "id": "SELECTED_TIME_WINDOW",
+      "rule": "60 <= state_minute_of_session <= 210"
+    },
+    "eligible_signals": 29798,
+    "entered": 16358,
+    "entry_rate": 0.5489630176521915,
+    "historical_cost_quantiles": {
+      "p50": 0.0002696054944966574,
+      "p75": 0.0003218870233099462,
+      "p90": 0.0003415293442896026,
+      "p95": 0.0003551522056596027
+    },
+    "hit_rate": 0.41991686025186453,
+    "horizon_minutes": 30,
+    "id": "NEW-ECO-DISC-16-SELECTED_TIME_WINDOW-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.0009990792196143874,
+    "mfe": 0.0009650735989752564,
+    "payoff": 0.8271572560687969,
+    "raw_p_value": 0.999999999999604,
+    "regime_stability": {
+      "RANGE": -0.00026766848223525215,
+      "TREND_DOWN": -0.00023893616167548664,
+      "TREND_UP": -0.00042814427569183485
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.356708,
+    "sessions": 980,
+    "signal_frozen": true,
+    "signal_source": "DISC-16",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.0003817394085022164,
+        "cost_2x": -0.0005206192859593009,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "RANGE": -0.00026766848223525215,
+          "TREND_DOWN": -0.00023893616167548664,
+          "TREND_UP": -0.00042814427569183485
+        },
+        "remove_best_10_sessions": -0.0002580639039587377,
+        "remove_best_5pct": -0.0004092732931003118,
+        "sample_concentration_top10_sessions": 0.002812079716346742,
+        "spread_perturbation_10pct": -0.00027063550653654895,
+        "stronger_signal_neighbor": -0.00023639480030580222,
+        "temporal_concentration": 0.07184265458946269,
+        "weaker_signal_neighbor": -0.00024285953104513208,
+        "winsorization": -0.0002419930406598473
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity",
+        "regime_dependence"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.00033746950072587024,
+      "2016-H1": -2.3429045294891195e-05,
+      "2016-H2": -0.0005083088903965184,
+      "2017": -0.00024908518179413245,
+      "2017-H1": -0.0002710936597303268,
+      "2017-H2": -0.00022825475101717822,
+      "2018": -0.00027505608398145203,
+      "2018-H1": -0.0002923061746715838,
+      "2018-H2": -0.0002601626853181605,
+      "2019": -0.00014675182638697838,
+      "2019-H1": -0.00021929882119593494,
+      "2019-H2": -4.540961100294722e-05
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.000309317154504671,
+        -0.0001764019075855931
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.002475247600867593,
+      "expected_costs": 0.00027775975491416876,
+      "expected_gross_return": 3.4900223869036645e-05,
+      "expected_net_return": -0.00024285953104513208,
+      "support": 16319,
+      "uncertainty": 3.390695074466274e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.4510369823478086,
+    "waited": 13440,
+    "walk_forward": [
+      {
+        "eligible": 5260,
+        "embargo_minutes": 30,
+        "entered": 2807,
+        "expected_net_return": -0.00033746950072587024,
+        "learned_from_past": {
+          "end": 210,
+          "start": 60
+        },
+        "purge_minutes": 30,
+        "test_year": 2016,
+        "train_eligible": 5125,
+        "waited": 2453
+      },
+      {
+        "eligible": 7982,
+        "embargo_minutes": 30,
+        "entered": 4719,
+        "expected_net_return": -0.00024908518179413245,
+        "learned_from_past": {
+          "end": 210,
+          "start": 60
+        },
+        "purge_minutes": 30,
+        "test_year": 2017,
+        "train_eligible": 10385,
+        "waited": 3263
+      },
+      {
+        "eligible": 8143,
+        "embargo_minutes": 30,
+        "entered": 4320,
+        "expected_net_return": -0.00027505608398145203,
+        "learned_from_past": {
+          "end": 210,
+          "start": 60
+        },
+        "purge_minutes": 30,
+        "test_year": 2018,
+        "train_eligible": 18367,
+        "waited": 3823
+      },
+      {
+        "eligible": 8413,
+        "embargo_minutes": 30,
+        "entered": 4512,
+        "expected_net_return": -0.00014675182638697838,
+        "learned_from_past": {
+          "end": 210,
+          "start": 60
+        },
+        "purge_minutes": 30,
+        "test_year": 2019,
+        "train_eligible": 26510,
+        "waited": 3901
+      }
+    ],
+    "years": 4
+  },
+  {
+    "abstention_value": {
+      "ABSTENTION_VALUE": 0.0002941702587700367,
+      "optimal_action": "WAIT",
+      "value_enter": -0.0002941702587700367,
+      "value_wait": 0.0
+    },
+    "action": "ENTER_LONG",
+    "bh_fdr_q_value": 1.0,
+    "break_even_cost": -1.6984491233305496e-05,
+    "complexity": 1,
+    "cost_stress": {
+      "0.75": -0.0002248738168858539,
+      "1.0": -0.0002941702587700367,
+      "1.25": -0.0003634667006542195,
+      "1.5": -0.00043276314253840227,
+      "2.0": -0.0005713560263067679
+    },
+    "cost_to_gross_ratio": 16.31993350458374,
+    "economic_filter": {
+      "family": "signal + favorable regime",
+      "id": "RANGE_REGIME",
+      "rule": "state_regime_v0 == RANGE"
+    },
+    "eligible_signals": 29798,
+    "entered": 2634,
+    "entry_rate": 0.08839519430834285,
+    "historical_cost_quantiles": {
+      "p50": 0.00026059292617550795,
+      "p75": 0.00032131143849662086,
+      "p90": 0.00034703083872906777,
+      "p95": 0.0003614976024141854
+    },
+    "hit_rate": 0.35876993166287013,
+    "horizon_minutes": 30,
+    "id": "NEW-ECO-DISC-16-RANGE_REGIME-V1",
+    "locked_oos_inspected": false,
+    "mae": -0.0007552064522617518,
+    "mfe": 0.0006750636546722746,
+    "payoff": 0.7584629379420826,
+    "raw_p_value": 1.0,
+    "regime_stability": {
+      "RANGE": -0.0002941702587700367
+    },
+    "rejection_reasons": [
+      "expected_net_return_not_positive",
+      "ci95_not_positive",
+      "temporal_stability_failed",
+      "economic_skeptic_failed"
+    ],
+    "research_value": 0.35682,
+    "sessions": 655,
+    "signal_frozen": true,
+    "signal_source": "DISC-16",
+    "skeptic": {
+      "attacks": {
+        "cost_1_5x": -0.00043276314253840227,
+        "cost_2x": -0.0005713560263067679,
+        "data_quality": {
+          "cost_methods": [
+            "PROXY_COST"
+          ],
+          "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO"
+        },
+        "gap_sensitivity": false,
+        "regime_means": {
+          "RANGE": -0.0002941702587700367
+        },
+        "remove_best_10_sessions": -0.0003155043522863168,
+        "remove_best_5pct": -0.0004102246977504424,
+        "sample_concentration_top10_sessions": 0.006454062262718299,
+        "spread_perturbation_10pct": -0.00032188883552370984,
+        "stronger_signal_neighbor": -0.00029403842727780357,
+        "temporal_concentration": 0.07787392391872455,
+        "weaker_signal_neighbor": -0.0002941702587700367,
+        "winsorization": -0.0002889506663350328
+      },
+      "failures": [
+        "remove_best_5pct",
+        "remove_best_10_sessions",
+        "winsorization",
+        "cost_1_5x",
+        "spread_perturbation_10pct",
+        "weaker_signal_neighbor",
+        "stronger_signal_neighbor",
+        "gap_sensitivity"
+      ],
+      "passed": false
+    },
+    "stability_passed": false,
+    "status": "REJECTED",
+    "support_passed": true,
+    "temporal_stability": {
+      "2016": -0.00043256658587666603,
+      "2016-H1": -0.0001490023585010526,
+      "2016-H2": -0.0005266641321806812,
+      "2017": -0.0003681746632426102,
+      "2017-H1": -0.00036325738639728246,
+      "2017-H2": -0.00037218486960190645,
+      "2018": -0.0002386899680341839,
+      "2018-H1": -0.00032358478896227455,
+      "2018-H2": -0.00015561594755495315,
+      "2019": -0.00022768576879028289,
+      "2019-H1": -0.00025137410892066373,
+      "2019-H2": -0.00018587820160653124
+    },
+    "trade_value": 0.0,
+    "trade_value_v1": {
+      "confidence_interval_95": [
+        -0.00036006944007165915,
+        -0.00022827107746841428
+      ],
+      "decision": "WAIT",
+      "downside_p05": -0.0019446125846896219,
+      "expected_costs": 0.0002771857675367312,
+      "expected_gross_return": -1.6984491233305496e-05,
+      "expected_net_return": -0.0002941702587700367,
+      "support": 2618,
+      "uncertainty": 3.362203127633797e-05,
+      "uncertainty_method": "SESSION_CLUSTERED_SANDWICH"
+    },
+    "type": "NEW_ECONOMIC_HYPOTHESIS",
+    "validation_inspected": false,
+    "wait_rate": 0.9116048056916571,
+    "waited": 27164,
+    "walk_forward": [
+      {
+        "eligible": 5260,
+        "embargo_minutes": 30,
+        "entered": 300,
+        "expected_net_return": -0.00043256658587666603,
+        "learned_from_past": {
+          "regime": "RANGE"
+        },
+        "purge_minutes": 30,
+        "test_year": 2016,
+        "train_eligible": 5125,
+        "waited": 4960
+      },
+      {
+        "eligible": 7982,
+        "embargo_minutes": 30,
+        "entered": 754,
+        "expected_net_return": -0.0003681746632426102,
+        "learned_from_past": {
+          "regime": "RANGE"
+        },
+        "purge_minutes": 30,
+        "test_year": 2017,
+        "train_eligible": 10385,
+        "waited": 7228
+      },
+      {
+        "eligible": 8143,
+        "embargo_minutes": 30,
+        "entered": 738,
+        "expected_net_return": -0.0002386899680341839,
+        "learned_from_past": {
+          "regime": "RANGE"
+        },
+        "purge_minutes": 30,
+        "test_year": 2018,
+        "train_eligible": 18367,
+        "waited": 7405
+      },
+      {
+        "eligible": 8413,
+        "embargo_minutes": 30,
+        "entered": 842,
+        "expected_net_return": -0.00022768576879028289,
+        "learned_from_past": {
+          "regime": "RANGE"
+        },
+        "purge_minutes": 30,
+        "test_year": 2019,
+        "train_eligible": 26510,
+        "waited": 7571
+      }
+    ],
+    "years": 4
+  }
+]

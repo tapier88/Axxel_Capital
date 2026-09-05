@@ -1,0 +1,83 @@
+{
+  "bars_hash": "cfcbc493cdf286ab701127c9fa7580d7d72ee7f51ad43e2e7e0b5a68274a720e",
+  "canonical_url": "https://www.metatrader.com/en/symbols/xauusd",
+  "columns": [
+    "symbol",
+    "timestamp_open_utc",
+    "open",
+    "high",
+    "low",
+    "close",
+    "tick_volume",
+    "real_volume",
+    "spread"
+  ],
+  "complete_example_path": "reports/examples/dataset-11d5cf82a841e95415fb3bc0_experience.json",
+  "coverage": {
+    "first": "2026-08-27T01:00:00Z",
+    "last": "2026-09-02T22:00:00Z"
+  },
+  "dataset_id": "DATASET-11d5cf82a841e95415fb3bc0",
+  "experience_store_path": "experience_store/market/xauusd/dataset-11d5cf82a841e95415fb3bc0.json",
+  "experiences": 75,
+  "limitations": [
+    "H1 source cannot produce 5m/15m/30m labels",
+    "No bid/ask or spread; LONG/SHORT tradable returns are null",
+    "Volume is tick volume; real volume unavailable"
+  ],
+  "partitions": {
+    "DEV": [
+      "SESSION-XAUUSD-2026-08-27-COT",
+      "SESSION-XAUUSD-2026-08-28-COT",
+      "SESSION-XAUUSD-2026-08-31-COT"
+    ],
+    "LOCKED_OOS": [
+      "SESSION-XAUUSD-2026-09-02-COT"
+    ],
+    "VALIDATION": [
+      "SESSION-XAUUSD-2026-09-01-COT"
+    ]
+  },
+  "quality": {
+    "blocking_errors": false,
+    "duplicate_timestamps": 0,
+    "gap_count": 4,
+    "gaps": [
+      {
+        "after": "2026-08-27T22:00:00+00:00",
+        "before": "2026-08-28T01:00:00+00:00",
+        "minutes": 180
+      },
+      {
+        "after": "2026-08-28T22:00:00+00:00",
+        "before": "2026-08-31T01:00:00+00:00",
+        "minutes": 3060
+      },
+      {
+        "after": "2026-08-31T22:00:00+00:00",
+        "before": "2026-09-01T01:00:00+00:00",
+        "minutes": 180
+      },
+      {
+        "after": "2026-09-01T22:00:00+00:00",
+        "before": "2026-09-02T01:00:00+00:00",
+        "minutes": 180
+      }
+    ],
+    "invalid_ohlc": 0,
+    "nan_required_fields": 0,
+    "negative_volume": 0,
+    "records": 110,
+    "unordered_pairs": 0
+  },
+  "raw_file_hash": "f710961309cff1803bf27f1aabadaf67dfde0fd9d81f19f7431abec858d3e7ab",
+  "raw_path": "data/raw/xauusd/xauusd_1h_c079cd1a82ab.json",
+  "schema_version": "market-experience-v1",
+  "sessions": 5,
+  "sessions_path": "data/sessions/dataset-11d5cf82a841e95415fb3bc0.json",
+  "source": "MetaTrader MarketData MCP (public, read-only)",
+  "spread_available": false,
+  "symbol": "XAUUSD",
+  "ticks_available": false,
+  "timeframe": "1h"
+}

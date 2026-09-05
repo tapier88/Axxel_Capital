@@ -1,0 +1,68 @@
+[
+  {
+    "artifact": "reports/data_integrity/2026-09-04/evidence_manifest.json",
+    "does_not_count_as_hypothesis_test": true,
+    "historical_registry_preserved": true,
+    "id": "AXXEL-DATA-INTEGRITY-20260904",
+    "kind": "OPERATIONAL_DATA_AUDIT_NOT_STATISTICAL_RESEARCH",
+    "next_action": "OBTAIN_OR_PRESERVE_ORIGINAL_DEV_SOURCE_AND_HISTORICAL_SESSION_EVIDENCE",
+    "report": "reports/data_integrity/2026-09-04/REPORT.md",
+    "sha256": "b85607261fd6e4cdcd017385fee768fd338b6df7fb98eac8d234ebb7234570f4",
+    "status": "DIAGNOSTIC_COMPLETE_CERTIFICATION_BLOCKED"
+  },
+  {
+    "artifact": "reports/data_integrity/2026-09-04-source-evidence/evidence_manifest.json",
+    "does_not_count_as_hypothesis_test": true,
+    "historical_registry_preserved": true,
+    "id": "AXXEL-ORIGINAL-SOURCE-EVIDENCE-20260904",
+    "kind": "DOCUMENTARY_AND_CURRENT_METADATA_EVIDENCE_NOT_RESEARCH_DATA",
+    "next_action": "OBTAIN_AUTHENTICATED_PROVIDER_DOCUMENTS_USING_PREPARED_REQUEST",
+    "report": "reports/data_integrity/2026-09-04-source-evidence/FOUNDATION_REPORT.md",
+    "sha256": "32f5c097abf09f518cfa1878da39ba009029e9fe5209e265d20ccef8233bb68f",
+    "status": "BLOCKED"
+  },
+  {
+    "artifact": "reports/data_integrity/provider-request-final-2026-09-04/evidence_manifest.json",
+    "does_not_count_as_hypothesis_test": true,
+    "historical_registry_preserved": true,
+    "id": "XM-PROVIDER-REQUEST-FINAL-20260904",
+    "kind": "HUMAN_PROVIDER_REQUEST_PACKAGE",
+    "report": "reports/data_integrity/provider-request-final-2026-09-04/PACKAGE_REPORT.md",
+    "sha256": "db1722e0d7c49415c9a2b4db1f62f45a4dbfd0a2b0cc89eace1cd28ffabc73fc",
+    "status": "PREPARED_NOT_SENT"
+  },
+  {
+    "artifact": "reports/data_integrity/histdata-2015-2017-2026-09-04/evidence_manifest.json",
+    "does_not_count_as_hypothesis_test": true,
+    "historical_registry_preserved": true,
+    "id": "HISTDATA-XAUUSD-M1-2015-2017-AUDIT-20260904",
+    "kind": "OPERATIONAL_SOURCE_INTEGRITY_DIAGNOSTIC_NOT_STATISTICAL_RESEARCH",
+    "next_action": "Recover existing HistData acquisition evidence and seek historical feed/time/session clarification; preserve separate XM evidence request; no further internal substitutes",
+    "report": "reports/data_integrity/histdata-2015-2017-2026-09-04/FOUNDATION_REPORT.md",
+    "sha256": "ec166295d0744bd29c8c6c458158de130a56f539506fc41d204f107afc75baae",
+    "status": "AUDIT_COMPLETE_EXPLORATORY_ONLY_CERTIFICATION_BLOCKED"
+  },
+  {
+    "artifact": "reports/data_integrity/histdata-documentary-2026-09-04/evidence_manifest.json",
+    "blockers_closed": 0,
+    "does_not_count_as_hypothesis_test": true,
+    "historical_registry_preserved": true,
+    "id": "HISTDATA-DOCUMENTARY-CONSOLIDATION-20260904",
+    "kind": "DOCUMENTARY_SOURCE_EVIDENCE_CONSOLIDATION",
+    "report": "reports/data_integrity/histdata-documentary-2026-09-04/FOUNDATION_REPORT.md",
+    "sha256": "a207bcfcf7fe8daa57447b6f89718c197bbe8c86fab765d0eda272bebea1ec9b",
+    "status": "WAITING_FOR_SOURCE_EVIDENCE"
+  },
+  {
+    "artifact": "reports/foundation_recovery_plan/2026-09-04/evidence_manifest.json",
+    "does_not_count_as_hypothesis_test": true,
+    "historical_registry_preserved": true,
+    "id": "ADR-FOUNDATION-001-DESIGN-20260904",
+    "implementation_authorized": false,
+    "kind": "ARCHITECTURAL_DECISION_PROPOSAL_NO_IMPLEMENTATION",
+    "next_action": "AWAIT_HUMAN_APPROVAL_OF_ADR_FOUNDATION_001",
+    "report": ".axxel/master_architecture/00_START_HERE/FOUNDATION_RECOVERY_PLAN_ADR_001.md",
+    "sha256": "5652b308963af43de1ff990f06fc9feb3a930972ff4ea2359c719f28ecbb6911",
+    "status": "PROPOSE_APPROVAL"
+  }
+]

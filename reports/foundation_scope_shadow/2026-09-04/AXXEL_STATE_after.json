@@ -1,0 +1,203 @@
+{
+  "schema_version": "2.0",
+  "project": "AXXEL CAPITAL",
+  "system_mode": "CONTINUOUS_MEASURABLE_IMPROVEMENT",
+  "north_star": "REPRODUCIBLE_RISK_ADJUSTED_NET_EDGE",
+  "human_role": "HUMAN_ON_THE_LOOP",
+  "phase": "PHASE_1_FOUNDATION",
+  "primary_bottleneck": "FOUNDATION_G3_RESEARCH_ROUTE_AND_G4_XM_FORWARD_CAPTURE",
+  "current_task": "REVIEW_FOUNDATION_SCOPE_READINESS_V1_SHADOW_EVIDENCE",
+  "next_best_action": "HUMAN_REVIEW_THEN_SEPARATELY_AUTHORIZE_TRACK_B_PREREQUISITES",
+  "real_deployment": {
+    "status": "BLOCKED",
+    "automatic_promotion": false
+  },
+  "architecture_evolution": {
+    "enabled": true,
+    "default_mode": "ADDITIVE",
+    "promotion_path": [
+      "OBSERVE",
+      "SHADOW",
+      "SANDBOX",
+      "CHALLENGER",
+      "VALIDATED",
+      "PROMOTED"
+    ],
+    "rollback_required": true
+  },
+  "capabilities": {
+    "operational": [
+      "discovery",
+      "hypothesis_preregistration",
+      "evidence_registry",
+      "research_value",
+      "skeptic",
+      "walk_forward",
+      "purging",
+      "fdr_controls",
+      "opportunity_discovery",
+      "data_engine_v1"
+    ],
+    "implementing": [
+      "xgboost",
+      "lightgbm",
+      "catboost",
+      "ensemble_calibration"
+    ],
+    "degraded": [
+      "historical_cost_reality_bid_ask_ticks"
+    ],
+    "not_started": [
+      "control_tower",
+      "architecture_gap_detector",
+      "live_data",
+      "fundamental_intelligence",
+      "drift_detection",
+      "continuous_learning",
+      "champion_challenger",
+      "loss_intelligence",
+      "risk_capital_engine",
+      "strategy_portfolio",
+      "process_auditor",
+      "watchdogs_recovery",
+      "mission_control_dashboard",
+      "paper_demo_execution",
+      "production_ea",
+      "generalist_intelligence_layer",
+      "hierarchical_agent_control",
+      "shared_foundation_reuse"
+    ],
+    "shadow": [
+      "foundation_scope_readiness_v1"
+    ]
+  },
+  "architecture_principles": [
+    "ADDITIVE_CHANGE_BY_DEFAULT",
+    "PROTECT_VALIDATED_BASELINE",
+    "NEW_COMPONENT_ONLY_IF_OPERATIONALLY_JUSTIFIED",
+    "GENERALIST_FIRST",
+    "COMPOSE_BEFORE_SPECIALIZE",
+    "MEMORY_AND_STATE_OUTSIDE_MODEL",
+    "PLAN_IN_SUBTASKS_EXECUTE_IN_ACTIONS",
+    "COLLECT_ONCE_CERTIFY_ONCE_REUSE_MANY_TIMES",
+    "MEASURE_DATA_DIVERSITY_NOT_ONLY_DATA_VOLUME",
+    "KEEP_CONTEXT_FIELDS_ONLY_IF_ABLATION_SHOWS_VALUE",
+    "LOW_QUALITY_EXPERIENCE_IS_NOT_CERTIFIED_EVIDENCE"
+  ],
+  "intelligence_objectives": {
+    "status": "FUTURE_NOT_PHASE_1",
+    "maximize": [
+      "generalist_task_coverage",
+      "cross_context_transfer",
+      "composition_transfer",
+      "reliability",
+      "validated_throughput"
+    ],
+    "minimize": [
+      "unnecessary_specialists",
+      "human_intervention",
+      "duplicated_data_work",
+      "context_without_measured_value"
+    ]
+  },
+  "architecture_change_policy": {
+    "new_top_level_component_requires": [
+      "independent_state_or_lifecycle",
+      "clear_interface",
+      "distinct_operational_responsibility"
+    ],
+    "otherwise": "integrate_into_existing_component"
+  },
+  "data_engine": {
+    "implementation_status": "IMPLEMENTED",
+    "certification_status": "IN_PROGRESS",
+    "certified": false,
+    "pilot_status": "EXPLORATORY_ONLY",
+    "pilot_dataset_id": "DE1-658ff72ef8932e5b4d50118751d039fc11015010ec6f1101c3dce81805b58706",
+    "pilot_rows": 1048576,
+    "pilot_score": 89.7073,
+    "pilot_time_range": "2015-01-02 08:06 to 2017-12-19 15:00 (stored as UTC)",
+    "strong_origin_certified_rows": 0,
+    "new_research_eligible_rows": 0,
+    "xm_legacy_status": "EXPLORATORY_ONLY",
+    "histdata_status": "EXPLORATORY_ONLY"
+  },
+  "open_blockers": [
+    "histdata_download_authenticity_receipt_or_exact_download_proof_missing",
+    "histdata_historical_time_semantics_not_fully_attested_for_xauusd_2015_2017",
+    "histdata_historical_session_calendar_not_attested",
+    "histdata_feed_upstream_and_instrument_definition_not_attested",
+    "histdata_3136_gaps_unadjudicated",
+    "histdata_txt_interval_duration_discrepancy_6_to_7_seconds_unexplained",
+    "xm_historical_provenance_clock_and_session_attestation_missing",
+    "xm_specific_execution_cost_history_missing"
+  ],
+  "protected_constraints": [
+    "DO_NOT_OPEN_VALIDATION",
+    "DO_NOT_OPEN_LOCKED_OOS",
+    "DO_NOT_REPAIR_OR_FILL_GAPS_AUTOMATICALLY",
+    "DO_NOT_REPLACE_ZERO_SPREAD_WITH_PROXY_VALUES",
+    "DO_NOT_PROMOTE_EXPLORATORY_DATA_TO_CERTIFIED_WITHOUT_NEW_EVIDENCE",
+    "DO_NOT_START_CONTROL_TOWER_BEFORE_FOUNDATION_EXIT_GATE"
+  ],
+  "dominant_dependency": "PROVIDER_HISTORICAL_PROVENANCE_CLOCK_AND_SESSION_ATTESTATION",
+  "provider_evidence_request": {
+    "status": "PREPARED_NOT_SENT",
+    "scope": "GOLD/XAUUSD, XMGlobal-MT5 6, 2015-01-02 08:06 to 2017-12-19 15:00 stored-clock range",
+    "requires_explicit_recipient_or_user_authorization_to_send": true
+  },
+  "foundation_gate": {
+    "status": "BLOCKED",
+    "reason": "G3_CERTIFIABLE_RESEARCH_ROUTE_AND_G4_QUALIFIED_XM_FORWARD_CAPTURE_NOT_ESTABLISHED",
+    "data_engine_certified": false,
+    "control_tower_allowed": false
+  },
+  "histdata_xauusd_m1_2015_2017": {
+    "status": "EXPLORATORY_ONLY",
+    "rows_total": 1057441,
+    "rows_by_year": {
+      "2015": 351666,
+      "2016": 353415,
+      "2017": 352360
+    },
+    "gaps_total": 3136,
+    "gaps_by_year": {
+      "2015": 2053,
+      "2016": 619,
+      "2017": 462
+    },
+    "cross_year_gaps": 2,
+    "stale_episodes": 8,
+    "jumps_over_2pct": 1,
+    "certified_rows": 0,
+    "research_eligible_rows": 0,
+    "preservation": "ZIP_AND_EXTRACTED_MEMBERS_HASHED_AND_BYTE_MATCHED",
+    "cost_data": "NOT_AVAILABLE_IN_M1_OHLC"
+  },
+  "foundation_recovery_policy": {
+    "adr": "ADR-FOUNDATION-001",
+    "status": "APPROVED",
+    "policy_version": "FOUNDATION_SCOPE_READINESS_V1",
+    "approved_date": "2026-09-04",
+    "implementation_status": "SHADOW_IMPLEMENTED",
+    "data_engine_certified": false,
+    "control_tower_allowed": false,
+    "scope_readiness_evidence": "reports/foundation_scope_shadow/2026-09-04/evidence_manifest.json",
+    "gates": {
+      "G1": "FULFILLED_IMPLEMENTATION_AND_TEST",
+      "G2": "FULFILLED_ADR_APPROVED",
+      "G3": "NOT_ESTABLISHED",
+      "G4": "NOT_STARTED",
+      "G5": "FULFILLED_IN_SHADOW_ONLY",
+      "G6": "FULFILLED_IN_SHADOW_ONLY"
+    },
+    "production_consumers_migrated": false
+  },
+  "architecture_decisions": [
+    "ADR-FOUNDATION-001_APPROVED",
+    "FOUNDATION_SCOPE_READINESS_V1_SHADOW_IMPLEMENTED",
+    "DATA_ENGINE_CERTIFIED_REMAINS_FALSE",
+    "CONTROL_TOWER_REMAINS_BLOCKED"
+  ],
+  "DATA_ENGINE_CERTIFIED": false
+}

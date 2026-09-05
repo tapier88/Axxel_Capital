@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-09-03T02:24:16.518711+00:00",
+  "evidence_artifact": "reports/evidence/hypothesis-disc-15-near_high_reverts-v1_ff3f9ba829605057.json",
+  "evidence_hash": "66e1f36e2c4ef47df8099aeb647d027514df2b6f3d6d97d38e3bd37cc57aab25",
+  "hypothesis_id": "HYPOTHESIS-DISC-15-NEAR_HIGH_REVERTS-V1",
+  "locked_oos_authorized": false,
+  "partition_authorized": "VALIDATION",
+  "spec_hash": "0c3a315cd83ad1d126dcabcc674f6700cd5e64bc4188dca29206422771e2f0b0"
+}

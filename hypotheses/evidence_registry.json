@@ -1,0 +1,1822 @@
+[
+  {
+    "action": "LONG",
+    "condition": {
+      "modulus": 10,
+      "remainder": 3,
+      "type": "session_hash_mod"
+    },
+    "created_at": "2026-09-03T02:05:24.373453+00:00",
+    "effect_unit": "return",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-cal-negative-session-hash-v1_bf6e789e5afa64a8.json",
+      "reports/evidence/hypothesis-cal-negative-session-hash-v1_b7c5f8771fbac20c.json",
+      "reports/evidence/hypothesis-cal-negative-session-hash-v1_75086316c2948aec.json"
+    ],
+    "evidence_score": 0.514751,
+    "expected_direction": "GREATER",
+    "id": "HYPOTHESIS-CAL-NEGATIVE-SESSION-HASH-V1",
+    "last_adjusted_p": 0.9597600599850038,
+    "last_evidence_artifact": "reports/evidence/hypothesis-cal-negative-session-hash-v1_75086316c2948aec.json",
+    "last_nominal_p": 0.4798800299925019,
+    "last_report_hash": "1d8cb4c601461cd4b8d98b3338e0b237498b46479b588eb2c9229af0a12c8936",
+    "minimum_effect": 0.0001,
+    "negative_control": true,
+    "null": "Hash-assigned sessions and remaining sessions have equal mean 30m LONG return",
+    "parameter_neighbors": [],
+    "planned_comparisons": 1,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean tradable return",
+    "question": "Does an arbitrary deterministic hash bucket of sessions predict positive 30m LONG return?",
+    "rejection_criterion": "Reject as evidence if FDR-adjusted p > 0.05 or robustness gates fail",
+    "rejection_reasons": [
+      "economic_materiality_failed",
+      "multiple_testing_failed",
+      "temporal_stability_failed",
+      "negative_control_failed",
+      "negative_control_not_eligible"
+    ],
+    "secondary_metrics": [
+      "median",
+      "confidence intervals",
+      "sign stability"
+    ],
+    "spec_hash": "9567c69b3e809c707d299d9621d50d7fbc092029ee96bb70835faab8d3b6eaf8",
+    "status": "REJECTED",
+    "survival_criterion": "Must pass all DEV evidence and skeptic gates",
+    "target_variable": "outcome_tradable_return_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T02:08:49.590249+00:00"
+  },
+  {
+    "action": "WAIT",
+    "condition": {
+      "end": 30,
+      "field": "state_minute_of_session",
+      "start": 0,
+      "type": "minute_range"
+    },
+    "created_at": "2026-09-03T02:05:28.485735+00:00",
+    "effect_unit": "return standard deviation",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-cal-early-window-vol-v1_bca3841d7a19d0fe.json",
+      "reports/evidence/hypothesis-cal-early-window-vol-v1_ce5f80f1aed61dc5.json",
+      "reports/evidence/hypothesis-cal-early-window-vol-v1_7d542797645604f6.json"
+    ],
+    "evidence_score": 0.35,
+    "expected_direction": "GREATER",
+    "id": "HYPOTHESIS-CAL-EARLY-WINDOW-VOL-V1",
+    "last_adjusted_p": 1.0,
+    "last_evidence_artifact": "reports/evidence/hypothesis-cal-early-window-vol-v1_7d542797645604f6.json",
+    "last_nominal_p": 1.0,
+    "last_report_hash": "d89e1b9961adfa008830c4dde9830850b00fbc6826042caa2a2cf11422ee14ca",
+    "minimum_effect": 1e-05,
+    "null": "Early-window and same-session remaining-window volatility are exchangeable at session level",
+    "parameter_neighbors": [
+      25,
+      35
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "paired session difference in mean realized volatility",
+    "question": "Is future 30m realized volatility higher during 08:00-08:30 COT than the session base rate?",
+    "rejection_criterion": "Reject if materiality, FDR or stability gates fail",
+    "rejection_reasons": [
+      "effect_direction_failed",
+      "multiple_testing_failed",
+      "temporal_stability_failed",
+      "parameter_stability_failed",
+      "negative_control_failed"
+    ],
+    "secondary_metrics": [
+      "median",
+      "regime stability",
+      "base rate"
+    ],
+    "spec_hash": "f7378074528be7a1e7ad89518bfbe666671c95a952216cdac3bac9cf9f152075",
+    "status": "REJECTED",
+    "survival_criterion": "Positive material effect across temporal and parameter perturbations",
+    "target_variable": "label_realized_volatility_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 9,
+    "updated_at": "2026-09-03T02:08:49.608062+00:00"
+  },
+  {
+    "action": "WAIT",
+    "condition": {
+      "field": "state_volatility_15m_causal",
+      "quantile": 0.75,
+      "type": "quantile_gte"
+    },
+    "created_at": "2026-09-03T02:05:31.176681+00:00",
+    "effect_unit": "return standard deviation",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-cal-vol-persistence-v1_50d905a4272024e1.json",
+      "reports/evidence/hypothesis-cal-vol-persistence-v1_4b618854b8c4a194.json"
+    ],
+    "evidence_score": 0.89955,
+    "expected_direction": "GREATER",
+    "id": "HYPOTHESIS-CAL-VOL-PERSISTENCE-V1",
+    "last_adjusted_p": 0.002999250187453137,
+    "last_evidence_artifact": "reports/evidence/hypothesis-cal-vol-persistence-v1_4b618854b8c4a194.json",
+    "last_nominal_p": 0.00024993751562109475,
+    "last_report_hash": "15f6a12bc18c35d4ba0b5df3e4da391407e86c4b605aba0e175439c6e1a2cd0e",
+    "minimum_effect": 1e-05,
+    "null": "Top-quartile causal volatility and lower-volatility observations have equal future volatility",
+    "parameter_neighbors": [
+      0.7,
+      0.8
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "paired session difference in mean realized volatility",
+    "question": "Does high causal 15m volatility precede higher realized volatility over the next 30m?",
+    "rejection_criterion": "Reject if materiality, FDR or stability gates fail",
+    "rejection_reasons": [
+      "negative_control_failed"
+    ],
+    "secondary_metrics": [
+      "median",
+      "regime stability",
+      "base rate"
+    ],
+    "spec_hash": "2c5985c3fc2b5b9c025f714097c226d65898d2a429f6b0dc2f95cf9097dc1fbb",
+    "status": "REJECTED",
+    "survival_criterion": "Positive material effect across years, regimes and neighbor quantiles",
+    "target_variable": "label_realized_volatility_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 6,
+    "updated_at": "2026-09-03T02:08:49.624506+00:00",
+    "validation_preregistration": "hypotheses/validation_preregistrations/hypothesis-cal-vol-persistence-v1.json"
+  },
+  {
+    "action": "WAIT",
+    "condition": {
+      "field": "state_minute_of_session",
+      "type": "minute_equals",
+      "value": 30
+    },
+    "created_at": "2026-09-03T02:06:02.692922+00:00",
+    "effect_unit": "return standard deviation",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-cal-0830-expansion-v1_0e63cbf810188ab7.json",
+      "reports/evidence/hypothesis-cal-0830-expansion-v1_6625a284ad201f6c.json"
+    ],
+    "evidence_score": 0.35,
+    "expected_direction": "GREATER",
+    "id": "HYPOTHESIS-CAL-0830-EXPANSION-V1",
+    "last_adjusted_p": 1.0,
+    "last_evidence_artifact": "reports/evidence/hypothesis-cal-0830-expansion-v1_6625a284ad201f6c.json",
+    "last_nominal_p": 1.0,
+    "last_report_hash": "fa063b754c675ffffa20cbae0b73b60bad676342bed26c9056891b28896048fd",
+    "minimum_effect": 1e-05,
+    "null": "08:30 and the same-session remaining minutes have equal future volatility",
+    "parameter_neighbors": [
+      20,
+      25,
+      35,
+      40
+    ],
+    "planned_comparisons": 5,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "paired session difference in mean realized volatility",
+    "question": "Does 08:30 COT show exceptional next-30m realized volatility relative to the full session base rate?",
+    "rejection_criterion": "Reject if the exact minute is an isolated peak or robustness gates fail",
+    "rejection_reasons": [
+      "effect_direction_failed",
+      "multiple_testing_failed",
+      "temporal_stability_failed",
+      "parameter_stability_failed",
+      "negative_control_failed"
+    ],
+    "secondary_metrics": [
+      "median",
+      "neighbor minutes",
+      "base rate"
+    ],
+    "spec_hash": "40353dda59872986e934d402db5ff7082109de471b3bea75fe42cec914bed979",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect with stable neighboring minutes and temporal blocks",
+    "target_variable": "label_realized_volatility_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 10,
+    "updated_at": "2026-09-03T02:08:49.646035+00:00"
+  },
+  {
+    "action": "LONG",
+    "campaign_fdr_p_value": 1.0,
+    "condition": {
+      "field": "state_return_15m",
+      "quantile": 0.8,
+      "type": "quantile_gte"
+    },
+    "created_at": "2026-09-03T02:21:40.732427+00:00",
+    "duplicate_rejected_idea": false,
+    "effect_unit": "return",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-07-positive_momentum_long-v1_4e60505e7ce38a61.json"
+    ],
+    "evidence_score": 0.35,
+    "expected_direction": "GREATER",
+    "family": "MOMENTUM",
+    "id": "HYPOTHESIS-DISC-07-POSITIVE_MOMENTUM_LONG-V1",
+    "initial_research_value": {
+      "components": {
+        "complexity_penalty": 0.2,
+        "contradiction_value": 0.3,
+        "data_quality": 0.9,
+        "economic_relevance": 1.0,
+        "estimated_compute_cost": 0.39,
+        "expected_information_gain": 0.8,
+        "family_saturation_penalty": 0.0,
+        "novelty": 0.85,
+        "prior_evidence": 0.15,
+        "redundancy_penalty": 0.05,
+        "uncertainty_reduction": 0.75
+      },
+      "penalty": 0.0725,
+      "purpose": "autonomous research priority only",
+      "score": 0.724468
+    },
+    "last_adjusted_p": 1.0,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-07-positive_momentum_long-v1_4e60505e7ce38a61.json",
+    "last_nominal_p": 1.0,
+    "last_report_hash": "c8c63d7b5bd2adc2f390930c2ad0c8554cb15b4af04e4ac8a9be34e7bb9b6354",
+    "memory_consulted": 8,
+    "minimum_effect": 5e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [
+      0.75,
+      0.85
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "prior_hypotheses_consulted": 4,
+    "proposal_type": "NOVEL",
+    "question": "Does positive momentum long change outcome_tradable_return_30m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [
+      "effect_direction_failed",
+      "multiple_testing_failed",
+      "temporal_stability_failed",
+      "parameter_stability_failed"
+    ],
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "semantic_signature": "dabe74ebf20092b431e921c53eb343d5304332ddb51200f12f1c6ac091692742",
+    "spec_hash": "c3fd14492bc19ebf3fbd489e9b8a2e9750c03a00db2c0d25420b53f140ea74fd",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "outcome_tradable_return_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T13:44:10.847753+00:00"
+  },
+  {
+    "action": "SHORT",
+    "campaign_fdr_p_value": 0.002570143499678732,
+    "condition": {
+      "field": "state_return_15m",
+      "quantile": 0.85,
+      "type": "quantile_gte"
+    },
+    "created_at": "2026-09-03T02:21:44.256568+00:00",
+    "duplicate_rejected_idea": false,
+    "effect_unit": "return",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-09-up_move_reverses-v1_b7a83b686d8e9481.json"
+    ],
+    "evidence_score": 0.999325,
+    "expected_direction": "GREATER",
+    "family": "REVERSAL",
+    "id": "HYPOTHESIS-DISC-09-UP_MOVE_REVERSES-V1",
+    "initial_research_value": {
+      "components": {
+        "complexity_penalty": 0.2,
+        "contradiction_value": 0.3,
+        "data_quality": 0.9,
+        "economic_relevance": 1.0,
+        "estimated_compute_cost": 0.39,
+        "expected_information_gain": 0.8,
+        "family_saturation_penalty": 0.0,
+        "novelty": 0.85,
+        "prior_evidence": 0.15,
+        "redundancy_penalty": 0.05,
+        "uncertainty_reduction": 0.75
+      },
+      "penalty": 0.0725,
+      "purpose": "autonomous research priority only",
+      "score": 0.724468
+    },
+    "last_adjusted_p": 0.004497751124437781,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-09-up_move_reverses-v1_b7a83b686d8e9481.json",
+    "last_nominal_p": 0.0004997501249375312,
+    "last_report_hash": "7e3aa200df9aae021b1d6f27eb0501a02a2489a7604700d33389bc641e745210",
+    "memory_consulted": 8,
+    "minimum_effect": 5e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [
+      0.8,
+      0.9
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "prior_hypotheses_consulted": 4,
+    "proposal_type": "NOVEL",
+    "question": "Does up move reverses change outcome_tradable_return_15m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [],
+    "replication_ratio": 0.9098615388119776,
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "semantic_signature": "71836db2d99a5109332b1fe39a30e15c535694cdd2745017317829e40b9d147b",
+    "spec_hash": "ab18da50363cf9c0d93b7cdb84ac903319da0b732bd304f3180efc831b76d2af",
+    "status": "VALIDATED_PREDICTIVE_RELATIONSHIP_NO_TRADE",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "outcome_tradable_return_15m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T14:01:51.737813+00:00",
+    "validation_effect": 0.00013301248483555257,
+    "validation_preregistration": "hypotheses/validation_preregistrations/hypothesis-disc-09-up_move_reverses-v1.json",
+    "validation_result": "reports/validation/PROMPT_6_VALIDATION_CEREMONY.json",
+    "validation_result_hash": "5697dcb882a6da87834bd7e5419224d9cb3706401089255d629d964dd1438fa4"
+  },
+  {
+    "action": "LONG",
+    "campaign_fdr_p_value": 1.0,
+    "condition": {
+      "field": "state_return_60m",
+      "quantile": 0.8,
+      "type": "quantile_gte"
+    },
+    "created_at": "2026-09-03T02:21:47.713262+00:00",
+    "duplicate_rejected_idea": false,
+    "effect_unit": "return",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-11-up_continues-v1_ab5ed11e0695a864.json"
+    ],
+    "evidence_score": 0.35,
+    "expected_direction": "GREATER",
+    "family": "CONTINUATION",
+    "id": "HYPOTHESIS-DISC-11-UP_CONTINUES-V1",
+    "initial_research_value": {
+      "components": {
+        "complexity_penalty": 0.2,
+        "contradiction_value": 0.3,
+        "data_quality": 0.9,
+        "economic_relevance": 1.0,
+        "estimated_compute_cost": 0.39,
+        "expected_information_gain": 0.8,
+        "family_saturation_penalty": 0.0,
+        "novelty": 0.85,
+        "prior_evidence": 0.15,
+        "redundancy_penalty": 0.05,
+        "uncertainty_reduction": 0.75
+      },
+      "penalty": 0.0725,
+      "purpose": "autonomous research priority only",
+      "score": 0.724468
+    },
+    "last_adjusted_p": 1.0,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-11-up_continues-v1_ab5ed11e0695a864.json",
+    "last_nominal_p": 1.0,
+    "last_report_hash": "10d8e6555c0c0fb2543358ed03f8152e5cdba9940a954f172790abc77c807ed8",
+    "memory_consulted": 8,
+    "minimum_effect": 5e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [
+      0.75,
+      0.85
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "prior_hypotheses_consulted": 4,
+    "proposal_type": "NOVEL",
+    "question": "Does up continues change outcome_tradable_return_60m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [
+      "effect_direction_failed",
+      "multiple_testing_failed",
+      "temporal_stability_failed",
+      "parameter_stability_failed"
+    ],
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "semantic_signature": "6c6e48fa7514e3ef379ae500b375785a61a2173dd7e244c7d44faa5e32933767",
+    "spec_hash": "9069fa30fd8bf78800bd78c723882a148d0c39a9b6a7a26fbeac02dcb0b3927d",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "outcome_tradable_return_60m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T13:44:10.995728+00:00"
+  },
+  {
+    "action": "LONG",
+    "campaign_fdr_p_value": 1.0,
+    "condition": {
+      "field": "state_distance_recent_high",
+      "quantile": 0.1,
+      "type": "quantile_lte"
+    },
+    "created_at": "2026-09-03T02:21:50.860941+00:00",
+    "duplicate_rejected_idea": false,
+    "effect_unit": "return",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-13-near_high_breaks-v1_cf93cf66e2c438c6.json"
+    ],
+    "evidence_score": 0.35,
+    "expected_direction": "GREATER",
+    "family": "BREAKOUT",
+    "id": "HYPOTHESIS-DISC-13-NEAR_HIGH_BREAKS-V1",
+    "initial_research_value": {
+      "components": {
+        "complexity_penalty": 0.2,
+        "contradiction_value": 0.3,
+        "data_quality": 0.9,
+        "economic_relevance": 1.0,
+        "estimated_compute_cost": 0.39,
+        "expected_information_gain": 0.8,
+        "family_saturation_penalty": 0.0,
+        "novelty": 0.85,
+        "prior_evidence": 0.15,
+        "redundancy_penalty": 0.05,
+        "uncertainty_reduction": 0.75
+      },
+      "penalty": 0.0725,
+      "purpose": "autonomous research priority only",
+      "score": 0.724468
+    },
+    "last_adjusted_p": 1.0,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-13-near_high_breaks-v1_cf93cf66e2c438c6.json",
+    "last_nominal_p": 1.0,
+    "last_report_hash": "c5f7813eae08e9afd86191839a2c50b3a7c66194e1ba02d9dbc142d77907e4fb",
+    "memory_consulted": 8,
+    "minimum_effect": 5e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [
+      0.05,
+      0.15
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "prior_hypotheses_consulted": 4,
+    "proposal_type": "NOVEL",
+    "question": "Does near high breaks change outcome_tradable_return_30m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [
+      "effect_direction_failed",
+      "multiple_testing_failed",
+      "temporal_stability_failed",
+      "parameter_stability_failed"
+    ],
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "semantic_signature": "139ce7d36bcceb903ce36e4c4c8bf2fcc1f7e08eb88100272b423ab62a9feba9",
+    "spec_hash": "77cc8dfc327213fe736fb7c934a56824e30014ca4f54f6d0d9621674c0139fec",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "outcome_tradable_return_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T13:44:11.058241+00:00"
+  },
+  {
+    "action": "SHORT",
+    "campaign_fdr_p_value": 0.002570143499678732,
+    "condition": {
+      "field": "state_distance_recent_high",
+      "quantile": 0.1,
+      "type": "quantile_lte"
+    },
+    "created_at": "2026-09-03T02:21:54.233143+00:00",
+    "duplicate_rejected_idea": false,
+    "effect_unit": "return",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-15-near_high_reverts-v1_ff3f9ba829605057.json"
+    ],
+    "evidence_score": 0.999325,
+    "expected_direction": "GREATER",
+    "family": "MEAN_REVERSION",
+    "id": "HYPOTHESIS-DISC-15-NEAR_HIGH_REVERTS-V1",
+    "initial_research_value": {
+      "components": {
+        "complexity_penalty": 0.2,
+        "contradiction_value": 0.3,
+        "data_quality": 0.9,
+        "economic_relevance": 1.0,
+        "estimated_compute_cost": 0.39,
+        "expected_information_gain": 0.8,
+        "family_saturation_penalty": 0.0,
+        "novelty": 0.85,
+        "prior_evidence": 0.15,
+        "redundancy_penalty": 0.05,
+        "uncertainty_reduction": 0.75
+      },
+      "penalty": 0.0725,
+      "purpose": "autonomous research priority only",
+      "score": 0.724468
+    },
+    "last_adjusted_p": 0.004497751124437781,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-15-near_high_reverts-v1_ff3f9ba829605057.json",
+    "last_nominal_p": 0.0004997501249375312,
+    "last_report_hash": "66e1f36e2c4ef47df8099aeb647d027514df2b6f3d6d97d38e3bd37cc57aab25",
+    "memory_consulted": 8,
+    "minimum_effect": 5e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [
+      0.05,
+      0.15
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "prior_hypotheses_consulted": 4,
+    "proposal_type": "NOVEL",
+    "question": "Does near high reverts change outcome_tradable_return_30m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [],
+    "replication_ratio": 1.7093352168159635,
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "semantic_signature": "d0197539521e660d49ed3b6eee1aa766e3d4199c5f899cbb6e737d4b40e0ff98",
+    "spec_hash": "0c3a315cd83ad1d126dcabcc674f6700cd5e64bc4188dca29206422771e2f0b0",
+    "status": "VALIDATED_PREDICTIVE_RELATIONSHIP_NO_TRADE",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "outcome_tradable_return_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T14:01:51.781216+00:00",
+    "validation_effect": 0.00040380822387792,
+    "validation_preregistration": "hypotheses/validation_preregistrations/hypothesis-disc-15-near_high_reverts-v1.json",
+    "validation_result": "reports/validation/PROMPT_6_VALIDATION_CEREMONY.json",
+    "validation_result_hash": "5697dcb882a6da87834bd7e5419224d9cb3706401089255d629d964dd1438fa4"
+  },
+  {
+    "action": "LONG",
+    "campaign_fdr_p_value": 0.002570143499678732,
+    "condition": {
+      "field": "state_spread_points",
+      "quantile": 0.2,
+      "type": "quantile_lte"
+    },
+    "created_at": "2026-09-03T02:21:57.283764+00:00",
+    "duplicate_rejected_idea": false,
+    "effect_unit": "return",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-19-low_spread_long-v1_d582aa0947012c25.json"
+    ],
+    "evidence_score": 0.979902,
+    "expected_direction": "GREATER",
+    "family": "COST",
+    "id": "HYPOTHESIS-DISC-19-LOW_SPREAD_LONG-V1",
+    "initial_research_value": {
+      "components": {
+        "complexity_penalty": 0.2,
+        "contradiction_value": 0.3,
+        "data_quality": 0.9,
+        "economic_relevance": 1.0,
+        "estimated_compute_cost": 0.39,
+        "expected_information_gain": 0.8,
+        "family_saturation_penalty": 0.0,
+        "novelty": 0.85,
+        "prior_evidence": 0.15,
+        "redundancy_penalty": 0.05,
+        "uncertainty_reduction": 0.75
+      },
+      "penalty": 0.0725,
+      "purpose": "autonomous research priority only",
+      "score": 0.724468
+    },
+    "last_adjusted_p": 0.0029985007496251873,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-19-low_spread_long-v1_d582aa0947012c25.json",
+    "last_nominal_p": 0.0004997501249375312,
+    "last_report_hash": "7c111a406ef0dd4e38c9a21c25903cda21ba42f61eb9321f0abddb968858c440",
+    "memory_consulted": 8,
+    "minimum_effect": 5e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [
+      0.15,
+      0.25
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "prior_hypotheses_consulted": 4,
+    "proposal_type": "NOVEL",
+    "question": "Does low spread long change outcome_tradable_return_15m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [
+      "economic_materiality_failed"
+    ],
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "semantic_signature": "306819d7bb237cd93173c4b9ea2e37bc2cc66bfac62f80445a60039cc5c3e26f",
+    "spec_hash": "981ecbf8e44a7c08a6bcef9e5d44c1829659e6c44e0200549a597c28fcad56e7",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "outcome_tradable_return_15m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T13:44:11.208885+00:00"
+  },
+  {
+    "action": "LONG",
+    "campaign_fdr_p_value": 0.002570143499678732,
+    "condition": {
+      "field": "state_return_15m",
+      "quantile": 0.15,
+      "type": "quantile_lte"
+    },
+    "created_at": "2026-09-03T02:22:46.541033+00:00",
+    "duplicate_rejected_idea": false,
+    "effect_unit": "return",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-10-down_move_reverses-v1_2f33196a1aa822eb.json"
+    ],
+    "evidence_score": 0.999438,
+    "expected_direction": "GREATER",
+    "family": "REVERSAL",
+    "id": "HYPOTHESIS-DISC-10-DOWN_MOVE_REVERSES-V1",
+    "initial_research_value": {
+      "components": {
+        "complexity_penalty": 0.2,
+        "contradiction_value": 0.3,
+        "data_quality": 0.9,
+        "economic_relevance": 1.0,
+        "estimated_compute_cost": 0.39,
+        "expected_information_gain": 0.8,
+        "family_saturation_penalty": 0.0,
+        "novelty": 0.85,
+        "prior_evidence": 0.15,
+        "redundancy_penalty": 0.05,
+        "uncertainty_reduction": 0.75
+      },
+      "penalty": 0.0725,
+      "purpose": "autonomous research priority only",
+      "score": 0.724468
+    },
+    "last_adjusted_p": 0.0037481259370314842,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-10-down_move_reverses-v1_2f33196a1aa822eb.json",
+    "last_nominal_p": 0.0004997501249375312,
+    "last_report_hash": "9f498ba70e5896d9c3c02de5b0c1fc587d1fc5b6d134d4e88c72db90b1a1c7f0",
+    "memory_consulted": 13,
+    "minimum_effect": 5e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [
+      0.1,
+      0.2
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "prior_hypotheses_consulted": 10,
+    "proposal_type": "NOVEL",
+    "question": "Does down move reverses change outcome_tradable_return_15m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [],
+    "replication_ratio": 1.1343783423055158,
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "semantic_signature": "bed7c0d9743b48515cbcf143d15a62baf12579df803b9c92274d6a0f2a29f341",
+    "spec_hash": "506d3b139884ae86a53c8acc0be0adbdad169b60defa17bd67a735108414cc66",
+    "status": "VALIDATED_PREDICTIVE_RELATIONSHIP_NO_TRADE",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "outcome_tradable_return_15m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T14:01:51.748380+00:00",
+    "validation_effect": 0.00018827304145887147,
+    "validation_preregistration": "hypotheses/validation_preregistrations/hypothesis-disc-10-down_move_reverses-v1.json",
+    "validation_result": "reports/validation/PROMPT_6_VALIDATION_CEREMONY.json",
+    "validation_result_hash": "5697dcb882a6da87834bd7e5419224d9cb3706401089255d629d964dd1438fa4"
+  },
+  {
+    "action": "LONG",
+    "campaign_fdr_p_value": 0.002570143499678732,
+    "condition": {
+      "field": "state_distance_recent_low",
+      "quantile": 0.1,
+      "type": "quantile_lte"
+    },
+    "created_at": "2026-09-03T02:23:28.911147+00:00",
+    "effect_unit": "return",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-16-near_low_reverts-v1_f54993175d2479ec.json"
+    ],
+    "evidence_score": 0.999505,
+    "expected_direction": "GREATER",
+    "family": "MEAN_REVERSION",
+    "id": "HYPOTHESIS-DISC-16-NEAR_LOW_REVERTS-V1",
+    "last_adjusted_p": 0.0032983508245877065,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-16-near_low_reverts-v1_f54993175d2479ec.json",
+    "last_nominal_p": 0.0004997501249375312,
+    "last_report_hash": "e919ae47bedb0e69ddfed9833c302cf91c82443a34ce4d1ce76a6ccd66ab2bc4",
+    "minimum_effect": 5e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [
+      0.05,
+      0.15
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "proposal_type": "NOVEL",
+    "question": "Does near low reverts change outcome_tradable_return_30m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [],
+    "replication_ratio": 1.6144671823027064,
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "spec_hash": "4ee63ad0496902a6b913333d8bfe61c00dd25088ccb6644a79417a298abac7ab",
+    "status": "VALIDATED_PREDICTIVE_RELATIONSHIP_NO_TRADE",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "outcome_tradable_return_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T14:01:51.812817+00:00",
+    "validation_effect": 0.0004513124524537951,
+    "validation_preregistration": "hypotheses/validation_preregistrations/hypothesis-disc-16-near_low_reverts-v1.json",
+    "validation_result": "reports/validation/PROMPT_6_VALIDATION_CEREMONY.json",
+    "validation_result_hash": "5697dcb882a6da87834bd7e5419224d9cb3706401089255d629d964dd1438fa4"
+  },
+  {
+    "action": "WAIT",
+    "campaign_fdr_p_value": 1.0,
+    "condition": {
+      "end": 90,
+      "field": "state_minute_of_session",
+      "start": 60,
+      "type": "minute_range"
+    },
+    "created_at": "2026-09-03T02:23:35.465510+00:00",
+    "effect_unit": "return-derived",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-01-mid_morning_vol-v1_73c1c25960c0d786.json"
+    ],
+    "evidence_score": 0.35,
+    "expected_direction": "GREATER",
+    "family": "TEMPORAL",
+    "id": "HYPOTHESIS-DISC-01-MID_MORNING_VOL-V1",
+    "last_adjusted_p": 1.0,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-01-mid_morning_vol-v1_73c1c25960c0d786.json",
+    "last_nominal_p": 1.0,
+    "last_report_hash": "4e5c4b1591b2aadb6fdb42d03b48a9267c81128ca27bbd0cf15bf4fe54db8d25",
+    "minimum_effect": 1e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [
+      85,
+      95
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "proposal_type": "REFINEMENT",
+    "question": "Does mid morning vol change label_realized_volatility_30m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [
+      "effect_direction_failed",
+      "multiple_testing_failed",
+      "temporal_stability_failed",
+      "parameter_stability_failed",
+      "negative_control_failed"
+    ],
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "spec_hash": "65e9e5cc4af3e19a34d75953b9475679b6ea2bf8cc4fc217d6a546aee85a4212",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "label_realized_volatility_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T13:44:11.506776+00:00"
+  },
+  {
+    "action": "WAIT",
+    "campaign_fdr_p_value": 0.002570143499678732,
+    "condition": {
+      "field": "state_volatility_15m_causal",
+      "quantile": 0.8,
+      "type": "quantile_gte"
+    },
+    "created_at": "2026-09-03T02:23:38.241287+00:00",
+    "effect_unit": "return-derived",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-03-high_vol_short_horizon-v1_ed6586889abf053a.json"
+    ],
+    "evidence_score": 0.89955,
+    "expected_direction": "GREATER",
+    "family": "VOLATILITY",
+    "id": "HYPOTHESIS-DISC-03-HIGH_VOL_SHORT_HORIZON-V1",
+    "last_adjusted_p": 0.0029985007496251873,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-03-high_vol_short_horizon-v1_ed6586889abf053a.json",
+    "last_nominal_p": 0.0004997501249375312,
+    "last_report_hash": "fe188629db92ad129b1dd952582253970a2653c850a12dd9421e2e94ec5281aa",
+    "minimum_effect": 1e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [
+      0.75,
+      0.85
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "proposal_type": "REFINEMENT",
+    "question": "Does high vol short horizon change label_realized_volatility_15m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [
+      "negative_control_failed"
+    ],
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "spec_hash": "dcf35d009a0f7ba39e1e6c241941a001fc1fc20e7c11e74808649d0912dd7310",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "label_realized_volatility_15m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T13:44:11.561851+00:00"
+  },
+  {
+    "action": "WAIT",
+    "campaign_fdr_p_value": 0.002570143499678732,
+    "condition": {
+      "field": "state_bar_range",
+      "quantile": 0.8,
+      "type": "quantile_gte"
+    },
+    "created_at": "2026-09-03T02:23:40.517726+00:00",
+    "effect_unit": "return-derived",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-05-high_range_up_excursion-v1_725a221b3893a27a.json"
+    ],
+    "evidence_score": 0.899578,
+    "expected_direction": "GREATER",
+    "family": "RANGE",
+    "id": "HYPOTHESIS-DISC-05-HIGH_RANGE_UP_EXCURSION-V1",
+    "last_adjusted_p": 0.002811094452773613,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-05-high_range_up_excursion-v1_725a221b3893a27a.json",
+    "last_nominal_p": 0.0004997501249375312,
+    "last_report_hash": "62e7408027e711cf160b68dafc5b5d3905ae12e9df4a28bd9ea647f4346abd0c",
+    "minimum_effect": 1e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [
+      0.75,
+      0.85
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "proposal_type": "NOVEL",
+    "question": "Does high range up excursion change label_up_excursion_30m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [
+      "negative_control_failed"
+    ],
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "spec_hash": "9d1ed904cf222b43ecebd5941917802bce3c9056b1bafdf67b79e83d532e9b1d",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "label_up_excursion_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T13:44:11.631913+00:00"
+  },
+  {
+    "action": "WAIT",
+    "campaign_fdr_p_value": 0.8223388305847077,
+    "condition": {
+      "field": "state_regime_v0",
+      "type": "field_equals",
+      "value": "TREND_UP"
+    },
+    "created_at": "2026-09-03T02:23:42.721962+00:00",
+    "effect_unit": "return-derived",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-17-up_regime_expands-v1_b0482b4db3418bcd.json"
+    ],
+    "evidence_score": 0.378628,
+    "expected_direction": "GREATER",
+    "family": "REGIME",
+    "id": "HYPOTHESIS-DISC-17-UP_REGIME_EXPANDS-V1",
+    "last_adjusted_p": 0.8771614192903548,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-17-up_regime_expands-v1_b0482b4db3418bcd.json",
+    "last_nominal_p": 0.5482258870564718,
+    "last_report_hash": "a10c9998ab9db802e0124c95a07367a68eb29a42275db66ea11863a5671e786a",
+    "minimum_effect": 1e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [],
+    "planned_comparisons": 1,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "proposal_type": "NOVEL",
+    "question": "Does up regime expands change label_realized_volatility_30m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [
+      "effect_direction_failed",
+      "economic_materiality_failed",
+      "multiple_testing_failed",
+      "temporal_stability_failed",
+      "parameter_stability_failed",
+      "negative_control_failed"
+    ],
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "spec_hash": "9c6001fa2805ee7c49c35b73bd1619317c166b6a69cb1182482058172b1c6faf",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "label_realized_volatility_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 1,
+    "updated_at": "2026-09-03T13:44:11.690606+00:00"
+  },
+  {
+    "action": "WAIT",
+    "campaign_fdr_p_value": 0.002570143499678732,
+    "condition": {
+      "field": "state_tick_volume",
+      "quantile": 0.8,
+      "type": "quantile_gte"
+    },
+    "created_at": "2026-09-03T02:23:44.854909+00:00",
+    "effect_unit": "return-derived",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-23-high_tick_activity-v1_ab6d76dead2aa161.json"
+    ],
+    "evidence_score": 0.899575,
+    "expected_direction": "GREATER",
+    "family": "DATA_QUALITY",
+    "id": "HYPOTHESIS-DISC-23-HIGH_TICK_ACTIVITY-V1",
+    "last_adjusted_p": 0.00283191737464601,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-23-high_tick_activity-v1_ab6d76dead2aa161.json",
+    "last_nominal_p": 0.0004997501249375312,
+    "last_report_hash": "3762ea01ba49d12e8f1427924c66b764d3c477ffbe6876027eda2ab4935f2011",
+    "minimum_effect": 1e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [
+      0.75,
+      0.85
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "proposal_type": "NOVEL",
+    "question": "Does high tick activity change label_realized_volatility_30m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [
+      "negative_control_failed"
+    ],
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "spec_hash": "5192d89b1be11979e2c4f5ee09b6024a42b9c7e7270ba334c27e84415b019cdf",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "label_realized_volatility_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T13:44:11.762840+00:00"
+  },
+  {
+    "action": "LONG",
+    "campaign_fdr_p_value": 1.0,
+    "condition": {
+      "clauses": [
+        {
+          "field": "state_regime_v0",
+          "type": "field_equals",
+          "value": "TREND_UP"
+        },
+        {
+          "field": "state_bar_range",
+          "quantile": 0.75,
+          "type": "quantile_gte"
+        }
+      ],
+      "type": "all"
+    },
+    "created_at": "2026-09-03T02:23:47.022603+00:00",
+    "effect_unit": "return",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-22-up_regime_high_range-v1_59166eb2e6f3f261.json"
+    ],
+    "evidence_score": 0.35,
+    "expected_direction": "GREATER",
+    "family": "CROSS_FEATURE",
+    "id": "HYPOTHESIS-DISC-22-UP_REGIME_HIGH_RANGE-V1",
+    "last_adjusted_p": 1.0,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-22-up_regime_high_range-v1_59166eb2e6f3f261.json",
+    "last_nominal_p": 1.0,
+    "last_report_hash": "99a675544b603b0edba7f539365f6aa24952480514b6cc4965aeec90d39b3a4b",
+    "minimum_effect": 5e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [],
+    "planned_comparisons": 1,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "proposal_type": "NOVEL",
+    "question": "Does up regime high range change outcome_tradable_return_30m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [
+      "effect_direction_failed",
+      "multiple_testing_failed",
+      "temporal_stability_failed",
+      "parameter_stability_failed"
+    ],
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "spec_hash": "a02ea09316101a8dcc594583c734b75d2633edbcd05d751ef494e7679ffe05e8",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "outcome_tradable_return_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 1,
+    "updated_at": "2026-09-03T13:44:11.851601+00:00"
+  },
+  {
+    "action": "WAIT",
+    "campaign_fdr_p_value": 0.002570143499678732,
+    "condition": {
+      "clauses": [
+        {
+          "end": 210,
+          "field": "state_minute_of_session",
+          "start": 150,
+          "type": "minute_range"
+        },
+        {
+          "field": "state_volatility_15m_causal",
+          "quantile": 0.75,
+          "type": "quantile_gte"
+        }
+      ],
+      "type": "all"
+    },
+    "created_at": "2026-09-03T02:23:50.122757+00:00",
+    "effect_unit": "return-derived",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-21-late_high_vol-v1_ff59ff208cf3680f.json"
+    ],
+    "evidence_score": 0.899573,
+    "expected_direction": "GREATER",
+    "family": "CROSS_FEATURE",
+    "id": "HYPOTHESIS-DISC-21-LATE_HIGH_VOL-V1",
+    "last_adjusted_p": 0.002848575712143928,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-21-late_high_vol-v1_ff59ff208cf3680f.json",
+    "last_nominal_p": 0.0004997501249375312,
+    "last_report_hash": "baf485a6293f46d3ebd6cec4f98874f4827a89072ed1437705a85549d8e39d81",
+    "minimum_effect": 1e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [],
+    "planned_comparisons": 1,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "proposal_type": "NOVEL",
+    "question": "Does late high vol change label_realized_volatility_30m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [
+      "negative_control_failed"
+    ],
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "spec_hash": "2e33a9562317b04dba6997ee6e73a5b08c43c3fe958e1b4e9bc8a1808dcada38",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "label_realized_volatility_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 1,
+    "updated_at": "2026-09-03T13:44:11.908554+00:00"
+  },
+  {
+    "action": "WAIT",
+    "campaign_fdr_p_value": 0.002570143499678732,
+    "condition": {
+      "field": "state_tick_volume",
+      "quantile": 0.2,
+      "type": "quantile_lte"
+    },
+    "created_at": "2026-09-03T02:23:52.178285+00:00",
+    "effect_unit": "return-derived",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-24-low_tick_activity-v1_6beef5ffa06b6b0a.json"
+    ],
+    "evidence_score": 0.899591,
+    "expected_direction": "LESS",
+    "family": "DATA_QUALITY",
+    "id": "HYPOTHESIS-DISC-24-LOW_TICK_ACTIVITY-V1",
+    "last_adjusted_p": 0.002725909772386534,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-24-low_tick_activity-v1_6beef5ffa06b6b0a.json",
+    "last_nominal_p": 0.0004997501249375312,
+    "last_report_hash": "f9829c8ba8372300ee6a78909294f09234082ab94c0a872143c5f130b8f78dc0",
+    "minimum_effect": 1e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [
+      0.15,
+      0.25
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "proposal_type": "NOVEL",
+    "question": "Does low tick activity change label_realized_volatility_30m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [
+      "negative_control_failed"
+    ],
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "spec_hash": "1bedd6265a692da0155983102bef17e148fdc5f34d8e4a4918f1f5f58f3a74b0",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "label_realized_volatility_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T13:44:11.969442+00:00"
+  },
+  {
+    "action": "WAIT",
+    "campaign_fdr_p_value": 0.002570143499678732,
+    "condition": {
+      "field": "state_regime_v0",
+      "type": "field_equals",
+      "value": "RANGE"
+    },
+    "created_at": "2026-09-03T02:23:54.511870+00:00",
+    "effect_unit": "return-derived",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-18-range_regime_quiet-v1_dc69185ce16375aa.json"
+    ],
+    "evidence_score": 0.87213,
+    "expected_direction": "LESS",
+    "family": "REGIME",
+    "id": "HYPOTHESIS-DISC-18-RANGE_REGIME_QUIET-V1",
+    "last_adjusted_p": 0.0026236881559220386,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-18-range_regime_quiet-v1_dc69185ce16375aa.json",
+    "last_nominal_p": 0.0004997501249375312,
+    "last_report_hash": "b3281e0bc200f2eb32065601ba6a9da65251aab6acff085ee5d4c82d34f65bc4",
+    "minimum_effect": 1e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [],
+    "planned_comparisons": 1,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "proposal_type": "NOVEL",
+    "question": "Does range regime quiet change label_realized_volatility_30m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [
+      "economic_materiality_failed",
+      "negative_control_failed"
+    ],
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "spec_hash": "c954426f51c126e2cbd67d645defa3ec503be79ae20837b94313a572725896f1",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "label_realized_volatility_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 1,
+    "updated_at": "2026-09-03T13:44:12.015364+00:00"
+  },
+  {
+    "action": "WAIT",
+    "campaign_fdr_p_value": 0.002570143499678732,
+    "condition": {
+      "field": "state_volatility_60m_causal",
+      "quantile": 0.2,
+      "type": "quantile_lte"
+    },
+    "created_at": "2026-09-03T02:23:56.578983+00:00",
+    "effect_unit": "return-derived",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-04-low_vol_long_horizon-v1_afedee8291449a9d.json"
+    ],
+    "evidence_score": 0.899619,
+    "expected_direction": "LESS",
+    "family": "VOLATILITY",
+    "id": "HYPOTHESIS-DISC-04-LOW_VOL_LONG_HORIZON-V1",
+    "last_adjusted_p": 0.0025371929419905435,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-04-low_vol_long_horizon-v1_afedee8291449a9d.json",
+    "last_nominal_p": 0.0004997501249375312,
+    "last_report_hash": "61d796a5e23a79ae37ce41130492b042eb6d234441cb5199df82adb327f1eb80",
+    "minimum_effect": 1e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [
+      0.15,
+      0.25
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "proposal_type": "REFINEMENT",
+    "question": "Does low vol long horizon change label_realized_volatility_60m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [
+      "negative_control_failed"
+    ],
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "spec_hash": "dd9a372770086432c91c91fe66e1433f29615a59012001f3ae8ad0da4cdb7a48",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "label_realized_volatility_60m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T13:44:12.051732+00:00"
+  },
+  {
+    "action": "WAIT",
+    "campaign_fdr_p_value": 0.002570143499678732,
+    "condition": {
+      "end": 210,
+      "field": "state_minute_of_session",
+      "start": 180,
+      "type": "minute_range"
+    },
+    "created_at": "2026-09-03T02:23:58.890518+00:00",
+    "effect_unit": "return-derived",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-02-late_session_vol-v1_38529ef1d29caf44.json"
+    ],
+    "evidence_score": 0.899631,
+    "expected_direction": "GREATER",
+    "family": "TEMPORAL",
+    "id": "HYPOTHESIS-DISC-02-LATE_SESSION_VOL-V1",
+    "last_adjusted_p": 0.0024630541871921183,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-02-late_session_vol-v1_38529ef1d29caf44.json",
+    "last_nominal_p": 0.0004997501249375312,
+    "last_report_hash": "a2deade297484f26a37bf15feb3d4a98592d0d73532d284f13ae5ceb9ece7bcd",
+    "minimum_effect": 1e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [
+      205,
+      215
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "proposal_type": "REFINEMENT",
+    "question": "Does late session vol change label_realized_volatility_30m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [
+      "negative_control_failed"
+    ],
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "spec_hash": "ed730c6f8bea9b7cd3a1632d6ba3958001c91a82c4c645867f5c04b01c043bed",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "label_realized_volatility_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T13:44:12.088408+00:00"
+  },
+  {
+    "action": "SHORT",
+    "campaign_fdr_p_value": 1.0,
+    "condition": {
+      "field": "state_return_15m",
+      "quantile": 0.2,
+      "type": "quantile_lte"
+    },
+    "created_at": "2026-09-03T02:24:01.291353+00:00",
+    "effect_unit": "return",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-08-negative_momentum_short-v1_228cdc79a2daba68.json"
+    ],
+    "evidence_score": 0.35,
+    "expected_direction": "GREATER",
+    "family": "MOMENTUM",
+    "id": "HYPOTHESIS-DISC-08-NEGATIVE_MOMENTUM_SHORT-V1",
+    "last_adjusted_p": 1.0,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-08-negative_momentum_short-v1_228cdc79a2daba68.json",
+    "last_nominal_p": 1.0,
+    "last_report_hash": "7e05a60a4d0d2ac05dc7666626c6ba14c3ab033976ee8bc9c859eb1695f134b6",
+    "minimum_effect": 5e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [
+      0.15,
+      0.25
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "proposal_type": "NOVEL",
+    "question": "Does negative momentum short change outcome_tradable_return_30m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [
+      "effect_direction_failed",
+      "multiple_testing_failed",
+      "temporal_stability_failed",
+      "parameter_stability_failed"
+    ],
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "spec_hash": "a8706f24fb0614ed1ce39a3116bbd8706dbb5bf8fb18a1e768bc45f51121ab49",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "outcome_tradable_return_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T13:44:12.128890+00:00"
+  },
+  {
+    "action": "SHORT",
+    "campaign_fdr_p_value": 1.0,
+    "condition": {
+      "field": "state_return_60m",
+      "quantile": 0.2,
+      "type": "quantile_lte"
+    },
+    "created_at": "2026-09-03T02:24:05.058704+00:00",
+    "effect_unit": "return",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-12-down_continues-v1_84361101ff2a0d3f.json"
+    ],
+    "evidence_score": 0.35,
+    "expected_direction": "GREATER",
+    "family": "CONTINUATION",
+    "id": "HYPOTHESIS-DISC-12-DOWN_CONTINUES-V1",
+    "last_adjusted_p": 1.0,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-12-down_continues-v1_84361101ff2a0d3f.json",
+    "last_nominal_p": 1.0,
+    "last_report_hash": "fd0b10a151483badcde1ad3af84bfb2b9453d869ae718d562c0ff05b8f7777b3",
+    "minimum_effect": 5e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [
+      0.15,
+      0.25
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "proposal_type": "NOVEL",
+    "question": "Does down continues change outcome_tradable_return_60m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [
+      "effect_direction_failed",
+      "multiple_testing_failed",
+      "temporal_stability_failed",
+      "parameter_stability_failed"
+    ],
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "spec_hash": "331220fbc77db5db63bf6b3c85def03fd02aaf21b6d62b2e71ddecb9e958d769",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "outcome_tradable_return_60m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T13:44:12.194699+00:00"
+  },
+  {
+    "action": "SHORT",
+    "campaign_fdr_p_value": 1.0,
+    "condition": {
+      "field": "state_distance_recent_low",
+      "quantile": 0.1,
+      "type": "quantile_lte"
+    },
+    "created_at": "2026-09-03T02:24:08.151719+00:00",
+    "effect_unit": "return",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-14-near_low_breaks-v1_a174e7c82e91b354.json"
+    ],
+    "evidence_score": 0.35,
+    "expected_direction": "GREATER",
+    "family": "BREAKOUT",
+    "id": "HYPOTHESIS-DISC-14-NEAR_LOW_BREAKS-V1",
+    "last_adjusted_p": 1.0,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-14-near_low_breaks-v1_a174e7c82e91b354.json",
+    "last_nominal_p": 1.0,
+    "last_report_hash": "ff6095c78614f3778211462f8e3ee20f43a05245feb9153ab42c9df85c7a6ad0",
+    "minimum_effect": 5e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [
+      0.05,
+      0.15
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "proposal_type": "NOVEL",
+    "question": "Does near low breaks change outcome_tradable_return_30m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [
+      "effect_direction_failed",
+      "multiple_testing_failed",
+      "temporal_stability_failed",
+      "parameter_stability_failed"
+    ],
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "spec_hash": "da074ff6978d086321a76de96bca3167abd542743891c54b464ffabea6f2c721",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "outcome_tradable_return_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T13:44:12.286579+00:00"
+  },
+  {
+    "action": "LONG",
+    "campaign_fdr_p_value": 0.5301349325337331,
+    "condition": {
+      "field": "state_spread_points",
+      "quantile": 0.8,
+      "type": "quantile_gte"
+    },
+    "created_at": "2026-09-03T02:24:11.107107+00:00",
+    "effect_unit": "return",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-20-high_spread_long-v1_2981b009d52e8aaa.json"
+    ],
+    "evidence_score": 0.682038,
+    "expected_direction": "LESS",
+    "family": "COST",
+    "id": "HYPOTHESIS-DISC-20-HIGH_SPREAD_LONG-V1",
+    "last_adjusted_p": 0.5964017991004498,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-20-high_spread_long-v1_2981b009d52e8aaa.json",
+    "last_nominal_p": 0.11044477761119441,
+    "last_report_hash": "5808280a57aeeecf222649c9a8e8d1da647ce90bbd7df8432e0963e2ed02e0b2",
+    "minimum_effect": 5e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [
+      0.75,
+      0.85
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "proposal_type": "NOVEL",
+    "question": "Does high spread long change outcome_tradable_return_30m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [
+      "economic_materiality_failed",
+      "multiple_testing_failed",
+      "negative_control_failed"
+    ],
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "spec_hash": "59fc1d3a99843bedeb9d15cf024795acac6ecdcbfefdee4e12ca88c948eb7106",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "outcome_tradable_return_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T13:44:12.408638+00:00"
+  },
+  {
+    "action": "WAIT",
+    "campaign_fdr_p_value": 0.002570143499678732,
+    "condition": {
+      "field": "state_bar_range",
+      "quantile": 0.8,
+      "type": "quantile_gte"
+    },
+    "created_at": "2026-09-03T02:24:13.895813+00:00",
+    "effect_unit": "return-derived",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-disc-06-high_range_down_excursion-v1_19d21c3f20ab8ec0.json"
+    ],
+    "evidence_score": 0.89958,
+    "expected_direction": "LESS",
+    "family": "RANGE",
+    "id": "HYPOTHESIS-DISC-06-HIGH_RANGE_DOWN_EXCURSION-V1",
+    "last_adjusted_p": 0.002798600699650175,
+    "last_evidence_artifact": "reports/evidence/hypothesis-disc-06-high_range_down_excursion-v1_19d21c3f20ab8ec0.json",
+    "last_nominal_p": 0.0004997501249375312,
+    "last_report_hash": "76457f1c0e1e7ff86989840986bfc3aba77be2c91b03e3498c86cd9a671e8299",
+    "minimum_effect": 1e-05,
+    "minimum_rows": 5000,
+    "minimum_sessions": 200,
+    "minimum_years": 3,
+    "null": "Conditioned and baseline session-level outcomes are exchangeable",
+    "parameter_neighbors": [
+      0.75,
+      0.85
+    ],
+    "planned_comparisons": 3,
+    "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+    "primary_metric": "session-weighted difference in mean outcome",
+    "proposal_type": "NOVEL",
+    "question": "Does high range down excursion change label_down_excursion_30m versus its DEV base rate?",
+    "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+    "rejection_reasons": [
+      "negative_control_failed"
+    ],
+    "secondary_metrics": [
+      "base rate",
+      "median bootstrap",
+      "MFE/MAE context",
+      "temporal and regime stability"
+    ],
+    "spec_hash": "e1de20cd0609aa1c7c61b4b819cecfa221ee7893b01376f89e9ebd8722cfb382",
+    "status": "REJECTED",
+    "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+    "target_variable": "label_down_excursion_30m",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 3,
+    "updated_at": "2026-09-03T13:44:12.479123+00:00"
+  },
+  {
+    "action": "LONG_SHORT_OR_WAIT",
+    "condition": {
+      "field": "state_minute_of_session",
+      "type": "minute_equals",
+      "value": 30
+    },
+    "created_at": "2026-09-03T17:43:54.059386+00:00",
+    "effect_unit": "net return",
+    "evidence_artifacts": [
+      "reports/evidence/hypothesis-ml-xauusd-0830-direction-v1_68bcc5b689dfdaa5.json",
+      "reports/evidence/hypothesis-ml-xauusd-0830-direction-v1_51a2c004825826a0.json",
+      "reports/evidence/hypothesis-ml-xauusd-0830-direction-v1_de2b8732d2c5fad1.json",
+      "reports/evidence/hypothesis-ml-xauusd-0830-direction-v1_d807da15338fa8de.json",
+      "reports/evidence/hypothesis-ml-xauusd-0830-direction-v1_260dcabc02245475.json",
+      "reports/evidence/hypothesis-ml-xauusd-0830-direction-v1_4ca995d80f13ef95.json"
+    ],
+    "expected_direction": "GREATER",
+    "experiment_config_hash": "b3f1ee01b59e03b5940a68456e9f3f338b785b271f71b66264ba2a3273fd361b",
+    "family": "ML_0830",
+    "frozen_experiment_config": {
+      "broker_symbol": "GOLD",
+      "cpu_threads_per_model": 2,
+      "dataset_version": "DATASET-V2-e4a8cc6b19c1ae75ddc74bbe",
+      "decision": {
+        "maximum_probability_std": 0.1,
+        "minimum_probability": 0.5
+      },
+      "decision_time_cot": "08:30",
+      "early_stopping_rounds": 20,
+      "experiment_id": "ML-XAUUSD-0830-V1",
+      "frozen_before_execution": true,
+      "horizon_minutes": 30,
+      "hypothesis": {
+        "action": "LONG_SHORT_OR_WAIT",
+        "condition": {
+          "field": "state_minute_of_session",
+          "type": "minute_equals",
+          "value": 30
+        },
+        "effect_unit": "net return",
+        "expected_direction": "GREATER",
+        "family": "ML_0830",
+        "id": "HYPOTHESIS-ML-XAUUSD-0830-DIRECTION-V1",
+        "minimum_effect": 0.0,
+        "null": "Causal pre-08:30 features do not improve multiclass probability quality or net return over climatology after costs",
+        "planned_comparisons": 4,
+        "population": "One GOLD/XAUUSD 08:30 COT decision per DEV session",
+        "primary_metric": "purged expanding-walk-forward ensemble balanced accuracy and net return after costs",
+        "proposal_type": "FALSIFICATION",
+        "question": "Does information available by 08:30 COT predict a monetizable 30m direction on XAUUSD after costs?",
+        "rejection_criterion": "Reject if ensemble fails frozen predictive or economic gates",
+        "secondary_metrics": [
+          "log loss",
+          "Brier score",
+          "calibration error",
+          "MFE MAE errors",
+          "model disagreement"
+        ],
+        "survival_criterion": "Pass predictive, economic, temporal, cost, calibration, disagreement and Skeptic gates without post-hoc tuning",
+        "target_variable": "ML_CLASS_DOWN_NO_TRADE_UP_30M_ATR025_NET_COST",
+        "temporal_window": "2015-01-01/2020-01-01 exclusive"
+      },
+      "label": {
+        "atr_multiple": 0.25,
+        "classes": [
+          "DOWN",
+          "NO_TRADE",
+          "UP"
+        ],
+        "definition": "UP/DOWN only when that direction's 30m proxy-net return exceeds 0.25 causal ATR; otherwise NO_TRADE"
+      },
+      "models": {
+        "catboost": {
+          "depth": 3,
+          "iterations": 240,
+          "learning_rate": 0.035
+        },
+        "lightgbm": {
+          "depth": 3,
+          "iterations": 240,
+          "learning_rate": 0.035
+        },
+        "xgboost": {
+          "depth": 3,
+          "iterations": 240,
+          "learning_rate": 0.035
+        }
+      },
+      "output_report": "reports/evidence/ML_XAUUSD_0830_V1.json",
+      "partition": "DEV",
+      "promotion": {
+        "minimum_balanced_accuracy": 0.3533333333333333,
+        "minimum_trades": 40,
+        "require_all_skeptic_tests": true,
+        "require_log_loss_below_climatology": true,
+        "require_positive_net_after_costs": true,
+        "require_real_costs_and_slippage_for_validation_ready": true
+      },
+      "seed": 20260903,
+      "symbol": "XAUUSD",
+      "walk_forward": {
+        "embargo_minutes": 30,
+        "first_test_year": 2016,
+        "scheme": "expanding annual DEV; chronological 70/15/15 fit/early-stop/calibration"
+      }
+    },
+    "id": "HYPOTHESIS-ML-XAUUSD-0830-DIRECTION-V1",
+    "last_nominal_p": 1.0,
+    "last_report_hash": "84862c6b4235d7e0691b4179c50d847a063cb8fd77246be6ed842840af57ee85",
+    "minimum_effect": 0.0,
+    "ml_report": "reports/evidence/hypothesis-ml-xauusd-0830-direction-v1_4ca995d80f13ef95.json",
+    "null": "Causal pre-08:30 features do not improve multiclass probability quality or net return over climatology after costs",
+    "planned_comparisons": 4,
+    "population": "One GOLD/XAUUSD 08:30 COT decision per DEV session",
+    "primary_metric": "purged expanding-walk-forward ensemble balanced accuracy and net return after costs",
+    "proposal_type": "FALSIFICATION",
+    "question": "Does information available by 08:30 COT predict a monetizable 30m direction on XAUUSD after costs?",
+    "rejection_criterion": "Reject if ensemble fails frozen predictive or economic gates",
+    "secondary_metrics": [
+      "log loss",
+      "Brier score",
+      "calibration error",
+      "MFE MAE errors",
+      "model disagreement"
+    ],
+    "spec_hash": "fc9afbe0351669801ed619798370e3e6b4c4ba1f0479daaa8e5e3943989a17ac",
+    "status": "REJECTED",
+    "survival_criterion": "Pass predictive, economic, temporal, cost, calibration, disagreement and Skeptic gates without post-hoc tuning",
+    "target_variable": "ML_CLASS_DOWN_NO_TRADE_UP_30M_ATR025_NET_COST",
+    "temporal_window": "2015-01-01/2020-01-01 exclusive",
+    "tests_executed": 24,
+    "updated_at": "2026-09-03T19:36:00.524111+00:00"
+  }
+]

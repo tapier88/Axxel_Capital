@@ -1,0 +1,38 @@
+{
+  "dataset_version": "DATASET-V2-e4a8cc6b19c1ae75ddc74bbe",
+  "experience_counts": {
+    "DEV": 1047684,
+    "LOCKED_OOS": 419508,
+    "VALIDATION": 629985
+  },
+  "file_hashes": {
+    "DEV": "4422a1c42d8cab0596094276f3b7e9851d72ef13d544b33d2b6ab6464a20c479",
+    "LOCKED_OOS": "f553c52af766bee6b2a986dfaeb6e262101614f2e286ddcc0e1aaed4e0ec5014",
+    "VALIDATION": "280557212b2add10e03f7d4993bbc887ce2a3ec7f8c9fa6f9ffae10058de6663"
+  },
+  "files": {
+    "DEV": "experience_store/v2/dataset-v2-e4a8cc6b19c1ae75ddc74bbe/dev.parquet",
+    "LOCKED_OOS": "experience_store/v2/dataset-v2-e4a8cc6b19c1ae75ddc74bbe/locked_oos.parquet",
+    "VALIDATION": "experience_store/v2/dataset-v2-e4a8cc6b19c1ae75ddc74bbe/validation.parquet"
+  },
+  "locked_oos_policy": "File is never opened by discovery/retrieval unless allow_locked=True",
+  "partition_policy": "config/partitions_gold_m1_v2.json",
+  "proxy_cost": "bar spread points * 0.01; broker chart is bid-based",
+  "real_tick_cost_horizon_labels": 2166,
+  "schema_version": "market-experience-v2",
+  "session_counts": {
+    "DEV": 1289,
+    "LOCKED_OOS": 516,
+    "VALIDATION": 775
+  },
+  "slippage": "unavailable; preserved as null and never assumed zero",
+  "source_id": "MT5-XMGLOBAL-GOLD-M1-V1",
+  "source_m1_manifest": "data/raw/gold_m1/mt5-xmglobal-gold-m1-v1/mt5-xmglobal-gold-m1-v1_d988b7cc2b957c0e.manifest.json",
+  "source_tick_manifest": "data/raw/gold_ticks/mt5-xmglobal-gold-ticks-sample-v1/mt5-xmglobal-gold-ticks-sample-v1_6829d834fa4476f5.manifest.json",
+  "symbol_exact": "GOLD",
+  "symbol_international": "XAUUSD",
+  "tick_source_id": "MT5-XMGLOBAL-GOLD-TICKS-SAMPLE-V1",
+  "timeframe": "M1",
+  "total_experiences": 2097177,
+  "total_sessions": 2580
+}

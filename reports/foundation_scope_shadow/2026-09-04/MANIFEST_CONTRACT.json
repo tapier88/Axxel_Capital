@@ -1,0 +1,28 @@
+{
+  "$comment": "Closed SHADOW contract. Formal validation is src/data/scope.py; this is documentation, not an issuer or catalogue.",
+  "schema_version": "AXXEL-SCOPE-1",
+  "policy_version": "FOUNDATION_SCOPE_READINESS_V1",
+  "required": [
+    "schema_version", "policy_version", "certificate_id", "revision", "status",
+    "track", "capabilities", "instrument", "period", "fields", "environment",
+    "purposes", "consumers", "partition", "provenance_references", "validity",
+    "revocation_status", "parents", "derivation", "artifact"
+  ],
+  "additional_fields": "DENY",
+  "certificate_id_format": "SC1-[A-Za-z0-9_-]{1,80}",
+  "revision": 1,
+  "status": "SHADOW_ELIGIBLE",
+  "tracks": {
+    "A": {"partition": "DEV", "environment": "RESEARCH"},
+    "B": {"partition": "FORWARD_EXECUTION", "environment": ["PAPER", "DEMO", "LIVE"]}
+  },
+  "period_and_validity": {"interval": "[from,to_exclusive)", "timezone": "explicit offset required"},
+  "parent_reference": {"required_fields": ["certificate_id", "revision"], "permission_rule": "intersection"},
+  "artifact": {
+    "required": ["path", "sha256", "period", "fields", "kind"],
+    "path_template": "data/engine/shadow/{certificate_id}/artifact.parquet",
+    "kinds": ["dataset", "features", "labels", "cache", "experiences", "model"]
+  },
+  "root_admission": "SYNTHETIC_FIXTURE only in this implementation",
+  "production_certificate_issuer": "NOT_IMPLEMENTED"
+}

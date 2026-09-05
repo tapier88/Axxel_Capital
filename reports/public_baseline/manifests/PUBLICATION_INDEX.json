@@ -1,0 +1,17 @@
+[
+  {
+    "source": "data/engine/datasets/DE1-0c31006bc9f6159f6db73f25fb9d9e080185a1dd259d18b28d3cca2b73793bf1/manifest.json",
+    "published": false,
+    "reason": "Private metadata; original remains local"
+  },
+  {
+    "source": "data/engine/datasets/DE1-658ff72ef8932e5b4d50118751d039fc11015010ec6f1101c3dce81805b58706/manifest.json",
+    "published": false,
+    "reason": "Private metadata; original remains local"
+  },
+  {
+    "source": "data/engine/datasets/DE1-948e75847bb0f7feab34b8cc2f7740c671202e9de5503a2e1dc4680535bf4250/manifest.json",
+    "published": false,
+    "reason": "Private metadata; original remains local"
+  }
+]

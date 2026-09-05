@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-09-03T02:24:16.608960+00:00",
+  "evidence_artifact": "reports/evidence/hypothesis-disc-10-down_move_reverses-v1_2f33196a1aa822eb.json",
+  "evidence_hash": "9f498ba70e5896d9c3c02de5b0c1fc587d1fc5b6d134d4e88c72db90b1a1c7f0",
+  "hypothesis_id": "HYPOTHESIS-DISC-10-DOWN_MOVE_REVERSES-V1",
+  "locked_oos_authorized": false,
+  "partition_authorized": "VALIDATION",
+  "spec_hash": "506d3b139884ae86a53c8acc0be0adbdad169b60defa17bd67a735108414cc66"
+}

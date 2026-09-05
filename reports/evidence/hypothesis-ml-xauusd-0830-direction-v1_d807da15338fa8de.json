@@ -1,0 +1,601 @@
+{
+  "adversarial_diagnostics": {
+    "controls": {
+      "features_lagged_7_sessions": {
+        "balanced_accuracy": 0.3333333333333333,
+        "brier_multiclass": 0.6756287358023566,
+        "cumulative_net_return": 0.0,
+        "expected_calibration_error": 0.044312770474033716,
+        "log_loss": 1.113768003178614,
+        "trades": 0
+      },
+      "permuted_training_blocks": {
+        "balanced_accuracy": 0.3333333333333333,
+        "brier_multiclass": 0.6757156730800709,
+        "cumulative_net_return": 0.0,
+        "expected_calibration_error": 0.04389484857904763,
+        "log_loss": 1.1139080748726922,
+        "trades": 0
+      },
+      "seed_plus_101": {
+        "balanced_accuracy": 0.3325434439178515,
+        "brier_multiclass": 0.6735422323244544,
+        "cumulative_net_return": 0.0,
+        "expected_calibration_error": 0.048541062878858406,
+        "log_loss": 1.1109473598578554,
+        "trades": 0
+      },
+      "seed_plus_202": {
+        "balanced_accuracy": 0.3333333333333333,
+        "brier_multiclass": 0.6735275085173341,
+        "cumulative_net_return": 0.0,
+        "expected_calibration_error": 0.04570965285850975,
+        "log_loss": 1.1109281794703443,
+        "trades": 0
+      }
+    },
+    "purpose": "adversarial diagnostics only; no model/threshold selection"
+  },
+  "auxiliary_barrier_probabilities": {
+    "purpose": "auxiliary only; not used to change the frozen primary trade decision",
+    "tasks": {
+      "long_atr_reached": {
+        "catboost": {
+          "brier": 0.23350822895375198,
+          "log_loss": 0.6601402126513972,
+          "mean_probability": 0.6337002910099541,
+          "observed_rate": 0.6397273612463485
+        },
+        "ensemble": {
+          "brier": 0.23381348402911903,
+          "log_loss": 0.660769948616888,
+          "mean_probability": 0.6337966468434744,
+          "observed_rate": 0.6397273612463485
+        },
+        "lightgbm": {
+          "brier": 0.23343939354565887,
+          "log_loss": 0.6599820393638198,
+          "mean_probability": 0.6340154159731128,
+          "observed_rate": 0.6397273612463485
+        },
+        "xgboost": {
+          "brier": 0.23496955533969477,
+          "log_loss": 0.6631610819218514,
+          "mean_probability": 0.6336742335473556,
+          "observed_rate": 0.6397273612463485
+        }
+      },
+      "short_atr_reached": {
+        "catboost": {
+          "brier": 0.24607625305872624,
+          "log_loss": 0.6867265540151707,
+          "mean_probability": 0.594041432115104,
+          "observed_rate": 0.6241480038948394
+        },
+        "ensemble": {
+          "brier": 0.24590418795342217,
+          "log_loss": 0.6862608780872956,
+          "mean_probability": 0.5939694357357982,
+          "observed_rate": 0.6241480038948394
+        },
+        "lightgbm": {
+          "brier": 0.24623087837786212,
+          "log_loss": 0.6870237310042291,
+          "mean_probability": 0.5944880842444594,
+          "observed_rate": 0.6241480038948394
+        },
+        "xgboost": {
+          "brier": 0.2454463570655871,
+          "log_loss": 0.685140081877375,
+          "mean_probability": 0.5933787908478311,
+          "observed_rate": 0.6241480038948394
+        }
+      }
+    }
+  },
+  "baseline": {
+    "balanced_accuracy": 0.3333333333333333,
+    "brier_multiclass": 0.6579472579455061,
+    "expected_calibration_error": 0.022670256028409275,
+    "log_loss": 1.085685419556954
+  },
+  "config_hash": "94f5e600eea6ca5a6e3eaa32146cb5bb118f229ed3c907da41adc5ca421c6a4a",
+  "cost_reality": {
+    "promotion_ceiling": "RESEARCH_ONLY",
+    "real_costs_complete": false,
+    "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO",
+    "spread": "PROXY_COST"
+  },
+  "dataset": {
+    "atr_multiple": 0.25,
+    "auxiliary_barriers": "Marginal excursion above 0.25 causal ATR plus proxy spread; not first touch or executable bracket PnL",
+    "candidate_sessions": 1289,
+    "class_counts": {
+      "DOWN": 411,
+      "NO_TRADE": 521,
+      "UP": 350
+    },
+    "classes": [
+      "DOWN",
+      "NO_TRADE",
+      "UP"
+    ],
+    "cost_methods": [
+      "PROXY_COST"
+    ],
+    "dataset_version": "DATASET-V2-e4a8cc6b19c1ae75ddc74bbe",
+    "dev_file_hash": "4422a1c42d8cab0596094276f3b7e9851d72ef13d544b33d2b6ab6464a20c479",
+    "excluded_incomplete_sessions": 7,
+    "feature_contract_hash": "f00018d22b7406778cc0c44570741857ecf7950336ca94c31cb3e6c57d49e348",
+    "features": [
+      "state_return_1m",
+      "state_return_5m",
+      "state_return_15m",
+      "state_return_30m",
+      "state_return_60m",
+      "state_bar_range",
+      "state_atr_14_causal",
+      "state_volatility_15m_causal",
+      "state_volatility_60m_causal",
+      "state_distance_recent_high",
+      "state_distance_recent_low",
+      "state_momentum_15m_causal",
+      "state_spread_points",
+      "state_tick_volume",
+      "state_regime_v0_RANGE",
+      "state_regime_v0_TREND_DOWN",
+      "state_regime_v0_TREND_UP"
+    ],
+    "horizon_minutes": 30,
+    "locked_oos_inspected": false,
+    "partition": "DEV",
+    "rows": 1282,
+    "sessions": 1282,
+    "slippage_status": [
+      "UNAVAILABLE_NOT_ASSUMED_ZERO"
+    ],
+    "validation_inspected": false
+  },
+  "ensemble": {
+    "balanced_accuracy": 0.3325434439178515,
+    "brier_multiclass": 0.6731932460810719,
+    "economic": {
+      "by_year": {
+        "2016": 0.0,
+        "2017": 0.0,
+        "2018": 0.0,
+        "2019": 0.0
+      },
+      "coverage": 0.0,
+      "cumulative_net_return": 0.0,
+      "mean_net_return_per_trade": 0.0,
+      "positive_year_fraction": 0.0,
+      "trades": 0,
+      "win_rate": 0.0
+    },
+    "expected_calibration_error": 0.04689770664590416,
+    "log_loss": 1.110465915286215,
+    "maximum_probability_std": 0.031693351522501086,
+    "mean_probability_std": 0.004983621499266665,
+    "regression": {
+      "long_mae": {
+        "mae": 0.0005082253079994575
+      },
+      "long_mfe": {
+        "mae": 0.000500305205299003
+      },
+      "short_mae": {
+        "mae": 0.000500305205299003
+      },
+      "short_mfe": {
+        "mae": 0.0005082253079994575
+      }
+    }
+  },
+  "gates": {
+    "economic_positive": false,
+    "predictive": false,
+    "real_costs": false,
+    "skeptic": false
+  },
+  "hypothesis_id": "HYPOTHESIS-ML-XAUUSD-0830-DIRECTION-V1",
+  "locked_oos_inspected": false,
+  "models": {
+    "catboost": {
+      "balanced_accuracy": 0.3335722505022136,
+      "brier_multiclass": 0.6731581073962786,
+      "economic": {
+        "by_year": {
+          "2016": 0.0,
+          "2017": 0.0,
+          "2018": 0.0,
+          "2019": 0.0
+        },
+        "coverage": 0.0,
+        "cumulative_net_return": 0.0,
+        "mean_net_return_per_trade": 0.0,
+        "positive_year_fraction": 0.0,
+        "trades": 0,
+        "win_rate": 0.0
+      },
+      "expected_calibration_error": 0.04536770480523849,
+      "importance_rank_stability": 0.7408954459088554,
+      "log_loss": 1.1103959321109933,
+      "regression": {
+        "long_mae": {
+          "mae": 0.0004998559759852491
+        },
+        "long_mfe": {
+          "mae": 0.0005180358621876328
+        },
+        "short_mae": {
+          "mae": 0.0005180358621876328
+        },
+        "short_mfe": {
+          "mae": 0.0004998559759852491
+        }
+      },
+      "top_feature_importance": [
+        [
+          "state_return_60m",
+          0.11646069332218645
+        ],
+        [
+          "state_return_1m",
+          0.10518719432798751
+        ],
+        [
+          "state_volatility_15m_causal",
+          0.09877882316291088
+        ],
+        [
+          "state_distance_recent_low",
+          0.08115965214471002
+        ],
+        [
+          "state_return_5m",
+          0.07537831204333853
+        ],
+        [
+          "state_return_30m",
+          0.0729388103631737
+        ],
+        [
+          "state_bar_range",
+          0.07127854334387085
+        ],
+        [
+          "state_atr_14_causal",
+          0.0712501462145061
+        ]
+      ]
+    },
+    "lightgbm": {
+      "balanced_accuracy": 0.3335722505022136,
+      "brier_multiclass": 0.6733724697295722,
+      "economic": {
+        "by_year": {
+          "2016": 0.0,
+          "2017": 0.0,
+          "2018": 0.0,
+          "2019": 0.0
+        },
+        "coverage": 0.0,
+        "cumulative_net_return": 0.0,
+        "mean_net_return_per_trade": 0.0,
+        "positive_year_fraction": 0.0,
+        "trades": 0,
+        "win_rate": 0.0
+      },
+      "expected_calibration_error": 0.054493860406709095,
+      "importance_rank_stability": 0.8299862821123952,
+      "log_loss": 1.1111658661395858,
+      "regression": {
+        "long_mae": {
+          "mae": 0.000508399565466047
+        },
+        "long_mfe": {
+          "mae": 0.000518355907574005
+        },
+        "short_mae": {
+          "mae": 0.000518355907574005
+        },
+        "short_mfe": {
+          "mae": 0.000508399565466047
+        }
+      },
+      "top_feature_importance": [
+        [
+          "state_return_1m",
+          0.1731964325547421
+        ],
+        [
+          "state_return_30m",
+          0.12461894169454538
+        ],
+        [
+          "state_return_60m",
+          0.09650074221312077
+        ],
+        [
+          "state_volatility_15m_causal",
+          0.09238418769381386
+        ],
+        [
+          "state_bar_range",
+          0.09148004060692254
+        ],
+        [
+          "state_distance_recent_low",
+          0.08958696538741576
+        ],
+        [
+          "state_return_5m",
+          0.0799843446728253
+        ],
+        [
+          "state_atr_14_causal",
+          0.07077711116675864
+        ]
+      ]
+    },
+    "xgboost": {
+      "balanced_accuracy": 0.3325434439178515,
+      "brier_multiclass": 0.6734314830575681,
+      "economic": {
+        "by_year": {
+          "2016": 0.0,
+          "2017": 0.0,
+          "2018": 0.0,
+          "2019": 0.0
+        },
+        "coverage": 0.0,
+        "cumulative_net_return": 0.0,
+        "mean_net_return_per_trade": 0.0,
+        "positive_year_fraction": 0.0,
+        "trades": 0,
+        "win_rate": 0.0
+      },
+      "expected_calibration_error": 0.04763650940875193,
+      "importance_rank_stability": 0.697985845701307,
+      "log_loss": 1.1106534209176289,
+      "regression": {
+        "long_mae": {
+          "mae": 0.0005233764465674396
+        },
+        "long_mfe": {
+          "mae": 0.00047757422356801195
+        },
+        "short_mae": {
+          "mae": 0.00047757422356801195
+        },
+        "short_mfe": {
+          "mae": 0.0005233764465674396
+        }
+      },
+      "top_feature_importance": [
+        [
+          "state_return_1m",
+          0.0920134079796717
+        ],
+        [
+          "state_atr_14_causal",
+          0.08528855339968766
+        ],
+        [
+          "state_return_60m",
+          0.08467356596789118
+        ],
+        [
+          "state_distance_recent_low",
+          0.08113071835778471
+        ],
+        [
+          "state_tick_volume",
+          0.08075813923251386
+        ],
+        [
+          "state_volatility_15m_causal",
+          0.0801523281702971
+        ],
+        [
+          "state_return_30m",
+          0.07960963001602919
+        ],
+        [
+          "state_bar_range",
+          0.07610169216102705
+        ]
+      ]
+    }
+  },
+  "p_value": 1.0,
+  "prediction_hash": "73599c5cc8b666ca31ad956a40beb88098c5de905411151c86423889a68ca3da",
+  "predictions_path": "reports/evidence/ml-xauusd-0830-v1_predictions.parquet",
+  "report_id": "ML-XAUUSD-0830-V1",
+  "research_value": {
+    "components": {
+      "complexity_penalty": 0.3,
+      "contradiction_value": 1.0,
+      "data_quality": 0.5,
+      "economic_relevance": 1.0,
+      "estimated_compute_cost": 0.5,
+      "expected_information_gain": 0.0,
+      "family_saturation_penalty": 1.0,
+      "novelty": 0.0,
+      "prior_evidence": 1.0,
+      "redundancy_penalty": 1.0,
+      "uncertainty_reduction": 1.0
+    },
+    "interpretation": "Heuristic priority for repeating the same hypothesis, not statistical confidence",
+    "penalty": 0.825,
+    "purpose": "autonomous research priority only",
+    "score": 0.204913
+  },
+  "runtime": {
+    "device": "CPU",
+    "python": "3.13.5",
+    "seed": 20260903,
+    "threads_per_model": 2,
+    "versions": {
+      "catboost": "1.2.10",
+      "lightgbm": "4.7.0",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "pyarrow": "23.0.0",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.16.3",
+      "xgboost": "3.2.0"
+    }
+  },
+  "serialized_models": {
+    "hash": "3342d4aefe448a985502b1fad586a1b7f547ceb46cbaf2ec48ccd828a0619327",
+    "path": "models/ml-xauusd-0830-v1/manifest.json"
+  },
+  "skeptic": {
+    "attempted": 7,
+    "block_bootstrap_all_sessions": {
+      "block_size": 20,
+      "confidence_interval_90": [
+        0.0,
+        0.0
+      ],
+      "confidence_interval_95": [
+        0.0,
+        0.0
+      ],
+      "distribution_mean": 0.0,
+      "favorable_resample_proportion": 0.0,
+      "median": 0.0,
+      "method": "MOVING_SESSION_BLOCK_BOOTSTRAP",
+      "observed": 0.0,
+      "resamples": 2000,
+      "seed": 20261895,
+      "sign_stability": 1.0
+    },
+    "bootstrap_mean_ci_95": [
+      0.0,
+      0.0
+    ],
+    "cost_2x": {
+      "by_year": {
+        "2016": 0.0,
+        "2017": 0.0,
+        "2018": 0.0,
+        "2019": 0.0
+      },
+      "coverage": 0.0,
+      "cumulative_net_return": 0.0,
+      "mean_net_return_per_trade": 0.0,
+      "positive_year_fraction": 0.0,
+      "trades": 0,
+      "win_rate": 0.0
+    },
+    "existing_skeptic": {
+      "attempted": 8,
+      "attempts": [
+        {
+          "effect": 0.0,
+          "name": "winsorization_5pct",
+          "survived": false
+        },
+        {
+          "effect": 0.0,
+          "name": "remove_best_5pct_sessions",
+          "survived": false
+        },
+        {
+          "effect": 0.0,
+          "name": "remove_worst_5pct_sessions",
+          "survived": false
+        },
+        {
+          "name": "temporal_concentration",
+          "survived": false
+        },
+        {
+          "applicable": true,
+          "name": "cost_2x",
+          "survived": false
+        },
+        {
+          "name": "few_outliers",
+          "outlier_absolute_share": 0.0,
+          "survived": true
+        },
+        {
+          "name": "data_quality",
+          "survived": true
+        },
+        {
+          "name": "gap_sensitivity",
+          "note": "Outcomes crossing non-contiguous minute horizons were excluded, not imputed",
+          "survived": true
+        }
+      ],
+      "survival_proportion": 0.375,
+      "survived": 3
+    },
+    "mean_after_remove_best_5pct": 0.0,
+    "no_trade_note": "Economic attacks cannot demonstrate survival when no trades occur",
+    "passed": 2,
+    "shifted_balanced_accuracy": 0.33253588516746413,
+    "survived": false,
+    "tests": {
+      "beats_seven_session_label_shift": false,
+      "bootstrap_ci_lower_positive": false,
+      "calibration_ece_at_most_10pct": true,
+      "mean_model_probability_std_at_most_limit": true,
+      "positive_in_at_least_75pct_years": false,
+      "survives_cost_2x": false,
+      "survives_remove_best_5pct": false
+    }
+  },
+  "source_hashes": {
+    "src/ml/__init__.py": "4587cf8363456ac1424bbb8125df44a68ebc100601b25962bc725899512850f9",
+    "src/ml/data.py": "97bd09d50477f6a79f33c259ba0932bd026c9e3aa9b49de3cd306d223e9d1ee4",
+    "src/ml/experiment.py": "7b1be68bd9aaf651ecec0bda48ab28d92fbed6d4d10fba614e05510afe719ec7",
+    "src/ml/models.py": "8563f702db4e5ba0fc14e9645da8c19f74d1b406ce8cfebabddabf30414a7f3a"
+  },
+  "spec_hash": "fc9afbe0351669801ed619798370e3e6b4c4ba1f0479daaa8e5e3943989a17ac",
+  "validation_inspected": false,
+  "verdict": "REJECTED",
+  "walk_forward_folds": [
+    {
+      "calibration_rows": 39,
+      "early_stop_rows": 38,
+      "embargo_minutes": 30,
+      "fit_rows": 178,
+      "purge_minutes": 30,
+      "test_rows": 256,
+      "test_year": 2016
+    },
+    {
+      "calibration_rows": 77,
+      "early_stop_rows": 77,
+      "embargo_minutes": 30,
+      "fit_rows": 357,
+      "purge_minutes": 30,
+      "test_rows": 255,
+      "test_year": 2017
+    },
+    {
+      "calibration_rows": 115,
+      "early_stop_rows": 115,
+      "embargo_minutes": 30,
+      "fit_rows": 536,
+      "purge_minutes": 30,
+      "test_rows": 258,
+      "test_year": 2018
+    },
+    {
+      "calibration_rows": 154,
+      "early_stop_rows": 154,
+      "embargo_minutes": 30,
+      "fit_rows": 716,
+      "purge_minutes": 30,
+      "test_rows": 258,
+      "test_year": 2019
+    }
+  ]
+}

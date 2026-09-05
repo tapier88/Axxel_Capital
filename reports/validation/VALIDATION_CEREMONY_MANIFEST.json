@@ -1,0 +1,281 @@
+{
+  "candidates": [
+    {
+      "action": "SHORT",
+      "condition": {
+        "field": "state_return_15m",
+        "quantile": 0.85,
+        "type": "quantile_gte"
+      },
+      "cost_rule": "frozen V2 gross minus recorded spread cost; slippage unavailable, never assumed zero",
+      "current_scientific_snapshot_hash": "cd7fbc4854d9218b8dbb21ae0c7e0d58f561b4967a00ac5794f4d3da7ab0ee4c",
+      "dev_effect": 0.00014618980928595942,
+      "dev_evidence_hash": "7e3aa200df9aae021b1d6f27eb0501a02a2489a7604700d33389bc641e745210",
+      "dev_evidence_path": "reports/evidence/hypothesis-disc-09-up_move_reverses-v1_b7a83b686d8e9481.json",
+      "expected_direction": "GREATER",
+      "frozen_scientific_specification": {
+        "action": "SHORT",
+        "condition": {
+          "field": "state_return_15m",
+          "quantile": 0.85,
+          "type": "quantile_gte"
+        },
+        "effect_unit": "return",
+        "expected_direction": "GREATER",
+        "family": "REVERSAL",
+        "id": "HYPOTHESIS-DISC-09-UP_MOVE_REVERSES-V1",
+        "minimum_effect": 5e-05,
+        "minimum_rows": 5000,
+        "minimum_sessions": 200,
+        "minimum_years": 3,
+        "null": "Conditioned and baseline session-level outcomes are exchangeable",
+        "parameter_neighbors": [
+          0.8,
+          0.9
+        ],
+        "planned_comparisons": 3,
+        "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+        "primary_metric": "session-weighted difference in mean outcome",
+        "proposal_type": "NOVEL",
+        "question": "Does up move reverses change outcome_tradable_return_15m versus its DEV base rate?",
+        "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+        "secondary_metrics": [
+          "base rate",
+          "median bootstrap",
+          "MFE/MAE context",
+          "temporal and regime stability"
+        ],
+        "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+        "target_variable": "outcome_tradable_return_15m",
+        "temporal_window": "2015-01-01/2020-01-01 exclusive"
+      },
+      "hypothesis_id": "HYPOTHESIS-DISC-09-UP_MOVE_REVERSES-V1",
+      "legacy_hash_note": "spec_hash remains the immutable creation-time hash; snapshot hash covers the normalized current scientific fields",
+      "minimum_effect": 5e-05,
+      "preregistration_file_hash": "652544828b04a285a801c3499d5d91b138966cfbde1d3b2b94005c0911efe3c9",
+      "preregistration_path": "hypotheses/validation_preregistrations/hypothesis-disc-09-up_move_reverses-v1.json",
+      "primary_metric": "session-weighted difference in mean outcome",
+      "rejection_criteria": "any mandatory predictive gate fails",
+      "resolved_dev_threshold": 0.0008073086832424027,
+      "secondary_metrics": [
+        "base rate",
+        "median bootstrap",
+        "MFE/MAE context",
+        "temporal and regime stability"
+      ],
+      "spec_hash": "ab18da50363cf9c0d93b7cdb84ac903319da0b732bd304f3180efc831b76d2af",
+      "success_criteria": "all predictive gates in the hashed ceremony protocol",
+      "target": "outcome_tradable_return_15m"
+    },
+    {
+      "action": "LONG",
+      "condition": {
+        "field": "state_return_15m",
+        "quantile": 0.15,
+        "type": "quantile_lte"
+      },
+      "cost_rule": "frozen V2 gross minus recorded spread cost; slippage unavailable, never assumed zero",
+      "current_scientific_snapshot_hash": "de41dfae57b6d7bf15f6232ab68072a8808f63704e4690c26d533ef4542d2492",
+      "dev_effect": 0.00016597023624078053,
+      "dev_evidence_hash": "9f498ba70e5896d9c3c02de5b0c1fc587d1fc5b6d134d4e88c72db90b1a1c7f0",
+      "dev_evidence_path": "reports/evidence/hypothesis-disc-10-down_move_reverses-v1_2f33196a1aa822eb.json",
+      "expected_direction": "GREATER",
+      "frozen_scientific_specification": {
+        "action": "LONG",
+        "condition": {
+          "field": "state_return_15m",
+          "quantile": 0.15,
+          "type": "quantile_lte"
+        },
+        "effect_unit": "return",
+        "expected_direction": "GREATER",
+        "family": "REVERSAL",
+        "id": "HYPOTHESIS-DISC-10-DOWN_MOVE_REVERSES-V1",
+        "minimum_effect": 5e-05,
+        "minimum_rows": 5000,
+        "minimum_sessions": 200,
+        "minimum_years": 3,
+        "null": "Conditioned and baseline session-level outcomes are exchangeable",
+        "parameter_neighbors": [
+          0.1,
+          0.2
+        ],
+        "planned_comparisons": 3,
+        "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+        "primary_metric": "session-weighted difference in mean outcome",
+        "proposal_type": "NOVEL",
+        "question": "Does down move reverses change outcome_tradable_return_15m versus its DEV base rate?",
+        "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+        "secondary_metrics": [
+          "base rate",
+          "median bootstrap",
+          "MFE/MAE context",
+          "temporal and regime stability"
+        ],
+        "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+        "target_variable": "outcome_tradable_return_15m",
+        "temporal_window": "2015-01-01/2020-01-01 exclusive"
+      },
+      "hypothesis_id": "HYPOTHESIS-DISC-10-DOWN_MOVE_REVERSES-V1",
+      "legacy_hash_note": "spec_hash remains the immutable creation-time hash; snapshot hash covers the normalized current scientific fields",
+      "minimum_effect": 5e-05,
+      "preregistration_file_hash": "239d7bee9e21c0257d2a2fa6a0fa688c17fc615cd6c1ac6a35a8967f3d99ed98",
+      "preregistration_path": "hypotheses/validation_preregistrations/hypothesis-disc-10-down_move_reverses-v1.json",
+      "primary_metric": "session-weighted difference in mean outcome",
+      "rejection_criteria": "any mandatory predictive gate fails",
+      "resolved_dev_threshold": -0.000813140348024044,
+      "secondary_metrics": [
+        "base rate",
+        "median bootstrap",
+        "MFE/MAE context",
+        "temporal and regime stability"
+      ],
+      "spec_hash": "506d3b139884ae86a53c8acc0be0adbdad169b60defa17bd67a735108414cc66",
+      "success_criteria": "all predictive gates in the hashed ceremony protocol",
+      "target": "outcome_tradable_return_15m"
+    },
+    {
+      "action": "SHORT",
+      "condition": {
+        "field": "state_distance_recent_high",
+        "quantile": 0.1,
+        "type": "quantile_lte"
+      },
+      "cost_rule": "frozen V2 gross minus recorded spread cost; slippage unavailable, never assumed zero",
+      "current_scientific_snapshot_hash": "3493a558bf9019d42c225cf9201b7e54f01f4064427421488664dc610a89fc46",
+      "dev_effect": 0.00023623700015384185,
+      "dev_evidence_hash": "66e1f36e2c4ef47df8099aeb647d027514df2b6f3d6d97d38e3bd37cc57aab25",
+      "dev_evidence_path": "reports/evidence/hypothesis-disc-15-near_high_reverts-v1_ff3f9ba829605057.json",
+      "expected_direction": "GREATER",
+      "frozen_scientific_specification": {
+        "action": "SHORT",
+        "condition": {
+          "field": "state_distance_recent_high",
+          "quantile": 0.1,
+          "type": "quantile_lte"
+        },
+        "effect_unit": "return",
+        "expected_direction": "GREATER",
+        "family": "MEAN_REVERSION",
+        "id": "HYPOTHESIS-DISC-15-NEAR_HIGH_REVERTS-V1",
+        "minimum_effect": 5e-05,
+        "minimum_rows": 5000,
+        "minimum_sessions": 200,
+        "minimum_years": 3,
+        "null": "Conditioned and baseline session-level outcomes are exchangeable",
+        "parameter_neighbors": [
+          0.05,
+          0.15
+        ],
+        "planned_comparisons": 3,
+        "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+        "primary_metric": "session-weighted difference in mean outcome",
+        "proposal_type": "NOVEL",
+        "question": "Does near high reverts change outcome_tradable_return_30m versus its DEV base rate?",
+        "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+        "secondary_metrics": [
+          "base rate",
+          "median bootstrap",
+          "MFE/MAE context",
+          "temporal and regime stability"
+        ],
+        "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+        "target_variable": "outcome_tradable_return_30m",
+        "temporal_window": "2015-01-01/2020-01-01 exclusive"
+      },
+      "hypothesis_id": "HYPOTHESIS-DISC-15-NEAR_HIGH_REVERTS-V1",
+      "legacy_hash_note": "spec_hash remains the immutable creation-time hash; snapshot hash covers the normalized current scientific fields",
+      "minimum_effect": 5e-05,
+      "preregistration_file_hash": "88f2ffc4c28ea5398730f0c84ee24c50e08af580a7a1e0086c2b62b306b9aa0b",
+      "preregistration_path": "hypotheses/validation_preregistrations/hypothesis-disc-15-near_high_reverts-v1.json",
+      "primary_metric": "session-weighted difference in mean outcome",
+      "rejection_criteria": "any mandatory predictive gate fails",
+      "resolved_dev_threshold": 0.00023706099218618424,
+      "secondary_metrics": [
+        "base rate",
+        "median bootstrap",
+        "MFE/MAE context",
+        "temporal and regime stability"
+      ],
+      "spec_hash": "0c3a315cd83ad1d126dcabcc674f6700cd5e64bc4188dca29206422771e2f0b0",
+      "success_criteria": "all predictive gates in the hashed ceremony protocol",
+      "target": "outcome_tradable_return_30m"
+    },
+    {
+      "action": "LONG",
+      "condition": {
+        "field": "state_distance_recent_low",
+        "quantile": 0.1,
+        "type": "quantile_lte"
+      },
+      "cost_rule": "frozen V2 gross minus recorded spread cost; slippage unavailable, never assumed zero",
+      "current_scientific_snapshot_hash": "4ee63ad0496902a6b913333d8bfe61c00dd25088ccb6644a79417a298abac7ab",
+      "dev_effect": 0.0002795426611336196,
+      "dev_evidence_hash": "e919ae47bedb0e69ddfed9833c302cf91c82443a34ce4d1ce76a6ccd66ab2bc4",
+      "dev_evidence_path": "reports/evidence/hypothesis-disc-16-near_low_reverts-v1_f54993175d2479ec.json",
+      "expected_direction": "GREATER",
+      "frozen_scientific_specification": {
+        "action": "LONG",
+        "condition": {
+          "field": "state_distance_recent_low",
+          "quantile": 0.1,
+          "type": "quantile_lte"
+        },
+        "effect_unit": "return",
+        "expected_direction": "GREATER",
+        "family": "MEAN_REVERSION",
+        "id": "HYPOTHESIS-DISC-16-NEAR_LOW_REVERTS-V1",
+        "minimum_effect": 5e-05,
+        "minimum_rows": 5000,
+        "minimum_sessions": 200,
+        "minimum_years": 3,
+        "null": "Conditioned and baseline session-level outcomes are exchangeable",
+        "parameter_neighbors": [
+          0.05,
+          0.15
+        ],
+        "planned_comparisons": 3,
+        "population": "GOLD M1 decisions 08:00-12:30 COT in DEV",
+        "primary_metric": "session-weighted difference in mean outcome",
+        "proposal_type": "NOVEL",
+        "question": "Does near low reverts change outcome_tradable_return_30m versus its DEV base rate?",
+        "rejection_criterion": "Any mandatory evidence or falsification gate fails",
+        "secondary_metrics": [
+          "base rate",
+          "median bootstrap",
+          "MFE/MAE context",
+          "temporal and regime stability"
+        ],
+        "survival_criterion": "Material effect survives FDR, dependence-aware resampling, stability and negative controls",
+        "target_variable": "outcome_tradable_return_30m",
+        "temporal_window": "2015-01-01/2020-01-01 exclusive"
+      },
+      "hypothesis_id": "HYPOTHESIS-DISC-16-NEAR_LOW_REVERTS-V1",
+      "legacy_hash_note": "spec_hash remains the immutable creation-time hash; snapshot hash covers the normalized current scientific fields",
+      "minimum_effect": 5e-05,
+      "preregistration_file_hash": "7841c3952e1d76a6591e77e0c30997e61cd0a2bea75f5a89cb2b428bb6832847",
+      "preregistration_path": "hypotheses/validation_preregistrations/hypothesis-disc-16-near_low_reverts-v1.json",
+      "primary_metric": "session-weighted difference in mean outcome",
+      "rejection_criteria": "any mandatory predictive gate fails",
+      "resolved_dev_threshold": 0.0002466731106382834,
+      "secondary_metrics": [
+        "base rate",
+        "median bootstrap",
+        "MFE/MAE context",
+        "temporal and regime stability"
+      ],
+      "spec_hash": "4ee63ad0496902a6b913333d8bfe61c00dd25088ccb6644a79417a298abac7ab",
+      "success_criteria": "all predictive gates in the hashed ceremony protocol",
+      "target": "outcome_tradable_return_30m"
+    }
+  ],
+  "ceremony_id": "VALIDATION-CEREMONY-REVERSAL-RELATIVE-V1",
+  "created_at": "2026-09-03T14:01:04.475041+00:00",
+  "dataset_validation_hash_expected": "280557212b2add10e03f7d4993bbc887ce2a3ec7f8c9fa6f9ffae10058de6663",
+  "dataset_version": "DATASET-V2-e4a8cc6b19c1ae75ddc74bbe",
+  "family": "REVERSAL_RELATIVE_V1",
+  "integrity_verified": true,
+  "locked_oos_authorized": false,
+  "manifest_hash": "f343ce96e5b8001c8f7097b57f17de8963ba4f23dac98b82a2aa28b300c77843",
+  "validation_read_before_manifest": false
+}

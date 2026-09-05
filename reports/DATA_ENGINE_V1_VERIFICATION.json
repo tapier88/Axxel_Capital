@@ -1,0 +1,101 @@
+{
+  "report_id": "AXXEL_DATA_ENGINE_V1_VERIFICATION",
+  "date": "2026-09-04",
+  "tests": {
+    "command": "python -m pytest tests -q",
+    "passed": 148,
+    "failed": 0,
+    "seconds": 18.28,
+    "market_payloads": "Synthetic fixtures only"
+  },
+  "pilot": {
+    "dataset_id": "DE1-658ff72ef8932e5b4d50118751d039fc11015010ec6f1101c3dce81805b58706",
+    "status": "EXPLORATORY_ONLY",
+    "quality_score": 89.7073,
+    "rows": 1048576,
+    "rows_removed": 0,
+    "from": "2015-01-02T08:06:00+00:00",
+    "to": "2017-12-19T15:00:00+00:00",
+    "source_rowgroups_read": [
+      0
+    ],
+    "source_rowgroups_not_read": [
+      1,
+      2,
+      3
+    ],
+    "raw_sha256": "13a5809f4273af3dfb551b22d9978948af48b51e6a5f0a6a0611c8f5cd18bbe8",
+    "logical_sha256": "1b1bfde9ce5cd7e13db782fb2e271cb737dd2845b758ec6ff91e0c45fc4e37cd",
+    "certificate_sha256": "6cd1da46a3dfe53764c8204f51fb525d29263a47cf867af83f2b240ab7032701",
+    "counts": {
+      "GAP": 2679,
+      "ZERO_SPREAD": 249,
+      "STALE_RUN": 146,
+      "PRICE_JUMP": 1
+    },
+    "repeated_cli_same_dataset_id": true,
+    "all_manifest_artifact_hashes_verified": true,
+    "gold_publication": "DENIED_AS_EXPECTED: Dataset cannot enter research: EXPLORATORY_ONLY",
+    "validation_payload_opened": false,
+    "locked_oos_payload_opened": false,
+    "mixed_source_footer_metadata_inspected": true,
+    "parent_full_file_hash_recomputed": false,
+    "legacy_original_provider_response_recoverable": false,
+    "ml_experiment_run": false
+  },
+  "environment": {
+    "data_engine_runtime": "Python 3.13.5, numpy 2.2.6, pandas 2.3.3, pyarrow 23.0.0, pandera 0.29.0, duckdb 1.4.4",
+    "pip_check": "FAILED_UNRELATED_GLOBAL_PACKAGES",
+    "issues": [
+      "rembg: pooch and scikit-image absent",
+      "rembg requests numpy>=2.3.0; current AXXEL numpy is 2.2.6",
+      "fastapi 0.115.6 requests starlette<0.42; global starlette is 1.6.0"
+    ],
+    "unrelated_packages_modified": false
+  },
+  "limitations": [
+    "V1 certifies bounded timezone-aware OHLCV Parquet; no live/tick/CSV adapter",
+    "DEV only; independent validation capability not implemented in this V1",
+    "In-memory ingestion capped at 2000000 rows; query memory limit does not constrain ingestion",
+    "Application integrity is not hostile OS-user isolation",
+    "RESEARCH_GRADE reserved; historical broker calendar/contract and execution-cost coverage incomplete"
+  ],
+  "documentation_updated": [
+    "AXXEL_EDGE_DISCOVERY_MD/02_DATA/DATA_ACQUISITION.md",
+    "AXXEL_EDGE_DISCOVERY_MD/02_DATA/DATA_QUALITY.md",
+    "AXXEL_EDGE_DISCOVERY_MD/02_DATA/DATA_NORMALIZATION.md",
+    "AXXEL_EDGE_DISCOVERY_MD/02_DATA/EXPERIENCE_STORE.md",
+    "AXXEL_EDGE_DISCOVERY_MD/02_DATA/DATA_INVENTORY.md",
+    "MASTER_INDEX.md",
+    "MIGRATION_NOTE.md",
+    "AXXEL_EDGE_DISCOVERY_MD/01_ARCHITECTURE/SYSTEM_ARCHITECTURE.md",
+    "AXXEL_EDGE_DISCOVERY_MD/01_ARCHITECTURE/SYSTEM_FLOW.md",
+    "AXXEL_EDGE_DISCOVERY_MD/01_ARCHITECTURE/MT5_INTEGRATION_ARCHITECTURE.md",
+    "AXXEL_EDGE_DISCOVERY_MD/01_ARCHITECTURE/EXPERIENCE_ARCHITECTURE.md",
+    "AXXEL_EDGE_DISCOVERY_MD/02_DATA/TIMEZONE_RULES.md",
+    "AXXEL_EDGE_DISCOVERY_MD/02_DATA/FEATURE_SCHEMA.md",
+    "AXXEL_EDGE_DISCOVERY_MD/02_DATA/STATE_SCHEMA.md",
+    "AXXEL_EDGE_DISCOVERY_MD/02_DATA/OUTCOME_SCHEMA.md",
+    "AXXEL_EDGE_DISCOVERY_MD/02_DATA/COST_MODEL.md",
+    "AXXEL_EDGE_DISCOVERY_MD/03_RESEARCH/DISCOVERY_ENGINE.md",
+    "AXXEL_EDGE_DISCOVERY_MD/03_RESEARCH/EXPERIENCE_REPLAY.md",
+    "AXXEL_EDGE_DISCOVERY_MD/03_RESEARCH/HYPOTHESIS_ENGINE.md",
+    "AXXEL_EDGE_DISCOVERY_MD/04_VALIDATION/LEAKAGE_DETECTION.md",
+    "AXXEL_EDGE_DISCOVERY_MD/04_VALIDATION/OUT_OF_SAMPLE.md",
+    "AXXEL_EDGE_DISCOVERY_MD/04_VALIDATION/SKEPTIC_ENGINE.md",
+    "AXXEL_EDGE_DISCOVERY_MD/04_VALIDATION/VALIDATION_PROTOCOL.md",
+    "AXXEL_EDGE_DISCOVERY_MD/04_VALIDATION/WALK_FORWARD.md",
+    "AXXEL_EDGE_DISCOVERY_MD/06_OPERATIONS/AUTONOMOUS_LOOP.md",
+    "AXXEL_EDGE_DISCOVERY_MD/06_OPERATIONS/RESOURCE_BUDGET.md",
+    "AXXEL_EDGE_DISCOVERY_MD/06_OPERATIONS/FAILURE_RECOVERY.md",
+    "AXXEL_EDGE_DISCOVERY_MD/09_CONFIG/RESEARCH_CONFIG.md",
+    "AXXEL_EDGE_DISCOVERY_MD/09_CONFIG/RESOURCE_LIMITS.md",
+    "AXXEL_EDGE_DISCOVERY_MD/15_KNOWLEDGE/LESSONS_LEARNED.md",
+    "README.md",
+    "AGENTS.md",
+    "AXXEL_EDGE_DISCOVERY_MD/00_CORE/AGENT.md",
+    "AXXEL_EDGE_DISCOVERY_MD/00_CORE/MISSION.md",
+    "AXXEL_EDGE_DISCOVERY_MD/02_DATA/DATA_ENGINE.md"
+  ],
+  "prior_incident_preserved": "reports/ML_PARTITION_ACCESS_INCIDENT.json"
+}

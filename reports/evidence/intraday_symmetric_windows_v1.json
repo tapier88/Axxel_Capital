@@ -1,0 +1,155 @@
+{
+  "locked_oos_inspected": false,
+  "note": "18 equal 15m windows; the single 12:30 boundary minute is excluded from symmetry. Anomaly only; direction/tradability not inferred",
+  "partition": "DEV",
+  "symmetric": true,
+  "validation_inspected": false,
+  "width_minutes": 15,
+  "windows": [
+    {
+      "effect": -0.00011059026971013608,
+      "end_minute": 14,
+      "fdr_p_value": 0.0010577657636481168,
+      "p_value": 0.000999000999000999,
+      "sessions": 1287,
+      "start_minute": 0
+    },
+    {
+      "effect": -0.00010824523788378815,
+      "end_minute": 29,
+      "fdr_p_value": 0.0010577657636481168,
+      "p_value": 0.000999000999000999,
+      "sessions": 1284,
+      "start_minute": 15
+    },
+    {
+      "effect": -9.53457693957707e-05,
+      "end_minute": 44,
+      "fdr_p_value": 0.0010577657636481168,
+      "p_value": 0.000999000999000999,
+      "sessions": 1285,
+      "start_minute": 30
+    },
+    {
+      "effect": -8.43212222701889e-05,
+      "end_minute": 59,
+      "fdr_p_value": 0.0010577657636481168,
+      "p_value": 0.000999000999000999,
+      "sessions": 1288,
+      "start_minute": 45
+    },
+    {
+      "effect": -7.57095356798719e-05,
+      "end_minute": 74,
+      "fdr_p_value": 0.0010577657636481168,
+      "p_value": 0.000999000999000999,
+      "sessions": 1288,
+      "start_minute": 60
+    },
+    {
+      "effect": -6.987196171358123e-05,
+      "end_minute": 89,
+      "fdr_p_value": 0.0010577657636481168,
+      "p_value": 0.000999000999000999,
+      "sessions": 1287,
+      "start_minute": 75
+    },
+    {
+      "effect": -4.9888454391826616e-05,
+      "end_minute": 104,
+      "fdr_p_value": 0.0010577657636481168,
+      "p_value": 0.000999000999000999,
+      "sessions": 1288,
+      "start_minute": 90
+    },
+    {
+      "effect": -4.382019857184095e-06,
+      "end_minute": 119,
+      "fdr_p_value": 0.06593406593406594,
+      "p_value": 0.06593406593406594,
+      "sessions": 1288,
+      "start_minute": 105
+    },
+    {
+      "effect": 9.051283049011237e-05,
+      "end_minute": 134,
+      "fdr_p_value": 0.0010577657636481168,
+      "p_value": 0.000999000999000999,
+      "sessions": 1287,
+      "start_minute": 120
+    },
+    {
+      "effect": 0.00010246865573660522,
+      "end_minute": 149,
+      "fdr_p_value": 0.0010577657636481168,
+      "p_value": 0.000999000999000999,
+      "sessions": 1288,
+      "start_minute": 135
+    },
+    {
+      "effect": 5.602857263259009e-05,
+      "end_minute": 164,
+      "fdr_p_value": 0.0010577657636481168,
+      "p_value": 0.000999000999000999,
+      "sessions": 1288,
+      "start_minute": 150
+    },
+    {
+      "effect": 4.8917861469806846e-05,
+      "end_minute": 179,
+      "fdr_p_value": 0.0010577657636481168,
+      "p_value": 0.000999000999000999,
+      "sessions": 1285,
+      "start_minute": 165
+    },
+    {
+      "effect": 4.578545440107679e-05,
+      "end_minute": 194,
+      "fdr_p_value": 0.0010577657636481168,
+      "p_value": 0.000999000999000999,
+      "sessions": 1286,
+      "start_minute": 180
+    },
+    {
+      "effect": 5.852506239650979e-05,
+      "end_minute": 209,
+      "fdr_p_value": 0.0010577657636481168,
+      "p_value": 0.000999000999000999,
+      "sessions": 1284,
+      "start_minute": 195
+    },
+    {
+      "effect": 7.806409320016631e-05,
+      "end_minute": 224,
+      "fdr_p_value": 0.0010577657636481168,
+      "p_value": 0.000999000999000999,
+      "sessions": 1289,
+      "start_minute": 210
+    },
+    {
+      "effect": 6.732102269487018e-05,
+      "end_minute": 239,
+      "fdr_p_value": 0.0010577657636481168,
+      "p_value": 0.000999000999000999,
+      "sessions": 1286,
+      "start_minute": 225
+    },
+    {
+      "effect": 3.521685632350833e-05,
+      "end_minute": 254,
+      "fdr_p_value": 0.0010577657636481168,
+      "p_value": 0.000999000999000999,
+      "sessions": 1283,
+      "start_minute": 240
+    },
+    {
+      "effect": 1.4905971557602684e-05,
+      "end_minute": 269,
+      "fdr_p_value": 0.0010577657636481168,
+      "p_value": 0.000999000999000999,
+      "sessions": 1286,
+      "start_minute": 255
+    }
+  ],
+  "windows_tested": 18
+}

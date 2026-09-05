@@ -1,0 +1,106 @@
+{
+  "version": "2.0",
+  "states": [
+    "OPERATIONAL",
+    "IMPLEMENTING",
+    "DEGRADED",
+    "BLOCKED",
+    "NOT_STARTED",
+    "IMPLEMENTED_NOT_CERTIFIED",
+    "PARTIAL"
+  ],
+  "matrix": [
+    {
+      "capability": "Data Engine V1",
+      "state": "IMPLEMENTED_NOT_CERTIFIED",
+      "priority": "P0",
+      "blocks": [
+        "Control Tower confidence",
+        "Research reproducibility"
+      ]
+    },
+    {
+      "capability": "Control Tower",
+      "state": "NOT_STARTED",
+      "priority": "P1",
+      "blocks": [
+        "Autonomous task governance"
+      ]
+    },
+    {
+      "capability": "Observability",
+      "state": "NOT_STARTED",
+      "priority": "P2",
+      "blocks": [
+        "Learning",
+        "Reliable autonomy"
+      ]
+    },
+    {
+      "capability": "Experience Engine",
+      "state": "PARTIAL",
+      "priority": "P3",
+      "blocks": [
+        "Learning"
+      ],
+      "scope": "V0 modules exist; target integrated phase remains blocked"
+    },
+    {
+      "capability": "Learning Engine",
+      "state": "NOT_STARTED",
+      "priority": "P4",
+      "blocks": [
+        "Continuous improvement"
+      ]
+    },
+    {
+      "capability": "Improvement Engine",
+      "state": "NOT_STARTED",
+      "priority": "P5",
+      "blocks": [
+        "Systematic optimization"
+      ]
+    },
+    {
+      "capability": "Architecture Gap Detector",
+      "state": "NOT_STARTED",
+      "priority": "P6",
+      "blocks": [
+        "Self-evolution"
+      ]
+    },
+    {
+      "capability": "Autonomy Engine",
+      "state": "NOT_STARTED",
+      "priority": "P7",
+      "blocks": [
+        "Long-term autonomy"
+      ]
+    },
+    {
+      "capability": "Watchdogs/Recovery",
+      "state": "NOT_STARTED",
+      "priority": "P8",
+      "blocks": [
+        "Safe demo operation"
+      ]
+    },
+    {
+      "capability": "Paper/Demo Execution",
+      "state": "NOT_STARTED",
+      "priority": "P9",
+      "blocks": [
+        "Production candidacy"
+      ]
+    },
+    {
+      "capability": "Historical Cost Reality",
+      "state": "DEGRADED",
+      "priority": "P0/P1",
+      "blocks": [
+        "High-confidence net-edge claims"
+      ]
+    }
+  ],
+  "scope_note": "Target capability readiness differs from existence of V0 modules; no phase promotion."
+}

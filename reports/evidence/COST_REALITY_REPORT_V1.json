@@ -1,0 +1,91 @@
+{
+  "authorized_candidates": [
+    {
+      "access": "located; automated response empty, not ingested",
+      "fields": "DateTime,Bid,Ask,Volume",
+      "source": "HistData.com XAUUSD Generic ASCII ticks",
+      "timezone": "EST fixed, no DST",
+      "url": "https://www.histdata.com/download-free-forex-data/"
+    },
+    {
+      "access": "API/platform candidate; not ingested",
+      "fields": "best bid/ask ticks",
+      "source": "Dukascopy JForex history",
+      "url": "https://www.dukascopy.com/wiki/en/development/strategy-api/historical-data/history-ticks/"
+    }
+  ],
+  "bid_ask_coverage_dev": 0.0,
+  "comparison_to_xm_proxy": "NOT_COMPUTABLE_WITHOUT_INGESTED_INDEPENDENT_TICKS",
+  "existing_cost_source": {
+    "ASK": false,
+    "BID": false,
+    "BROKER": "XM Global Limited",
+    "HASH": "4422a1c42d8cab0596094276f3b7e9851d72ef13d544b33d2b6ab6464a20c479",
+    "PROVENANCE": "MetaTrader5 Python API M1 acquisition; broker chart bid-based",
+    "SOURCE_ID": "MT5-XMGLOBAL-GOLD-M1-V1",
+    "SPREAD": "M1 spread points proxy",
+    "SYMBOL": "GOLD/XAUUSD",
+    "TIMESTAMP": "2015-01-02/2019-12-31 DEV"
+  },
+  "local_search": {
+    "active_terminal": "XMGlobal-MT5 6",
+    "ohlc_files": [
+      {
+        "HASH": "6192ef9542a0577bf3939014fc7c066d6a05b7ad5182ed0d8e6b01256de3afb2",
+        "eligible": false,
+        "fields": "OHLC only; no usable bid/ask",
+        "path": "XAUUSD_20Y_History.csv"
+      },
+      {
+        "HASH": "fe587617fb473140ab5e02f0266d7ff8e9e7f4e3a316f436c178e4dd1029a2da",
+        "eligible": false,
+        "fields": "OHLC only; no usable bid/ask",
+        "path": "XAUUSD_Deep_History.csv"
+      }
+    ],
+    "stale_second_terminal_registration": "BFB1BD1E6F2B8D41CDA133F2D2F5DF97 origin path missing"
+  },
+  "mixing_policy": "No external observations were merged with XM; future source must remain separately identified and mapped",
+  "report_id": "COST_REALITY_REPORT_V1",
+  "slippage": "UNAVAILABLE_NOT_ASSUMED_ZERO",
+  "status": "REAL_TICK_DEV_UNAVAILABLE",
+  "usable_new_sources": 0,
+  "xm_proxy_coverage_dev": 1.0,
+  "xm_proxy_distribution": {
+    "by_minute_bucket": {
+      "0": 0.000298376326658835,
+      "120": 0.00028773112820953,
+      "150": 0.00028526055594883695,
+      "180": 0.0002850413759628003,
+      "210": 0.0002830513615392341,
+      "240": 0.00028368763883824123,
+      "270": 0.0002856592892983889,
+      "30": 0.0002984165179310798,
+      "60": 0.0002952341909839975,
+      "90": 0.00029430188713831904
+    },
+    "by_regime": {
+      "RANGE": 0.00029135943118965103,
+      "TREND_DOWN": 0.00029018696225455203,
+      "TREND_UP": 0.0002893953231920815
+    },
+    "by_volatility_quartile": {
+      "Q1": 0.0002892898484773524,
+      "Q2": 0.0002886976730594345,
+      "Q3": 0.00028809533008904685,
+      "Q4": 0.00029435295010937226
+    },
+    "spread_points": {
+      "p50": 37.0,
+      "p75": 40.0,
+      "p90": 43.0,
+      "p95": 45.0
+    },
+    "spread_return": {
+      "p50": 0.00030571084291487315,
+      "p75": 0.0003273662682193486,
+      "p90": 0.00035234229162602206,
+      "p95": 0.0003672036834543355
+    }
+  }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "created_at": "2026-09-03T00:35:10.018138+00:00",
+    "falsification": "Dry-run evidence fails the declared acceptance criteria",
+    "id": "HYPOTHESIS-20260903T003510018092Z-ca144d4563",
+    "question": "¿Puede la arquitectura V0 completar y persistir una iteración trazable sin operar en mercado?",
+    "rationale": "Pending empirical evidence",
+    "statement": "Investigate whether: ¿Puede la arquitectura V0 completar y persistir una iteración trazable sin operar en mercado?",
+    "status": "ACTIVE",
+    "tags": [
+      "dry-run",
+      "system"
+    ],
+    "uncertainties": [
+      "No market dataset has been supplied",
+      "No edge is claimed"
+    ]
+  },
+  {
+    "created_at": "2026-09-03T00:51:20.517257+00:00",
+    "falsification": "Dry-run evidence fails the declared acceptance criteria",
+    "id": "HYPOTHESIS-20260903T005120517197Z-2b3d136690",
+    "question": "Can XAUUSD market experiences be retrieved and replayed without temporal leakage?",
+    "rationale": "Pending empirical evidence",
+    "statement": "Investigate whether: Can XAUUSD market experiences be retrieved and replayed without temporal leakage?",
+    "status": "ACTIVE",
+    "tags": [
+      "data-quality",
+      "market-experience",
+      "xauusd"
+    ],
+    "uncertainties": [
+      "No spread/bid/ask in source",
+      "H1 cannot resolve 5m/15m/30m labels",
+      "No edge is being evaluated"
+    ]
+  },
+  {
+    "created_at": "2026-09-03T01:50:24.882211+00:00",
+    "falsification": "Dry-run evidence fails the declared acceptance criteria",
+    "id": "HYPOTHESIS-20260903T015024882137Z-be499f56e5",
+    "question": "Can real GOLD M1 experiences be retrieved and replayed causally from DEV without opening LOCKED_OOS?",
+    "rationale": "Pending empirical evidence",
+    "statement": "Investigate whether: Can real GOLD M1 experiences be retrieved and replayed causally from DEV without opening LOCKED_OOS?",
+    "status": "ACTIVE",
+    "tags": [
+      "data-quality",
+      "gold",
+      "m1",
+      "market-experience-v2"
+    ],
+    "uncertainties": [
+      "Full-history tick bid/ask is unavailable; most costs use an explicit spread proxy",
+      "Slippage is unavailable and remains null",
+      "No market edge is tested or claimed"
+    ]
+  }
+]

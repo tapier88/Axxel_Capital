@@ -1,0 +1,20 @@
+{
+  "test_command": "python -m pytest tests -q",
+  "tests_passed": 127,
+  "last_suite_seconds": 14.41,
+  "native_models_reloaded_on_synthetic_input": 21,
+  "editable_install_metadata_dry_run": "PASSED",
+  "repeat_checks": {
+    "primary_probability_hash_identical": true,
+    "all_three_model_metrics_identical": true,
+    "ensemble_metrics_identical": true,
+    "baseline_metrics_identical": true,
+    "adversarial_diagnostics_identical": true,
+    "auxiliary_barrier_metrics_identical": true
+  },
+  "prediction_hash": "73599c5cc8b666ca31ad956a40beb88098c5de905411151c86423889a68ca3da",
+  "experiment_command": "python scripts/run_ml_experiment.py --config config/ml_xauusd_0830_v1.json",
+  "verdict": "REJECTED",
+  "partition_incident": "reports/ML_PARTITION_ACCESS_INCIDENT.json",
+  "note": "The ML runner is DEV-only. Earlier legacy test suites opened protected partitions before the bypass was removed. This verification does not erase that incident."
+}

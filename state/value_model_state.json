@@ -1,0 +1,225 @@
+{
+  "last_research_priorities": {
+    "HYPOTHESIS-CAL-0830-EXPANSION-V1": {
+      "components": {
+        "expected_information_gain": 0.65,
+        "novelty": 0.3,
+        "previous_evidence": 0.35,
+        "relevance": 0.8,
+        "uncertainty_reduction": 0.7
+      },
+      "cost": 0.25,
+      "purpose": "research prioritization only; not trade value",
+      "resolved_question_discount": 0.825,
+      "score": 0.462
+    },
+    "HYPOTHESIS-CAL-EARLY-WINDOW-VOL-V1": {
+      "components": {
+        "expected_information_gain": 0.65,
+        "novelty": 0.7,
+        "previous_evidence": 0.35,
+        "relevance": 0.8,
+        "uncertainty_reduction": 0.7
+      },
+      "cost": 0.25,
+      "purpose": "research prioritization only; not trade value",
+      "resolved_question_discount": 0.825,
+      "score": 0.505312
+    },
+    "HYPOTHESIS-CAL-NEGATIVE-SESSION-HASH-V1": {
+      "components": {
+        "expected_information_gain": 0.48524900000000004,
+        "novelty": 0.7,
+        "previous_evidence": 0.514751,
+        "relevance": 0.8,
+        "uncertainty_reduction": 0.7
+      },
+      "cost": 0.25,
+      "purpose": "research prioritization only; not trade value",
+      "resolved_question_discount": 0.742625,
+      "score": 0.412036
+    },
+    "HYPOTHESIS-CAL-VOL-PERSISTENCE-V1": {
+      "components": {
+        "expected_information_gain": 0.10045000000000004,
+        "novelty": 0.7,
+        "previous_evidence": 0.89955,
+        "relevance": 0.8,
+        "uncertainty_reduction": 0.7
+      },
+      "cost": 0.25,
+      "purpose": "research prioritization only; not trade value",
+      "resolved_question_discount": 0.550225,
+      "score": 0.231181
+    }
+  },
+  "last_scores": {
+    "information_value": 0.4,
+    "research_value": 0.726708,
+    "uncertainty_after": 0.808119,
+    "uncertainty_before": 0.958119
+  },
+  "model_version_id": "MODEL_VERSION-20260903T003510119898Z-b4e2c75f13",
+  "post_campaign_priorities": [
+    {
+      "family": "REVERSAL",
+      "id": "HYPOTHESIS-DISC-09-UP_MOVE_REVERSES-V1",
+      "score": 0.387663,
+      "status": "VALIDATION_READY"
+    },
+    {
+      "family": "MEAN_REVERSION",
+      "id": "HYPOTHESIS-DISC-15-NEAR_HIGH_REVERTS-V1",
+      "score": 0.387663,
+      "status": "VALIDATION_READY"
+    },
+    {
+      "family": "REVERSAL",
+      "id": "HYPOTHESIS-DISC-10-DOWN_MOVE_REVERSES-V1",
+      "score": 0.387656,
+      "status": "VALIDATION_READY"
+    },
+    {
+      "family": "MEAN_REVERSION",
+      "id": "HYPOTHESIS-DISC-16-NEAR_LOW_REVERTS-V1",
+      "score": 0.387651,
+      "status": "VALIDATION_READY"
+    },
+    {
+      "family": "MOMENTUM",
+      "id": "HYPOTHESIS-DISC-07-POSITIVE_MOMENTUM_LONG-V1",
+      "score": 0.270641,
+      "status": "REJECTED"
+    },
+    {
+      "family": "MOMENTUM",
+      "id": "HYPOTHESIS-DISC-08-NEGATIVE_MOMENTUM_SHORT-V1",
+      "score": 0.270641,
+      "status": "REJECTED"
+    },
+    {
+      "family": "CONTINUATION",
+      "id": "HYPOTHESIS-DISC-11-UP_CONTINUES-V1",
+      "score": 0.270641,
+      "status": "REJECTED"
+    },
+    {
+      "family": "CONTINUATION",
+      "id": "HYPOTHESIS-DISC-12-DOWN_CONTINUES-V1",
+      "score": 0.270641,
+      "status": "REJECTED"
+    },
+    {
+      "family": "BREAKOUT",
+      "id": "HYPOTHESIS-DISC-13-NEAR_HIGH_BREAKS-V1",
+      "score": 0.270641,
+      "status": "REJECTED"
+    },
+    {
+      "family": "BREAKOUT",
+      "id": "HYPOTHESIS-DISC-14-NEAR_LOW_BREAKS-V1",
+      "score": 0.270641,
+      "status": "REJECTED"
+    },
+    {
+      "family": "TEMPORAL",
+      "id": "HYPOTHESIS-DISC-01-MID_MORNING_VOL-V1",
+      "score": 0.250838,
+      "status": "REJECTED"
+    },
+    {
+      "family": "REGIME",
+      "id": "HYPOTHESIS-DISC-17-UP_REGIME_EXPANDS-V1",
+      "score": 0.246789,
+      "status": "REJECTED"
+    },
+    {
+      "family": "CROSS_FEATURE",
+      "id": "HYPOTHESIS-DISC-22-UP_REGIME_HIGH_RANGE-V1",
+      "score": 0.240506,
+      "status": "REJECTED"
+    },
+    {
+      "family": "COST",
+      "id": "HYPOTHESIS-DISC-20-HIGH_SPREAD_LONG-V1",
+      "score": 0.223674,
+      "status": "REJECTED"
+    },
+    {
+      "family": "COST",
+      "id": "HYPOTHESIS-DISC-19-LOW_SPREAD_LONG-V1",
+      "score": 0.184643,
+      "status": "REJECTED"
+    },
+    {
+      "family": "REGIME",
+      "id": "HYPOTHESIS-DISC-18-RANGE_REGIME_QUIET-V1",
+      "score": 0.176983,
+      "status": "REJECTED"
+    },
+    {
+      "family": "VOLATILITY",
+      "id": "HYPOTHESIS-DISC-03-HIGH_VOL_SHORT_HORIZON-V1",
+      "score": 0.173104,
+      "status": "REJECTED"
+    },
+    {
+      "family": "DATA_QUALITY",
+      "id": "HYPOTHESIS-DISC-23-HIGH_TICK_ACTIVITY-V1",
+      "score": 0.173101,
+      "status": "REJECTED"
+    },
+    {
+      "family": "RANGE",
+      "id": "HYPOTHESIS-DISC-05-HIGH_RANGE_UP_EXCURSION-V1",
+      "score": 0.1731,
+      "status": "REJECTED"
+    },
+    {
+      "family": "RANGE",
+      "id": "HYPOTHESIS-DISC-06-HIGH_RANGE_DOWN_EXCURSION-V1",
+      "score": 0.1731,
+      "status": "REJECTED"
+    },
+    {
+      "family": "DATA_QUALITY",
+      "id": "HYPOTHESIS-DISC-24-LOW_TICK_ACTIVITY-V1",
+      "score": 0.173098,
+      "status": "REJECTED"
+    },
+    {
+      "family": "VOLATILITY",
+      "id": "HYPOTHESIS-DISC-04-LOW_VOL_LONG_HORIZON-V1",
+      "score": 0.173094,
+      "status": "REJECTED"
+    },
+    {
+      "family": "TEMPORAL",
+      "id": "HYPOTHESIS-DISC-02-LATE_SESSION_VOL-V1",
+      "score": 0.173093,
+      "status": "REJECTED"
+    },
+    {
+      "family": "CROSS_FEATURE",
+      "id": "HYPOTHESIS-DISC-21-LATE_HIGH_VOL-V1",
+      "score": 0.153827,
+      "status": "REJECTED"
+    }
+  ],
+  "prompt_8": {
+    "abstention_value": 0.0002826809736809444,
+    "opportunity_research_value": 0.6388525252448862,
+    "opportunity_value": 0.8024697979700696,
+    "reversal_family_research_value": 0.01,
+    "trade_value": 0
+  },
+  "trained": false,
+  "updated_at": "2026-09-03T14:01:52.077339+00:00",
+  "validation_values": {
+    "interpretation": "separate non-interchangeable scores",
+    "knowledge_value": 1.0,
+    "research_value": 0.2,
+    "trade_value": 0.0
+  },
+  "version": "v3-independent-validation"
+}

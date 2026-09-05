@@ -1,0 +1,1046 @@
+[
+  {
+    "confidence": 0.65,
+    "content": "2 episodios aportan evidencia sobre HYPOTHESIS-20260903T003510018092Z-ca144d4563. Conclusión V0: evidencia acumulada; requiere validación estadística posterior.",
+    "created_at": "2026-09-03T00:35:22.171438+00:00",
+    "evidence_ids": [
+      "EPISODE-20260903T003510043264Z-2d98929bce",
+      "EPISODE-20260903T003522146642Z-c1ef44c992"
+    ],
+    "id": "MEMORY-20260903T003522171377Z-dfaf6d116b",
+    "status": "active",
+    "tags": [
+      "consolidated",
+      "hypothesis-20260903t003510018092z-ca144d4563"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.8,
+    "content": "2 episodios aportan evidencia sobre HYPOTHESIS-20260903T005120517197Z-2b3d136690. Conclusión V0: evidencia acumulada; requiere validación estadística posterior.",
+    "created_at": "2026-09-03T00:52:26.664697+00:00",
+    "evidence_ids": [
+      "EPISODE-20260903T005120640937Z-16c2c5c07b",
+      "EPISODE-20260903T005226640046Z-c2f2196d8b"
+    ],
+    "experience_ids": [
+      "EXPERIENCE-0a61d334f59b58977b8133e2",
+      "EXPERIENCE-31336062bc1dfbf9e9a8c8fe",
+      "EXPERIENCE-32837db4b3a6005a0fec9202",
+      "EXPERIENCE-66a8d3f531238ca29a897fee",
+      "EXPERIENCE-6f3f3ba827954b0331628ae4",
+      "EXPERIENCE-7824ca6405e14c0527ae9249",
+      "EXPERIENCE-a72a0ee42a1079b8484605f0",
+      "EXPERIENCE-c09363e01dc4a48f4670087c",
+      "EXPERIENCE-d038babd6c1610e09fef6083",
+      "EXPERIENCE-fd9aed644e8b588c5222f627"
+    ],
+    "id": "MEMORY-20260903T005226664642Z-bdaa7441d6",
+    "status": "active",
+    "tags": [
+      "consolidated",
+      "hypothesis-20260903t005120517197z-2b3d136690"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.85,
+    "content": "2 episodios aportan evidencia sobre HYPOTHESIS-20260903T015024882137Z-be499f56e5. Conclusión V0: evidencia acumulada; requiere validación estadística posterior.",
+    "created_at": "2026-09-03T01:50:47.711342+00:00",
+    "evidence_ids": [
+      "EPISODE-20260903T015027942713Z-544160d8cb",
+      "EPISODE-20260903T015047620243Z-0d827bf8b5"
+    ],
+    "experience_ids": [
+      "EXPERIENCE-V2-1ce10daccc509197",
+      "EXPERIENCE-V2-5b788e0057ae8576",
+      "EXPERIENCE-V2-65c12a39ab03c914",
+      "EXPERIENCE-V2-6686557456f6e444",
+      "EXPERIENCE-V2-930268d350425187",
+      "EXPERIENCE-V2-aba33d833cec96e3",
+      "EXPERIENCE-V2-adcd5892f152279d",
+      "EXPERIENCE-V2-c2d0b683e6acb1ae",
+      "EXPERIENCE-V2-e48d3cf259004115",
+      "EXPERIENCE-V2-e632e96428129754"
+    ],
+    "id": "MEMORY-20260903T015047711266Z-87011fbc6b",
+    "status": "active",
+    "tags": [
+      "consolidated",
+      "hypothesis-20260903t015024882137z-be499f56e5"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.565783,
+    "content": "HYPOTHESIS-CAL-NEGATIVE-SESSION-HASH-V1 terminó REJECTED; razones: ['economic_materiality_failed', 'multiple_testing_failed', 'temporal_stability_failed', 'negative_control_not_eligible']",
+    "created_at": "2026-09-03T02:06:05.754406+00:00",
+    "evidence_ids": [
+      "EVIDENCE-CAL-NEGATIVE-SESSION-HASH-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T020605754265Z-8df2186eef",
+    "status": "active",
+    "tags": [
+      "evidence-v1",
+      "hypothesis-cal-negative-session-hash-v1",
+      "rejected"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.45,
+    "content": "HYPOTHESIS-CAL-EARLY-WINDOW-VOL-V1 terminó REJECTED; razones: ['effect_direction_failed', 'multiple_testing_failed', 'temporal_stability_failed', 'parameter_stability_failed']",
+    "created_at": "2026-09-03T02:06:05.797513+00:00",
+    "evidence_ids": [
+      "EVIDENCE-CAL-EARLY-WINDOW-VOL-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T020605797405Z-7c8966b050",
+    "status": "active",
+    "tags": [
+      "evidence-v1",
+      "hypothesis-cal-early-window-vol-v1",
+      "rejected"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.999663,
+    "content": "HYPOTHESIS-CAL-VOL-PERSISTENCE-V1 terminó DEV_SURVIVOR; razones: ['passed DEV gates']",
+    "created_at": "2026-09-03T02:06:05.838279+00:00",
+    "evidence_ids": [
+      "EVIDENCE-CAL-VOL-PERSISTENCE-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T020605838197Z-84d541a58d",
+    "status": "active",
+    "tags": [
+      "dev_survivor",
+      "evidence-v1",
+      "hypothesis-cal-vol-persistence-v1"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.45,
+    "content": "HYPOTHESIS-CAL-0830-EXPANSION-V1 terminó REJECTED; razones: ['effect_direction_failed', 'multiple_testing_failed', 'temporal_stability_failed', 'parameter_stability_failed']",
+    "created_at": "2026-09-03T02:06:05.880848+00:00",
+    "evidence_ids": [
+      "EVIDENCE-CAL-0830-EXPANSION-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T020605880726Z-2d0af6a46d",
+    "status": "active",
+    "tags": [
+      "evidence-v1",
+      "hypothesis-cal-0830-expansion-v1",
+      "rejected"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.89955,
+    "content": "HYPOTHESIS-CAL-VOL-PERSISTENCE-V1 terminó REJECTED; razones: ['negative_control_failed']",
+    "created_at": "2026-09-03T02:08:49.639409+00:00",
+    "evidence_ids": [
+      "EVIDENCE-CAL-VOL-PERSISTENCE-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T020849639323Z-8df0b4c258",
+    "status": "active",
+    "tags": [
+      "evidence-v1",
+      "hypothesis-cal-vol-persistence-v1",
+      "rejected"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.35,
+    "content": "Discovery MOMENTUM HYPOTHESIS-DISC-07-POSITIVE_MOMENTUM_LONG-V1 -> REJECTED; ['effect_direction_failed', 'multiple_testing_failed', 'temporal_stability_failed', 'parameter_stability_failed']",
+    "created_at": "2026-09-03T02:21:44.240279+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-07-POSITIVE_MOMENTUM_LONG-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022144240180Z-6da74c5ea8",
+    "status": "active",
+    "tags": [
+      "discovery-v1",
+      "momentum",
+      "rejected"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.999325,
+    "content": "Discovery REVERSAL HYPOTHESIS-DISC-09-UP_MOVE_REVERSES-V1 -> DEV_SURVIVOR; ['passed DEV gates']",
+    "created_at": "2026-09-03T02:21:47.696804+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-09-UP_MOVE_REVERSES-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022147696732Z-db63155b74",
+    "status": "active",
+    "tags": [
+      "dev_survivor",
+      "discovery-v1",
+      "reversal"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.35,
+    "content": "Discovery CONTINUATION HYPOTHESIS-DISC-11-UP_CONTINUES-V1 -> REJECTED; ['effect_direction_failed', 'multiple_testing_failed', 'temporal_stability_failed', 'parameter_stability_failed']",
+    "created_at": "2026-09-03T02:21:50.844962+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-11-UP_CONTINUES-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022150844904Z-5cd87d5288",
+    "status": "active",
+    "tags": [
+      "continuation",
+      "discovery-v1",
+      "rejected"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.35,
+    "content": "Discovery BREAKOUT HYPOTHESIS-DISC-13-NEAR_HIGH_BREAKS-V1 -> REJECTED; ['effect_direction_failed', 'multiple_testing_failed', 'temporal_stability_failed', 'parameter_stability_failed']",
+    "created_at": "2026-09-03T02:21:54.209913+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-13-NEAR_HIGH_BREAKS-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022154209842Z-f16cb0934f",
+    "status": "active",
+    "tags": [
+      "breakout",
+      "discovery-v1",
+      "rejected"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.999325,
+    "content": "Discovery MEAN_REVERSION HYPOTHESIS-DISC-15-NEAR_HIGH_REVERTS-V1 -> DEV_SURVIVOR; ['passed DEV gates']",
+    "created_at": "2026-09-03T02:21:57.249723+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-15-NEAR_HIGH_REVERTS-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022157249576Z-b439157983",
+    "status": "active",
+    "tags": [
+      "dev_survivor",
+      "discovery-v1",
+      "mean_reversion"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.999438,
+    "content": "Discovery REVERSAL HYPOTHESIS-DISC-10-DOWN_MOVE_REVERSES-V1 -> DEV_SURVIVOR; ['passed DEV gates']",
+    "created_at": "2026-09-03T02:22:50.263427+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-10-DOWN_MOVE_REVERSES-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022250263315Z-c699c621dc",
+    "status": "active",
+    "tags": [
+      "dev_survivor",
+      "discovery-v1",
+      "reversal"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.999505,
+    "content": "Discovery MEAN_REVERSION HYPOTHESIS-DISC-16-NEAR_LOW_REVERTS-V1 -> DEV_SURVIVOR; ['passed DEV gates']",
+    "created_at": "2026-09-03T02:23:32.501048+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-16-NEAR_LOW_REVERTS-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022332500947Z-a4e9f3993a",
+    "status": "active",
+    "tags": [
+      "dev_survivor",
+      "discovery-v1",
+      "mean_reversion"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.979902,
+    "content": "Discovery COST HYPOTHESIS-DISC-19-LOW_SPREAD_LONG-V1 -> REJECTED; ['economic_materiality_failed']",
+    "created_at": "2026-09-03T02:23:35.448227+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-19-LOW_SPREAD_LONG-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022335448153Z-9fc9da8890",
+    "status": "active",
+    "tags": [
+      "cost",
+      "discovery-v1",
+      "rejected"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.35,
+    "content": "Discovery TEMPORAL HYPOTHESIS-DISC-01-MID_MORNING_VOL-V1 -> REJECTED; ['effect_direction_failed', 'multiple_testing_failed', 'temporal_stability_failed', 'parameter_stability_failed', 'negative_control_failed']",
+    "created_at": "2026-09-03T02:23:38.224161+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-01-MID_MORNING_VOL-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022338224099Z-205fa2bc8d",
+    "status": "active",
+    "tags": [
+      "discovery-v1",
+      "rejected",
+      "temporal"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.89955,
+    "content": "Discovery VOLATILITY HYPOTHESIS-DISC-03-HIGH_VOL_SHORT_HORIZON-V1 -> REJECTED; ['negative_control_failed']",
+    "created_at": "2026-09-03T02:23:40.500135+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-03-HIGH_VOL_SHORT_HORIZON-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022340500068Z-480a13e189",
+    "status": "active",
+    "tags": [
+      "discovery-v1",
+      "rejected",
+      "volatility"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.899578,
+    "content": "Discovery RANGE HYPOTHESIS-DISC-05-HIGH_RANGE_UP_EXCURSION-V1 -> REJECTED; ['negative_control_failed']",
+    "created_at": "2026-09-03T02:23:42.705312+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-05-HIGH_RANGE_UP_EXCURSION-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022342705236Z-a19bcbc672",
+    "status": "active",
+    "tags": [
+      "discovery-v1",
+      "range",
+      "rejected"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.378628,
+    "content": "Discovery REGIME HYPOTHESIS-DISC-17-UP_REGIME_EXPANDS-V1 -> REJECTED; ['effect_direction_failed', 'economic_materiality_failed', 'multiple_testing_failed', 'temporal_stability_failed', 'parameter_stability_failed', 'negative_control_failed']",
+    "created_at": "2026-09-03T02:23:44.834570+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-17-UP_REGIME_EXPANDS-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022344834490Z-49b7996641",
+    "status": "active",
+    "tags": [
+      "discovery-v1",
+      "regime",
+      "rejected"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.899575,
+    "content": "Discovery DATA_QUALITY HYPOTHESIS-DISC-23-HIGH_TICK_ACTIVITY-V1 -> REJECTED; ['negative_control_failed']",
+    "created_at": "2026-09-03T02:23:47.006206+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-23-HIGH_TICK_ACTIVITY-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022347006133Z-14da9bd57d",
+    "status": "active",
+    "tags": [
+      "data_quality",
+      "discovery-v1",
+      "rejected"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.35,
+    "content": "Discovery CROSS_FEATURE HYPOTHESIS-DISC-22-UP_REGIME_HIGH_RANGE-V1 -> REJECTED; ['effect_direction_failed', 'multiple_testing_failed', 'temporal_stability_failed', 'parameter_stability_failed']",
+    "created_at": "2026-09-03T02:23:50.106143+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-22-UP_REGIME_HIGH_RANGE-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022350106084Z-670bc28df9",
+    "status": "active",
+    "tags": [
+      "cross_feature",
+      "discovery-v1",
+      "rejected"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.899573,
+    "content": "Discovery CROSS_FEATURE HYPOTHESIS-DISC-21-LATE_HIGH_VOL-V1 -> REJECTED; ['negative_control_failed']",
+    "created_at": "2026-09-03T02:23:52.160978+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-21-LATE_HIGH_VOL-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022352160897Z-75648aee36",
+    "status": "active",
+    "tags": [
+      "cross_feature",
+      "discovery-v1",
+      "rejected"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.899591,
+    "content": "Discovery DATA_QUALITY HYPOTHESIS-DISC-24-LOW_TICK_ACTIVITY-V1 -> REJECTED; ['negative_control_failed']",
+    "created_at": "2026-09-03T02:23:54.492343+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-24-LOW_TICK_ACTIVITY-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022354492278Z-4caf64fbb4",
+    "status": "active",
+    "tags": [
+      "data_quality",
+      "discovery-v1",
+      "rejected"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.87213,
+    "content": "Discovery REGIME HYPOTHESIS-DISC-18-RANGE_REGIME_QUIET-V1 -> REJECTED; ['economic_materiality_failed', 'negative_control_failed']",
+    "created_at": "2026-09-03T02:23:56.561216+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-18-RANGE_REGIME_QUIET-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022356561155Z-1938adcdb2",
+    "status": "active",
+    "tags": [
+      "discovery-v1",
+      "regime",
+      "rejected"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.899619,
+    "content": "Discovery VOLATILITY HYPOTHESIS-DISC-04-LOW_VOL_LONG_HORIZON-V1 -> REJECTED; ['negative_control_failed']",
+    "created_at": "2026-09-03T02:23:58.864191+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-04-LOW_VOL_LONG_HORIZON-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022358864120Z-2bf98e10bc",
+    "status": "active",
+    "tags": [
+      "discovery-v1",
+      "rejected",
+      "volatility"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.899631,
+    "content": "Discovery TEMPORAL HYPOTHESIS-DISC-02-LATE_SESSION_VOL-V1 -> REJECTED; ['negative_control_failed']",
+    "created_at": "2026-09-03T02:24:01.271144+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-02-LATE_SESSION_VOL-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022401271062Z-ffe0234fce",
+    "status": "active",
+    "tags": [
+      "discovery-v1",
+      "rejected",
+      "temporal"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.35,
+    "content": "Discovery MOMENTUM HYPOTHESIS-DISC-08-NEGATIVE_MOMENTUM_SHORT-V1 -> REJECTED; ['effect_direction_failed', 'multiple_testing_failed', 'temporal_stability_failed', 'parameter_stability_failed']",
+    "created_at": "2026-09-03T02:24:05.041890+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-08-NEGATIVE_MOMENTUM_SHORT-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022405041829Z-00192ec957",
+    "status": "active",
+    "tags": [
+      "discovery-v1",
+      "momentum",
+      "rejected"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.35,
+    "content": "Discovery CONTINUATION HYPOTHESIS-DISC-12-DOWN_CONTINUES-V1 -> REJECTED; ['effect_direction_failed', 'multiple_testing_failed', 'temporal_stability_failed', 'parameter_stability_failed']",
+    "created_at": "2026-09-03T02:24:08.133854+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-12-DOWN_CONTINUES-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022408133788Z-916057a484",
+    "status": "active",
+    "tags": [
+      "continuation",
+      "discovery-v1",
+      "rejected"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.35,
+    "content": "Discovery BREAKOUT HYPOTHESIS-DISC-14-NEAR_LOW_BREAKS-V1 -> REJECTED; ['effect_direction_failed', 'multiple_testing_failed', 'temporal_stability_failed', 'parameter_stability_failed']",
+    "created_at": "2026-09-03T02:24:11.089603+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-14-NEAR_LOW_BREAKS-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022411089408Z-f01c1f1280",
+    "status": "active",
+    "tags": [
+      "breakout",
+      "discovery-v1",
+      "rejected"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.682038,
+    "content": "Discovery COST HYPOTHESIS-DISC-20-HIGH_SPREAD_LONG-V1 -> REJECTED; ['economic_materiality_failed', 'multiple_testing_failed', 'negative_control_failed']",
+    "created_at": "2026-09-03T02:24:13.874192+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-20-HIGH_SPREAD_LONG-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022413874122Z-f718c1842e",
+    "status": "active",
+    "tags": [
+      "cost",
+      "discovery-v1",
+      "rejected"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.89958,
+    "content": "Discovery RANGE HYPOTHESIS-DISC-06-HIGH_RANGE_DOWN_EXCURSION-V1 -> REJECTED; ['negative_control_failed']",
+    "created_at": "2026-09-03T02:24:16.199801+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-06-HIGH_RANGE_DOWN_EXCURSION-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022416199719Z-f4e2bcf6b2",
+    "status": "active",
+    "tags": [
+      "discovery-v1",
+      "range",
+      "rejected"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.8,
+    "content": "BREAKOUT: NO_PREDICTIVE_INFORMATION_IN_TESTED_REGION; rejected=2, validation_ready=0",
+    "created_at": "2026-09-03T02:25:45.143209+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-13-NEAR_HIGH_BREAKS-V1",
+      "EVIDENCE-DISC-14-NEAR_LOW_BREAKS-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022545142971Z-6d347dc8cb",
+    "status": "active",
+    "tags": [
+      "discovery-consolidated",
+      "family-consolidation-breakout",
+      "no_predictive_information_in_tested_region"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.8,
+    "content": "CONTINUATION: NO_PREDICTIVE_INFORMATION_IN_TESTED_REGION; rejected=2, validation_ready=0",
+    "created_at": "2026-09-03T02:25:45.168731+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-11-UP_CONTINUES-V1",
+      "EVIDENCE-DISC-12-DOWN_CONTINUES-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022545168640Z-de5ccc908d",
+    "status": "active",
+    "tags": [
+      "discovery-consolidated",
+      "family-consolidation-continuation",
+      "no_predictive_information_in_tested_region"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.8,
+    "content": "COST: NO_PREDICTIVE_INFORMATION_IN_TESTED_REGION; rejected=2, validation_ready=0",
+    "created_at": "2026-09-03T02:25:45.190830+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-19-LOW_SPREAD_LONG-V1",
+      "EVIDENCE-DISC-20-HIGH_SPREAD_LONG-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022545190775Z-9b6ff131d1",
+    "status": "active",
+    "tags": [
+      "discovery-consolidated",
+      "family-consolidation-cost",
+      "no_predictive_information_in_tested_region"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.8,
+    "content": "CROSS_FEATURE: NO_PREDICTIVE_INFORMATION_IN_TESTED_REGION; rejected=2, validation_ready=0",
+    "created_at": "2026-09-03T02:25:45.208334+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-21-LATE_HIGH_VOL-V1",
+      "EVIDENCE-DISC-22-UP_REGIME_HIGH_RANGE-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022545208248Z-c94c52193c",
+    "status": "active",
+    "tags": [
+      "discovery-consolidated",
+      "family-consolidation-cross_feature",
+      "no_predictive_information_in_tested_region"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.8,
+    "content": "DATA_QUALITY: NO_PREDICTIVE_INFORMATION_IN_TESTED_REGION; rejected=2, validation_ready=0",
+    "created_at": "2026-09-03T02:25:45.228593+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-23-HIGH_TICK_ACTIVITY-V1",
+      "EVIDENCE-DISC-24-LOW_TICK_ACTIVITY-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022545228516Z-7f643afe0c",
+    "status": "active",
+    "tags": [
+      "discovery-consolidated",
+      "family-consolidation-data_quality",
+      "no_predictive_information_in_tested_region"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.8,
+    "content": "MEAN_REVERSION: DEV_STATISTICAL_CANDIDATE_NOT_VALIDATED; rejected=0, validation_ready=2",
+    "created_at": "2026-09-03T02:25:45.245608+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-15-NEAR_HIGH_REVERTS-V1",
+      "EVIDENCE-DISC-16-NEAR_LOW_REVERTS-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022545245548Z-9bf07c43b9",
+    "status": "active",
+    "tags": [
+      "dev_statistical_candidate_not_validated",
+      "discovery-consolidated",
+      "family-consolidation-mean_reversion"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.8,
+    "content": "MOMENTUM: NO_PREDICTIVE_INFORMATION_IN_TESTED_REGION; rejected=2, validation_ready=0",
+    "created_at": "2026-09-03T02:25:45.260616+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-07-POSITIVE_MOMENTUM_LONG-V1",
+      "EVIDENCE-DISC-08-NEGATIVE_MOMENTUM_SHORT-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022545260556Z-98298af093",
+    "status": "active",
+    "tags": [
+      "discovery-consolidated",
+      "family-consolidation-momentum",
+      "no_predictive_information_in_tested_region"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.8,
+    "content": "RANGE: NO_PREDICTIVE_INFORMATION_IN_TESTED_REGION; rejected=2, validation_ready=0",
+    "created_at": "2026-09-03T02:25:45.276120+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-05-HIGH_RANGE_UP_EXCURSION-V1",
+      "EVIDENCE-DISC-06-HIGH_RANGE_DOWN_EXCURSION-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022545276058Z-1acfad816f",
+    "status": "active",
+    "tags": [
+      "discovery-consolidated",
+      "family-consolidation-range",
+      "no_predictive_information_in_tested_region"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.8,
+    "content": "REGIME: NO_PREDICTIVE_INFORMATION_IN_TESTED_REGION; rejected=2, validation_ready=0",
+    "created_at": "2026-09-03T02:25:45.312020+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-17-UP_REGIME_EXPANDS-V1",
+      "EVIDENCE-DISC-18-RANGE_REGIME_QUIET-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022545311802Z-261593f728",
+    "status": "active",
+    "tags": [
+      "discovery-consolidated",
+      "family-consolidation-regime",
+      "no_predictive_information_in_tested_region"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.8,
+    "content": "REVERSAL: DEV_STATISTICAL_CANDIDATE_NOT_VALIDATED; rejected=0, validation_ready=2",
+    "created_at": "2026-09-03T02:25:45.358464+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-09-UP_MOVE_REVERSES-V1",
+      "EVIDENCE-DISC-10-DOWN_MOVE_REVERSES-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022545358317Z-b1d3eaf6f7",
+    "status": "active",
+    "tags": [
+      "dev_statistical_candidate_not_validated",
+      "discovery-consolidated",
+      "family-consolidation-reversal"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.8,
+    "content": "TEMPORAL: NO_PREDICTIVE_INFORMATION_IN_TESTED_REGION; rejected=2, validation_ready=0",
+    "created_at": "2026-09-03T02:25:45.400794+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-01-MID_MORNING_VOL-V1",
+      "EVIDENCE-DISC-02-LATE_SESSION_VOL-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022545400532Z-e92b482565",
+    "status": "active",
+    "tags": [
+      "discovery-consolidated",
+      "family-consolidation-temporal",
+      "no_predictive_information_in_tested_region"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.8,
+    "content": "VOLATILITY: NO_PREDICTIVE_INFORMATION_IN_TESTED_REGION; rejected=2, validation_ready=0",
+    "created_at": "2026-09-03T02:25:45.437587+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-03-HIGH_VOL_SHORT_HORIZON-V1",
+      "EVIDENCE-DISC-04-LOW_VOL_LONG_HORIZON-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T022545437469Z-bc36b672ef",
+    "status": "active",
+    "tags": [
+      "discovery-consolidated",
+      "family-consolidation-volatility",
+      "no_predictive_information_in_tested_region"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.95,
+    "content": "NO_TRADE: HYPOTHESIS-DISC-09-UP_MOVE_REVERSES-V1 improves relative to a worse base rate but conditioned net return remains -0.0001545346 <= 0.",
+    "created_at": "2026-09-03T13:44:12.682173+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-09-UP_MOVE_REVERSES-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T134412682086Z-0d78bb0334",
+    "status": "active",
+    "tags": [
+      "no-trade",
+      "no-trade-hypothesis-disc-09-up_move_reverses-v1",
+      "relative-predictive-information"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.95,
+    "content": "NO_TRADE: HYPOTHESIS-DISC-15-NEAR_HIGH_REVERTS-V1 improves relative to a worse base rate but conditioned net return remains -0.0000684545 <= 0.",
+    "created_at": "2026-09-03T13:44:12.707064+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-15-NEAR_HIGH_REVERTS-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T134412706934Z-005b152079",
+    "status": "active",
+    "tags": [
+      "no-trade",
+      "no-trade-hypothesis-disc-15-near_high_reverts-v1",
+      "relative-predictive-information"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.95,
+    "content": "NO_TRADE: HYPOTHESIS-DISC-10-DOWN_MOVE_REVERSES-V1 improves relative to a worse base rate but conditioned net return remains -0.0001486297 <= 0.",
+    "created_at": "2026-09-03T13:44:12.741138+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-10-DOWN_MOVE_REVERSES-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T134412741004Z-3379596de1",
+    "status": "active",
+    "tags": [
+      "no-trade",
+      "no-trade-hypothesis-disc-10-down_move_reverses-v1",
+      "relative-predictive-information"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.95,
+    "content": "NO_TRADE: HYPOTHESIS-DISC-16-NEAR_LOW_REVERTS-V1 improves relative to a worse base rate but conditioned net return remains -0.0000429830 <= 0.",
+    "created_at": "2026-09-03T13:44:12.773207+00:00",
+    "evidence_ids": [
+      "EVIDENCE-DISC-16-NEAR_LOW_REVERTS-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T134412773068Z-4e7fb01cf6",
+    "status": "active",
+    "tags": [
+      "no-trade",
+      "no-trade-hypothesis-disc-16-near_low_reverts-v1",
+      "relative-predictive-information"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.9,
+    "content": "Independent VALIDATION result for HYPOTHESIS-DISC-09-UP_MOVE_REVERSES-V1: VALIDATED_PREDICTIVE_RELATIONSHIP_NO_TRADE; DEV effect=0.0001461898093, VALIDATION effect=0.0001330124848, net conditional=-0.0002075577824.",
+    "created_at": "2026-09-03T14:01:51.843966+00:00",
+    "evidence_ids": [
+      "5697dcb882a6da87834bd7e5419224d9cb3706401089255d629d964dd1438fa4",
+      "HYPOTHESIS-DISC-09-UP_MOVE_REVERSES-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T140151843846Z-774a1cdf19",
+    "status": "active",
+    "tags": [
+      "hypothesis-disc-09-up_move_reverses-v1",
+      "prompt-6",
+      "validated_predictive_relationship_no_trade",
+      "validation"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.9,
+    "content": "Independent VALIDATION result for HYPOTHESIS-DISC-10-DOWN_MOVE_REVERSES-V1: VALIDATED_PREDICTIVE_RELATIONSHIP_NO_TRADE; DEV effect=0.0001659702362, VALIDATION effect=0.0001882730415, net conditional=-0.0001856057582.",
+    "created_at": "2026-09-03T14:01:51.857584+00:00",
+    "evidence_ids": [
+      "5697dcb882a6da87834bd7e5419224d9cb3706401089255d629d964dd1438fa4",
+      "HYPOTHESIS-DISC-10-DOWN_MOVE_REVERSES-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T140151857484Z-9c5eb19868",
+    "status": "active",
+    "tags": [
+      "hypothesis-disc-10-down_move_reverses-v1",
+      "prompt-6",
+      "validated_predictive_relationship_no_trade",
+      "validation"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.9,
+    "content": "Independent VALIDATION result for HYPOTHESIS-DISC-15-NEAR_HIGH_REVERTS-V1: VALIDATED_PREDICTIVE_RELATIONSHIP_NO_TRADE; DEV effect=0.0002362370002, VALIDATION effect=0.0004038082239, net conditional=-0.0001676832166.",
+    "created_at": "2026-09-03T14:01:51.882508+00:00",
+    "evidence_ids": [
+      "5697dcb882a6da87834bd7e5419224d9cb3706401089255d629d964dd1438fa4",
+      "HYPOTHESIS-DISC-15-NEAR_HIGH_REVERTS-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T140151882435Z-b01dce978e",
+    "status": "active",
+    "tags": [
+      "hypothesis-disc-15-near_high_reverts-v1",
+      "prompt-6",
+      "validated_predictive_relationship_no_trade",
+      "validation"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.9,
+    "content": "Independent VALIDATION result for HYPOTHESIS-DISC-16-NEAR_LOW_REVERTS-V1: VALIDATED_PREDICTIVE_RELATIONSHIP_NO_TRADE; DEV effect=0.0002795426611, VALIDATION effect=0.0004513124525, net conditional=-0.0001020309079.",
+    "created_at": "2026-09-03T14:01:51.909965+00:00",
+    "evidence_ids": [
+      "5697dcb882a6da87834bd7e5419224d9cb3706401089255d629d964dd1438fa4",
+      "HYPOTHESIS-DISC-16-NEAR_LOW_REVERTS-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T140151909855Z-95d6e6dde3",
+    "status": "active",
+    "tags": [
+      "hypothesis-disc-16-near_low_reverts-v1",
+      "prompt-6",
+      "validated_predictive_relationship_no_trade",
+      "validation"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.9,
+    "content": "4/4 frozen reversal-relative hypotheses replicated independently; economic status is preserved separately.",
+    "created_at": "2026-09-03T14:01:51.935867+00:00",
+    "evidence_ids": [
+      "5697dcb882a6da87834bd7e5419224d9cb3706401089255d629d964dd1438fa4",
+      "HYPOTHESIS-DISC-09-UP_MOVE_REVERSES-V1",
+      "HYPOTHESIS-DISC-10-DOWN_MOVE_REVERSES-V1",
+      "HYPOTHESIS-DISC-15-NEAR_HIGH_REVERTS-V1",
+      "HYPOTHESIS-DISC-16-NEAR_LOW_REVERTS-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T140151935753Z-7582b3623a",
+    "status": "active",
+    "tags": [
+      "independent-replication",
+      "prompt-6",
+      "reversal-relative-v1",
+      "validation"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.95,
+    "content": "Four frozen extreme-reversal conditions replicated their positive relative effect in independent VALIDATION 2020-2022, but all four absolute conditional net returns remained negative after the frozen spread-cost model. Conclusion: reproducible relative market relationship; NO_TRADE and not a tradable edge.",
+    "created_at": "2026-09-03T14:03:45.852870+00:00",
+    "evidence_ids": [
+      "5697dcb882a6da87834bd7e5419224d9cb3706401089255d629d964dd1438fa4",
+      "HYPOTHESIS-DISC-09-UP_MOVE_REVERSES-V1",
+      "HYPOTHESIS-DISC-10-DOWN_MOVE_REVERSES-V1",
+      "HYPOTHESIS-DISC-15-NEAR_HIGH_REVERTS-V1",
+      "HYPOTHESIS-DISC-16-NEAR_LOW_REVERTS-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T140345852805Z-5dadd673d1",
+    "status": "active",
+    "tags": [
+      "independent-replication",
+      "no-trade",
+      "prompt-6",
+      "validated-relative-reversal-no-trade-v1",
+      "validation"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 1.0,
+    "content": "Economic DEV campaign tested 24 preregistered ENTER/WAIT policies over four frozen relative-reversal signals. All were REJECTED. Best net policy NEW-ECO-DISC-15-LOW_COST_ATR-V1 returned -0.0001623489 at 1x proxy cost; low cost/ATR reduced losses but did not cross zero. WAIT remains optimal. DEV historical bid/ask ticks and slippage remain unavailable; no failed filter may be reused as a post-hoc rescue.",
+    "created_at": "2026-09-03T16:55:50.481945+00:00",
+    "evidence_ids": [
+      "ECONOMIC-DISCOVERY-V1",
+      "ca494c6ef74c6c1d8b33c1c5f5c2f17b24f14c7c3f5a9af8de2a78bb7873e933"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T165550481866Z-196459d1d7",
+    "status": "active",
+    "tags": [
+      "dev-only",
+      "enter-vs-wait",
+      "no-trade",
+      "prompt-7-economic-campaign-v1",
+      "proxy-cost-only"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 1.0,
+    "content": "REVERSAL_RELATIVE_VALIDATED_BUT_NOT_MONETIZABLE. DO_NOT_REOPEN_WITH_POSTHOC_FILTERS. Research Value is 0.01 unless genuinely new external evidence arrives.",
+    "created_at": "2026-09-03T17:09:04.771815+00:00",
+    "evidence_ids": [
+      "OPPORTUNITY-DISCOVERY-V1",
+      "f0d7ae49fb908b3bdbc67c5fc0d1c27ae05d62b2e531e31f787a1caf4ec3d8e3"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T170904771658Z-34fa93e3c7",
+    "status": "active",
+    "tags": [
+      "dev-only",
+      "research-only",
+      "reversal-family-closed-v1"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 1.0,
+    "content": "Prompt #8 tested 30 preregistered large-move hypotheses. Opportunity survivors=['OPP-01', 'OPP-02', 'OPP-03', 'OPP-11', 'OPP-12', 'OPP-13', 'OPP-14', 'OPP-16', 'OPP-17', 'OPP-18', 'OPP-19', 'OPP-21', 'OPP-24', 'OPP-25', 'OPP-26', 'OPP-27', 'OPP-28', 'OPP-30']; direction survivors=[]; DEV economic survivors=[]. Brokers were not mixed and WAIT remains mandatory where net direction failed.",
+    "created_at": "2026-09-03T17:09:04.813301+00:00",
+    "evidence_ids": [
+      "OPPORTUNITY-DISCOVERY-V1",
+      "f0d7ae49fb908b3bdbc67c5fc0d1c27ae05d62b2e531e31f787a1caf4ec3d8e3"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T170904813198Z-c39adc891a",
+    "status": "active",
+    "tags": [
+      "dev-only",
+      "prompt-8-opportunity-v1",
+      "research-only"
+    ],
+    "type": "semantic"
+  },
+  {
+    "confidence": 0.7,
+    "content": "ML-XAUUSD-0830-V1: REJECTED; balanced accuracy=0.332543; trades=0. No post-hoc tuning; proxy costs cannot justify promotion.",
+    "created_at": "2026-09-03T18:50:05.284577+00:00",
+    "evidence_ids": [
+      "ML-XAUUSD-0830-V1"
+    ],
+    "experience_ids": [],
+    "id": "MEMORY-20260903T185005284504Z-d91b98e527",
+    "status": "active",
+    "tags": [
+      "0830",
+      "ml",
+      "rejected",
+      "xauusd"
+    ],
+    "type": "semantic"
+  }
+]

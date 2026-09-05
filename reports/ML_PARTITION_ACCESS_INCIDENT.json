@@ -1,0 +1,17 @@
+{
+  "incident_id": "ML-INTEGRATION-LEGACY-TEST-OOS-ACCESS",
+  "status": "BYPASS_REMOVED_REQUIRES_SCIENTIFIC_REVIEW",
+  "cause": "The existing real-artifact test test_locked_oos_requires_explicit_capability called query(LOCKED_OOS, allow_locked=True). It ran during full test suites before the bypass was identified.",
+  "access_scope": "The Parquet reader opened the actual LOCKED_OOS file before taking head(1); the test asserted only the partition string. Legacy checksum verification and replay also accessed VALIDATION.",
+  "used_for_ml_training_or_selection": false,
+  "outcome_values_exposed_in_assistant_output": false,
+  "claim_that_oos_was_never_opened_during_task": false,
+  "remediation": [
+    "ParquetExperienceStore now rejects LOCKED_OOS regardless of allow_locked",
+    "include_locked checksum verification is denied",
+    "Default checksum verification and replay are DEV-only",
+    "The legacy positive-access test now asserts denial"
+  ],
+  "future_holdout_use": "Review this access incident before claiming the holdout has never been opened; do not silently erase this record.",
+  "ml_verdict": "REJECTED"
+}

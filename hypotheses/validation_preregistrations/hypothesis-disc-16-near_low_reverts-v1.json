@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-09-03T02:24:16.697967+00:00",
+  "evidence_artifact": "reports/evidence/hypothesis-disc-16-near_low_reverts-v1_f54993175d2479ec.json",
+  "evidence_hash": "e919ae47bedb0e69ddfed9833c302cf91c82443a34ce4d1ce76a6ccd66ab2bc4",
+  "hypothesis_id": "HYPOTHESIS-DISC-16-NEAR_LOW_REVERTS-V1",
+  "locked_oos_authorized": false,
+  "partition_authorized": "VALIDATION",
+  "spec_hash": "4ee63ad0496902a6b913333d8bfe61c00dd25088ccb6644a79417a298abac7ab"
+}
