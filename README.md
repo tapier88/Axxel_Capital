@@ -68,3 +68,9 @@ Control Tower requiere evidencia del gate de Foundation y aprobación posterior.
 RAW, ticks, holdouts, modelos, credenciales, logs de host y configuración local están
 excluidos de Git. No usar fuerza para agregarlos. No promoción automática, no nuevo T0,
 no órdenes, no trading, no fills y no apertura de VALIDATION/LOCKED_OOS.
+
+## Palabras clave del proyecto
+
+`agente_trading_algoritmico` · `automejora_continua`
+
+Describen la mision del proyecto; no implican trading activo ni autonomia promovida.
