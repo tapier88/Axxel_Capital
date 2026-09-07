@@ -39,3 +39,13 @@ XM/HistData tienen carencias de procedencia/reloj/sesiones; ninguna limpieza oto
 Los resultados históricos de VALIDATION son decisiones consumidas y preservadas, no una
 nueva ceremonia ni permiso para reutilizar datos. Próxima tarea: revisar blockers G3/G4,
 con aprobación separada de cualquier cambio operacional; no se ejecuta en esta entrega.
+
+
+## Revisión de arranque Track B V2 — 2026-09-07
+
+Readiness: **TRACK_B_V2_START_READINESS_BLOCKED**. Suite completa: 344 passed.
+Escala: 279 lotes medidos de 384 previstos, pico 47,139 s; ensayo interrumpido
+por incumplimiento de cadencia. Métricas finales y recuperación a escala incompletas.
+No cambia código/configuración de producción ni se crea T0. Próxima acción:
+REVIEW_TRACK_B_V2_OPERATIONAL_GAPS_FOR_AUTHORIZATION.
+[Informe](TRACK_B_V2_START_READINESS_REPORT.md) y [checklist](TRACK_B_V2_START_CHECKLIST.md).

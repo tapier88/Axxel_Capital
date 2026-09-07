@@ -74,3 +74,7 @@ no órdenes, no trading, no fills y no apertura de VALIDATION/LOCKED_OOS.
 `agente_trading_algoritmico` · `automejora_continua`
 
 Describen la mision del proyecto; no implican trading activo ni autonomia promovida.
+
+
+Revisión de arranque Track B V2: **BLOCKED**; [informe y límites](docs/TRACK_B_V2_START_READINESS_REPORT.md).
+V2 sigue desactivada, sin T0; G4 y certificación permanecen false.

@@ -57,7 +57,7 @@ Lives inside Data Engine + Experience Engine; not a standalone engine.
 ## Conclusion
 
 The architecture now has a logical dependency order and avoids turning every research insight
-into a separate subsystem. The current action is the safe GitHub baseline; subsequent work remains bounded by G3/G4.
+into a separate subsystem. Track B V2 start readiness is BLOCKED after review; subsequent operational changes require separate authorization and remain bounded by G3/G4.
 
 
 ---

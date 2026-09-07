@@ -49,3 +49,13 @@ was merged; its project keywords and history were preserved. Both updates were
 pushed atomically, without force. Final administrative receipt and ZIP use new
 filenames; prior verification/ZIP receipts remain preserved. No source/test/config
 changed after the successful public-export suite.
+
+
+## Revisión de arranque Track B V2 — 2026-09-07
+
+Readiness: **TRACK_B_V2_START_READINESS_BLOCKED**. Suite completa: 344 passed.
+Escala: 279 lotes medidos de 384 previstos, pico 47,139 s; ensayo interrumpido
+por incumplimiento de cadencia. Métricas finales y recuperación a escala incompletas.
+No cambia código/configuración de producción ni se crea T0. Próxima acción:
+REVIEW_TRACK_B_V2_OPERATIONAL_GAPS_FOR_AUTHORIZATION.
+[Informe](TRACK_B_V2_START_READINESS_REPORT.md) y [checklist](TRACK_B_V2_START_CHECKLIST.md).

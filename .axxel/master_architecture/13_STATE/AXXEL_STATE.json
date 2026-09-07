@@ -6,8 +6,8 @@
   "human_role": "HUMAN_ON_THE_LOOP",
   "phase": "PHASE_1_FOUNDATION",
   "primary_bottleneck": "G3_HISTORICAL_ROUTE_AND_G4_XM_FORWARD_QUALIFICATION",
-  "current_task": "AXXEL_GITHUB_BASELINE_PUBLISHED",
-  "next_best_action": "REVIEW_G3_G4_BLOCKERS_UNDER_SEPARATE_AUTHORIZATION",
+  "current_task": "TRACK_B_V2_START_READINESS_REVIEW_COMPLETE_BLOCKED",
+  "next_best_action": "REVIEW_TRACK_B_V2_OPERATIONAL_GAPS_FOR_AUTHORIZATION",
   "real_deployment": {
     "status": "BLOCKED",
     "automatic_promotion": false
@@ -231,28 +231,61 @@
     "start_readiness": {
       "status": "TRACK_B_V2_START_READINESS_BLOCKED",
       "checks": {
-        "storage": "TECHNICAL_CHECKS_PASS_SYNC_ATTESTATION_PENDING",
-        "power": "CHANGE_REQUIRED",
-        "xm_demo_identity": "READY_IDENTITY_ONLY_SYMBOL_PENDING",
-        "utc": "READY_AT_OBSERVATION_RECHECK_AT_START",
-        "worker_supervisor_lock": "QUIESCENT_AND_LOCK_TEST_PASS_OPERATIONAL_SUPERVISOR_PENDING"
+        "storage": "DEGRADED_SYNC_ATTESTATION_PENDING",
+        "power": "BLOCKED_AUTOMATIC_SLEEP_ENABLED",
+        "xm_demo": "DEGRADED_IDENTITY_READY_SYMBOL_UNVERIFIED",
+        "utc": "READY_AT_OBSERVATION_ONLY",
+        "process_lock": "DEGRADED_QUIESCENT_LOCK_PASS_SUPERVISOR_PENDING",
+        "performance": "BLOCKED_FIVE_SESSIONS_NOT_DEMONSTRATED",
+        "ceremony": "BLOCKED_PRODUCTION_A_TO_N_NOT_IMPLEMENTED"
       },
       "blockers": [
-        "POWER_SLEEP_AC_900_DC_600_SECONDS",
-        "HIBERNATION_AC_DC_10800_SECONDS",
-        "LID_CLOSE_SUSPEND_AC_DC",
+        "AUTOMATIC_SLEEP_AND_HIBERNATION_ENABLED",
+        "LID_CLOSE_SUSPEND",
         "WAKE_ADMIN_OBSERVABILITY_PENDING",
-        "CURRENT_SYMBOL_AVAILABILITY_NOT_VERIFIED_WITHOUT_QUOTES",
-        "REAL_BINDING_AND_DURABLE_T0_CEREMONY_NOT_IMPLEMENTED_ENABLED",
-        "OPERATIONAL_SUPERVISOR_NOT_INSTALLED_OR_APPROVED",
-        "FULL_SYNC_CONFIGURATION_ATTESTATION_PENDING",
-        "LONG_RUN_RECONCILIATION_THROUGHPUT_NOT_QUALIFIED"
+        "SYNC_ATTESTATION_PENDING",
+        "SYMBOL_AVAILABILITY_WITHOUT_QUOTES_UNVERIFIED",
+        "OPERATIONAL_SUPERVISOR_NOT_IMPLEMENTED_INSTALLED",
+        "PRODUCTION_START_AUTHORIZATION_T0_BINDING_NOT_IMPLEMENTED",
+        "FIVE_SESSION_PERFORMANCE_NOT_DEMONSTRATED"
       ],
-      "preregistration": "reports/track_b_xm_forward_capture_v2/start_readiness/TRACK_B_V2_START_PREREGISTRATION.json",
-      "preregistration_sha256": "814688cd50e52aab2c046a88220e7f998cd0a1bd32c2feac9c94547a7c5349e7",
+      "preregistration": "reports/track_b_xm_forward_capture_v2/start_readiness_r3/TRACK_B_V2_START_PREREGISTRATION.json",
+      "preregistration_sha256": "af36fc119a81ede0e457d088a8408eacb46a2f069b4c06c75144dbafbf956f19",
+      "report": "docs/TRACK_B_V2_START_READINESS_REPORT.md",
+      "review_baseline_commit": "817908b0fc5fa7c4967ee61401177e90b51f096f",
       "activation": false,
-      "t0": null
-    }
+      "t0": null,
+      "synthetic_performance_batches": 279,
+      "five_sessions_demonstrated": false,
+      "full_suite_passed": 344
+    },
+    "start_readiness_history": [
+      {
+        "status": "TRACK_B_V2_START_READINESS_BLOCKED",
+        "checks": {
+          "storage": "TECHNICAL_CHECKS_PASS_SYNC_ATTESTATION_PENDING",
+          "power": "CHANGE_REQUIRED",
+          "xm_demo_identity": "READY_IDENTITY_ONLY_SYMBOL_PENDING",
+          "utc": "READY_AT_OBSERVATION_RECHECK_AT_START",
+          "worker_supervisor_lock": "QUIESCENT_AND_LOCK_TEST_PASS_OPERATIONAL_SUPERVISOR_PENDING"
+        },
+        "blockers": [
+          "POWER_SLEEP_AC_900_DC_600_SECONDS",
+          "HIBERNATION_AC_DC_10800_SECONDS",
+          "LID_CLOSE_SUSPEND_AC_DC",
+          "WAKE_ADMIN_OBSERVABILITY_PENDING",
+          "CURRENT_SYMBOL_AVAILABILITY_NOT_VERIFIED_WITHOUT_QUOTES",
+          "REAL_BINDING_AND_DURABLE_T0_CEREMONY_NOT_IMPLEMENTED_ENABLED",
+          "OPERATIONAL_SUPERVISOR_NOT_INSTALLED_OR_APPROVED",
+          "FULL_SYNC_CONFIGURATION_ATTESTATION_PENDING",
+          "LONG_RUN_RECONCILIATION_THROUGHPUT_NOT_QUALIFIED"
+        ],
+        "preregistration": "reports/track_b_xm_forward_capture_v2/start_readiness/TRACK_B_V2_START_PREREGISTRATION.json",
+        "preregistration_sha256": "814688cd50e52aab2c046a88220e7f998cd0a1bd32c2feac9c94547a7c5349e7",
+        "activation": false,
+        "t0": null
+      }
+    ]
   },
   "capability_scope_note": "Module implementation or historical research results do not authorize present scientific consumption or future autonomous layers.",
   "publication_baseline": {

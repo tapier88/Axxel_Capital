@@ -29,13 +29,13 @@ Su estado permanente es:
 ```yaml
 phase: PHASE_1_FOUNDATION
 primary_bottleneck: G3_HISTORICAL_ROUTE_AND_G4_XM_FORWARD_QUALIFICATION
-current_task: AXXEL_GITHUB_BASELINE_PUBLISHED
+current_task: TRACK_B_V2_START_READINESS_REVIEW_COMPLETE_BLOCKED
 north_star: REPRODUCIBLE_RISK_ADJUSTED_NET_EDGE
 human_role: HUMAN_ON_THE_LOOP
 real_deployment: BLOCKED
 ```
 
-Data Engine V1 ya esta implementado; faltan G3/G4 y certificacion. Esta tarea publica la baseline sin iniciar esos trabajos.
+Data Engine V1 ya esta implementado; faltan G3/G4 y certificacion. Readiness Track B V2 revisado: BLOCKED. No se autoriza T0 ni captura.
 
 **No se cambia esta prioridad por introducir V2.**
 
@@ -238,7 +238,7 @@ AXXEL siempre debe elegir:
 
 Hoy esa tarea es:
 
-`REVIEW_G3_G4_BLOCKERS_UNDER_SEPARATE_AUTHORIZATION`
+`REVIEW_TRACK_B_V2_OPERATIONAL_GAPS_FOR_AUTHORIZATION`
 
 Solo tras evidencia del gate Foundation y aprobacion posterior:
 

@@ -1,0 +1,23 @@
+{
+  "status": "PREREGISTERED_SYNTHETIC_ONLY",
+  "baseline": "817908b0fc5fa7c4967ee61401177e90b51f096f",
+  "batches": 384,
+  "rows_per_batch": 3,
+  "clock_step_seconds": 30,
+  "operational_parameters_changed": false,
+  "deadline_seconds": 3600,
+  "milestones": [
+    1,
+    32,
+    64,
+    128,
+    192,
+    256,
+    384
+  ],
+  "five_session_sizing_scenario_batches": 14400,
+  "scenario_is_not_broker_calendar": true,
+  "acceptance": "No integrity failures; measured heartbeat <=30 seconds and batch duration <=30 seconds; five sessions require demonstrated scale, extrapolation alone cannot establish READY",
+  "preserve_fixture": true,
+  "prior_run": "r3 harness storage counter raced with ephemeral heartbeat publication; worker unchanged; failure preserved"
+}

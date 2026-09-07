@@ -14,3 +14,13 @@
 
 No se compran datos, contactan proveedores o cambian parámetros operacionales en esta tarea.
 La configuración congelada V2 sigue intacta; su preregistro de readiness no es autorización.
+
+
+## Revisión de arranque Track B V2 — 2026-09-07
+
+Readiness: **TRACK_B_V2_START_READINESS_BLOCKED**. Suite completa: 344 passed.
+Escala: 279 lotes medidos de 384 previstos, pico 47,139 s; ensayo interrumpido
+por incumplimiento de cadencia. Métricas finales y recuperación a escala incompletas.
+No cambia código/configuración de producción ni se crea T0. Próxima acción:
+REVIEW_TRACK_B_V2_OPERATIONAL_GAPS_FOR_AUTHORIZATION.
+[Informe](TRACK_B_V2_START_READINESS_REPORT.md) y [checklist](TRACK_B_V2_START_CHECKLIST.md).

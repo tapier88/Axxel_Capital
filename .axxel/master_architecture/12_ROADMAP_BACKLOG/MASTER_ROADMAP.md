@@ -1,11 +1,11 @@
 # MASTER ROADMAP
 
-## Prioridad vigente - publicacion baseline
+## Prioridad vigente - cierre de readiness Track B V2
 
 Data Engine IMPLEMENTED; SHADOW implementado. AHORA G3 NOT_ESTABLISHED y G4 false.
 V1 revocada; V2 IMPLEMENTED_AWAITING_START_APPROVAL, activation=false, T0=null.
 DATA_ENGINE_CERTIFIED=false; Control Tower BLOCKED. Publicacion GitHub: COMPLETADA; no avance de fase.
-Despues, revisar blockers G3/G4 bajo autorizacion separada. Los epics siguientes son
+Readiness V2 revisado: BLOCKED. Siguiente: REVIEW_TRACK_B_V2_OPERATIONAL_GAPS_FOR_AUTHORIZATION. G3 no se trabaja en esta tarea. Los epics siguientes son
 desglose del roadmap; no todos estan implementados ni autorizados.
 
 
